@@ -54,7 +54,24 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+<<<<<<< Updated upstream
   background-color: rgb(255,255,255,0.5);
+=======
+  background:  url(../Media/bar.jpg) ;
+  background-size: 100%;
+}
+#Jac{
+  display: block;
+  width: 110px;
+  height: 30px
+}
+.blur{
+  -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+>>>>>>> Stashed changes
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -66,10 +83,17 @@ a:focus {
   outline: none;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 700;
+  margin-top: 10px;
+  width: 110px;
+  height: 30px;
+  background: url(../Media/jac.png) no-repeat center center scroll;
+  background-size: 100%;
+  padding: 0;
 }
-.navbar-custom .navbar-brand:focus {
-  outline: none;
+
+.navbar-brand:hover {
+  background: url(../Media/jacHover.png) no-repeat center center scroll;
+  background-size: 100%;
 }
 .navbar-custom a {
   color: white;
@@ -80,9 +104,9 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ECECEC;
   outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -93,7 +117,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -103,14 +127,17 @@ a:focus {
     padding: 20px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparent;
+    background: url(../Media/bar.jpg) ;
+    background-size: 100%;
+    background-position: 0px -30px;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
+    background: url(../Media/bar.jpg) no-repeat center center scroll;
+      background-size: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -225,8 +252,8 @@ top: 15%;
   width: 100%;
   padding: 50px 0;
   color: white;
-  /*background: url(../Media/MainPage.svg) no-repeat center center scroll;*/
-  background-color: black;
+  background: url(../Media/Dots.svg) repeat center center scroll;
+background-color: #ECECEC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -272,7 +299,14 @@ ul.banner-social-buttons {
     margin-bottom: 0;
   }
 }
+#contact{
+  margin-bottom: 20px;
+}
+
 footer {
+  background: url(../Media/Dots.svg) repeat;
+  background-color: #ECECEC;
+
   padding: 50px 0;
 }
 footer p {
@@ -296,4 +330,14 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+.icon{
+  width: 80px;
+  height: 80px;
+}
+.ibor{
+margin-top: 20px;
+}
+#A{
+  margin-bottom: 40px;
 }
