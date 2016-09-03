@@ -96,11 +96,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-<<<<<<< HEAD
   color: #3497b4;
-=======
-  color: #FFFFFF;
->>>>>>> origin/master
   outline: none;
   background-color: rgba(233, 233, 233, 0.3);
 }
@@ -133,16 +129,10 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-<<<<<<< HEAD
     /*background: url(../Media/bar.jpg) no-repeat center center scroll;*/
     background: white;
     background-size: 100%;
     border-bottom: 1px solid rgba(233, 233, 233, 0.4);
-=======
-    background: url(../Media/bar.jpg) no-repeat center center scroll;
-    background-size: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
->>>>>>> origin/master
   }
   .navbar-custom.top-nav-collapse a{
     color: silver;
@@ -168,23 +158,14 @@ a:focus {
 
   width: 100%;
 }
-<<<<<<< HEAD
 
-=======
-/*intro decoration*/
->>>>>>> origin/master
 .intro {
   display: table;
   width: 100%;
   height: 100%;
   text-align: center;
   color: rgba(255,255,255);
-<<<<<<< HEAD
   background-color: transparent;
-=======
-  background: url(../Media/MainPage2.svg) no-repeat center center scroll;
-  background-color: #FFFFFF;
->>>>>>> origin/master
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -288,12 +269,7 @@ padding-bottom: 50px;
 
 .projects-section {
   width: 100%;
-<<<<<<< HEAD
   padding-bottom: 50px;
-=======
-  margin-top: 50px;
-  margin-bottom: 50px;
->>>>>>> origin/master
   color: black;
   background: url(../Media/Dots.svg) repeat center center scroll;
   background-color: #FFFFFF;
@@ -497,128 +473,3 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-<<<<<<< HEAD
-=======
-
-.icon{
-  width: 80px;
-  height: 80px;
-}
-.ibor{
-  margin-top: 20px;
-}
-#A{
-  margin-bottom: 40px;
-}
-/*Project card dsection*/
-.card{
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-top: 40px;
-  text-align: center;
-  color: black;
-  background: #f2f2f2;
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-}
-.card-container {
-  clear: both;
-  position: relative;
-  font-size: 40px;
-  margin: 0;
-}
-
-.card-container .card .card-pic {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.card-container .card .card-pic:hover img {
-  -webkit-transform: translate3d(0, -50px, 0);
-  transform: translate3d(0, -50px, 0);
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-.card-container .card .card-pic:hover .card-description {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.card-container .card .card-pic img {
-  -webkit-transition: -webkit-transform .3s;
-  transition: transform .3s;
-}
-
-.card-container .card .card-pic .card-description {
-  width: 100%;
-  height: 90px;
-  position: absolute;
-  bottom: 0;
-  background-color: #f2f2f2;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
-  text-align: center;
-  padding: 39px 20px 0 20px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-  -webkit-transition: -webkit-transform .3s;
-  transition: transform .3s;
-}
-
-.card-container .card-left {
-  position: relative;
-  float: left;
-}
-
-.card-container .card-right {
-  position: relative;
-  float: right;
-}
-
-.card-container .card-center {
-  position: relative;
-  height: auto;
-}
-.card-description{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-@media (min-width: 768px) {
-  #C02{
-    width: 48%;
-  }
-  #C03{
-    width: 48%;
-  }
-  #C04{
-    width: 48%;
-  }
-}
-
-.projectWidth {
-  padding-right:15px;
-  padding-left:15px;
-  margin-right:auto;
-  margin-left:auto;;
-  max-width: 800px;
-  height: inherit;
-}
->>>>>>> origin/master
