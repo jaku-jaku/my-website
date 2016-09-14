@@ -162,40 +162,65 @@ Owl carousel
   position: absolute;
   display: inline-block;
   margin-left: -111px;
-  margin-top: -71px;
+  margin-top: -67px;
   padding: 10px 20px;
   color: transparent;
   content: "RESUME";
-  border: 4px solid #11ABB0;
+  border-left : 4px solid #0e878b;
+  border-right: 4px solid  #0e878b;
   animation: scales 3s linear infinite;
 }
 #resume:hover .headerbox:before{
   position: absolute;
   display: inline-block;
   margin-left: -24px;
-  margin-top: -15px;
+  margin-top: -10px;
   padding: 10px 20px;
   color: transparent;
   content: "RESUME";
-  border: 4px solid   #11ABB0;
-   animation: scales 1.5s linear infinite;
- }
-
+  border-left: 4px solid  #0e878b;
+  border-right: 4px solid  #0e878b;
+  animation: scales 1.5s linear infinite;
+}
+#Portfolio:hover .headerbox:after{
+  position: absolute;
+  display: inline-block;
+  margin-left: -142px;
+  margin-top: -67px;
+  padding: 10px 20px;
+  color: transparent;
+  content: "PORTFOLIO";
+  border-left : 4px solid #0e878b;
+  border-right: 4px solid  #0e878b;
+  animation: scales 3s linear infinite;
+}
+#Portfolio:hover .headerbox:before{
+  position: absolute;
+  display: inline-block;
+  margin-left: -24px;
+  margin-top: -10px;
+  padding: 10px 20px;
+  color: transparent;
+  content: "PORTFOLIO";
+  border-left: 4px solid  #0e878b;
+  border-right: 4px solid  #0e878b;
+  animation: scales 1.5s linear infinite;
+}
 @keyframes scales{
   0%{
     transform:  scale(1);
     opacity: 0;
   }
   30%{
-      opacity: 0.5;
+    opacity: 0.5;
   }
   50%{
     transform:  scale(1.2);
-      opacity: 0.3;
+    opacity: 0.3;
   }
   100%{
     transform:  scale(1.5);
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -392,7 +417,6 @@ a.disable span{
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-
 }
 
 .btn {
@@ -463,18 +487,17 @@ ul.banner-social-buttons {
 .card-container .card .card-pic:hover img {
   -webkit-transform: translate3d(0, -50px, 0);
   transform: translate3d(0, -50px, 0);
+
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
 }
-
 .card-container .card .card-pic:hover .card-description {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
 .card-container .card .card-pic img {
   -webkit-transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -482,7 +505,7 @@ ul.banner-social-buttons {
 
 .card-container .card .card-pic .card-description {
   width: 100%;
-  height: 90px;
+  height: 200px;
   position: absolute;
   bottom: 0;
   background-color: #f2f2f2;
@@ -494,8 +517,8 @@ ul.banner-social-buttons {
   padding: 39px 20px 0 20px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, 100px, 0);
   -webkit-transition: -webkit-transform .3s;
   transition: transform .3s;
 }
@@ -522,8 +545,12 @@ ul.banner-social-buttons {
   font-size: 100%;
   vertical-align: baseline;
 }
-
-
+.card-description p{
+  margin-top: 45px;
+  font-size: 10px;
+  padding-top: 10px;
+  border-top:1px solid black;
+}
 
 .projectWidth {
   padding-right:15px;
@@ -624,8 +651,8 @@ border-color:  #ed5565;
   position: relative;
   max-width: 100%;
 }
-.lifestone:before {
-  background: #F9F9F9;
+.linebf:before {
+  background: #11ABB0;
   content: '';
   margin-left: -1px;
   position: absolute;
@@ -633,9 +660,53 @@ border-color:  #ed5565;
   left: 32px;
   width: 2px;
   height: 100%;
-}
 
+  /*transition: background-color 0.5s ease;*/
+}
+.linebflihuili:before{
+  background: #11ABB0;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient(red, #11ABB0,#11ABB0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, #11ABB0,#11ABB0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, #11ABB0,#11ABB0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, #11ABB0,#11ABB0); /* Standard syntax */
+}
+.linebfloyola:before{
+  background: #11ABB0;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient( #11ABB0,red,#11ABB0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( #11ABB0,red,#11ABB0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( #11ABB0,red,#11ABB0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( #11ABB0,red,#11ABB0); /* Standard syntax */
+}
+.linebfuw:before{
+  background: #11ABB0;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  width: 2px;
+  height: 100%;
+  background: -webkit-linear-gradient( #11ABB0,#11ABB0,red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( #11ABB0,#11ABB0,red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( #11ABB0,#11ABB0,red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( #11ABB0,#11ABB0,red); /* Standard syntax */
+}
 .lifestone-event {
+  list-style:none;
   position: relative;
   padding: 0;
 }
@@ -653,7 +724,7 @@ border-color:  #ed5565;
   margin: 16px 8px 8px -16px;
   position: absolute;
   border-radius: 8px;
-  background: #E9E9E9;
+  background: #11ABB0;
   width: 16px;
   height: 16px;
   /*display: inline-block;*/
@@ -763,11 +834,11 @@ border-color:  #ed5565;
   -webkit-transition-delay: 0.1s;
   transition: box-shadow 0.5s ease-in 0.1s;
 
-  -moz-box-shadow: inset 0 0 0 0em #11ABB0;
-  -webkit-box-shadow: inset 0 0 0 0em #11ABB0 ;
-  box-shadow: inset 0 0 0 0em #11ABB0 ;
-  background: none repeat scroll 0 0 #CCC ;
-  box-shadow: 0 0 0 0 #11ABB0 inset;
+  -moz-box-shadow: inset 0 0 0 0em #CCC;
+  -webkit-box-shadow: inset 0 0 0 0em #CCC ;
+  box-shadow: inset 0 0 0 0em #CCC ;
+  background: none repeat scroll 0 0 #11ABB0 ;
+  box-shadow: 0 0 0 0 #CCC inset;
 }
 
 .lifestone-event-underline {
@@ -932,7 +1003,7 @@ img::-moz-selection {
   border-bottom: 1px solid #00b2ca;
 }
 .listStyleUnderline li.activeL a {
-  border-bottom: 1px solid #00b2ca;
+  border-bottom: 1px solid red;
 }
 /*Portfolio Nav END*/
 /*Portfolio info*/
@@ -1123,6 +1194,8 @@ img::-moz-selection {
 .btn-sem:hover{
   background-color: #373737;
   color:  #e6e6e6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .col-md-6 {

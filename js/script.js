@@ -71,33 +71,46 @@ $('.filter li a').click(function(e) {
   var $this = $(this);
   $('li').removeClass('activeL');
   $this.parent().addClass('activeL');
-// Filter
+  // Filter
   var te= document.getElementsByClassName('activeL');
   var ac=$( te ).attr("datalist");
   // console.log(ac);
 
   var listItems = $("#workList li");
   listItems.each(function() {
-  var dl=$(this).attr("class");
-  // console.log(dl);
+    var dl=$(this).attr("class");
+    // console.log(dl);
 
-  if(ac!='*'){
-    // console.log(0);
-    if(dl!=ac){
-      // console.log(true);
-      $(this).fadeOut("slow");
+    if(ac!='*'){
+      // console.log(0);
+      if(dl!=ac){
+        // console.log(true);
+        $(this).fadeOut("slow");
+      }else{
+        $(this).fadeIn("slow");
+      }
     }else{
       $(this).fadeIn("slow");
     }
-  }else{
-    $(this).fadeIn("slow");
-  }
   });
-//
+  //
 
   e.preventDefault();
 });
 
 $('.pageclose').click(function () {
-   $('.modal').modal('toggle');
+  $('.modal').modal('toggle');
+});
+
+$('#lihuili').hover(function(){
+  $('#edulfs').toggleClass("linebf");
+  $('#edulfs').toggleClass("linebflihuili");
+});
+$('#loyola').hover(function(){
+  $('#edulfs').toggleClass("linebf");
+  $('#edulfs').toggleClass("linebfloyola");
+});
+$('#uw').hover(function(){
+  $('#edulfs').toggleClass("linebf");
+  $('#edulfs').toggleClass("linebfuw");
 });
