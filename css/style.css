@@ -458,8 +458,6 @@ ul.banner-social-buttons {
 /*Project card dsection*/
 .card{
 
-  color: black;
-
   width: 100%;
   height: 100%;
   margin: auto;
@@ -469,6 +467,7 @@ ul.banner-social-buttons {
 
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
+
 .card-container {
   clear: both;
   position: relative;
@@ -1197,7 +1196,7 @@ img::-moz-selection {
   background-color: #373737;
   color:  #e6e6e6;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .col-md-6 {
