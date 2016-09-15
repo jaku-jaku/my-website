@@ -152,11 +152,12 @@ Owl carousel
   font-size: 40px;
   padding: 30px;
   margin-top: -30px;
+  margin-bottom: 30px;
 }
 .headerbox{
-  display: inline-block;
+  text-align: center;
   padding: 10px 20px;
-  border: 4px solid #0e878b;
+  border: 4px solid  #0e878b;
 }
 
 #resume:hover .headerbox:before{
@@ -174,9 +175,9 @@ Owl carousel
 #resume:hover .headerbox:after{
   position: absolute;
   display: inline-block;
-  margin-left: -111px;
-  margin-top: -67px;
-  padding: 10px 20px;
+  margin-left: -198px;
+  margin-top: -9px;
+  padding:10px 20px;
   color: transparent;
   content: "RESUME";
   border-left : 4px solid #0e878b;
@@ -199,8 +200,8 @@ Owl carousel
 #Portfolio:hover .headerbox:after{
   position: absolute;
   display: inline-block;
-  margin-left: -142px;
-  margin-top: -67px;
+  margin-left: -260px;
+  margin-top: -10px;
   padding: 10px 20px;
   color: transparent;
   content: "PORTFOLIO";
@@ -557,7 +558,7 @@ ul.banner-social-buttons {
   padding-right:15px;
   padding-left:15px;
   margin-right:auto;
-  margin-left:auto;;
+  margin-left:auto;
   max-width: 1000px;
   height: inherit;
 }
