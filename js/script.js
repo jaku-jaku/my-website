@@ -34,7 +34,7 @@ $(function() {
     event.preventDefault();
   });
 });
-
+document.getElementById("#portfolioModal1").style.paddingLeft = "0px";
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
   if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
