@@ -12,9 +12,9 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
+
 //owl-demo
 $(document).ready(function() {
-
   $(".owl-demo").owlCarousel({
     navigation:true,
     navigationText:["<span class='angle'></span>","<span class='angle'></span>"],
@@ -22,7 +22,6 @@ $(document).ready(function() {
     autoHeight : true,
     transitionStyle:"fade"
   });
-
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin

@@ -274,6 +274,7 @@ Owl carousel
   background: url(../Media/jachover2.png) no-repeat center center scroll;
   background-size: 100%;
 }
+
 .navbar-custom a {
   color: gray;
 }
@@ -398,10 +399,146 @@ a.disable span{
 
 /*About*/
 #about{
-  background-color: white;
+  background: url(../Media/intro.svg);
+  background-position: center;
+  background-size: cover;
+  min-height:100vh;
   padding-bottom: 50px;
 }
 
+.cropCircle{
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  overflow: hidden;
+}
+#profilephoto{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.borderCircle{
+  height: 260px;
+  width: 260px;
+  border-radius: 130px;
+  border: 5px solid white;
+}
+.borCircle{
+  height: 270px;
+  width: 270px;
+  position: absolute;
+  margin-top: -260px;
+  margin-left: -10px;
+  border-radius: 135px;
+  border: 5px solid transparent;
+  transform: rotate(30deg);
+  border-top-color: #42DCA3;
+  border-bottom-color: #42DCA3;
+  animation: slowspin 5s linear infinite;
+}
+.borCircle1{
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  margin-top: -265px;
+  margin-left: -15px;
+  border-radius: 140px;
+  border: 4px solid transparent;
+  transform: rotate(230deg);
+  border-top-color: #42DCA3;
+  border-bottom-color: #42DCA3;
+  animation: slowspin2 4s linear infinite;
+}
+.selfDesc{
+  letter-spacing: 2px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 20px;
+  margin-top: 0px;
+  text-align:left;
+  font-size:15px;
+  padding: 10px 5px 10px 35px;
+  border: 5px solid #42DCA3;
+  border-image: url(../Media/bar.JPG) 5 round;
+}
+.selfDesc strong{
+  font-size:18px;
+  transition: all 0.5s ease;
+  color: #11ABB0;
+  font-weight: 500;
+}
+.selfDesc li:before {
+  content: "\f0a4"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.8em; /* same as padding-left set on li */
+  margin-right: 0.5em;
+  width: 1.3em; /* same as padding-left set on li */
+}
+.hoveranim:hover strong{
+  color: #ed5655;
+}
+.hoveranim:hover li:before{
+  animation: rlshift 0.5s linear infinite;
+}
+@keyframes rlshift{
+  0%{
+    -ms-transform: translate(0em,0em); /* IE 9 */
+    -webkit-transform: translate(0em,0em); /* Safari */
+    transform: translate(0em,0em);
+  }
+  90%{
+    -ms-transform: translate(0.5em,0em); /* IE 9 */
+    -webkit-transform: translate(0.5em,0em); /* Safari */
+    transform: translate(0.5em,0em);
+  }
+  100%{
+    -ms-transform: translate(0em,0em); /* IE 9 */
+    -webkit-transform: translate(0em,0em); /* Safari */
+    transform: translate(0em,0em);
+  }
+}
+.selfDesc li{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.buttoncus{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size:18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.buttoncus:hover{
+  color: white;
+  font-size:18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@keyframes slowspin{
+  0%{
+    transform: rotate(30deg);
+  }
+  50%{
+    transform: rotate(75deg);
+  }
+  100%{
+    transform: rotate(390deg);
+  }
+}
+@keyframes slowspin2{
+  0%{
+    transform: rotate(230deg);
+  }
+  50%{
+    transform: rotate(275deg);
+  }
+  100%{
+    transform: rotate(590deg);
+  }
+}
 /*Portfolio-Protfolio*/
 #Portfolio{
 
@@ -414,6 +551,7 @@ a.disable span{
   width: 100%;
   padding-bottom: 50px;
   color: black;
+  min-height: 100vh;
   background: url(../Media/Dots.svg) repeat center center scroll;
   background-color: #FFFFFF;
   -webkit-background-size: cover;
@@ -511,12 +649,9 @@ ul.banner-social-buttons {
   position: absolute;
   bottom: 0;
   background-color: #f2f2f2;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: 400;
   text-align: center;
-  padding: 39px 20px 0 20px;
+  padding: 10px 20px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transform: translate3d(0, 100px, 0);
@@ -525,31 +660,29 @@ ul.banner-social-buttons {
   transition: transform .3s;
 }
 
-.card-container .card-left {
-  position: relative;
-  float: left;
+.card-des-title{
+  width: 100%;
+  height:80px;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+  letter-spacing: 2px;
+}
+#CompRobCon span .card-des-title {
+  padding: 10px 0;
+}
+#C002 span .card-des-title {
+  padding: 10px 0;
+}
+.card-des-explain{
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
 }
 
-.card-container .card-right {
-  position: relative;
-  float: right;
-}
-
-.card-container .card-center {
-  position: relative;
-  height: auto;
-}
-.card-description{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-.card-description p{
-  margin-top: 45px;
-  font-size: 10px;
+.card-des-explain p{
+  letter-spacing: 1px;
+  font-size: 12px;
   padding-top: 10px;
   border-top:1px solid black;
 }
@@ -817,7 +950,7 @@ border-color:  #ed5565;
   padding: 8px 15px;
 }
 .barMouseDetectArea{
-  padding: 30px 0;
+  padding: 15px 0;
 }
 .lifestone-event:hover .gradient-effect{
   -moz-box-shadow: inset 40em 0 0 0 #ed5565;
@@ -842,7 +975,11 @@ border-color:  #ed5565;
   background: none repeat scroll 0 0 #11ABB0 ;
   box-shadow: 0 0 0 0 #CCC inset;
 }
-
+.buttoncus:hover.gradient-effect{
+  -moz-box-shadow: inset 40em 0 0 0 #ed5565;
+  -webkit-box-shadow: inset 40em 0 0 0 #ed5565;
+  box-shadow: inset 40em 0 0 0 #ed5565;
+}
 .lifestone-event-underline {
   width:100%;
   height: 4px;
@@ -873,13 +1010,13 @@ border-color:  #ed5565;
 .barstyle li {
   position: relative;
   background: #bdc3c7;
-  height: 42px;
+  height: 38px;
   border-radius: 3px;
   overflow: hidden;
 }
 .barstyle li em {
   color: #fff;
-  font: 15px/42px "Open Sans",sans-serif;
+  font: 15px/38px "Open Sans",sans-serif;
   letter-spacing: 2px;
   padding-left: 20px;
   position: relative;
@@ -891,7 +1028,7 @@ border-color:  #ed5565;
   top: 0;
   padding-right: 24px;
   display: inline-block;
-  height: 42px;
+  height: 38px;
   line-height: 42px;
   border-radius: 3px;
   margin:0;
@@ -906,7 +1043,7 @@ border-color:  #ed5565;
 }
 .Cpplus {
   background: #1abc9c;
-  width: 10%;
+  width: 30%;
   -moz-animation: Cpplus 2s ease;
   -webkit-animation: Cpplus 2s ease;
 }
@@ -918,7 +1055,7 @@ border-color:  #ed5565;
 }
 .Javas {
   background: #1abc9c;
-  width: 20%;
+  width: 30%;
   -moz-animation: Javas 2s ease;
   -webkit-animation: Javas 2s ease;
 }
@@ -929,18 +1066,70 @@ border-color:  #ed5565;
   -webkit-animation: Labview 2s ease;
 }
 .Photoshop {
-  background: #1abc9c;
+  background: #a9709d;
   width: 50%;
   -moz-animation: Photoshop 2s ease;
   -webkit-animation: Photoshop 2s ease;
 }
 .Illustrator {
+  background: #a9709d;
+  width: 50%;
+  -moz-animation: Illustrator 2s ease;
+  -webkit-animation: Illustrator 2s ease;
+}
+.Arduino {
   background: #1abc9c;
   width: 50%;
   -moz-animation: Illustrator 2s ease;
   -webkit-animation: Illustrator 2s ease;
 }
-
+.SolidWorks {
+  background: #3e9eda;
+  width: 70%;
+  -moz-animation: Illustrator 2s ease;
+  -webkit-animation: Illustrator 2s ease;
+}
+.AutoCAD {
+  background: #3e9eda;
+  width: 50%;
+  -moz-animation: Illustrator 2s ease;
+  -webkit-animation: Illustrator 2s ease;
+}
+.VectorWorks{
+  background: #3e9eda;
+  width: 70%;
+  -moz-animation: Illustrator 2s ease;
+  -webkit-animation: Illustrator 2s ease;
+}
+/*soft skill*/
+.Adapt{
+  background: #3497b4;
+  width: 96%;
+}
+.ProbSolv{
+  background: #3497b4;
+  width: 90%;
+}
+.CritObser{
+  background: #3497b4;
+  width: 70%;
+}
+.TeaColl{
+  background: #11Abb0;
+  width: 90%;
+}
+.ComSkill{
+  background: #11Abb0;
+  width: 80%;
+}
+.Creat{
+  background: #985986;
+  width: 95%;
+}
+.Respon{
+  background: #985986;
+  width: 100%;
+}
 /*Contact*/
 #contact{
   padding-bottom: 20px;
@@ -1011,10 +1200,9 @@ img::-moz-selection {
 /*Portfolio info*/
 .portfolio-info .info-content {
   background-color: #F0F0F0;
-  margin-left: -15px;
   padding: 50px 0;
-  min-height: 100%;
   border: 0;
+  border-bottom: 50px;
   border-radius: 0;
   text-align: center;
   background-clip: border-box;
