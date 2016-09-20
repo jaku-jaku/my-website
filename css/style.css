@@ -1170,9 +1170,8 @@ img::-moz-selection {
 #Obj1{
   visibility: hidden;
 }
-#portfolioModal1{
-  margin-left: -15px;
-}
+
+
 /*Protfolio-Nav*/
 .filter {
   padding-left: 0px;
