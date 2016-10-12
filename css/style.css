@@ -19,6 +19,7 @@ Owl carousel
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
 .carouselCard{
   display: block;
   max-width: 500px;
@@ -90,7 +91,7 @@ Owl carousel
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   left: 0;
   text-align: center;
 }
@@ -598,7 +599,7 @@ ul.banner-social-buttons {
 }
 /*Project card dsection*/
 .card{
-
+  position: absolute;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -669,6 +670,9 @@ ul.banner-social-buttons {
   letter-spacing: 2px;
 }
 #CompRobCon span .card-des-title {
+  padding: 10px 0;
+}
+#C004 span .card-des-title {
   padding: 10px 0;
 }
 #C002 span .card-des-title {
@@ -1199,10 +1203,13 @@ img::-moz-selection {
 }
 /*Portfolio Nav END*/
 /*Portfolio info*/
-
+.portfolio-info{
+  background-color: #F0F0F0;
+}
 .portfolio-info .info-content {
   background-color: #F0F0F0;
   padding: 50px 0;
+  margin-left: -15px;
   border: 0;
   border-bottom: 50px;
   border-radius: 0;
@@ -1232,38 +1239,67 @@ img::-moz-selection {
   float: right;
   text-align: right;
 }
-.info-details{
+.project-category{
+max-width: 800px;
+margin: auto;
+}
+.project-details{
   margin-top: 20px;
 }
-.info-details p{
+.project-details p{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
   text-align: left;
 }
+
+.img-comment p{
+  width:90%;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+  border-top: 1px solid gray;
+}
+
 .info-font {
   text-align: left;
   font-family: 'Dosis', arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
 .work-detail {
   text-align: left;
+  left: 0px;
   color: #777;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 .work-detail p {
   font-size: 13px;
-  padding: 4px 0;
-  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 .work-detail p:last-child {
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-.info-description::first-letter {
+.project-description{
+  max-width: 800px;
+  margin: auto;
+}
+ .project-head4 h4{
+   display:inline-block;
+  padding: 20px 10px 5px 10px;
+  border-bottom: 1px solid gray;
+}
+.project-para{
   display: block;
   float: left;
   text-align: left;
-  margin: 5px 10px 8px 0;
+}
+.project-para::first-letter {
+  margin: 5px 10px 8px 0px;
   font-size: 30px;
   width: 30px;
   height: 30px;
@@ -1274,6 +1310,20 @@ img::-moz-selection {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid gray;
+}
+.NtS{
+  color:#ed5565 ;
+}
+.NtH{
+  font-weight: bold;
+  color: #3e9eda;
+}
+.NtT{
+  font-weight: bold;
+  color:#985986;
+}
+.project-para a{
+  font-weight: bold;
 }
 /*Form contact*/
 .form-contact input,
