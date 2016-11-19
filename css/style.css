@@ -153,8 +153,24 @@ Owl carousel
   font-size: 40px;
   padding: 30px;
   margin-top: -30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
+.header-col:after{
+  display:block;
+  height:4px;
+  background-color:#0e878b;
+  content:" ";
+  width:100px;
+  margin:0 auto;
+  margin-top:10px;
+  -webkit-transition: width 1.3s; /* Safari */
+  transition: width 1.3s;
+}
+
+.header-col:hover:after{
+width:200px;
+}
+
 .headerbox{
   text-align: center;
   padding: 10px 20px;
@@ -507,13 +523,13 @@ a.disable span{
   padding: 10px 20px;
   margin-bottom: 20px;
   color: white;
-  font-size:18px;
+  font-size:20px;
   font-weight: 500;
   text-transform: uppercase;
 }
 .buttoncus:hover{
   color: white;
-  font-size:18px;
+  font-size:20px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -1138,6 +1154,22 @@ border-color:  #ed5565;
 #contact{
   padding-bottom: 20px;
   background-color: white;
+}
+#ThanksMessage{
+  height:33px;
+  font-size: 15px;
+  padding: 6px;
+  font-weight: 500;
+  color:white;
+  background: #22ABAF;
+}
+#ERRORMessage{
+  height:33px;
+  font-size: 15px;
+  padding: 6px;
+  font-weight: 500;
+  color:white;
+  background: red;
 }
 /*Footer*/
 footer {

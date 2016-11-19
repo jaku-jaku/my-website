@@ -1,5 +1,5 @@
-
-
+$("#ThanksMessage").hide();
+$("#ERRORMessage").hide();
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
   if ($(".navbar").offset().top > 50) {

@@ -113,7 +113,12 @@ TOC :
     width: 10em;
     margin: 20px 20px;
   }
-
+  #ThanksMessage{
+    height:55px;
+  }
+  #ERRORMessage{
+    height:55px;
+  }
 }
 
 /* mobile narrow

@@ -26,7 +26,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="Plug_in/css/FA/css/font-awesome.css">
   <!-- Reference End -->
-
+  <link rel="icon" href="Media/jachover2.png">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -403,52 +403,56 @@
           <div class="col-lg-8 col-lg-offset-2">
             <div class="header-col"><span>Get in touch</span></div>
             <p>Feel free to email me to provide some feedback on my website, give me suggestions for my website, or to just say hello!</p>
-            <p><a href="mailto:projectbyjx@google.com">projectbyjx@google.com</a>
-            </p>
+            <p><a href="mailto:projectbyjx@google.com">projectbyjx@google.com</a></p>
 
             <ul class="list-inline banner-social-buttons">
               <li>
                 <a href="https://github.com/JXproject" class="buttoncus gradient-effect" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
               </li>
               <li>
-                <a href="https://twitter.com/JianxiangXu" class="buttoncus gradient-effect" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                <a href="https://ca.linkedin.com/in/jack-xu-29a186128" class="buttoncus gradient-effect" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">Linkedin</span></a>
               </li>
               <li>
-                <a href="https://google.com/" class="buttoncus gradient-effect" target="_blank"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                <a href="https://www.youtube.com/channel/UCjgtNRyLt02jPVeTeMz8gPQ/featured" class="buttoncus gradient-effect" target="_blank"><i class="fa fa-youtube-square fa-fw"></i> <span class="network-name">YouTube</span></a>
               </li>
             </ul>
 
+            <div id="ThanksMessage" >
+              Message Received! Thanks for emailing me! I will contact you ASAP. :D
+            </div>
+            <div id="ERRORMessage" >
+              : C Ooops, something is wrong, message is failed to send
+            </div>
 
             <div class="row" id="contact-form">
-              <form class="form-contact" method="post" action="mailSystem/mail.php" role="form">
-
+              <form method="POST" id="gform" class="form-contact" action="https://script.google.com/macros/s/AKfycbw1RvmGkrxh8oUfrFkiMBeZu_1014lo_M0r4VShxkalPIhn4DA/exec">
                 <div class="col-md-6" id="plp-label">
-                  <input id="input-name " type="text" name="name" placeholder="Your Name*" required="" data-error="Name is required." class="input-block input-md" >
+                  <input id="input-name " type="text" name="name" placeholder="Your Name*" required="" data-error="Name is required." class="input-block input-md" value="">
                 </div>
                 <div class="col-md-6" id="company-label">
-                  <input id="input-company" type="company" name="name" placeholder="Your Company" class="input-block input-md">
+                  <input id="input-company" type="company" name="companyName" placeholder="Your Company" class="input-block input-md" value="">
                 </div>
                 <div class="col-md-6" id="email-label">
-                  <input id="input-email" type="email" name="email"  placeholder="Your Email*" required="" data-error="Email is required." class="input-block input-md ">
+                  <input id="input-email" type="email" name="email"  placeholder="Your Email*" required="" data-error="Email is required." class="input-block input-md " value="">
                 </div>
                 <div class="col-md-6" id="tel-label">
-                  <input id="input-phone"  type="tel" name="phone"  placeholder="Your Phone" class="input-block input-md">
+                  <input id="input-phone"  type="tel" name="phone"  placeholder="Your Phone" class="input-block input-md" value="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea id="input-message" placeholder="MESSAGE for me*" name="message" required="" data-error="Please,leave a message." class="input-md"></textarea>
+                  <textarea id="input-message" placeholder="MESSAGE for me*" name="message" required="" data-error="Please,leave a message." class="input-md" value=""></textarea>
                 </div>
 
                 <div class="col-md-6">
                   <div id="send-result"></div>
                 </div>
                 <div class="col-md-6">
-                  <button id="submit-message" type="submit" class="btn-sem" value="Send message">Send message</button>
+                  <button id="submit-message" type="submit" class="btn-sem" value="Send">Send message</button>
                 </div>
               </form>
+
+
             </div>
-
-
 
           </div>
         </div>
@@ -819,16 +823,16 @@
     <script src="Plug_in/js/jquery/jquery-easing.min.js"></script>
     <!-- Core JavaScript -->
     <script type="text/javascript" src="js/script.js"></script>
-
-<!-- Google Analytics -->
+    <script type="text/javascript" src="form.js"></script>
+    <!-- Google Analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-86170334-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-86170334-1', 'auto');
+    ga('send', 'pageview');
 
     </script>
 
