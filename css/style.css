@@ -54,8 +54,8 @@ Owl carousel
 }
 .owl-prev :hover,
 .owl-next :hover {
-  -webkit-transition: 0 none !important;
-  transition: 0 none !important;
+  -webkit-transition: width 2s !important;
+  transition: width 2s !important;
 }
 .owl-prev span,
 .owl-next span {
@@ -147,7 +147,8 @@ Owl carousel
   text-align: center;
   margin: auto;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Alegreya', serif;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 40px;
@@ -255,7 +256,8 @@ width:200px;
   margin-bottom: 0;
   border-bottom: 1px solid rgba(233, 233, 233, 0.4);
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Alegreya', serif;
   background-color: white;
 }
 
@@ -336,11 +338,9 @@ a.disable span{
 #intro-bgc{
   width: 100%;
   height: 100%;
-  /*background-color: black;*/
+  background-color: black;
   position: relative;
   background : url(../Media/BACK.JPG) no-repeat bottom right scroll;
-
-  width: 100%;
 }
 
 .intro {
@@ -348,7 +348,7 @@ a.disable span{
   width: 100%;
   height: 100%;
   text-align: center;
-  color: rgba(255,255,255);
+  color: rgba(0,0,0,255);
   background-color: transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -364,7 +364,6 @@ a.disable span{
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-size: 48px;
   -webkit-font-smoothing: antialiased;
 }
 .welcome span{
@@ -373,21 +372,38 @@ a.disable span{
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.intro-header {
+  letter-spacing: 2px;
+  border-top: 10px;
+  font-size: 52px;
+  font-family: 'Alegreya', serif;
+  border-bottom: 20px;
+}
+.intro-header span{
+  letter-spacing: 8px;
+
+  border-top: 10px;
+  font-size: 72px;
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  border-bottom: 20px;
+}
 .intro-text {
   border-top: 10px;
-  font-size: 10;
-  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+
+  font-family: 'Alegreya', serif;
   border-bottom: 20px;
 }
 .intro-text span,.intro-text2 span {
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .intro-text2 {
   border-top: 20px;
-  font-size: 10;
-  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-family: 'Alegreya', serif;
   border-bottom: 20px;
 }
 
@@ -416,7 +432,7 @@ a.disable span{
 
 /*About*/
 #about{
-  background: url(../Media/intro.svg);
+  /*background: url(../Media/intro.svg);*/
   background-position: center;
   background-size: cover;
   min-height:100vh;
@@ -475,7 +491,7 @@ a.disable span{
   font-size:15px;
   padding: 10px 5px 10px 35px;
   border: 5px solid #42DCA3;
-  border-image: url(../Media/bar.JPG) 5 round;
+  /*border-image: url(../Media/bar.JPG) 5 round;*/
 }
 .selfDesc strong{
   font-size:18px;
@@ -569,7 +585,7 @@ a.disable span{
   padding-bottom: 50px;
   color: black;
   min-height: 100vh;
-  background: url(../Media/Dots.svg) repeat center center scroll;
+  /*background: url(../Media/Dots.svg) repeat center center scroll;*/
   background-color: #FFFFFF;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -579,8 +595,9 @@ a.disable span{
 
 .btn {
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: 400;
+  font-family: 'Alegreya', serif;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -938,7 +955,7 @@ border-color:  #ed5565;
 .lifestone-event-info h4 {
   font-size: 20px;
   margin-bottom: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya', serif;
 }
 .lifestone-event-info strong {
   font-weight: 700;
@@ -1295,7 +1312,7 @@ margin: auto;
 
 .info-font {
   text-align: left;
-  font-family: 'Dosis', arial, sans-serif;
+  font-family: 'Alegreya', serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
