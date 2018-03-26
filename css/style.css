@@ -361,21 +361,23 @@ a.disable span{
 }
 
 .welcome {
-  font-size: 100%;
+  color: #122b40;
   vertical-align: baseline;
   background: transparent;
   font-size: 48px;
   -webkit-font-smoothing: antialiased;
 }
 .welcome span{
+  color: #122b40;
   font-size: 72px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .intro-text {
+  color: #122b40;
   border-top: 10px;
-  font-size: 10;
+  font-size: 10px;
   font-family: 'Raleway', sans-serif;
   border-bottom: 20px;
 }
@@ -386,7 +388,7 @@ a.disable span{
 }
 .intro-text2 {
   border-top: 20px;
-  font-size: 10;
+  font-size: 10px;
   font-family: 'Raleway', sans-serif;
   border-bottom: 20px;
 }
