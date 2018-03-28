@@ -338,7 +338,8 @@ a.disable span{
   height: 100%;
   /*background-color: black;*/
   position: relative;
-  background : url(../Media/BACK.JPG) no-repeat bottom right scroll;
+  background : url(../Media/bg2.JPG) no-repeat bottom center scroll;
+  background-size: cover;
 
   width: 100%;
 }
@@ -378,7 +379,7 @@ a.disable span{
   color: #122b40;
   border-top: 10px;
   font-size: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya', serif;
   border-bottom: 20px;
 }
 .intro-text span,.intro-text2 span {
@@ -389,7 +390,7 @@ a.disable span{
 .intro-text2 {
   border-top: 20px;
   font-size: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya', serif;
   border-bottom: 20px;
 }
 
@@ -418,7 +419,8 @@ a.disable span{
 
 /*About*/
 #about{
-  background: url(../Media/intro.svg);
+  background: url(../Media/bg1.JPG);
+  /*background: #f9f9f9;*/
   background-position: center;
   background-size: cover;
   min-height:100vh;
@@ -571,7 +573,7 @@ a.disable span{
   padding-bottom: 50px;
   color: black;
   min-height: 100vh;
-  background: url(../Media/Dots.svg) repeat center center scroll;
+  /*background: url(../Media/Dots.svg) repeat center center scroll;*/
   background-color: #FFFFFF;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -581,7 +583,8 @@ a.disable span{
 
 .btn {
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Alegreya', serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -940,7 +943,8 @@ border-color:  #ed5565;
 .lifestone-event-info h4 {
   font-size: 20px;
   margin-bottom: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya', serif;
+  /*font-family: 'Raleway', sans-serif;*/
 }
 .lifestone-event-info strong {
   font-weight: 700;
@@ -1156,6 +1160,8 @@ border-color:  #ed5565;
 #contact{
   padding-bottom: 20px;
   background-color: white;
+  /*background: url(../Media/bg.JPG) center;*/
+  /*background-size: cover;*/
 }
 #ThanksMessage{
   height:33px;
@@ -1297,7 +1303,8 @@ margin: auto;
 
 .info-font {
   text-align: left;
-  font-family: 'Dosis', arial, sans-serif;
+  /*font-family: 'Dosis', arial, sans-serif;*/
+  font-family: 'Alegreya', serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
