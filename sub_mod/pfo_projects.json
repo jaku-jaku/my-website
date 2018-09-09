@@ -1,7 +1,7 @@
 [
   {
     "id_name": "CompRobCon",
-    "img_src": "Media/Comp_RobCon01.JPG",
+    "img_src": "Resources/Projects/Comp_Robot_Control_Competition_2016/Comp_RobCon01.JPG",
     "title": " <span> <strong>1st</strong> Place in </span><br>  Robotic And Cotrol System Design, 2015",
     "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
     "tags": ["competion", "2016", "Robotics"]
@@ -9,7 +9,7 @@
 
   {
     "id_name": "C004",
-    "img_src": "Media/JADOco.jpg",
+    "img_src": "Resources/Projects/Course_1A_JADO/JADOco.jpg",
     "title": "<span> <strong>TRON DAY</strong></span><br>2016<br>TEAM <b>JADO</b>",
     "description": "<p><b>Tron Day</b> is an exciting inner problem solving competition, first time introduce by Mechanical and Mecatronic Engineering Department.</p>",
     "tags": ["hackathon", "2016", "Robotics"]

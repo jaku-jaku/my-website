@@ -6,7 +6,7 @@ $(function(){
 });
 
 $(function(){
-    $("#portfolioSection").load("sub_mod/Portfolio.html");
+    $("#projectSection").load("sub_mod/Projects.html");
 });
 
 

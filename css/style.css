@@ -4,145 +4,38 @@
 .cardList li{
   font-size: 0px;
 }
+/* ==============================
+-  BTN
+============================== */
+.btn {
+  text-transform: uppercase;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-weight: 400;
+  font-family: 'Alegreya', serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: black;
+  background-color: #42DCA3;
+}
+ul.banner-social-buttons {
+  margin-top: 0;
+}
 
 /* ==============================
-Owl carousel
+-  Header Animations
 ============================== */
-.owl-demo .owl-item div{
-  padding:5px;
-}
-.owl-demo .owl-item img{
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.carouselCard{
-  display: block;
-  max-width: 500px;
-  height: auto;
-  margin: auto;
-}
-.owl-buttons {
-  position: static;
-}
-.owl-prev,
-.owl-next {
-  opacity: 0;
-  display: block;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  width: 105px;
-  height: 105px;
-  line-height: 105px;
-  font-size: 16px;
-  text-align: center;
-  color: #fff;
-  z-index: 6;
-  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-}
-.owl-prev {
-  left: -20px;
-}
-.owl-next {
-  right: -20px;
-}
-.owl-prev :hover,
-.owl-next :hover {
-  -webkit-transition: width 2s !important;
-  transition: width 2s !important;
-}
-.owl-prev span,
-.owl-next span {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
-}
-.owl-prev span {
-  right: 40px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.owl-next span {
-  left: 40px;
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-
-.owl-carousel:hover .owl-prev {
-  opacity: 1;
-  left: 5px;
-}
-.owl-carousel:hover .owl-next {
-  opacity: 1;
-  right: 5px;
-}
-.owl-pagination {
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 60px;
-  left: 0;
-  text-align: center;
-}
-.owl-page {
-  display: inline-block;
-  padding: 6px 4px;
-  position: relative;
-}
-.owl-page span {
-  width: 15px;
-  height: 5px;
-  display: block;
-  background: rgba(255,255,255,0.9);
-  position: relative;
-  z-index: 1000 !important;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 0px rgba(0,0,0,0.1);
-  box-shadow: 1px 1px 0px rgba(0,0,0,0.1);
-  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-}
-.owl-page:hover span {
-  background: #fff;
-}
-.owl-page.active span {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.8);
-  -webkit-transform: scale(1.3333333);
-  transform: scale(1.3333333);
-}
-.team-slider .owl-pagination {
-  bottom: 0px;
-}
-.team-slider .owl-page span {
-  border: 1px solid #00b2ca;
-  -webkit-box-shadow: 0px 0px 0px;
-  box-shadow: 0px 0px 0px;
-}
-.team-slider .owl-page.active span {
-  background: #00b2ca;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-.owl-high-pagination .owl-pagination {
-  left: 40px;
-  text-align: left;
-}
-/**/
-
-/**/
 .header-col {
   text-align: center;
   margin: auto;
@@ -167,11 +60,9 @@ Owl carousel
   -webkit-transition: width 1.3s; /* Safari */
   transition: width 1.3s;
 }
-
 .header-col:hover:after{
 width:200px;
 }
-
 .headerbox{
   text-align: center;
   padding: 10px 20px;
@@ -202,27 +93,26 @@ width:200px;
   border-right: 4px solid  #0e878b;
   animation: scales 3s linear infinite;
 }
-
-#Portfolio:hover .headerbox:before{
+#cls_project:hover .headerbox:before{
   position: absolute;
   display: inline-block;
   margin-left: -24px;
   margin-top: -10px;
   padding: 10px 20px;
   color: transparent;
-  content: "PORTFOLIO";
+  content: "PROJECTs";
   border-left: 4px solid  #0e878b;
   border-right: 4px solid  #0e878b;
   animation: scales 1.5s linear infinite;
 }
-#Portfolio:hover .headerbox:after{
+#cls_project:hover .headerbox:after{
   position: absolute;
   display: inline-block;
   margin-left: -260px;
   margin-top: -10px;
   padding: 10px 20px;
   color: transparent;
-  content: "PORTFOLIO";
+  content: "PROJECTS";
   border-left : 4px solid #0e878b;
   border-right: 4px solid  #0e878b;
   animation: scales 3s linear infinite;
@@ -244,11 +134,13 @@ width:200px;
     opacity: 0;
   }
 }
-
 #resume:hover .headerbox {
   border-color: #11ABB0;
 }
 
+/* ==============================
+-  Nav bar Style
+============================== */
 .light {
   font-weight: 400;
 }
@@ -260,13 +152,12 @@ width:200px;
   font-family: 'Alegreya', serif;
   background-color: white;
 }
-
+/*Icon Size*/
 #Jac{
   display: block;
   width: 110px;
   height: 30px
 }
-
 /*navigate bar decoration*/
 .navbar-custom .navbar-toggle {
   color: gray;
@@ -282,7 +173,7 @@ width:200px;
   margin-top: 10px;
   width: 110px;
   height: 30px;
-  background: url(../Media/jac.png) no-repeat center center scroll;
+  background: url(../Resources/MyIcons/jac.png) no-repeat center center scroll;
   background-size: 100%;
   padding: 0;
 }
@@ -290,10 +181,10 @@ width:200px;
   outline: none;
 }
 .navbar-brand:hover {
-  background: url(../Media/jachover2.png) no-repeat center center scroll;
+  background: url(../Resources/MyIcons/jachover2.png) no-repeat center center scroll;
   background-size: 100%;
 }
-
+/*nav bar list*/
 .navbar-custom a {
   color: gray;
 }
@@ -328,6 +219,10 @@ a.disable{
 a.disable span{
   text-decoration: line-through;
 }
+
+/* ==============================
+-  Intro Section
+============================== */
 /*intro decoration*/
 #try{
   width: 100vw;
@@ -340,9 +235,8 @@ a.disable span{
   height: 100%;
   background-color: black;
   position: relative;
-  background : url(../Media/BACK.JPG) no-repeat bottom right scroll;
+  background : url(../Resources/BACK.JPG) no-repeat bottom right scroll;
 }
-
 .intro {
   display: table;
   width: 100%;
@@ -430,9 +324,11 @@ a.disable span{
   background: rgba(255, 255, 255, 0.3);
 }
 
-/*About*/
+/* ==============================
+-  About Section
+============================== */
 #about{
-  /*background: url(../Media/intro.svg);*/
+  /*background: url(../Resources/intro.svg);*/
   background-position: center;
   background-size: cover;
   min-height:100vh;
@@ -491,7 +387,7 @@ a.disable span{
   font-size:15px;
   padding: 10px 5px 10px 35px;
   border: 5px solid #42DCA3;
-  /*border-image: url(../Media/bar.JPG) 5 round;*/
+  /*border-image: url(../Resources/bar.JPG) 5 round;*/
 }
 .selfDesc strong{
   font-size:18px;
@@ -572,64 +468,33 @@ a.disable span{
     transform: rotate(590deg);
   }
 }
-/*Portfolio-Protfolio*/
-#Portfolio{
+
+
+/* ==============================
+-  Project Section
+============================== */
+#cls_project{
 
 }
 .content-section {
   padding-top: 100px;
 }
 
-.Portfolio-section {
-  width: 100%;
-  padding-bottom: 50px;
-  color: black;
-  min-height: 100vh;
-  /*background: url(../Media/Dots.svg) repeat center center scroll;*/
-  background-color: #FFFFFF;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.btn {
-  text-transform: uppercase;
-  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-weight: 400;
-  font-family: 'Alegreya', serif;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 0;
-}
-.btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
-  background-color: transparent;
-}
-.btn-default:hover,
-.btn-default:focus {
-  border: 1px solid #42DCA3;
-  outline: none;
-  color: black;
-  background-color: #42DCA3;
-}
-ul.banner-social-buttons {
-  margin-top: 0;
-}
+/*TODO Background Color
+.Portfolio-section {*/
+  /*width: 100%;*/
+  /*padding-bottom: 50px;*/
+  /*color: black;*/
+  /*min-height: 100vh;*/
+  /*!*background: url(../Resources/Dots.svg) repeat center center scroll;*!*/
+  /*background-color: #FFFFFF;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*background-size: cover;*/
+  /*-o-background-size: cover;*/
+/*}*/
 
 
-.icon{
-  width: 80px;
-  height: 80px;
-}
-.ibor{
-  margin-top: 20px;
-}
-#A{
-  margin-bottom: 40px;
-}
 /*Project card dsection*/
 .card{
   position: absolute;
@@ -734,8 +599,9 @@ ul.banner-social-buttons {
 }
 
 
-
-/*Resume section*/
+/* ==============================
+-  Resume Section
+============================== */
 #resume {
   background: white;
   overflow: hidden;
@@ -1031,8 +897,12 @@ border-color:  #ed5565;
   padding: auto;
   margin: 10px 0;
 }
-/**/
-/*Resume Skills*/
+
+
+
+/* ==============================
+-  Skill Section
+============================== */
 .barstyle {
   width: 95%;
   float: left;
@@ -1190,7 +1060,7 @@ border-color:  #ed5565;
 }
 /*Footer*/
 footer {
-  background: url(../Media/Dots.svg) repeat;
+  background: url(../Resources/Svgs/Dots.svg) repeat;
   background-color: #FFFFFF;
 
   padding: 50px 0;
@@ -1219,11 +1089,14 @@ img::-moz-selection {
   position: relative;
   top: 15%;
 }
-/*Portfolio*/
+
+
+/* ==============================
+-  Project Modal Section
+============================== */
 #Obj1{
   visibility: hidden;
 }
-
 
 /*Protfolio-Nav*/
 .filter {
@@ -1251,6 +1124,7 @@ img::-moz-selection {
   border-bottom: 1px solid red;
 }
 /*Portfolio Nav END*/
+
 /*Portfolio info*/
 .portfolio-info{
   background-color: #F0F0F0;
@@ -1374,7 +1248,11 @@ margin: auto;
 .project-para a{
   font-weight: bold;
 }
-/*Form contact*/
+
+
+/* ==============================
+-  Contact Form Section
+============================== */
 .form-contact input,
 .form-contact select {
   margin-top:20px;
@@ -1495,7 +1373,7 @@ margin: auto;
 #plp-label:before {
   color: #666;
   content:"\f007";
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   position: absolute;
   top: 29px;
   left: 25px;
@@ -1503,7 +1381,7 @@ margin: auto;
 #company-label:before{
   color: #666;
   content: "\f0f7";
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   position: absolute;
   top: 29px;
   left: 25px;
@@ -1511,7 +1389,7 @@ margin: auto;
 #email-label:before{
   color: #666;
   content: "\f003";
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   position: absolute;
   top: 29px;
   left: 23px;
@@ -1519,7 +1397,7 @@ margin: auto;
 #tel-label:before{
   color: #666;
   content: "\f095";
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   position: absolute;
   top: 29px;
   left: 25px;
