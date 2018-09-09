@@ -14,25 +14,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Plug in Reference Start -->
-    <!-- Owl -->
-    <link rel="stylesheet" href="Plug_in/js/Owl/owl.carousel.css">
-    <!-- jQuery -->
-    <script src="Plug_in/js/jquery/jquery.js"></script>
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="Plug_in/css/bootstrap.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="Plug_in/css/FA/css/font-awesome.css">
+
     <!-- Reference End -->
-    <link rel="icon" href="Media/.png">
+    <link rel="icon" href="Media/JXX.png">
+
+    <!-- External Lib Reference Start -->
+    <!-- jQuery -->
+    <script src="Vendor/jQuery/jquery-3.3.1.js"></script>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="Vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
     <!--Font API-->
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Vendor/fontawesome-free-5.3.1-web/css/fontawesome.css">
+    <!-- Owl -->
+    <link rel="stylesheet" href="Vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+
   </head>
 
+  <!-- --------------------- PAGE ---------------------- -->
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="anim();">
-
-    <!-- Navigation -->
+    <!-- ==== #0 Navigation === -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -52,16 +55,19 @@
               <a href="#page-top"></a>
             </li>
             <li >
-              <a class="page-scroll" href="#Hello">ABOUT</a>
+              <a class="page-scroll" href="#page-about">ABOUT</a>
             </li>
             <li >
-              <a class="page-scroll" href="#Work">WORK</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#Blog">BLOG</a>
+              <a class="page-scroll" href="#page-experience">EXPERIENCE</a>
             </li>
             <li >
-              <a class="page-scroll" href="#Contqct">CONTACT</a>
+              <a class="page-scroll" href="#page-projects">PROJECTS</a>
+            </li>
+            <li >
+              <a class="page-scroll" href="#page-photography">PHOTOGRAPHY</a>
+            </li>
+            <li >
+              <a class="page-scroll" href="#page-contact">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -69,9 +75,9 @@
       </div>
       <!-- /.container -->
     </nav>
-    <!-- /.Navigation -->
+    <!-- === /.Navigation === -->
 
-    <!-- Intro Header -->
+    <!-- === #1 Intro Header === -->
     <header class="intro">
       <div class="intro-body">
         <div class="container">
@@ -98,17 +104,21 @@
         </div>
       </div>
     </header>
+    <!-- === /.Intro Header === -->
 
+    <!-- === #2 Portfolio Section === -->
+    <section class="portfolio" id="page-projects">
+      <div id="portfolioSection"></div>
+    </section>
+    <!-- === /.Portfolio Section === -->
 
-
-
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- === #3 Contact Section === -->
+    <section class="contact" id="page-contact">
       <div id="contactSection"></div>
     </section>
-    <!-- /.Contact Section -->
+    <!-- === /.Contact Section === -->
 
-    <!-- Footer -->
+    <!-- === #4 Footer === -->
     <footer>
       <div class="container text-center">
         <div id="go-top">
@@ -119,17 +129,19 @@
         <p>Copyright &copy; Jack Xu 2016</p>
       </div>
     </footer>
-    <!-- /.Footer -->
+    <!-- === /.Footer === -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="Plug_in/js/bootstrap.min.js"></script>
-    <script src="Plug_in/js/jquery/jquery.nicescroll.min.js"></script>
-    <script src="Plug_in/js/Owl/owl.carousel.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="Plug_in/js/jquery/jquery-easing.min.js"></script>
+
+
+    <!-- === #5 Scripts === -->
+    <!-- External JavaScript -->
+    <script src="Vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="Vendor/jQuery/jquery.nicescroll.min.js"></script>
+    <script src="Vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="Vendor/jQuery/jquery-easing.min.js"></script>
     <!-- Core JavaScript -->
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="js/core_script.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
 
     <!-- Google Analytics -->
     <script>
@@ -142,7 +154,7 @@
       ga('send', 'pageview');
     </script>
     <!-- /.Google Analytics -->
-
+    <!-- === /.Scripts === -->
   </body>
 
 

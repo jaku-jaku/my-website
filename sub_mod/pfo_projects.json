@@ -1,0 +1,18 @@
+[
+  {
+    "id_name": "CompRobCon",
+    "img_src": "Media/Comp_RobCon01.JPG",
+    "title": " <span> <strong>1st</strong> Place in </span><br>  Robotic And Cotrol System Design, 2015",
+    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
+    "tags": ["competion", "2016", "Robotics"]
+  },
+
+  {
+    "id_name": "C004",
+    "img_src": "Media/JADOco.jpg",
+    "title": "<span> <strong>TRON DAY</strong></span><br>2016<br>TEAM <b>JADO</b>",
+    "description": "<p><b>Tron Day</b> is an exciting inner problem solving competition, first time introduce by Mechanical and Mecatronic Engineering Department.</p>",
+    "tags": ["hackathon", "2016", "Robotics"]
+  }
+
+]

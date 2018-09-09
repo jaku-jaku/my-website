@@ -175,7 +175,7 @@ width:200px;
 .headerbox{
   text-align: center;
   padding: 10px 20px;
-  border: 4px solid  #0e878b;
+  /*border: 4px solid  #0e878b;*/
 }
 
 #resume:hover .headerbox:before{
