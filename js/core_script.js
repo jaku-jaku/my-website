@@ -33,10 +33,12 @@ $(function () {
             for (var i = 0; i < json.length; i++) {
                 pfo_elem = "";
                 pfo_elem += " <li class=\"pfo-item\">\n" +
-                    "<div class=\"card col-lg-6 col-md-6 col-xs-12 col-sm-6\" id=\"" + json[i].id_name + "\">" +
-                    "<a href=\"#portfolioModal1\"  data-toggle=\"modal\"   style=\"color:black; outline:0;\">" +
-                    " <span class=\"card-pic\">\n" +
-                    "      <img src=\""+ json[i].img_src + "\" style=\"width:100%; padding-bottom:100px;\"/>\n" +
+                    "<div class=\"card col-lg-4 col-md-4 col-xs-6 col-sm-6\" id=\"" + json[i].id_name + "\">" +
+                    "  <a href=\"#portfolioModal1\"  data-toggle=\"modal\"  style=\"color:black; outline:0;\">" +
+                    "    <span class=\"card-pic\">\n" +
+                    "      <div class = \"card-pic-crop\" >\n" +
+                    "      <img src=\""+ json[i].img_src + "\"/>\n" +
+                    "      </div> \n" +
                     "      <div class=\"card-description\">\n" +
                     "      <div class=\"card-des-title\">\n" +
                             json[i].title+
@@ -45,8 +47,8 @@ $(function () {
                             json[i].description+
                     "      </div>\n" +
                     "      </div>\n" +
-                    " </span>\n" +
-                    "</a>\n" +
+                    "    </span>\n" +
+                    "  </a>\n" +
                     "</div>\n" +
                     "</li>";
 
