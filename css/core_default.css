@@ -1,6 +1,6 @@
 body {
   min-width:300px;
-   /*_width: expression( document.body.clientWidth > 400 ? "400px" : "auto" ); !* sets max-width for IE *!*/
+  max_width: expression( document.body.clientWidth > 400 ? "400px" : "auto" ); /* sets max-width for IE */
 
   width: 100%;
   height: 100%;

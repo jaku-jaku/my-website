@@ -1,7 +1,8 @@
 
-/* ==============================
-Owl carousel
-============================== */
+/*!* ==============================*/
+/*Owl carousel*/
+/*============================== *!*/
+
 .owl-demo .owl-item div{
     padding:5px;
 }
@@ -48,8 +49,8 @@ Owl carousel
 }
 .owl-prev :hover,
 .owl-next :hover {
-    -webkit-transition: width 2s !important;
-    transition: width 2s !important;
+    -webkit-transition: none !important;
+    transition: none !important;
 }
 .owl-prev span,
 .owl-next span {

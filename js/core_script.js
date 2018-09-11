@@ -9,19 +9,10 @@ $(function(){
     $("#projectSection").load("sub_mod/Projects.html");
 });
 
-
-  /*----------------------------------------------------*/
-  /* TODO Owl Demo
-  ------------------------------------------------------ */
-$(document).ready(function() {
-  $(".owl-demo").owlCarousel({
-    navigation:true,
-    navigationText:["<span class='angle'></span>","<span class='angle'></span>"],
-    singleItem : true,
-    autoHeight : true,
-    transitionStyle:"fade"
-  });
+$(function(){
+    $("#modalTemplate").load("sub_mod/Project_modal_template.html");
 });
+
 
   /*----------------------------------------------------*/
   /* AUTO portfolio card gen
@@ -34,10 +25,9 @@ $(function () {
                 pfo_elem = "";
                 pfo_elem += " <li class=\"pfo-item\">\n" +
                     "<div class=\"card col-lg-4 col-md-4 col-xs-6 col-sm-6\" id=\"" + json[i].id_name + "\">" +
-                    "  <a href=\"#portfolioModal1\"  data-toggle=\"modal\"  style=\"color:black; outline:0;\">" +
                     "    <span class=\"card-pic\">\n" +
                     "      <div class = \"card-pic-crop\" >\n" +
-                    "      <img src=\""+ json[i].img_src + "\"/>\n" +
+                    "      <img src=\""+ json[i].img_directory + json[i].img_cover + "\"/>\n" +
                     "      </div> \n" +
                     "      <div class=\"card-description\">\n" +
                     "      <div class=\"card-des-title\">\n" +
@@ -48,7 +38,6 @@ $(function () {
                     "      </div>\n" +
                     "      </div>\n" +
                     "    </span>\n" +
-                    "  </a>\n" +
                     "</div>\n" +
                     "</li>";
 
@@ -56,6 +45,50 @@ $(function () {
             }
         });
 });
+
+
+  $(document).on('click', '.card', function () {
+      var id = this.id;
+      console.log("Clicked = "+id);
+
+      var modal_src_imgs;
+      modal_src_imgs = "<div class=\"carouselCard\">\n" +
+          "                            <div class=\"owl-demo owl-carousel img-comment\" >";
+
+      $.getJSON("sub_mod/pfo_projects.json",
+          function (json) {
+              for (var i = 0; i < json.length; i++) {
+
+                  if(json[i].id_name == id)
+                  {
+                      var j_items = json[i].more_imgs;
+                      for (var j = 0; j < j_items.length; j++)
+                      {
+                          modal_src_imgs += "<div><img src=\"" + json[i].img_directory + j_items[j] + "\"><p>"+ json[i].more_imgs_title[j] +"</p></div>\n";
+                      }
+
+                      modal_src_imgs += " </div>\n" +
+                          "                        </div>";
+                      console.log(modal_src_imgs);
+                      $('#modal-templ-imgs').html(modal_src_imgs);
+
+                      $(".owl-demo").owlCarousel({
+                          navigation:true,
+                          navigationText:["<span class='angle'></span>","<span class='angle'></span>"],
+                          singleItem : true,
+                          autoHeight : true,
+                          transitionStyle:"fade"
+                      });
+
+                      $('#portfolioModalTemplate').modal('show');
+                      break;
+                  }
+              }
+          }
+      );
+
+  });
+
 
   /*----------------------------------------------------*/
   /* Navbar Smooth Scroll

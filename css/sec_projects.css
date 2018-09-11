@@ -58,6 +58,10 @@
     transform: translate3d(0, 0, 0);
 }
 
+.card {
+    cursor: pointer;
+}
+
 .card-pic-crop {
     /*    width: responsive;
     height: responsive*/
