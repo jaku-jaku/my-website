@@ -12,7 +12,7 @@
     "code_link": "https://github.com/JXproject/LabViewFiles",
     "paras":
     [
-      "In grade 12 computer engineering course, I learned a",
+      "In grade 12 computer engineering course, I learned a fakfdsafsdafds afds af d af ds af ds af ds a f d af ds af ds a f dsa fdsa.",
       "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s",
       "On the day of competition, we carried equipments and parts that are already sorted by us into the competing arena and were ready for 3-hour design battle. First project was the vehicle lifter. For this project"
     ],
@@ -52,7 +52,7 @@
     "id_name": "TEMPLATE",
     "img_directory": "Resources/Testing/",
     "img_cover": "3.jpg",
-    "title": "<span> <strong>TEMPLATE</strong></span>2018",
+    "title": "<span> <strong>TEMPLATE1</strong></span>2018",
     "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
     "tags": ["template", "2018", "Unknown"],
     "more_imgs": ["1.jpg", "4.jpg", "11.jpg"],
@@ -75,7 +75,7 @@
     "id_name": "TEMPLATE2",
     "img_directory": "Resources/Testing/",
     "img_cover": "4.jpg",
-    "title": "<span> <strong>TEMPLATE</strong></span>2018",
+    "title": "<span> <strong>TEMPLATE2</strong></span>2018",
     "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
     "tags": ["template", "2018", "Unknown"],
     "more_imgs": ["1.jpg", "4.jpg", "11.jpg"],
@@ -98,7 +98,7 @@
   "id_name": "TEMPLATE3",
   "img_directory": "Resources/Testing/",
   "img_cover": "11.jpg",
-  "title": "<span> <strong>TEMPLATE</strong></span>2018",
+  "title": "<span> <strong>TEMPLATE3</strong></span>2018",
   "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
   "tags": ["template", "2018", "Unknown"],
   "more_imgs": ["1.jpg", "4.jpg", "11.jpg"],
@@ -115,9 +115,6 @@
     "Task",
     "Action"
   ]
-}
-
-
-
+  }
 
 ]

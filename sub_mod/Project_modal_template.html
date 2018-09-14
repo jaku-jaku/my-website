@@ -1,4 +1,4 @@
-<!-- Portfolio Modal 1 -->
+<!-- Portfolio Modal Template -->
 <div class="portfolio-info modal fade gg" id="portfolioModalTemplate" tabindex="-1" role="dialog" aria-hidden="true" >
     <div class="info-content">
 
@@ -6,9 +6,9 @@
         <div class="container">
             <div class="row">
                 <ul class="info-nav listStyleUnderline" >
-                    <li class="in-left prevp"><a href="#" class= "pageclose"><i class="fa fa-angle-left"></i><span class="Res-font-size">Previous Project</span></a></li>
-                    <li class="in-middle"><a href="#" data-dismiss="modal"><span class="icon-close">×</span> Close <span class="icon-close">×</span> </a></li>
-                    <li class="in-right nextp"><a href="#" class= "pageclose"><span class="Res-font-size">Next Project</span><i class="fa fa-angle-right"></i></a></li>
+                    <li class="in-left prevp noselect"><a><i class="fa fa-angle-left"></i><span class="Res-font-size">Previous Project</span></a></li>
+                    <li class="in-middle noselect" ><a href="#page-projects" data-dismiss="modal"><span class="icon-close">×</span> Close <span class="icon-close">×</span> </a></li>
+                    <li class="in-right nextp noselect"><a><span class="Res-font-size">Next Project</span><i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -17,8 +17,8 @@
         <div class="container">
             <div class="row">
                 <!-- Heading -->
-                <div class="col-md-12 Title">
-                    <h1>Project Template Title</h1>
+                <div class="col-md-12 Title" id="modal-templ-title">
+                    <!--Dynamic Title-->
                 </div>
 
                 <!-- project img display -->
@@ -32,30 +32,12 @@
                 <div class="col-md-12 mt-30 project-details">
                     <div class="project-category">
                         <h5 class="info-font">Project Category</h5>
-                        <div class="work-detail">
-                            <p><strong>Position:</strong> Co-Designer and Mechanic</p>
-                            <p><strong>Category:</strong> Competition, Team</p>
-                            <p><strong>View Code:</strong> <i class="fa fa-github" style="padding-right:2px;"></i><a href="https://github.com/JXproject/LabViewFiles" target="_blank">github.com/JXproject/LabViewFiles</a></p>
+                        <div class="work-detail" id = "modal-templ-details">
+                            <!--Dynamic content from json-->
                         </div>
                     </div>
-                    <div class="project-description">
-                        <h5 class="info-font">Project Description</h5>
-                        <div  class="project-head4"><h4>Situation</h4></div>
-                        <p class="project-para">
-                            In grade 12 computer engineering course, I learned and practice the graphic programming to prototype simple embedded system. Through series of challenges,t time management, problem solving skills, and leadership.
-                        </p>
-                        <div  class="project-head4"><h4>Task</h4></div>
-                        <p class="project-para">
-                            Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s
-                        </p>
-                        <div  class="project-head4"><h4>My Action</h4></div>
-                        <p class="project-para">
-                            On the day of competition, we carried equipments and parts that are already sorted by us into the competing arena and were ready for 3-hour design battle. First project was the vehicle lifter. For this project
-                        </p>
-                        <div  class="project-head4"><h4>Result</h4></div>
-                        <p class="project-para">
-                            Eventually, we won the first place and earned qualification for Ontario Skill Competition. In addition, my programming layout and comments got highly acknowledgement from the judges for its simplicity and opti
-                        </p>
+                    <div class="project-description" id = "modal-templ-description">
+                            <!--Dynamic content from json-->
                     </div>
                 </div>
                 <!-- Description END-->
@@ -66,9 +48,9 @@
             <div class="row">
 
                 <ul class="info-footer listStyleUnderline" >
-                    <li class="in-left"><a href="#" class= "pageclose"><i class="fa fa-angle-left"></i><span class="Res-font-size">Previous Project</span></a></li>
-                    <li class="in-middle"><a href="#" data-dismiss="modal"><span class="icon-close">×</span> Close <span class="icon-close">×</span> </a></li>
-                    <li class="in-right"><a href="#" class= "pageclose"><span class="Res-font-size">Next Project</span><i class="fa fa-angle-right"></i></a></li>
+                    <li class="in-left prevp noselect"><a><i class="fa fa-angle-left"></i><span class="Res-font-size">Previous Project</span></a></li>
+                    <li class="in-middle noselect" ><a href="#page-projects" data-dismiss="modal"><span class="icon-close">×</span> Close <span class="icon-close">×</span> </a></li>
+                    <li class="in-right nextp noselect"><a><span class="Res-font-size">Next Project</span><i class="fa fa-angle-right"></i></a></li>
                 </ul>
 
             </div>
@@ -76,13 +58,4 @@
 
     </div>
 </div>
-<!--<script>-->
-    <!--$(".owl-demo").owlCarousel({-->
-        <!--navigation:true,-->
-        <!--navigationText:["<span class='angle'></span>","<span class='angle'></span>"],-->
-        <!--singleItem : true,-->
-        <!--autoHeight : true,-->
-        <!--transitionStyle:"fade"-->
-    <!--});-->
-<!--</script>-->
-<!-- Portfolio Modal 1 END-->
+<!-- Portfolio Modal Template END-->

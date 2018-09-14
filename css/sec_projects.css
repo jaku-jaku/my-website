@@ -185,6 +185,7 @@
 .listStyleUnderline li a {
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
     color: #555;
     /*padding: 10px 10px;*/
     letter-spacing: 3px;

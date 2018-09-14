@@ -2,206 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0200724-a484-4b52-8f31-ff3f6cea0756" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Vendor/OwlCarousel/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vendor/OwlCarousel/owl.carousel.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/ROADMAP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/assets/owl.video.play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/bird_blue_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/feature-drag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/feature-modern.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/feature-module.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/feature-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/feature-responsive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/feature-zombie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/owl-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/img/twitter_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/js/foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/vendors/foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.mousewheel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/animate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/autoheight.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/autoplay.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/autowidth.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/center.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/demos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/lazyLoad.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/merge.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/mousewheel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/responsive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/rtl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/stagepadding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/urlhashnav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/demos/video.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/api-classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/api-events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/api-options.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/dev-buildin-plugins.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/dev-external.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/dev-plugin-api.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/dev-styles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/started-faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/started-installation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/started-welcome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/support-changelog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/support-contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/docs/support-contributing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/bird_blue_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/feature-drag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/feature-modern.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/feature-module.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/feature-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/feature-responsive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/feature-zombie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/owl-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/img/twitter_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/js/foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/scss/custom.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/scss/demos.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/scss/highlight.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/vendors/foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/vendors/highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.mousewheel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/data/classes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/data/events.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/data/features.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/data/options.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/helpers/modulo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/helpers/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/layouts/demos.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/layouts/docs.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/layouts/home.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/animate.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoheight.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoplay.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autowidth.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/basic.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/center.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/demos.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/events.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/lazyLoad.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/merge.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/mousewheel.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/responsive.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/rtl.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/stagepadding.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/test.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/urlhashnav.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/video.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-classes.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-events.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-options.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-buildin-plugins.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-external.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-plugin-api.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-styles.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-faq.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-installation.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-welcome.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-changelog.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contact.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contributing.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/pages/index.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/footer.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/head.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/header.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/home-carousel.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/home-features.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/home-hero.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/home-teaser-text.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/javascripts.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/releated-docs.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/sidenav-docs.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/title.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/docs_src/templates/partials/vendors.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/img/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/img/owl.video.play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/.jscsrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.animate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.autoheight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.autoplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.autorefresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.hash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.lazyload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.support.modernizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/js/owl.video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_animate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_autoheight.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_lazyload.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_theme.default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_theme.green.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/_video.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/owl.carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/src/scss/owl.theme.green.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/test/unit/autoplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/test/unit/core.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/core_default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core_default.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/sec_projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sec_projects.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tool_owl.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tool_owl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/core_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/core_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/Projects_modal1.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sub_mod/pfo_projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/pfo_projects.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -221,8 +26,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="173" column="35" lean-forward="true" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
+                <state relative-caret-position="175">
+                  <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -230,8 +35,8 @@
           <file leaf-file-name="Project_modal_template.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+                <state relative-caret-position="656">
+                  <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
@@ -239,8 +44,8 @@
           <file leaf-file-name="sec_projects.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-337">
-                  <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+                <state relative-caret-position="288">
+                  <caret line="50" column="31" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -248,10 +53,11 @@
           <file leaf-file-name="core_script.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="611">
-                  <caret line="124" column="3" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
+                <state relative-caret-position="636">
+                  <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
                   <folding>
-                    <marker date="1536641106239" expanded="true" signature="5337:6560" ph="..." />
+                    <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+                    <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -260,8 +66,8 @@
           <file leaf-file-name="pfo_projects.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="709">
-                  <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+                <state relative-caret-position="1500">
+                  <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -273,8 +79,17 @@
           <file leaf-file-name="core_responsive.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1380">
-                  <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+                <state relative-caret-position="150">
+                  <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="core_style.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/core_style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1305">
+                  <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -282,20 +97,12 @@
           <file leaf-file-name="core_script.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="482">
-                  <caret line="70" column="59" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+                <state relative-caret-position="278">
+                  <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
                   <folding>
-                    <marker date="1536641106239" expanded="true" signature="5337:6560" ph="..." />
+                    <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+                    <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tool_owl.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/tool_owl.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
                 </state>
               </provider>
             </entry>
@@ -334,10 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>icon</find>
-      <find>class=&quot;icon</find>
-      <find>banner-social-buttons</find>
-      <find>btn</find>
       <find>.sv</find>
       <find>jac.png</find>
       <find>btn-default</find>
@@ -348,7 +151,6 @@
       <find>filterlistnav</find>
       <find>cls_project</find>
       <find>margin-top</find>
-      <find>listStyleUnderline</find>
       <find>console</find>
       <find>hover</find>
       <find>portfolioModal1</find>
@@ -360,11 +162,19 @@
       <find>owl</find>
       <find>img-comment</find>
       <find>owl-nav</find>
-      <find>anim</find>
-      <find>jquery</find>
       <find>owl-theme</find>
+      <find>j_pfo_projs</find>
+      <find>jquery</find>
+      <find>.listS</find>
+      <find>listStyleUnderline</find>
+      <find>.listStyleUnderline li a</find>
+      <find>in-left</find>
       <find>card-pic</find>
+      <find>anim</find>
     </findStrings>
+    <replaceStrings>
+      <replace>G_j_pfo_projs</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Resources/Svgs</dir>
       <dir>$PROJECT_DIR$/Resources/Projects</dir>
@@ -394,17 +204,17 @@
         <option value="$PROJECT_DIR$/css/sec_contact_form.css" />
         <option value="$PROJECT_DIR$/css/core_animation.css" />
         <option value="$PROJECT_DIR$/css/core_style.css" />
-        <option value="$PROJECT_DIR$/css/core_responsive.css" />
-        <option value="$PROJECT_DIR$/css/core_default.css" />
         <option value="$PROJECT_DIR$/sub_mod/Projects_modal1.html" />
-        <option value="$PROJECT_DIR$/css/sec_projects.css" />
         <option value="$PROJECT_DIR$/sub_mod/Projects.html" />
         <option value="$PROJECT_DIR$/css/tool_owl.css" />
         <option value="$PROJECT_DIR$/sub_mod/package.json" />
         <option value="$PROJECT_DIR$/sub_mod/pfo_projects_details.json" />
-        <option value="$PROJECT_DIR$/sub_mod/pfo_projects.json" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/core_responsive.css" />
+        <option value="$PROJECT_DIR$/css/sec_projects.css" />
+        <option value="$PROJECT_DIR$/sub_mod/pfo_projects.json" />
         <option value="$PROJECT_DIR$/js/core_script.js" />
+        <option value="$PROJECT_DIR$/css/core_default.css" />
         <option value="$PROJECT_DIR$/sub_mod/Project_modal_template.html" />
       </list>
     </option>
@@ -418,8 +228,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="253" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -509,15 +319,15 @@
       <workItem from="1521328886710" duration="2195000" />
       <workItem from="1521393005107" duration="138000" />
       <workItem from="1521601786075" duration="3861000" />
-      <workItem from="1536438789680" duration="38325000" />
+      <workItem from="1536438789680" duration="46036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44519000" />
+    <option name="totallyTimeSpent" value="52230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1279762" />
@@ -597,7 +407,8 @@
         <state relative-caret-position="75">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="24" />
           <folding>
-            <marker date="1536641106239" expanded="true" signature="5337:6560" ph="..." />
+            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
@@ -661,7 +472,8 @@
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <marker date="1536641106239" expanded="true" signature="5337:6560" ph="..." />
+            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
@@ -725,7 +537,8 @@
         <state relative-caret-position="60">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <marker date="1536641106239" expanded="true" signature="5337:6560" ph="..." />
+            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
@@ -817,24 +630,10 @@
     <entry file="file://$PROJECT_DIR$/Resources/Projects/Comp_Robot_Control_Competition_2016/Comp_RobCon01.JPG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/core_default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/core_animation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/core_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1148">
-          <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -880,6 +679,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/tool_owl.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/FloatingDots.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3634">
@@ -887,55 +717,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
+    <entry file="file://$PROJECT_DIR$/css/core_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+        <state relative-caret-position="1305">
+          <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
+    <entry file="file://$PROJECT_DIR$/css/core_default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="173" column="35" lean-forward="true" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tool_owl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="825">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/core_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="124" column="3" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
+        <state relative-caret-position="636">
+          <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
           <folding>
-            <marker date="1536641106239" expanded="true" signature="5337:6560" ph="..." />
+            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="656">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
         </state>
       </provider>
     </entry>
