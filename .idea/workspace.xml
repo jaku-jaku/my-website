@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d0200724-a484-4b52-8f31-ff3f6cea0756" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/core_default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core_default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sec_projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sec_projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/core_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/core_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/pfo_projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/pfo_projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sub_mod/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/contact.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,20 +22,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.4648464">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+                <state relative-caret-position="506">
+                  <caret line="176" column="68" selection-start-line="176" selection-start-column="68" selection-end-line="176" selection-end-column="68" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Project_modal_template.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Project_modal_template.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="656">
-                  <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+                <state relative-caret-position="371">
+                  <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -50,6 +49,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sub_mod/contact.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="427">
+                  <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="core_script.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -57,7 +65,7 @@
                   <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
                   <folding>
                     <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-                    <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
+                    <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -79,7 +87,7 @@
           <file leaf-file-name="core_responsive.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
+                <state relative-caret-position="-719">
                   <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
                 </state>
               </provider>
@@ -97,11 +105,11 @@
           <file leaf-file-name="core_script.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="278">
-                  <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+                <state relative-caret-position="357">
+                  <caret line="176" column="47" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
                   <folding>
                     <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-                    <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
+                    <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -116,11 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sub_mod/contact.html">
+          <file leaf-file-name="sec_contact_form.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/sec_contact_form.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="52" selection-start-column="52" selection-end-column="52" />
+                <state relative-caret-position="614">
+                  <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -141,8 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.sv</find>
-      <find>jac.png</find>
       <find>btn-default</find>
       <find>card-container</find>
       <find>container</find>
@@ -164,13 +170,15 @@
       <find>owl-nav</find>
       <find>owl-theme</find>
       <find>j_pfo_projs</find>
-      <find>jquery</find>
       <find>.listS</find>
       <find>listStyleUnderline</find>
       <find>.listStyleUnderline li a</find>
-      <find>in-left</find>
       <find>card-pic</find>
+      <find>in-left</find>
+      <find>input-md</find>
       <find>anim</find>
+      <find>jquery</find>
+      <find>core</find>
     </findStrings>
     <replaceStrings>
       <replace>G_j_pfo_projs</replace>
@@ -195,7 +203,6 @@
         <option value="$PROJECT_DIR$/css/default.css" />
         <option value="$PROJECT_DIR$/sub_mod/Portfolio.html" />
         <option value="$PROJECT_DIR$/css/owl.css" />
-        <option value="$PROJECT_DIR$/sub_mod/contact.html" />
         <option value="$PROJECT_DIR$/js/sec_intro.css" />
         <option value="$PROJECT_DIR$/css/sec_about.css" />
         <option value="$PROJECT_DIR$/css/sec_resume.css" />
@@ -209,13 +216,15 @@
         <option value="$PROJECT_DIR$/css/tool_owl.css" />
         <option value="$PROJECT_DIR$/sub_mod/package.json" />
         <option value="$PROJECT_DIR$/sub_mod/pfo_projects_details.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/core_responsive.css" />
         <option value="$PROJECT_DIR$/css/sec_projects.css" />
         <option value="$PROJECT_DIR$/sub_mod/pfo_projects.json" />
-        <option value="$PROJECT_DIR$/js/core_script.js" />
         <option value="$PROJECT_DIR$/css/core_default.css" />
         <option value="$PROJECT_DIR$/sub_mod/Project_modal_template.html" />
+        <option value="$PROJECT_DIR$/js/core_script.js" />
+        <option value="$PROJECT_DIR$/js/form.js" />
+        <option value="$PROJECT_DIR$/sub_mod/contact.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -249,6 +258,11 @@
               <item name="MyWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyWeb" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -319,12 +333,12 @@
       <workItem from="1521328886710" duration="2195000" />
       <workItem from="1521393005107" duration="138000" />
       <workItem from="1521601786075" duration="3861000" />
-      <workItem from="1536438789680" duration="46036000" />
+      <workItem from="1536438789680" duration="46912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52230000" />
+    <option name="totallyTimeSpent" value="53106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -408,7 +422,7 @@
           <caret line="5" column="24" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
@@ -473,7 +487,7 @@
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
@@ -538,7 +552,7 @@
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
@@ -583,9 +597,6 @@
         <state relative-caret-position="-178" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/form.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vendor/fontawesome-free-5.3.1-web/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -617,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="100" column="36" lean-forward="true" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sec_contact_form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -672,29 +676,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="52" selection-start-column="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/tool_owl.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
           <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/FloatingDots.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3634">
-          <caret line="159" column="13" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -731,21 +707,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/FloatingDots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3634">
+          <caret line="159" column="13" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sec_contact_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719">
+          <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/form.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/core_script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
           <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536900655871" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
+    <entry file="file://$PROJECT_DIR$/sub_mod/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+        <state relative-caret-position="427">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="176" column="68" selection-start-line="176" selection-start-column="68" selection-end-line="176" selection-end-column="68" />
         </state>
       </provider>
     </entry>
