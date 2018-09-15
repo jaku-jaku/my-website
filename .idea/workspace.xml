@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d0200724-a484-4b52-8f31-ff3f6cea0756" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/core_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/core_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sub_mod/Projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/Projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sub_mod/pfo_projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/pfo_projects.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +21,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.4648464">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="176" column="68" selection-start-line="176" selection-start-column="68" selection-end-line="176" selection-end-column="68" />
+                <state relative-caret-position="2475">
+                  <caret line="165" column="13" lean-forward="true" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -34,8 +33,17 @@
           <file leaf-file-name="Project_modal_template.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="371">
-                  <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="53" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Projects.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sub_mod/Projects.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="68" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="68" />
                 </state>
               </provider>
             </entry>
@@ -43,17 +51,8 @@
           <file leaf-file-name="sec_projects.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="50" column="31" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sub_mod/contact.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+                <state relative-caret-position="2820">
+                  <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -61,11 +60,11 @@
           <file leaf-file-name="core_script.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="636">
-                  <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
+                <state relative-caret-position="2895">
+                  <caret line="196" column="3" selection-start-line="196" selection-start-column="3" selection-end-line="196" selection-end-column="3" />
                   <folding>
                     <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-                    <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
+                    <marker date="1536988314746" expanded="true" signature="9500:9501" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -74,8 +73,8 @@
           <file leaf-file-name="pfo_projects.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1500">
-                  <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -105,11 +104,11 @@
           <file leaf-file-name="core_script.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="176" column="47" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+                <state relative-caret-position="521">
+                  <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
                   <folding>
                     <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-                    <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
+                    <marker date="1536988314746" expanded="true" signature="9500:9501" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -149,8 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn-default</find>
-      <find>card-container</find>
       <find>container</find>
       <find>padding</find>
       <find>cls_pro</find>
@@ -173,15 +170,18 @@
       <find>.listS</find>
       <find>listStyleUnderline</find>
       <find>.listStyleUnderline li a</find>
-      <find>card-pic</find>
-      <find>in-left</find>
       <find>input-md</find>
       <find>anim</find>
       <find>jquery</find>
+      <find>G_j_pfo_projs</find>
+      <find>card-pic</find>
       <find>core</find>
+      <find>in-left</find>
+      <find>fG_j_pfo_projs</find>
     </findStrings>
     <replaceStrings>
       <replace>G_j_pfo_projs</replace>
+      <replace>G_j_pfo_projs_filtered</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Resources/Svgs</dir>
@@ -212,19 +212,19 @@
         <option value="$PROJECT_DIR$/css/core_animation.css" />
         <option value="$PROJECT_DIR$/css/core_style.css" />
         <option value="$PROJECT_DIR$/sub_mod/Projects_modal1.html" />
-        <option value="$PROJECT_DIR$/sub_mod/Projects.html" />
         <option value="$PROJECT_DIR$/css/tool_owl.css" />
         <option value="$PROJECT_DIR$/sub_mod/package.json" />
         <option value="$PROJECT_DIR$/sub_mod/pfo_projects_details.json" />
         <option value="$PROJECT_DIR$/css/core_responsive.css" />
-        <option value="$PROJECT_DIR$/css/sec_projects.css" />
-        <option value="$PROJECT_DIR$/sub_mod/pfo_projects.json" />
         <option value="$PROJECT_DIR$/css/core_default.css" />
         <option value="$PROJECT_DIR$/sub_mod/Project_modal_template.html" />
-        <option value="$PROJECT_DIR$/js/core_script.js" />
         <option value="$PROJECT_DIR$/js/form.js" />
         <option value="$PROJECT_DIR$/sub_mod/contact.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/sec_projects.css" />
+        <option value="$PROJECT_DIR$/sub_mod/Projects.html" />
+        <option value="$PROJECT_DIR$/sub_mod/pfo_projects.json" />
+        <option value="$PROJECT_DIR$/js/core_script.js" />
       </list>
     </option>
   </component>
@@ -237,8 +237,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="53" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -333,15 +333,15 @@
       <workItem from="1521328886710" duration="2195000" />
       <workItem from="1521393005107" duration="138000" />
       <workItem from="1521601786075" duration="3861000" />
-      <workItem from="1536438789680" duration="46912000" />
+      <workItem from="1536438789680" duration="50372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53106000" />
+    <option name="totallyTimeSpent" value="56566000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1279762" />
@@ -422,7 +422,7 @@
           <caret line="5" column="24" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536988314746" expanded="true" signature="9500:9501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -487,7 +487,7 @@
           <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536988314746" expanded="true" signature="9500:9501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -552,7 +552,7 @@
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
+            <marker date="1536988314746" expanded="true" signature="9500:9501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -641,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/Projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vendor/OwlCarousel2-2.3.4/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -679,20 +672,6 @@
     <entry file="file://$PROJECT_DIR$/css/tool_owl.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/core_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
@@ -704,13 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -738,28 +710,56 @@
     <entry file="file://$PROJECT_DIR$/js/form.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/core_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1536901427759" expanded="true" signature="8474:9697" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sub_mod/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="79">
           <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="176" column="68" selection-start-line="176" selection-start-column="68" selection-end-line="176" selection-end-column="68" />
+        <state relative-caret-position="2475">
+          <caret line="165" column="13" lean-forward="true" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/Project_modal_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sec_projects.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/Projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/core_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1536988314746" expanded="true" signature="9500:9501" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
