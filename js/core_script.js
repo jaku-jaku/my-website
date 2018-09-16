@@ -2,11 +2,19 @@
   /* Html bridge
   ------------------------------------------------------ */
 $(function(){
-    $("#contactSection").load("sub_mod/contact.html");
+    $("#contactSection").load("sub_mod/ContactForm.html");
+});
+
+$(function(){
+    $("#expSection").load("sub_mod/Experience.html");
 });
 
 $(function(){
     $("#projectSection").load("sub_mod/Projects.html");
+});
+
+$(function(){
+    $("#photoSection").load("sub_mod/Gallery.html");
 });
 
 $(function(){
@@ -101,6 +109,7 @@ $(function(){
               modal_html_buffer = "<div class=\"carouselCard\">\n" +
                   "                            <div class=\"owl-demo owl-carousel img-comment\" >";
               //load demo images
+              <!--TODO : Also need for youtube videos embedding support -->
               var j_items = G_j_pfo_projs_filtered[i].more_imgs;
               var j = 0;
               for (j = 0; j < j_items.length; j++) {
@@ -114,6 +123,7 @@ $(function(){
               $('#modal-templ-imgs').html(modal_html_buffer);
 
               //load details
+              <!--TODO : Add more type of referral links & their icons -->
               j_terms = G_j_pfo_projs_filtered[i].tags;
               modal_html_buffer = "<p><strong>Position: </strong>" + G_j_pfo_projs_filtered[i].position + "</p>\n" +
                   "                            <p><strong>Category: </strong>";
@@ -152,7 +162,6 @@ $(function(){
   }
   $(document).on('click', '.card', function () {
       var id = this.id;
-      // console.log("Clicked = "+id);
       gen_pfo_modal(id, 0);
   });
   $(document).on('click', '.prevp', function () {
@@ -242,5 +251,3 @@ $("body").niceScroll({
           gen_pfo_cards(G_j_pfo_projs_filtered);
       }
   });
-
-

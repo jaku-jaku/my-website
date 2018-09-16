@@ -14,6 +14,7 @@ body {
 html {
   width: 100%;
   height: 100%;
+  font-family: 'Alegreya', serif;
 }
 h1,
 h2,
@@ -32,8 +33,10 @@ p {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
+  font-family: 'Alegreya', serif;
 }
 a {
+  font-family: 'Alegreya', serif;
   color: #42DCA3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -53,4 +56,9 @@ a:focus {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+.section-decription-txt{
+  max-width: 600px;
+  margin: auto;
 }
