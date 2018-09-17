@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0200724-a484-4b52-8f31-ff3f6cea0756" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Resources/exp_bkg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/myExp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sec_myExp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/exp_animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sub_mod/Experience.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sub_mod/Gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sub_mod/exp_objects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/core_default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core_default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/core_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/core_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/Project_modal_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/Projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/Projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_mod/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/sub_mod/ContactForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/exp_animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/exp_animation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,14 +27,16 @@
         <counts>
           <entry key="css" value="203" />
           <entry key="html" value="275" />
-          <entry key="js" value="2643" />
+          <entry key="js" value="5815" />
+          <entry key="json" value="351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="203" />
           <entry key="HTML" value="275" />
-          <entry key="JavaScript" value="2643" />
+          <entry key="JSON" value="351" />
+          <entry key="JavaScript" value="5815" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,7 +44,7 @@
           <entry key="css" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="3" />
-          <entry key="json" value="2" />
+          <entry key="json" value="3" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
@@ -61,7 +53,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="2" />
+          <entry key="JSON" value="3" />
           <entry key="JavaScript" value="3" />
         </counts>
       </usages-collector>
@@ -110,8 +102,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/core_script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+                <state relative-caret-position="795">
+                  <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
                   <folding>
                     <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
                   </folding>
@@ -120,10 +112,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sub_mod/exp_objects.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="88" />
+                <state relative-caret-position="660">
+                  <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -162,8 +163,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/exp_animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="482">
-                  <caret line="125" column="25" lean-forward="true" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
+                <state relative-caret-position="488">
+                  <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -212,19 +213,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cardList</find>
-      <find>carouselCard</find>
-      <find>owl-carousel</find>
-      <find>owl</find>
-      <find>img-comment</find>
-      <find>owl-nav</find>
-      <find>owl-theme</find>
-      <find>j_pfo_projs</find>
-      <find>.listS</find>
-      <find>listStyleUnderline</find>
-      <find>.listStyleUnderline li a</find>
-      <find>input-md</find>
-      <find>jquery</find>
       <find>G_j_pfo_projs</find>
       <find>card-pic</find>
       <find>fG_j_pfo_projs</find>
@@ -236,16 +224,30 @@
       <find>click</find>
       <find>Draw</find>
       <find>RANGE</find>
-      <find>Node</find>
       <find>Render</find>
       <find>anim</find>
       <find>mouse</find>
-      <find>read</find>
       <find>data</find>
+      <find>main_anim_exp</find>
+      <find>Callback_Render</find>
+      <find>_ctx</find>
+      <find>30</find>
+      <find>this.title_w</find>
+      <find>this.MODE</find>
+      <find>read</find>
+      <find>node_</find>
+      <find>Node</find>
+      <find>updateStaticData</find>
+      <find>startEngine</find>
+      <find>for</find>
+      <find>orient</find>
+      <find>mdata</find>
+      <find>right</find>
     </findStrings>
     <replaceStrings>
       <replace>G_j_pfo_projs_filtered</replace>
       <replace>G_j_pfo_projs</replace>
+      <replace>m_data</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Resources/Svgs</dir>
@@ -293,6 +295,7 @@
         <option value="$PROJECT_DIR$/sub_mod/Experience.html" />
         <option value="$PROJECT_DIR$/css/sec_myExp.css" />
         <option value="$PROJECT_DIR$/js/exp_animation.js" />
+        <option value="$PROJECT_DIR$/sub_mod/exp_objects.json" />
       </list>
     </option>
   </component>
@@ -401,12 +404,12 @@
       <workItem from="1521601786075" duration="3861000" />
       <workItem from="1536438789680" duration="53821000" />
       <workItem from="1537052699994" duration="328000" />
-      <workItem from="1537068070413" duration="11737000" />
+      <workItem from="1537068070413" duration="23976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72080000" />
+    <option name="totallyTimeSpent" value="84319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -597,27 +600,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/core_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        <state relative-caret-position="795">
+          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
+    <entry file="file://$PROJECT_DIR$/js/exp_animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="88" />
+        <state relative-caret-position="488">
+          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/exp_animation.js">
+    <entry file="file://$PROJECT_DIR$/sub_mod/exp_objects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="125" column="25" lean-forward="true" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
+        <state relative-caret-position="272">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
         </state>
       </provider>
     </entry>

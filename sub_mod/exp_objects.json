@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Baanto Inc.",
+    "position": [10,15, 1, 1],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  },
+
+  {
+    "title": "Interaptix Inc.",
+    "position": [50,8, 1, 3],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  },
+
+  {
+    "title": "Trexo Robotics",
+    "position": [80,50, 1, 4],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  },
+
+  {
+    "title": "TobyX Corp.",
+    "position": [90,25, 1, 2],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  },
+
+  {
+    "title": "Mars Rover",
+    "position": [60,70, 1, 2],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  },
+
+  {
+    "title": "WATonomous",
+    "position": [20,80, 1, 1],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  },
+
+  {
+    "title": "Robot Racing",
+    "position": [90,85, 1, 2],
+    "start_date": "May,2017",
+    "end_date": "Aug,2017",
+    "Duration": "4 months",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "web": "http://baanto.com/"
+  }
+]
