@@ -254,4 +254,8 @@ TOC :
     padding: 3px 0px;
     letter-spacing: 1px;
   }
+
+  .container{
+    margin: auto;
+  }
 }

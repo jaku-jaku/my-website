@@ -4,7 +4,7 @@
 //     var C = document.getElementById('exp-canvas');
 //     var WH = [C.scrollWidth, C.scrollHeight];
 //     console.log(WH);
-// });
+// })
 
 // ----- RUN Scrips @ Statup & resizing
 $.getJSON("sub_mod/exp_objects.json",
@@ -16,7 +16,17 @@ $.getJSON("sub_mod/exp_objects.json",
         }
     });
 // - when resize => recompute the dots
-window.addEventListener('resize', function () {
+window.addEventListener('resize', function ()
+{
+    if ($(window).width() < 768) {
+        // console.log('Less than 960');
+        document.getElementById('exp-img').src='Resources/myExp_portrait.png';
+    }
+    else {
+        // console.log('More than 960');
+        document.getElementById('exp-img').src='Resources/myExp.png';
+    }
+
     updateWH();
 });
 // - compute at load
@@ -62,7 +72,7 @@ function Node(_data) {
         var tw = G_ctx.measureText(str).width;
         this.mx_lines = Math.ceil(tw/this.title_w[2]);
         this.str_span = Math.ceil(str.length/this.mx_lines);
-        console.log(this.x, this.y);
+        // console.log(this.x, this.y);
         //update drawing positions
         x = this.x;
         y = this.y;
@@ -233,9 +243,12 @@ function Node(_data) {
 
 // ----- Core Animation Code
 function startEngine() {
+    if ($(window).width() < 768) {
+        document.getElementById('exp-img').src='Resources/myExp_portrait.png';
+    }
     //config
     G_CVS = document.getElementById('exp-canvas');
-    G_BKG = document.getElementById('exp-bkg-img');
+    G_BKG = document.getElementById('exp-img');
     G_ctx = G_CVS.getContext('2d');
     updateWH();
 
@@ -267,6 +280,8 @@ function updateWH() {
         G_CVS.height = G_WH[1];
         G_CVS.scrollWidth = G_WH[0];
         G_CVS.scrollHeight = G_WH[1];
+        G_CVS.style.marginTop = -G_WH[1].toString() +'px';
+
         for (var ni= 0; ni< G_nodeList.length; ni++)
         {
             G_nodeList[ni].updateStaticData();
