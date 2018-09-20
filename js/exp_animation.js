@@ -21,10 +21,12 @@ window.addEventListener('resize', function ()
     if ($(window).width() < 768) {
         // console.log('Less than 960');
         document.getElementById('exp-img').src='Resources/myExp_portrait.png';
+        G_portrait_mode = true;
     }
     else {
         // console.log('More than 960');
         document.getElementById('exp-img').src='Resources/myExp.png';
+        G_portrait_mode = false;
     }
 
     updateWH();
@@ -41,6 +43,7 @@ var G_WH = null;
 var G_ctx = null;
 var ENUM_NODE_MODE = {"idle":1, "hover":2, "click":3};
 var G_nodeList = [];
+var G_portrait_mode = false;
 function Node(_data) {
     this.IDn = null;
     this.data = _data;
@@ -53,21 +56,40 @@ function Node(_data) {
     this.title_w = [0,0,0];
     this.mx_lines = 0;
     this.str_span = 0;
+    this.text_font = "15px Comic Sans MS";
+    this.text2_font =  "10px Comic Sans MS";
+    this.text_height = 15;//px
     // TODO: add silent state animation
     // TODO: add init function, only calc static
     // data at update or scrn change
-    this.updateStaticData = function () {
+    this.updateStaticData = function (_isPortrait) {
         var m_data = this.data;
-        this.x = G_WH[0]*m_data['position'][0]/100;
-        this.y = G_WH[1]*m_data['position'][1]/100;
-        this.r = G_WH[0]*m_data['position'][2]/100;
+        if(_isPortrait)
+        {
+            this.x = G_WH[0]*m_data['position_v'][0]/100;
+            this.y = G_WH[1]*m_data['position_v'][1]/100;
+            this.r = G_WH[0]*m_data['position_v'][2]/100;
+            this.quadrant = m_data['position_v'][3]%5;
+            this.text_font = "10px Comic Sans MS";
+            this.text2_font =  "8px Comic Sans MS";
+            this.text_height = 10;
+        }else
+        {
+            this.x = G_WH[0]*m_data['position'][0]/100;
+            this.y = G_WH[1]*m_data['position'][1]/100;
+            this.r = G_WH[0]*m_data['position'][2]/100;
+            this.quadrant = m_data['position'][3]%5;
+            this.text_font = "15px Comic Sans MS";
+            this.text2_font =  "10px Comic Sans MS";
+            this.text_height = 15;
+        }
+
         this.anim_r = this.r;
-        this.quadrant = m_data['position'][3]%5;
-        G_ctx.font = "15px Comic Sans MS";
+        G_ctx.font = this.text_font;
         this.title_w[0] = G_ctx.measureText(m_data['title']).width;
         this.title_w[1] = G_ctx.measureText(m_data['start_date'] + m_data['end_date']).width;
         this.title_w[2] = this.title_w[0]+this.title_w[1];
-        G_ctx.font = "10px Comic Sans MS";
+        G_ctx.font = this.text2_font;
         var str = m_data['Description'];
         var tw = G_ctx.measureText(str).width;
         this.mx_lines = Math.ceil(tw/this.title_w[2]);
@@ -171,7 +193,7 @@ function Node(_data) {
             G_ctx.closePath();
 
             //title
-            G_ctx.font = "15px Comic Sans MS";
+            G_ctx.font = this.text_font;
             G_ctx.fillStyle = "blue";
             if(this.orient[0]===1)
                 G_ctx.textAlign = "left";
@@ -180,15 +202,15 @@ function Node(_data) {
 
             G_ctx.fillText(this.data['title'],this.text_pos[0], this.text_pos[1]);
 
-            G_ctx.font = "10px Comic Sans MS";
+            G_ctx.font = this.text2_font;
             G_ctx.fillText(('(' + this.data['start_date']+' ~ ' +this.data['end_date'] + ')'), this.text_pos[2], this.text_pos[3]);
             //content
-            G_ctx.font = "10px Comic Sans MS";
+            G_ctx.font = this.text2_font;
             var str = this.data['Description'];
             var cur_str_i = 0;
             for (var i = 0; i< this.mx_lines; i++)
             {
-                G_ctx.fillText(str.substring(cur_str_i, cur_str_i+this.str_span),this.x+40*this.orient[0],this.y-(40 -i*15 -25)*this.orient[1]);
+                G_ctx.fillText(str.substring(cur_str_i, cur_str_i+this.str_span),this.x+40*this.orient[0],this.y-(40 -i*this.text_height -25)*this.orient[1]);
                 cur_str_i += this.str_span;
             }
 
@@ -203,14 +225,14 @@ function Node(_data) {
     };
 
     this.isOverlap = function (_mX, _mY) {
-        G_ctx.beginPath();
-        G_ctx.arc(_mX,_mY,10, 0, 2*Math.PI, false);
-        G_ctx.fillStyle= 'red';
-        G_ctx.strokeStyle = 'red';
-        G_ctx.globalAlpha = 0.5;
-        G_ctx.fill();
-        G_ctx.lineWidth = 1;
-        G_ctx.stroke();
+        // G_ctx.beginPath();
+        // G_ctx.arc(_mX,_mY,10, 0, 2*Math.PI, false);
+        // G_ctx.fillStyle= 'red';
+        // G_ctx.strokeStyle = 'red';
+        // G_ctx.globalAlpha = 0.5;
+        // G_ctx.fill();
+        // G_ctx.lineWidth = 1;
+        // G_ctx.stroke();
         //Assumption: BND included
         if (this.x >= (_mX-this.r) && this.x <= (_mX+this.r) && this.y >= (_mY-this.r) && this.y <= (_mY+this.r))
         {
@@ -245,6 +267,7 @@ function Node(_data) {
 function startEngine() {
     if ($(window).width() < 768) {
         document.getElementById('exp-img').src='Resources/myExp_portrait.png';
+        G_portrait_mode = true;
     }
     //config
     G_CVS = document.getElementById('exp-canvas');
@@ -284,9 +307,9 @@ function updateWH() {
 
         for (var ni= 0; ni< G_nodeList.length; ni++)
         {
-            G_nodeList[ni].updateStaticData();
+            G_nodeList[ni].updateStaticData(G_portrait_mode);
         }
-        console.log(G_WH);
+        // console.log(G_WH);
     }else
     {
         console.error("No cvs or bkg loaded!");

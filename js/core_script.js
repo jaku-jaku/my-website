@@ -1,7 +1,12 @@
   /*----------------------------------------------------*/
   /* Html bridge
   ------------------------------------------------------ */
-$(function(){
+  $(function(){
+      $("#aboutMeSection").load("sub_mod/About.html");
+  });
+
+
+  $(function(){
     $("#contactSection").load("sub_mod/ContactForm.html");
 });
 
