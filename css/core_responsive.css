@@ -21,6 +21,12 @@ TOC :
     line-height: 1.6;
   }
 
+  .abstract-container p{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+  }
+
   /*responsive navbar*/
   .navbar-custom {
     padding: 20px 0;
@@ -53,6 +59,7 @@ TOC :
     font-size: 80px;
   }
   .intro .intro-body .intro-text {
+    /*TODO: fix responsive!!!*/
     font-size: 26px;
   }
 
@@ -102,6 +109,13 @@ TOC :
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
+  /* General style */
+  .abstract-container p{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+  }
+
   .listStyleUnderline li a{
     letter-spacing: 2px;
   }
@@ -146,7 +160,14 @@ TOC :
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+  /* General style */
+  .abstract-container p{
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+  }
 
+  /**/
   .leftside{
     float: none;
     text-align: center;
@@ -219,6 +240,15 @@ TOC :
 -------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 480px) {
+
+  /* General style */
+  .abstract-container p{
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    font-size: medium;
+  }
+
 
   /*cards*/
   .card-pic-crop{

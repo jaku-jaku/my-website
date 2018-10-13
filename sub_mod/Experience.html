@@ -2,21 +2,41 @@
     <div class="row">
         <div class="projectWidth">
             <div class="header-col">
-            <span class="headerbox">
+            <span class="header-anim">
               Experience
             </span>
             </div>
             <div class="section-decription-txt">
-                <p>Here are some of my experience</p>
+                <p id="content-1">"It’s time for a new adventure!!"</p>
+                <p id="content-2">"I have never stopped exploring around."</p>
+                <p id="content-4">"Exploring, and create my own path."</p>
+                <p id="content-5">"Life is an adventure. Take risks."</p>
+                <p id="content-3">"I keep learning along my way."</p>
+                <p id="content-6">"Follow your heart!"</p>
+                <p id="content-7">"There are no dreams, but goals."</p>
             </div>
         </div>
     </div>
     <div id="exp-background">
         <!--TODO : build a vertical screen image for cellphone responsive*-->
         <div id="exp-bkg-img">
-            <img id="exp-img" src="Resources/myExp.png" />
+            <img id="exp-img" src="Resources/myExp.png"/>
         </div>
         <canvas id="exp-canvas"></canvas>
 
     </div>
 </div>
+<script>
+    var divs = $('p[id^="content-"]').hide(),
+        i = 0;
+
+    (function cycle() {
+
+        divs.eq(i).fadeIn(1900)
+            .delay(1000)
+            .fadeOut(1000, cycle);
+
+        i = ++i % divs.length;
+
+    })();
+</script>

@@ -14,7 +14,7 @@
     height: 100%;
     background-color: black;
     position: relative;
-    background : url(../Resources/BACK.JPG) no-repeat bottom right scroll;
+    background : url(../Resources/Background/BACK.JPG) no-repeat bottom right scroll;
 }
 .intro {
     display: table;
@@ -54,13 +54,13 @@
 }
 .intro-header span{
     letter-spacing: 8px;
-
     border-top: 10px;
     font-size: 72px;
     font-family: 'Alegreya', serif;
     font-weight: 400;
     border-bottom: 20px;
 }
+
 .intro-text {
     border-top: 10px;
     font-size: 10px;
@@ -80,6 +80,16 @@
     border-bottom: 20px;
 }
 
+.intro-text-icons{
+    margin-top: 20px;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.intro-text-icons a :hover{
+    transform: scale(1.2);
+    color: #ed5565;
+}
 
 /*floating scroll down button*/
 #DDA{

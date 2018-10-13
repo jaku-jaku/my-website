@@ -1,0 +1,40 @@
+<!-- About Section -->
+<div  class="container content-section text-center">
+    <div class="row ">
+
+        <div class="header-col" id="A"><span>About <strong>Me</strong></span></div>
+
+            <div id="profilephoto">
+                <div class="borderCircle">
+                    <div class="cropCircle">
+                        <img  src="Resources/my_photo.JPG" style=" width:110%;"/>
+                    </div>
+                    <div class="borCircle">
+                    </div>
+                    <div class="borCircle1">
+                    </div>
+                </div>
+            </div>
+            <div class = "abstract-container">
+                <h2><span> Jack (Jianxiang) Xu </span></h2>
+                <p>
+                    I'm a <span>2B Mechatronics Engineering</span> Student @ University of Waterloo.<br>
+                    ( <a href="#page-experience" class="page-scroll textHover"> Scroll down </a> | <a href="Resources/Jack(JIanxiang)Xu_Resume_V3.2.19.pdf" target="_blank" class="textHover">Download my resume</a> ) to know more about me :D
+                </p>
+                <a href="#page-contact" class="page-scroll buttoncus gradient-effect"><i class="fa fa-paper-plane"></i> <span>Contact Me</span></a>
+                <a href="Resources/Jack(JIanxiang)Xu_Resume_V3.2.19.pdf" target="_blank" class="buttoncus gradient-effect" ><i class="fa fa-download"></i> Download Resume</a>
+            </div>
+    </div>
+</div>
+
+<script>
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+</script>

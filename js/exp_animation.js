@@ -1,11 +1,4 @@
 
-
-// $(document).on('mouseover','#exp-canvas', function () {
-//     var C = document.getElementById('exp-canvas');
-//     var WH = [C.scrollWidth, C.scrollHeight];
-//     console.log(WH);
-// })
-
 // ----- RUN Scrips @ Statup & resizing
 $.getJSON("sub_mod/exp_objects.json",
     function (json) {
@@ -35,8 +28,9 @@ window.addEventListener('resize', function ()
 $(window).on('load', startEngine);
 
 // ----- Objects
-var __DEFAULT_FCLR__ = '#42DCA3';
-var __HVR_FCLR__ = '#337AB7';
+var _DEFAULT_FCLR_ = '#80ced6';
+var _HVR_FCLR_ = '#2c7e87';
+var _FONT_FCLR_ = '#3987a6';
 var G_CVS = null;
 var G_BKG = null;
 var G_WH = null;
@@ -54,13 +48,12 @@ function Node(_data) {
     this.quadrant = 1;
     this.startTIme = Date.now();
     this.title_w = [0,0,0];
+    this.bkg_rect = [0, 0, 0, 0];
     this.mx_lines = 0;
     this.str_span = 0;
     this.text_font = "15px Comic Sans MS";
-    this.text2_font =  "10px Comic Sans MS";
+    this.text2_font =  "12px Comic Sans MS";
     this.text_height = 15;//px
-    // TODO: add silent state animation
-    // TODO: add init function, only calc static
     // data at update or scrn change
     this.updateStaticData = function (_isPortrait) {
         var m_data = this.data;
@@ -70,8 +63,8 @@ function Node(_data) {
             this.y = G_WH[1]*m_data['position_v'][1]/100;
             this.r = G_WH[0]*m_data['position_v'][2]/100;
             this.quadrant = m_data['position_v'][3]%5;
-            this.text_font = "10px Comic Sans MS";
-            this.text2_font =  "8px Comic Sans MS";
+            this.text_font = "13px Comic Sans MS";
+            this.text2_font =  "10px Comic Sans MS";
             this.text_height = 10;
         }else
         {
@@ -80,19 +73,22 @@ function Node(_data) {
             this.r = G_WH[0]*m_data['position'][2]/100;
             this.quadrant = m_data['position'][3]%5;
             this.text_font = "15px Comic Sans MS";
-            this.text2_font =  "10px Comic Sans MS";
+            this.text2_font =  "12px Comic Sans MS";
             this.text_height = 15;
         }
 
         this.anim_r = this.r;
         G_ctx.font = this.text_font;
         this.title_w[0] = G_ctx.measureText(m_data['title']).width;
-        this.title_w[1] = G_ctx.measureText(m_data['start_date'] + m_data['end_date']).width;
-        this.title_w[2] = this.title_w[0]+this.title_w[1];
+        this.title_w[1] = G_ctx.measureText(m_data['company']).width;
+        if(!_isPortrait) // single lines
+            this.title_w[2] = this.title_w[0]+this.title_w[1];
+        else    // two lines
+            this.title_w[2] = this.title_w[0]>this.title_w[1]?this.title_w[0]:this.title_w[1];
         G_ctx.font = this.text2_font;
         var str = m_data['Description'];
         var tw = G_ctx.measureText(str).width;
-        this.mx_lines = Math.ceil(tw/this.title_w[2]);
+        this.mx_lines = Math.round(tw/this.title_w[2]);
         this.str_span = Math.ceil(str.length/this.mx_lines);
         // console.log(this.x, this.y);
         //update drawing positions
@@ -119,21 +115,48 @@ function Node(_data) {
         this.line_pos[1] = y-(r+2)*this.orient[1];
         this.line_pos[2] = x+30*this.orient[0];
         this.line_pos[3] = y-30*this.orient[1];
-        this.line_pos[4] = x+(30+this.title_w[2])*this.orient[0];
+        this.line_pos[4] = x+(this.title_w[2]*1.2)*this.orient[0];
         this.line_pos[5] = y-30*this.orient[1];
 
         this.text_pos[1] = this.orient[1]===1? y-40*this.orient[1]: y-47*this.orient[1];
-        this.text_pos[3] = this.text_pos[1];
+        // if(!_isPortrait)
+            this.text_pos[3] = this.text_pos[1];
+        // else
+        //     this.text_pos[3] = this.text_pos[1] + 20;
         if(this.orient[0]===1)
         {
             this.text_pos[0] = x+40*this.orient[0];
-            this.text_pos[2] = x+(50+this.title_w[0])*this.orient[0];
+            if(_isPortrait)
+                this.text_pos[2] = this.text_pos[0];
+            else
+                this.text_pos[2] = x+(50+this.title_w[0])*this.orient[0];
+            this.bkg_rect[0] = this.text_pos[0];
         }else
         {
-            this.text_pos[0] = x+(30+this.title_w[1])*this.orient[0];
             this.text_pos[2] = x+(40)*this.orient[0];
+            if(_isPortrait)
+                this.text_pos[0] = this.text_pos[2];
+            else
+                this.text_pos[0] = x+(30+this.title_w[1])*this.orient[0];
+            this.bkg_rect[0] = x+(30+this.title_w[2])*this.orient[0];
         }
+        this.bkg_rect[2] = this.title_w[2];
 
+        if(_isPortrait) this.bkg_rect[3] = (this.mx_lines+5)*this.text_height;
+        else            this.bkg_rect[3] = (this.mx_lines+3)*this.text_height;
+
+        if(this.orient[1] === 1)
+        {
+            if(_isPortrait)     this.text_pos[1] = this.text_pos[1] - this.text_height*1.5;
+            this.bkg_rect[1] = this.text_pos[1] - this.text_height;
+        }else {
+            if(_isPortrait)     this.text_pos[1] = this.text_pos[1] + this.text_height*1.5;
+            this.bkg_rect[1] = this.text_pos[1] - this.bkg_rect[3];
+        }
+        this.bkg_rect[0] -= 10;
+        this.bkg_rect[1] -= 10;
+        this.bkg_rect[3] += 20;
+        this.bkg_rect[2] += 20;
     };
 
     this.tick = 0;
@@ -145,30 +168,34 @@ function Node(_data) {
     this.Draw = function (){
         G_ctx.beginPath();
         G_ctx.arc(this.x,this.y,this.r, 0, 2*Math.PI, false);
+
         if(this.MODE === ENUM_NODE_MODE.hover || this.MODE === ENUM_NODE_MODE.click) {
             // HOVER
-            G_ctx.fillStyle= __HVR_FCLR__;
-            G_ctx.strokeStyle = __HVR_FCLR__;
-            G_ctx.globalAlpha = 0.5;
+            G_ctx.fillStyle= _HVR_FCLR_;
+            G_ctx.strokeStyle = _HVR_FCLR_;
+            G_ctx.globalAlpha = 1;
             G_ctx.fill();
             G_ctx.lineWidth = 1;
             G_ctx.stroke();
+            G_ctx.fillStyle= "white";
 
+            //TODO: backgrounds!!
+            G_ctx.fillRect(this.bkg_rect[0], this.bkg_rect[1], this.bkg_rect[2], this.bkg_rect[3]);
             // TODO : hover show shortened info
             // TODO : mode 3 show detailed info
 
         }
         else{
-            G_ctx.fillStyle= __DEFAULT_FCLR__;
-            G_ctx.strokeStyle = __DEFAULT_FCLR__;
+            G_ctx.fillStyle= _DEFAULT_FCLR_;
+            G_ctx.strokeStyle = _DEFAULT_FCLR_;
             G_ctx.globalAlpha = 0.5;
             G_ctx.fill();
             G_ctx.lineWidth = 1;
             G_ctx.stroke();
 
             G_ctx.beginPath();
-            // G_ctx.fillStyle = __DEFAULT_FCLR__;
-            G_ctx.strokeStyle = __DEFAULT_FCLR__;
+            // G_ctx.fillStyle = _DEFAULT_FCLR_;
+            G_ctx.strokeStyle = _DEFAULT_FCLR_;
             G_ctx.lineWidth = 3;
             if(this.tick%1 === 0)
             {
@@ -194,7 +221,7 @@ function Node(_data) {
 
             //title
             G_ctx.font = this.text_font;
-            G_ctx.fillStyle = "blue";
+            G_ctx.fillStyle = _FONT_FCLR_;
             if(this.orient[0]===1)
                 G_ctx.textAlign = "left";
             else
@@ -203,15 +230,26 @@ function Node(_data) {
             G_ctx.fillText(this.data['title'],this.text_pos[0], this.text_pos[1]);
 
             G_ctx.font = this.text2_font;
-            G_ctx.fillText(('(' + this.data['start_date']+' ~ ' +this.data['end_date'] + ')'), this.text_pos[2], this.text_pos[3]);
+            G_ctx.fillText(("["+this.data['company']+"]"), this.text_pos[2], this.text_pos[3]);
+
             //content
             G_ctx.font = this.text2_font;
             var str = this.data['Description'];
             var cur_str_i = 0;
-            for (var i = 0; i< this.mx_lines; i++)
+            for (var i = 0; i< this.mx_lines + 1; i++)
             {
-                G_ctx.fillText(str.substring(cur_str_i, cur_str_i+this.str_span),this.x+40*this.orient[0],this.y-(40 -i*this.text_height -25)*this.orient[1]);
-                cur_str_i += this.str_span;
+                if(i==0)//print date
+                {
+                    G_ctx.fillText(('(' + this.data['start_date']+' ~ ' +this.data['end_date'] + ')'), this.x+40*this.orient[0],this.y-(40 -i*this.text_height -25)*this.orient[1]);
+                }
+                else
+                {
+                    if(this.orient[1]>0)
+                        G_ctx.fillText(str.substring(cur_str_i, cur_str_i+this.str_span),this.x+40*this.orient[0],this.y-(40 -i*this.text_height -25));
+                    else
+                        G_ctx.fillText(str.substring(cur_str_i, cur_str_i+this.str_span),this.x+40*this.orient[0],this.y-(40 -(this.mx_lines+1-i)*this.text_height -25)*this.orient[1]);
+                    cur_str_i += this.str_span;
+                }
             }
 
         }
@@ -225,14 +263,6 @@ function Node(_data) {
     };
 
     this.isOverlap = function (_mX, _mY) {
-        // G_ctx.beginPath();
-        // G_ctx.arc(_mX,_mY,10, 0, 2*Math.PI, false);
-        // G_ctx.fillStyle= 'red';
-        // G_ctx.strokeStyle = 'red';
-        // G_ctx.globalAlpha = 0.5;
-        // G_ctx.fill();
-        // G_ctx.lineWidth = 1;
-        // G_ctx.stroke();
         //Assumption: BND included
         if (this.x >= (_mX-this.r) && this.x <= (_mX+this.r) && this.y >= (_mY-this.r) && this.y <= (_mY+this.r))
         {
@@ -249,19 +279,6 @@ function Node(_data) {
             this.MODE = ENUM_NODE_MODE.idle;
     };
 }
-
-// var data_ = "{\n" +
-//     "    \"title\" : \"Baanto Inc\",\n" +
-//     "    \"position\" : [10, 20], \n"+
-//     "    \"start_date\": \"2017-May\",\n" +
-//     "    \"end_date\": \"2017-Aug\",\n" +
-//     "    \"Duration\": \"4 mons.\",\n" +
-//     "    \"Description\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\",\n" +
-//     "    \"URL\": \"http://baanto.com/\" \n" +
-//     "}";
-// console.log(JSON.parse(data_));
-// var node_ = new Node(JSON.parse(data_), 10);
-
 
 // ----- Core Animation Code
 function startEngine() {
@@ -330,10 +347,15 @@ function Callback_Calculate() {
 function Callback_Render() {
     if(G_WH != null)
     {
-        G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
-        for (var ni= 0; ni< G_nodeList.length; ni++)
+        // Render/update only if the page is scrolling closer towards experience content
+        if(($('#page-about').offset().top <($(window).scrollTop()))
+            && ($('#page-projects').offset().top >($(window).scrollTop())))
         {
-            G_nodeList[ni].Draw();
+            G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
+            for (var ni= 0; ni< G_nodeList.length; ni++)
+            {
+                G_nodeList[ni].Draw();
+            }
         }
     }else
     {
@@ -341,10 +363,3 @@ function Callback_Render() {
     }
 }
 
-// function Callback_Mouse(event){
-//     var rect =  G_CVS.getContext('2d').canvas.getBoundingClientRect();
-//     mouseX=event.clientX-rect.left;
-//     mouseY=event.clientY-rect.top;
-//     Callback_mouse(mouseX, mouseY);
-//     console.log(rect);
-// }

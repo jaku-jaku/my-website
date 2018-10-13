@@ -2,8 +2,8 @@
 /* ==============================
 -  About Section
 ============================== */
-#about{
-    /*background: url(../Resources/intro.svg);*/
+#page-about{
+    background: #fafafa;
     background-position: center;
     background-size: cover;
     min-height:100vh;
@@ -52,55 +52,42 @@
     border-bottom-color: #42DCA3;
     animation: slowspin2 4s linear infinite;
 }
-.selfDesc{
-    letter-spacing: 2px;
-    font-weight: 300;
-    display: inline-block;
-    margin: 20px;
-    margin-top: 0px;
-    text-align:left;
-    font-size:15px;
-    padding: 10px 5px 10px 35px;
-    border: 5px solid #42DCA3;
-    /*border-image: url(../Resources/bar.JPG) 5 round;*/
+
+/*.selfDesc{*/
+    /*letter-spacing: 2px;*/
+    /*font-weight: 300;*/
+    /*display: inline-block;*/
+    /*margin: 20px;*/
+    /*margin-top: 0px;*/
+    /*text-align:left;*/
+    /*font-size:15px;*/
+    /*padding: 10px 5px 10px 35px;*/
+    /*border: 5px solid #42DCA3;*/
+    /*!*border-image: url(../Resources/bar.JPG) 5 round;*!*/
+/*}*/
+/*.selfDesc strong{*/
+    /*font-size:18px;*/
+    /*transition: all 0.5s ease;*/
+    /*color: #11ABB0;*/
+    /*font-weight: 500;*/
+/*}*/
+/*.selfDesc li:before {*/
+    /*content: "\f0a4"; !* FontAwesome Unicode *!*/
+    /*font-family: FontAwesome;*/
+    /*display: inline-block;*/
+    /*margin-left: -1.8em; !* same as padding-left set on li *!*/
+    /*margin-right: 0.5em;*/
+    /*width: 1.3em; !* same as padding-left set on li *!*/
+/*}*/
+
+.textHover {
+    transition: all .2s ease-in-out;
 }
-.selfDesc strong{
-    font-size:18px;
-    transition: all 0.5s ease;
-    color: #11ABB0;
-    font-weight: 500;
-}
-.selfDesc li:before {
-    content: "\f0a4"; /* FontAwesome Unicode */
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: -1.8em; /* same as padding-left set on li */
-    margin-right: 0.5em;
-    width: 1.3em; /* same as padding-left set on li */
-}
-.hoveranim:hover strong{
+
+.textHover:hover{
     color: #ed5655;
 }
-.hoveranim:hover li:before{
-    animation: rlshift 0.5s linear infinite;
-}
-@keyframes rlshift{
-    0%{
-        -ms-transform: translate(0em,0em); /* IE 9 */
-        -webkit-transform: translate(0em,0em); /* Safari */
-        transform: translate(0em,0em);
-    }
-    90%{
-        -ms-transform: translate(0.5em,0em); /* IE 9 */
-        -webkit-transform: translate(0.5em,0em); /* Safari */
-        transform: translate(0.5em,0em);
-    }
-    100%{
-        -ms-transform: translate(0em,0em); /* IE 9 */
-        -webkit-transform: translate(0em,0em); /* Safari */
-        transform: translate(0em,0em);
-    }
-}
+
 .selfDesc li{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
