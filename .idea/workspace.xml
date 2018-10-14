@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0200724-a484-4b52-8f31-ff3f6cea0756" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/side_bar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/core_default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core_default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/core_responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core_responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/core_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sec_projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sec_projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/core_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/core_script.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,25 +34,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="632" />
-          <entry key="html" value="1610" />
-          <entry key="js" value="7736" />
-          <entry key="json" value="1411" />
+          <entry key="css" value="1819" />
+          <entry key="html" value="2026" />
+          <entry key="js" value="7815" />
+          <entry key="json" value="1413" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="632" />
-          <entry key="HTML" value="1610" />
-          <entry key="JSON" value="1411" />
-          <entry key="JavaScript" value="7736" />
+          <entry key="CSS" value="1819" />
+          <entry key="HTML" value="2026" />
+          <entry key="JSON" value="1413" />
+          <entry key="JavaScript" value="7815" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="23" />
-          <entry key="html" value="19" />
-          <entry key="js" value="12" />
+          <entry key="css" value="32" />
+          <entry key="html" value="22" />
+          <entry key="js" value="15" />
           <entry key="json" value="6" />
           <entry key="png" value="5" />
           <entry key="rnc" value="2" />
@@ -52,65 +60,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="23" />
-          <entry key="HTML" value="19" />
+          <entry key="CSS" value="32" />
+          <entry key="HTML" value="22" />
           <entry key="Image" value="5" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="12" />
+          <entry key="JavaScript" value="15" />
           <entry key="RNG Compact" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47892192">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1410">
-                  <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/exp_animation.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5145">
-                  <caret line="343" selection-start-line="343" selection-end-line="343" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sub_mod/AboutMe.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sub_mod/Experience.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+                <state relative-caret-position="439">
+                  <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
@@ -118,8 +86,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sub_mod/exp_objects.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+                <state relative-caret-position="360">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
                 </state>
               </provider>
             </entry>
@@ -127,8 +95,82 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3165">
-                  <caret line="211" column="7" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="7" />
+                <state relative-caret-position="501">
+                  <caret line="243" selection-start-line="243" selection-end-line="243" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/side_bar.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/core_default.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="303">
+                  <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/sec_myExp.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sub_mod/Temp.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/core_script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="402">
+                  <caret line="225" column="24" selection-start-line="225" selection-start-column="24" selection-end-line="225" selection-end-column="24" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/core_style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1320">
+                  <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/sec_about.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1515">
+                  <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#349#404#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -142,50 +184,52 @@
       <list>
         <option value="tsconfig.json" />
         <option value="package_json" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>intro-bgc</find>
-      <find>Hire</find>
-      <find>cls_about</find>
-      <find>about</find>
-      <find>sc</find>
-      <find>hover</find>
-      <find>intro-text-icons</find>
-      <find>div</find>
-      <find>page-about</find>
-      <find>text_height</find>
-      <find>G_ctx</find>
-      <find>style</find>
-      <find>fill</find>
-      <find>_HVR_FCLR_</find>
-      <find>strokeStyle</find>
-      <find>fillStyle</find>
-      <find>_DEFAULT_FCLR_</find>
-      <find>title_w</find>
-      <find>ce</find>
-      <find>todo</find>
-      <find>rect</find>
-      <find>bkg</find>
-      <find>bkg_rect</find>
-      <find>#ed5565</find>
-      <find>text_pos</find>
-      <find>active</find>
-      <find>scrollTop</find>
-      <find>offset</find>
       <find>scroll</find>
       <find>page-exp</find>
+      <find>data-spy</find>
+      <find>page-top</find>
+      <find>page</find>
+      <find>CTAs</find>
+      <find>font</find>
+      <find>list-unstyled</find>
+      <find>backg</find>
+      <find>whitesmoke</find>
+      <find>fontaw</find>
+      <find>sidebar</find>
+      <find>sideNavBar</find>
+      <find>padding</find>
+      <find>.content</find>
+      <find>hover</find>
+      <find>span</find>
+      <find>navbar-custom</find>
+      <find>navbar-toggle</find>
+      <find>nav</find>
+      <find>collapse</find>
+      <find>navbar-collapse</find>
+      <find>dropdown-toggle</find>
+      <find>navbar</find>
+      <find>aria-expanded</find>
+      <find>aria</find>
+      <find>dropdown-toggl</find>
+      <find>navbar-fixed</find>
+      <find>active</find>
+      <find>page-scroll</find>
     </findStrings>
     <replaceStrings>
       <replace>G_j_pfo_projs_filtered</replace>
       <replace>G_j_pfo_projs</replace>
       <replace>1,</replace>
       <replace>m_data</replace>
+      <replace>sideNavBar</replace>
+      <replace>sidebar</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Resources/Svgs</dir>
@@ -225,20 +269,23 @@
         <option value="$PROJECT_DIR$/sub_mod/About.html" />
         <option value="$PROJECT_DIR$/css/sec_about_test.css" />
         <option value="$PROJECT_DIR$/css/sec_skills.css" />
-        <option value="$PROJECT_DIR$/css/core_default.css" />
         <option value="$PROJECT_DIR$/css/sec_resume.css" />
         <option value="$PROJECT_DIR$/css/sec_about.css" />
-        <option value="$PROJECT_DIR$/css/core_responsive.css" />
         <option value="$PROJECT_DIR$/css/sec_intro.css" />
-        <option value="$PROJECT_DIR$/sub_mod/exp_objects.json" />
         <option value="$PROJECT_DIR$/sub_mod/Experience.html" />
         <option value="$PROJECT_DIR$/sub_mod/ContactForm.html" />
         <option value="$PROJECT_DIR$/sub_mod/Gallery.html" />
         <option value="$PROJECT_DIR$/sub_mod/Projects.html" />
-        <option value="$PROJECT_DIR$/css/core_style.css" />
         <option value="$PROJECT_DIR$/sub_mod/AboutMe.html" />
         <option value="$PROJECT_DIR$/js/exp_animation.js" />
+        <option value="$PROJECT_DIR$/sub_mod/exp_objects.json" />
+        <option value="$PROJECT_DIR$/sub_mod/Temp.html" />
+        <option value="$PROJECT_DIR$/js/side_bar.js" />
+        <option value="$PROJECT_DIR$/css/core_default.css" />
+        <option value="$PROJECT_DIR$/css/core_style.css" />
+        <option value="$PROJECT_DIR$/css/core_responsive.css" />
         <option value="$PROJECT_DIR$/js/core_script.js" />
+        <option value="$PROJECT_DIR$/css/side_bar.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -253,6 +300,68 @@
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Pug/Jade</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+          <State>
+            <id>YAML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Angular</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -280,17 +389,6 @@
             <path>
               <item name="MyWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Background" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyWeb" type="462c0819:PsiDirectoryNode" />
               <item name="sub_mod" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,7 +410,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -358,18 +456,18 @@
       <workItem from="1537068070413" duration="44725000" />
       <workItem from="1538245434263" duration="8720000" />
       <workItem from="1539457426112" duration="1736000" />
-      <workItem from="1539465990537" duration="178000" />
+      <workItem from="1539465990537" duration="16681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115702000" />
+    <option name="totallyTimeSpent" value="132205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12778783" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12778783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -414,7 +512,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Media/intro.svg" />
     <entry file="file://$PROJECT_DIR$/Media/12.JPG" />
     <entry file="file://$PROJECT_DIR$/Media/BACK.JPG" />
     <entry file="file://$PROJECT_DIR$/Media/bar.JPG" />
@@ -471,13 +568,6 @@
     <entry file="file://$PROJECT_DIR$/css/sec_about_test.css" />
     <entry file="file://$PROJECT_DIR$/js/about_test.js" />
     <entry file="file://$PROJECT_DIR$/sub_mod/About.html" />
-    <entry file="file://$PROJECT_DIR$/css/core_default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/sec_skills.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2535">
@@ -526,24 +616,10 @@
     <entry file="file://$PROJECT_DIR$/Resources/Background/JXX.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sec_myExp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/sec_contact_form.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/core_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -568,69 +644,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sec_about.css">
+    <entry file="file://$PROJECT_DIR$/sub_mod/Experience.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state relative-caret-position="570">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/core_script.js">
+    <entry file="file://$USER_HOME$/Downloads/sidebar/style3.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/AboutMe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sub_mod/pfo_projects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
+        <state relative-caret-position="844">
           <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/sidebar/style5.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2067">
+          <caret line="33" lean-forward="true" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/side_bar.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/exp_animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5145">
+        <state relative-caret-position="633">
           <caret line="343" selection-start-line="343" selection-end-line="343" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/Experience.html">
+    <entry file="file://$PROJECT_DIR$/css/sec_about.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/AboutMe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sub_mod/exp_objects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="1515">
+          <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+          <folding>
+            <element signature="e#349#404#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/core_responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3165">
-          <caret line="211" column="7" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="7" />
+        <state relative-caret-position="501">
+          <caret line="243" selection-start-line="243" selection-end-line="243" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/exp_objects.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/core_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sub_mod/Temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sec_myExp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/core_default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/core_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="225" column="24" selection-start-line="225" selection-start-column="24" selection-end-line="225" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/side_bar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -11,21 +11,14 @@
 
   <title>Jack's Website</title>
 
+  <!-- Internal CSS Start -->
+  <link rel="stylesheet" href="css/side_bar.css">
   <link rel="stylesheet" href="css/core_default.css">
   <link rel="stylesheet" href="css/core_style.css">
-  <link rel="stylesheet" href="css/core_animation.css">
   <link rel="stylesheet" href="css/core_responsive.css">
-  <link rel="stylesheet" href="css/sec_about.css">
-  <link rel="stylesheet" href="css/sec_contact_form.css">
-  <link rel="stylesheet" href="css/sec_intro.css">
-  <link rel="stylesheet" href="css/sec_projects.css">
-  <link rel="stylesheet" href="css/sec_resume.css">
-  <link rel="stylesheet" href="css/sec_skills.css">
-  <link rel="stylesheet" href="css/sec_myExp.css">
-  <link rel="stylesheet" href="css/tool_owl.css">
 
-  <!-- Reference End -->
   <link rel="icon" href="Resources/JXX.png">
+  <!-- [END] Internal CSS [END] -->
 
   <!-- External Lib Reference Start -->
   <!-- jQuery -->
@@ -38,139 +31,149 @@
   <link rel="stylesheet" href="Vendor/font-awesome/css/font-awesome.css">
   <!-- Owl -->
   <link rel="stylesheet" href="Vendor/OwlCarousel/owl.carousel.css">
-
+  <!-- [END] External Lib Reference [END] -->
 
 </head>
 
 <!-- --------------------- MAIN BODY ---------------------- -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+<body>
 
-  <!-- ==== #0 Navigation Bar === -->
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          MENU
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top">
-          <div id="Jac"></div>
-        </a>
+  <div class="wrapper">
+    <!-- sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3 >JIANXIANG XU</h3>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li >
-            <a class="page-scroll" href="#page-about">ABOUT</a>
-          </li>
-          <li >
-            <a class="page-scroll" href="#page-experience">EXPERIENCE</a>
-          </li>
-          <li >
-            <a class="page-scroll" href="#page-projects">PROJECTS</a>
-          </li>
-          <li >
-            <a class="page-scroll" href="#page-photography">PHOTOGRAPHY</a>
-          </li>
-          <li >
-            <a class="page-scroll" href="#page-contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- === /.Navigation === -->
-  <div id="try">
-    <!-- <img id="intro-bgc" src="Media/BACK.JPG"/> -->
-    <div id="intro-bgc"></div>
-  </div>
-  <!-- === #1 Intro Header === -->
-  <header class="intro">
-    <div class="intro-body">
-      <div class="container">
-        <div class="row" >
-          <div class="col-md-8 col-md-offset-2" >
-            <!--Intro Text -->
-            <div class="intro-header">
-              Hello! This is <span>Jack Xu</span>
-            </div>
-            <div class="intro-text">
+      <ul class="list-unstyled components">
+        <p>Dummy Heading</p>
 
-            </div>
-            <div class="intro-text-icons">
-              <a href="https://github.com/JXproject"  target="_blank"><i class="fa fa-github fa-fw"></i></a>
-              <a href="https://www.linkedin.com/in/jack-xu-jxinbox/"  target="_blank"><i class="fa fa-linkedin-square fa-fw"></i></a>
-              <a href="https://www.instagram.com/jack_b_happy/"  target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
-            </div>
-            <div class="intro-text">
-            </div>
+        <li>
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Home</a>
+          <ul class="collapse in list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#" class="side-bar-click active">Page 1</a>
+            </li>
+            <li>
+              <a href="#" class="side-bar-click">Page 2</a>
+            </li>
+            <li>
+              <a href="#" class="side-bar-click">Page 3</a>
+            </li>
+          </ul>
+        </li>
 
-            <!--lovely scrolling arrow-->
-            <a href="#page-about" class="btn btn-circle page-scroll circle-border">
-              <img id="DDA" src="Resources/Svgs/DoubleDownArrow.svg" />
-            </a>
+        <li>
+          <a href="#" class="side-bar-click">About</a>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#" class="side-bar-click">Page 1</a>
+            </li>
+            <li>
+              <a href="#" class="side-bar-click">Page 2</a>
+            </li>
+            <li>
+              <a href="#" class="side-bar-click">Page 3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="side-bar-click">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="#" class="side-bar-click">Contact</a>
+        </li>
+
+      </ul>
+
+      <!--<ul class="list-unstyled CTAs">-->
+        <!--<li>-->
+          <!--<a  class="download">Download source</a>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<a  class="article">Back to article</a>-->
+        <!--</li>-->
+      <!--</ul>-->
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content" data-spy="scroll" data-target=".sidebar" >
+      <!-- ==== #0 Navigation Bar === -->
+      <nav class="navbar-custom navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" >
+              MENU
+            </button>
+
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">-->
+              <!--<div id="Jac"></div>-->
+            <!--</a>-->
           </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse " aria-expanded="false">
+            <ul class="nav navbar-nav">
+              <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-about">ABOUT</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click active" href="#page-blog">BLOG</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-projects">PROJECT</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-photography">PHOTOGRAPHY</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
-      </div>
+        <!-- /.container -->
+      </nav>
+      <!-- === /.Navigation === -->
+
+
+
+      <!--<h2>Collapsible sidebar Using Bootstrap 4</h2>-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+
+      <!--<div class="line"></div>-->
+
+      <!--<h2>Lorem Ipsum Dolor</h2>-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+
+      <!--<div class="line"></div>-->
+
+      <!--<h2>Lorem Ipsum Dolor</h2>-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+
+      <!--<div class="line"></div>-->
+
+      <!--<h3>Lorem Ipsum Dolor</h3>-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
     </div>
-  </header>
-  <!-- === /.Intro Header === -->
-
-  <!-- === #2 Portfolio Section === -->
-  <section class="sec_page cls_about" id="page-about">
-    <div id="aboutMeSection"></div>
-  </section>
-  <!-- === /.Portfolio Section === -->
-
-  <!-- === #2 Portfolio Section === -->
-  <section class="sec_page cls_experience" id="page-experience">
-    <div id="expSection"></div>
-  </section>
-  <!-- === /.Portfolio Section === -->
-
-  <!-- === #2 Portfolio Section === -->
-  <section class="sec_page cls_project" id="page-projects">
-    <div id="projectSection"></div>
-  </section>
-  <!-- === /.Portfolio Section === -->
-
-  <!-- === #2 Portfolio Section === -->
-  <section class="sec_page cls_photography" id="page-photography">
-    <div id="photoSection"></div>
-  </section>
-  <!-- === /.Portfolio Section === -->
-
-  <!-- === #3 Contact Section === -->
-  <section class="sec_page cls_contact" id="page-contact">
-    <div id="contactSection"></div>
-  </section>
-  <!-- === /.Contact Section === -->
-
-  <!-- Portfolio Modal 1 -->
-  <section class="sec_page cls_modal" id="page-modal">
-    <div id="modalTemplate"></div>
-  </section>
-  <!-- Portfolio Modal 1 END-->
+  </div>
 
 
-  <!-- === #4 Footer === -->
-  <footer>
-    <div class="container text-center">
-      <div id="go-top">
-        <a href="#page-top" class="btn btn-circle page-scroll circle-border" >
-          <img id="DUA" src="Resources/Svgs/DoubleUpArrow.svg" />
-        </a>
-      </div>
-      <p>Thanks!     &blacklozenge;      Jack Xu     &blacklozenge;     2018</p>
-    </div>
-  </footer>
-  <!-- === /.Footer === -->
+
+
+
 
   <!-- === #THE-END | Scripts === -->
   <!-- External JavaScript -->
@@ -181,7 +184,7 @@
 
   <!-- Core JavaScript -->
   <script type="text/javascript" src="js/core_script.js"></script>
-  <script type="text/javascript" src="js/exp_animation.js"></script>
+  <!--<script type="text/javascript" src="js/exp_animation.js"></script>-->
 
   <!-- Google Analytics -->
   <script>

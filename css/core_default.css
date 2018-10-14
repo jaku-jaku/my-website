@@ -6,8 +6,8 @@ body {
   height: 100%;
   /*font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-family: 'Alegreya', serif;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 -webkit-text-size-adjust: 100%;
 }
@@ -24,7 +24,7 @@ h5,
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  color: black;
   font-family: 'Alegreya', serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -37,7 +37,6 @@ p {
 }
 a {
   font-family: 'Alegreya', serif;
-  color: #42DCA3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -45,7 +44,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  /*color: #1d9b6c;*/
 }
 
 .noselect {

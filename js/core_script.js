@@ -1,30 +1,40 @@
 /*----------------------------------------------------*/
 /* Html bridge
 ------------------------------------------------------ */
-$(function(){
-    $("#aboutMeSection").load("sub_mod/AboutMe.html");
+// $(function(){
+//     $("#aboutMeSection").load("sub_mod/AboutMe.html");
+// });
+//
+//
+// $(function(){
+//     $("#contactSection").load("sub_mod/ContactForm.html");
+// });
+//
+// $(function(){
+//     $("#expSection").load("sub_mod/Experience.html");
+// });
+//
+// $(function(){
+//     $("#projectSection").load("sub_mod/Projects.html");
+// });
+//
+// $(function(){
+//     $("#photoSection").load("sub_mod/Gallery.html");
+// });
+//
+// $(function(){
+//     $("#modalTemplate").load("sub_mod/Project_modal_template.html");
+// });
+
+/*----------------------------------------------------*/
+/* sidebar Collapse
+------------------------------------------------------ */
+$(document).on('click', '#sidebarCollapse', function () {
+    $('#sidebar').toggleClass('active');
+    $(this).toggleClass('active');
 });
 
 
-$(function(){
-    $("#contactSection").load("sub_mod/ContactForm.html");
-});
-
-$(function(){
-    $("#expSection").load("sub_mod/Experience.html");
-});
-
-$(function(){
-    $("#projectSection").load("sub_mod/Projects.html");
-});
-
-$(function(){
-    $("#photoSection").load("sub_mod/Gallery.html");
-});
-
-$(function(){
-    $("#modalTemplate").load("sub_mod/Project_modal_template.html");
-});
 
 
 /*----------------------------------------------------*/
@@ -84,6 +94,7 @@ function gen_pfo_cards(_G_j_pfo_projs_filtered){
     $('#pfo-bundle').html(pfo_elem).slideDown(400).css({top: -20, opacity: 0}).
     animate({top: 0, opacity: 1}, 400);
 }
+
 /*----------------------------------------------------*/
 /* AUTO portfolio modal real-time gen
 ------------------------------------------------------ */
@@ -176,41 +187,58 @@ $(document).on('click', '.nextp', function () {
     gen_pfo_modal(G_cur_pfo_id_name, +1);
 });
 
+
 /*----------------------------------------------------*/
-/* Navbar Smooth Scroll
+/* Navbar Smooth Scroll TODO: Fix!!
 ------------------------------------------------------ */
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+//  jQuery for page scrolling feature - requires jQuery Easing plugin
+// $(function() {
+//     $('a.page-scroll').bind('click', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: $($anchor.attr('href')).offset().top
+//         }, 1500, 'easeInOutExpo');
+//         event.preventDefault();
+//     });
+// });
 
 
 /*----------------------------------------------------*/
 /* Responsive Menu Navbar
 ------------------------------------------------------ */
-// jQuery to collapse the navbar on scroll
-function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-}
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+// jQuery to collapse the navbar on scroll Todo
+// function collapseNavbar() {
+//     if ($(".navbar").offset().top > 50) {
+//         $(".navbar-fixed-top").addClass("top-nav-collapse");
+//     } else {
+//         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+//     }
+// }
+// $(window).scroll(collapseNavbar);
+// $(document).ready(collapseNavbar);
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    if ($(this).attr('class') !== 'dropdown-toggle active' && $(this).attr('class') !== 'dropdown-toggle') {
-        $('.navbar-toggle:visible').click();
+// $('.navbar-collapse ul li a').click(function() {
+//     if ($(this).attr('class') !== 'dropdown-toggle active' && $(this).attr('class') !== 'dropdown-toggle') {
+//         $('.navbar-toggle:visible').click();
+//     }
+// });
+$(document).on('click', '.nav-bar-click', function (e) {
+    var $this = $(this);
+    if(!$this.hasClass('active'))
+    {
+        $(".nav-bar-click.active").removeClass("active");
+        $this.addClass('active');
     }
 });
 
+$(document).on('click', '.side-bar-click', function (e) {
+    var $this = $(this);
+    if(!$this.hasClass('active'))
+    {
+        $(".side-bar-click.active").removeClass("active");
+        $this.addClass('active');
+    }
+});
 /*----------------------------------------------------*/
 /* parallax
 ------------------------------------------------------ */
