@@ -16,7 +16,10 @@
   <link rel="stylesheet" href="css/core_default.css">
   <link rel="stylesheet" href="css/core_style.css">
   <link rel="stylesheet" href="css/core_responsive.css">
-
+  <link rel="stylesheet" href="css/side_bar_about.css">
+  <link rel="stylesheet" href="css/sec_myExp.css">
+  <link rel="stylesheet" href="css/sec_projects.css">
+  <link rel="stylesheet" href="css/tool_owl.css">
   <link rel="icon" href="Resources/JXX.png">
   <!-- [END] Internal CSS [END] -->
 
@@ -36,7 +39,7 @@
 </head>
 
 <!-- --------------------- MAIN BODY ---------------------- -->
-<body>
+<body id="page-top">
 
   <div class="wrapper">
     <!-- sidebar Holder -->
@@ -89,20 +92,20 @@
 
       </ul>
 
-      <!--<ul class="list-unstyled CTAs">-->
-        <!--<li>-->
-          <!--<a  class="download">Download source</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a  class="article">Back to article</a>-->
-        <!--</li>-->
-      <!--</ul>-->
+      <ul class="list-unstyled custom-btns">
+        <li>
+          <a href="#page-contact" class="page-scroll"><i class="fa fa-paper-plane"></i> <span>Contact Me</span></a>
+        </li>
+        <li>
+          <a href="Resources/Jack(JIanxiang)Xu_Resume_V3.2.19.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- Page Content Holder -->
     <div id="content" data-spy="scroll" data-target=".sidebar" >
       <!-- ==== #0 Navigation Bar === -->
-      <nav class="navbar-custom navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+      <nav class="navbar-custom navbar-expand-lg navbar-light bg-light" role="navigation">
         <div class="container-fluid">
 
           <div class="navbar-header">
@@ -115,9 +118,7 @@
               <span></span>
               <span></span>
             </button>
-            <!--<a class="navbar-brand page-scroll" href="#page-top">-->
-              <!--<div id="Jac"></div>-->
-            <!--</a>-->
+
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -148,26 +149,29 @@
       <!-- === /.Navigation === -->
 
 
+      <!-- === INSERT MAIN CONTENTS HERE === -->
+      <!--TODO: In progress-->
+      <div id="view-area">
+        <!-- === #2 Portfolio Section === -->
+        <section class="sec_page cls_experience nice-scroll-wrapper" id="page-experience">
+          <!--<div id="expSection"></div>-->
+          <div id="projectSection"></div>
+        </section>
+        <!-- === /.Portfolio Section === -->
 
-      <!--<h2>Collapsible sidebar Using Bootstrap 4</h2>-->
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+        <!-- Portfolio Modal Template -->
+        <section class="sec_page cls_modal" id="page-modal">
+          <div id="modalTemplate"></div>
+        </section>
+        <!-- Portfolio Modal Template END-->
 
-      <!--<div class="line"></div>-->
 
-      <!--<h2>Lorem Ipsum Dolor</h2>-->
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+      </div>
+      <!-- === [END]INSERT MAIN CONTENTS HERE === -->
 
-      <!--<div class="line"></div>-->
-
-      <!--<h2>Lorem Ipsum Dolor</h2>-->
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-
-      <!--<div class="line"></div>-->
-
-      <!--<h3>Lorem Ipsum Dolor</h3>-->
-      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
     </div>
+    <!-- [END]Page Content Holder -->
+
   </div>
 
 
@@ -178,7 +182,7 @@
   <!-- === #THE-END | Scripts === -->
   <!-- External JavaScript -->
   <script src="Vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-  <script src="Vendor/jQuery/jquery.nicescroll.min.js"></script>
+  <!--<script src="Vendor/jQuery/jquery.nicescroll.min.js"></script>-->
   <script src="Vendor/jQuery/jquery-easing.min.js"></script>
   <script src="Vendor/OwlCarousel/owl.carousel.min.js"></script>
 

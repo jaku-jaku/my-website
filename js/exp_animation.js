@@ -347,9 +347,10 @@ function Callback_Calculate() {
 function Callback_Render() {
     if(G_WH != null)
     {
+        //TODO: add rendering rules
         // Render/update only if the page is scrolling closer towards experience content
-        if(($('#page-about').offset().top <($(window).scrollTop()))
-            && ($('#page-projects').offset().top >($(window).scrollTop())))
+        // if(($('#page-about').offset().top <($(window).scrollTop()))
+        //     && ($('#page-projects').offset().top >($(window).scrollTop())))
         {
             G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
             for (var ni= 0; ni< G_nodeList.length; ni++)

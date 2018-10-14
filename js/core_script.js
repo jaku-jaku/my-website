@@ -9,22 +9,22 @@
 // $(function(){
 //     $("#contactSection").load("sub_mod/ContactForm.html");
 // });
-//
-// $(function(){
-//     $("#expSection").load("sub_mod/Experience.html");
-// });
-//
-// $(function(){
-//     $("#projectSection").load("sub_mod/Projects.html");
-// });
+
+$(function(){
+    $("#expSection").load("sub_mod/Experience.html");
+});
+
+$(function(){
+    $("#projectSection").load("sub_mod/Projects.html");
+});
 //
 // $(function(){
 //     $("#photoSection").load("sub_mod/Gallery.html");
 // });
 //
-// $(function(){
-//     $("#modalTemplate").load("sub_mod/Project_modal_template.html");
-// });
+$(function(){
+    $("#modalTemplate").load("sub_mod/Project_modal_template.html");
+});
 
 /*----------------------------------------------------*/
 /* sidebar Collapse
@@ -251,12 +251,23 @@ function parallax() {
 /* Initializing jQuery Nice Scroll
 ------------------------------------------------------ */
 
-$("body").niceScroll({
-    bouncescroll:"",
-    cursorcolor:"#11abb0", // Set cursor color
-    cursorwidth: "8", // Sety cursor width
-    cursorborder: "" // Set cursor border color, default left none
-});
+// $("body").niceScroll({
+//     bouncescroll:"",
+//     cursorcolor:"#11abb0", // Set cursor color
+//     cursorwidth: "8", // Sety cursor width
+//     cursorborder: "" // Set cursor border color, default left none
+// });
+
+//TODO: Nice Scroll is so laggy !! Disabled for now
+// $("#view-area").niceScroll("#view-area .nice-scroll-wrapper",{
+//     cursorcolor:"black",
+//     boxzoom:true,
+//     bouncescroll: false,
+//     mousescrollstep: 15,
+//     cursorwidth: "8" // Sety cursor width
+// });
+
+
 
 /*----------------------------------------------------*/
 /* pfo filter selection
@@ -293,8 +304,8 @@ document.addEventListener('scroll', function (event) {
     // {
     $( ".sec_page" ).each(function(index) {
         elem = $(this);
-        if((scroll_pos - elem.offset().top) > - view_height/2 && (scroll_pos - elem.offset().top) < view_height/2)
-            console.log(index+ " - [" + elem.offset().top +","+ scroll_pos +" ]");
+        // if((scroll_pos - elem.offset().top) > - view_height/2 && (scroll_pos - elem.offset().top) < view_height/2)
+            // console.log(index+ " - [" + elem.offset().top +","+ scroll_pos +" ]");
     });
     // }
 }, true /*Capture event*/);

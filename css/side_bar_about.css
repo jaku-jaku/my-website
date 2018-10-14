@@ -92,21 +92,6 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
-.buttoncus{
-    display: inline-block;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    color: white;
-    font-size:20px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.buttoncus:hover{
-    color: white;
-    font-size:20px;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 @keyframes slowspin{
     0%{
