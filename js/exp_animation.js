@@ -11,26 +11,17 @@ $.getJSON("sub_mod/exp_objects.json",
 // - when resize => recompute the dots
 window.addEventListener('resize', function ()
 {
-    if ($(window).width() < 768) {
-        // console.log('Less than 960');
-        document.getElementById('exp-img').src='Resources/myExp_portrait.png';
-        G_portrait_mode = true;
+    if(reloadBackground())
+    {
+        updateWH();
     }
-    else {
-        // console.log('More than 960');
-        document.getElementById('exp-img').src='Resources/myExp.png';
-        G_portrait_mode = false;
-    }
-
-    updateWH();
 });
-// - compute at load
-$(window).on('load', startEngine);
 
 // ----- Objects
 var _DEFAULT_FCLR_ = '#80ced6';
 var _HVR_FCLR_ = '#2c7e87';
 var _FONT_FCLR_ = '#3987a6';
+var G_is_page_visible = false;
 var G_CVS = null;
 var G_BKG = null;
 var G_WH = null;
@@ -38,9 +29,19 @@ var G_ctx = null;
 var ENUM_NODE_MODE = {"idle":1, "hover":2, "click":3};
 var G_nodeList = [];
 var G_portrait_mode = false;
+function resetEngine(){
+    G_CVS = null;
+    G_BKG = null;
+    G_WH = null;
+    G_ctx = null;
+    G_is_page_visible = false;
+    G_portrait_mode = false;
+}
+
 function Node(_data) {
     this.IDn = null;
     this.data = _data;
+    this.tag = c_S(_data['title']);
     this.x = 0;
     this.y = 0;
     this.r = 0;
@@ -178,12 +179,12 @@ function Node(_data) {
             G_ctx.lineWidth = 1;
             G_ctx.stroke();
             G_ctx.fillStyle= "white";
-
+            G_ctx.globalAlpha = 0.6;
             //TODO: backgrounds!!
             G_ctx.fillRect(this.bkg_rect[0], this.bkg_rect[1], this.bkg_rect[2], this.bkg_rect[3]);
             // TODO : hover show shortened info
             // TODO : mode 3 show detailed info
-
+            G_ctx.globalAlpha = 1;
         }
         else{
             G_ctx.fillStyle= _DEFAULT_FCLR_;
@@ -238,7 +239,7 @@ function Node(_data) {
             var cur_str_i = 0;
             for (var i = 0; i< this.mx_lines + 1; i++)
             {
-                if(i==0)//print date
+                if(i===0)//print date
                 {
                     G_ctx.fillText(('(' + this.data['start_date']+' ~ ' +this.data['end_date'] + ')'), this.x+40*this.orient[0],this.y-(40 -i*this.text_height -25)*this.orient[1]);
                 }
@@ -257,12 +258,16 @@ function Node(_data) {
         if((Date.now() - this.startTIme)%60)
         {
             this.tick +=1;
-            this.tick %= 1000000000; //Reset per these amount of tiks
+            this.tick %= 1000000000; //Reset per these amount of ticks
         }
-
     };
 
     this.isOverlap = function (_mX, _mY) {
+        ////mouse debug
+        // G_ctx.beginPath();
+        // G_ctx.fillStyle = "#FF0000";
+        // G_ctx.arc(_mX,_mY, 20, 0, 2*Math.PI, true);
+        // G_ctx.fill();
         //Assumption: BND included
         if (this.x >= (_mX-this.r) && this.x <= (_mX+this.r) && this.y >= (_mY-this.r) && this.y <= (_mY+this.r))
         {
@@ -271,29 +276,48 @@ function Node(_data) {
         return false;
     };
     this.switchMODE = function (_inRange, _clicked) {
-        if((!_clicked && this.MODE===ENUM_NODE_MODE.click) || (_inRange && _clicked && this.MODE !== ENUM_NODE_MODE.click))
+        if((!_clicked && this.MODE===ENUM_NODE_MODE.click) || (_inRange && _clicked && this.MODE !== ENUM_NODE_MODE.click)) {
             this.MODE = ENUM_NODE_MODE.click;
+            if(G_sidebar_selected_tags.about !== this.tag)
+            {
+                G_sidebar_selected_tags.about = this.tag;
+                if(G_target === "#page-about")
+                {
+                    G_sidebar_selected_tags.current = this.tag;
+                    updateItemTarget();
+                }
+            }
+        }
         else if(_inRange)
             this.MODE = ENUM_NODE_MODE.hover;
         else
             this.MODE = ENUM_NODE_MODE.idle;
     };
+    this.triggerMODE = function (sidebar_selection){
+        if(this.tag === sidebar_selection)
+        {
+            this.MODE = ENUM_NODE_MODE.click;
+        }else{
+            this.MODE = ENUM_NODE_MODE.idle;
+        }
+
+    };
 }
 
-// ----- Core Animation Code
-function startEngine() {
-    if ($(window).width() < 768) {
-        document.getElementById('exp-img').src='Resources/myExp_portrait.png';
-        G_portrait_mode = true;
-    }
+function initEngine() {
     //config
     G_CVS = document.getElementById('exp-canvas');
     G_BKG = document.getElementById('exp-img');
+    if(!G_CVS || !G_BKG)
+    {
+        resetEngine();
+        // console.error("[Experience] unable to run animations!");
+        return;
+    }
     G_ctx = G_CVS.getContext('2d');
     updateWH();
 
     if (G_CVS.getContext) {
-        var FrameTimer = setInterval(function(){Callback_Calculate(); Callback_Render();},10);
         G_ctx.canvas.addEventListener("mousemove",function(event){
             var rect = G_ctx.canvas.getBoundingClientRect();
             mouseX=event.clientX-rect.left;
@@ -310,9 +334,32 @@ function startEngine() {
         })
     }
 }
+
+function isPageVisible(){
+    return G_target === "#page-about";
+}
+
+function reloadBackground(){
+    var obtain_resources = document.getElementById('exp-img');
+    if(obtain_resources != null) {
+        if ($(window).width() < 768) {
+            // console.log('Less than 960');
+            obtain_resources.src='Resources/myExp_portrait.png';
+            G_portrait_mode = true;
+        }
+        else {
+            // console.log('More than 960');
+            obtain_resources.src='Resources/myExp.png';
+            G_portrait_mode = false;
+        }
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function updateWH() {
-    G_WH = null;
-    if(G_CVS != null && G_BKG != null)
+    if(G_is_page_visible)
     {
         //make same resolution as screen
         G_WH = [G_BKG.scrollWidth, G_BKG.scrollHeight];
@@ -321,6 +368,7 @@ function updateWH() {
         G_CVS.scrollWidth = G_WH[0];
         G_CVS.scrollHeight = G_WH[1];
         G_CVS.style.marginTop = -G_WH[1].toString() +'px';
+        // console.log(G_CVS.width, G_CVS.height, G_CVS.style.marginTop);
 
         for (var ni= 0; ni< G_nodeList.length; ni++)
         {
@@ -329,7 +377,8 @@ function updateWH() {
         // console.log(G_WH);
     }else
     {
-        console.error("No cvs or bkg loaded!");
+        G_WH = null;
+        // console.error("No cvs or bkg loaded!");
     }
 }
 
@@ -340,8 +389,54 @@ function Callback_mouse(_mouseX, _mouseY, _clicked) {
     }
 }
 
+var G_tick  = 0;
+var G_section_decription_txt_index = 0;
 function Callback_Calculate() {
+    if(!G_is_page_visible)
+    {
+        // console.log("checking");
+        G_is_page_visible = isPageVisible();
+        if(G_is_page_visible)
+        {
+            // console.log("initing engine");
+            initEngine();//Otherwise, no need for initializing engine
+            reloadBackground();
+            updateWH();
+        }
+    }else{
+        if(!isPageVisible()){
+            resetEngine();
+            // console.warn("Reset engine");
+        }else{
+            //description text update
+            if(G_tick%380===0)
+            {
+                var divs = $('p[id^="content-"]').hide();
+                divs.eq(G_section_decription_txt_index).fadeIn(1900).delay(1000).fadeOut(1000);
+                G_section_decription_txt_index = ++G_section_decription_txt_index % divs.length;
+            }
+            G_tick ++;
 
+            //side-bar highlight
+            var cur_sidebar_state = ($('#sidebar').css("margin-left")==='0px');
+            if( G_context_status.side_bar_visible !== cur_sidebar_state)
+            {
+                reloadBackground();
+                setTimeout(function() {
+                    G_context_status.side_bar_visible = cur_sidebar_state;
+                },500);//give a 1s delay
+                updateWH();
+            }
+
+            if(G_context_status.side_bar_visible)
+            {
+                for (var ni= 0; ni< G_nodeList.length; ni++)
+                {
+                    G_nodeList[ni].triggerMODE(G_sidebar_selected_tags.about);
+                }
+            }
+        }
+    }
 }
 
 function Callback_Render() {
@@ -351,6 +446,7 @@ function Callback_Render() {
         // Render/update only if the page is scrolling closer towards experience content
         // if(($('#page-about').offset().top <($(window).scrollTop()))
         //     && ($('#page-projects').offset().top >($(window).scrollTop())))
+        if(G_is_page_visible)
         {
             G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
             for (var ni= 0; ni< G_nodeList.length; ni++)
@@ -358,9 +454,6 @@ function Callback_Render() {
                 G_nodeList[ni].Draw();
             }
         }
-    }else
-    {
-        console.error("Null WH");
     }
 }
 

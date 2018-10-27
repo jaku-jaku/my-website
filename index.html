@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="css/sec_myExp.css">
   <link rel="stylesheet" href="css/sec_projects.css">
   <link rel="stylesheet" href="css/tool_owl.css">
-  <link rel="icon" href="Resources/JXX.png">
+  <link rel="stylesheet" href="css/sec_contact_form.css">
+  <link rel="icon" href="Resources/Background/JXX.png">
   <!-- [END] Internal CSS [END] -->
 
   <!-- External Lib Reference Start -->
@@ -48,48 +49,8 @@
         <h3 >JIANXIANG XU</h3>
       </div>
 
-      <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-
-        <li>
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Home</a>
-          <ul class="collapse in list-unstyled" id="homeSubmenu">
-            <li>
-              <a href="#" class="side-bar-click active">Page 1</a>
-            </li>
-            <li>
-              <a href="#" class="side-bar-click">Page 2</a>
-            </li>
-            <li>
-              <a href="#" class="side-bar-click">Page 3</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#" class="side-bar-click">About</a>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-            <li>
-              <a href="#" class="side-bar-click">Page 1</a>
-            </li>
-            <li>
-              <a href="#" class="side-bar-click">Page 2</a>
-            </li>
-            <li>
-              <a href="#" class="side-bar-click">Page 3</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#" class="side-bar-click">Portfolio</a>
-        </li>
-
-        <li>
-          <a href="#" class="side-bar-click">Contact</a>
-        </li>
-
+      <ul class="list-unstyled components" id="sidebar-dynamic-selections">
+        <!--<AUTOMATED SIDE BAR>-->
       </ul>
 
       <ul class="list-unstyled custom-btns">
@@ -122,14 +83,14 @@
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-right navbar-main-collapse " aria-expanded="false">
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse " aria-expanded="false" id="top-navbar-selection">
             <ul class="nav navbar-nav">
               <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
               <li >
-                <a class="page-scroll nav-bar-click" href="#page-about">ABOUT</a>
+                <a class="page-scroll nav-bar-click active" href="#page-about">ABOUT</a>
               </li>
               <li >
-                <a class="page-scroll nav-bar-click active" href="#page-blog">BLOG</a>
+                <a class="page-scroll nav-bar-click" href="#page-blog">BLOG</a>
               </li>
               <li >
                 <a class="page-scroll nav-bar-click" href="#page-projects">PROJECT</a>
@@ -151,13 +112,15 @@
 
       <!-- === INSERT MAIN CONTENTS HERE === -->
       <!--TODO: In progress-->
-      <div id="view-area">
-        <!-- === #2 Portfolio Section === -->
-        <section class="sec_page cls_experience nice-scroll-wrapper" id="page-experience">
-          <!--<div id="expSection"></div>-->
-          <div id="projectSection"></div>
+      <div id="view-area" class="always_disp">
+
+        <!-- === Section === -->
+        <section class="sec_page nice-scroll-wrapper">
+          <div class="content-container" id="display-section" content_tag="">
+              <!-- JS will insert magical things here -->
+          </div>
         </section>
-        <!-- === /.Portfolio Section === -->
+        <!-- === Section === -->
 
         <!-- Portfolio Modal Template -->
         <section class="sec_page cls_modal" id="page-modal">
@@ -187,9 +150,11 @@
   <script src="Vendor/OwlCarousel/owl.carousel.min.js"></script>
 
   <!-- Core JavaScript -->
+  <script type="text/javascript" src="js/helper.js"></script>
   <script type="text/javascript" src="js/core_script.js"></script>
-  <!--<script type="text/javascript" src="js/exp_animation.js"></script>-->
-
+  <script type="text/javascript" src="js/exp_animation.js"></script>
+  <script type="text/javascript" src="js/pfo_lib.js"></script>
+  <script type="text/javascript" src="js/sidebar_script.js"></script>
   <!-- Google Analytics -->
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

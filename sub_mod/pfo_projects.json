@@ -30,7 +30,7 @@
     "img_cover": "JADOco.jpg",
     "title": "<span> <strong>TRON DAY</strong></span>",
     "description": "<p><b>Tron Day</b> is an exciting inner problem solving competition, first time introduce by Mechanical and Mecatronic Engineering Department.</p>",
-    "tags": ["Hackathon", "2016", "Robotics"],
+    "tags": ["Featured_Projects", "2016", "Robotics"],
     "more_imgs": ["JADOco.jpg", "JADO00.jpeg"],
     "more_imgs_title": ["title1", "title2"],
     "position": "Designer",

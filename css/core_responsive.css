@@ -82,10 +82,16 @@ TOC :
   #content {
     min-width: 700px;
   }
+
 }
 
-/*todo: defined based on length of menu bar*/
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1200px){
+  #view-area{
+    width: calc(100vw - 40px);
+  }
+/*}*/
+/*!*todo: defined based on length of menu bar*!*/
+/*@media screen and (max-width: 940px) {*/
   /*Hide side nav sidebar*/
   #sidebar {
     margin-left: -250px;
@@ -114,7 +120,6 @@ TOC :
   #sidebarCollapse.active span:last-of-type {
     transform: rotate(-45deg) translate(1px, -1px);
   }
-
 }
 
 /*@media (min-width: 768px) {*/

@@ -106,8 +106,9 @@
     font-size: 13px;
     display: inline-block;
     background-color: #4d4d4d;
-
     color: white;
+    -webkit-transition: width 1.3s; /* Safari */
+    transition: width 1.3s;
 }
 .btn-sem:hover{
     background-color: #373737;
