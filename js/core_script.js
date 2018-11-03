@@ -53,6 +53,7 @@ $(document).on('click', '#view-area', function (e) {
     var $this = $(this);
     var $top_nav = $("#top-navbar-selection");
     var $side_nav = $("#sidebar");
+    var $sidebarCollapseBtn = $("#sidebarCollapse");
     // Hide nav bar
     if($top_nav.attr('aria-expanded'))
     {
@@ -66,13 +67,15 @@ $(document).on('click', '#view-area', function (e) {
             if(!$side_nav.is(".active"))
             {
                 $side_nav.addClass('active');
-                $("#sidebarCollapse").addClass('active');
+                $sidebarCollapseBtn.addClass('active');
+                console.log("remove deactive");
             }
         }else{
             if($side_nav.is(".active"))
             {
                 $side_nav.removeClass('active');
-                $("#sidebarCollapse").removeClass('active');
+                $sidebarCollapseBtn.removeClass('active');
+                console.log("remove active");
             }
         }
     }

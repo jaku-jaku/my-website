@@ -335,10 +335,6 @@ function initEngine() {
     }
 }
 
-function isPageVisible(){
-    return G_target === "#page-about";
-}
-
 function reloadBackground(){
     var obtain_resources = document.getElementById('exp-img');
     if(obtain_resources != null) {
@@ -394,7 +390,7 @@ var G_section_decription_txt_index = 0;
 function Callback_Calculate() {
     if(!G_is_page_visible)
     {
-        G_is_page_visible = isPageVisible();
+        G_is_page_visible = (G_target === "#page-about");
         if(G_is_page_visible)
         {
             // console.log("initing engine");
@@ -403,7 +399,7 @@ function Callback_Calculate() {
             updateWH();
         }
     }else{
-        if(!isPageVisible()){
+        if(!(G_target === "#page-about")){
             resetEngine();
             // console.warn("Reset engine");
         }else{
@@ -445,7 +441,7 @@ function Callback_Render() {
         // Render/update only if the page is scrolling closer towards experience content
         // if(($('#page-about').offset().top <($(window).scrollTop()))
         //     && ($('#page-projects').offset().top >($(window).scrollTop())))
-        if(G_is_page_visible)
+        if(G_target === "#page-about")
         {
             G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
             for (var ni= 0; ni< G_nodeList.length; ni++)
