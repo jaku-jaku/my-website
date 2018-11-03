@@ -1,0 +1,53 @@
+[
+  {
+    "id_name": "CompRobCon",
+    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
+    "img_cover": "Comp_RobCon01.JPG",
+    "title": " Robotic System Design",
+    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
+    "tags": ["Course Notes", "2016", "Robotics"],
+    "md_file_name": "blog.md"
+  },
+
+  {
+    "id_name": "C004",
+    "img_directory": "Resources/Projects/Course_1A_JADO/",
+    "img_cover": "JADOco.jpg",
+    "title": "<span> <strong>TRON DAY</strong></span>",
+    "description": "<p><b>Tron Day</b> is an exciting inner problem solving competition, first time introduce by Mechanical and Mecatronic Engineering Department.</p>",
+    "tags": ["Course Notes", "2016", "Robotics"],
+    "md_file_name": "blog.md"
+  },
+
+
+  {
+    "id_name": "TEMPLATE",
+    "img_directory": "Resources/Testing/",
+    "img_cover": "3.jpg",
+    "title": "<span> <strong>TEMPLATE1</strong></span>2018",
+    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
+    "tags": ["Course Notes", "2018", "Daily Blogs"],
+    "md_file_name": "blog.md"
+  },
+
+  {
+    "id_name": "TEMPLATE2",
+    "img_directory": "Resources/Testing/",
+    "img_cover": "4.jpg",
+    "title": "<span> <strong>TEMPLATE2</strong></span>2018",
+    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
+    "tags": ["Activities", "2018", "Daily Blogs"],
+    "md_file_name": "blog.md"
+  },
+
+  {
+    "id_name": "TEMPLATE3",
+    "img_directory": "Resources/Testing/",
+    "img_cover": "11.jpg",
+    "title": "<span> <strong>TEMPLATE3</strong></span>2018",
+    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
+    "tags": ["Activities", "2018", "Daily Blogs"],
+    "md_file_name": "blog.md"
+  }
+
+]

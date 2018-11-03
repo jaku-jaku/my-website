@@ -394,7 +394,6 @@ var G_section_decription_txt_index = 0;
 function Callback_Calculate() {
     if(!G_is_page_visible)
     {
-        // console.log("checking");
         G_is_page_visible = isPageVisible();
         if(G_is_page_visible)
         {
@@ -456,4 +455,5 @@ function Callback_Render() {
         }
     }
 }
+
 

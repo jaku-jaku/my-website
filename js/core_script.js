@@ -27,13 +27,17 @@ $(function(){
         G_target = curPageObj.attr("href");
         loadSideBarRemappedBy(G_target);
         updateItemTarget();
-    }, 10);
+    }, 200);
 
 });
 
 
 $(function(){
     $("#modalTemplate").load("sub_mod/Project_modal_template.html");
+});
+
+$(function(){
+    $("#modalTemplatePhoto").load("sub_mod/PhotoModal.html");
 });
 
 /*----------------------------------------------------*/

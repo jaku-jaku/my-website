@@ -35,13 +35,15 @@ $(document).on('click', '.side-bar-click', function (e) {
                 break;
             case "#page-blog":
                 G_sidebar_selected_tags.blog = G_sidebar_selected_tags.current;
+                // console.log(G_sidebar_selected_tags.blog);
                 break;
             case "#page-projects":
-                disp_pfo_by(tag_in_attr);
+                disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, tag_in_attr, '#pfo-bundle', 'pfo-class');
                 G_sidebar_selected_tags.proj = G_sidebar_selected_tags.current;
                 break;
             case "#page-photography":
                 G_sidebar_selected_tags.photo = G_sidebar_selected_tags.current;
+                disp_cards_by(G_j_photos, G_j_photos_filtered, tag_in_attr, '#photo-gallery', 'gallery-class');
                 break;
             case "#page-contact":
                 G_sidebar_selected_tags.contact = G_sidebar_selected_tags.current;
@@ -74,17 +76,45 @@ $(document).on('click', '#sidebarCollapse', function () {
 
 function updateItemTarget(){
     $(".side-bar-click").each(function(){
-        $this = $(this);
-        if($this.attr("href").includes(G_sidebar_selected_tags.current))
+        var $this = $(this);
+        var ul_parent = $this.closest('ul');
+        var $attr_href = $this.attr("href");
+        if(G_target === "#page-blog")//blog has to be exact
         {
-            $this.addClass("active");
-            var ul_parent = $this.closest('ul');
-            ul_parent.addClass("in");
+            var temp = $attr_href.substr($attr_href.lastIndexOf('/')+1,$attr_href.length);
+            if( temp === (G_sidebar_selected_tags.current))
+            {
+                $this.addClass("active");
+                ul_parent.addClass("in");
 
-        }else if($this.hasClass("active")){
-            $this.removeClass("active");
+            }else if($this.hasClass("active")){
+                $this.removeClass("active");
+            }
+        }else{
+            if($attr_href.includes(G_sidebar_selected_tags.current))
+            {
+                $this.addClass("active");
+                ul_parent.addClass("in");
+
+            }else if($this.hasClass("active")){
+                $this.removeClass("active");
+            }
         }
     });
+    if(G_target === "#page-blog"){
+        if(G_sidebar_selected_tags.blog === "All_Blogs")
+        {
+            $("#display-section").load("sub_mod/Blog.html",
+                function(responseTxt, statusTxt, xhr){
+                    if(statusTxt === "success")
+                    {
+                        disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
+                    }
+                });
+        }else{
+            gen_blog(G_sidebar_selected_tags.blog);
+        }
+    }
 }
 
 /*----------------------------------------------------*/
@@ -100,6 +130,18 @@ function loadJsonFileSideBar() {
                 if(G_j_sidebar_Obj != null)
                 {
                     G_j_sidebar_Obj = sortResults(G_j_sidebar_Obj, "title", true);
+                }
+
+                var i = indexOfItemInJSON("title", "Blog", G_j_sidebar_Obj);
+                var child_list = G_j_sidebar_Obj[i].children;
+                for(i = 1; i < child_list.length; i++){
+                    var collector= [];
+                    for(var k =0; k<G_j_blogs.length;k++)
+                    {
+                        if(G_j_blogs[k].tags.indexOf(child_list[i].cat_name) > -1)
+                            collector.push({"cat_name":G_j_blogs[k].id_name});
+                    }
+                    child_list[i].children = collector;
                 }
             });
     }

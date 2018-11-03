@@ -19,17 +19,31 @@ function reloadPage($this, force)
                 disp_section.load("sub_mod/Experience.html");
                 break;
             case "#page-blog":
+                disp_section.load("sub_mod/Blog.html",
+                    function(responseTxt, statusTxt, xhr){
+                        if(statusTxt === "success")
+                        {
+                            disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
+                        }
+                    });
                 break;
             case "#page-projects":
                 disp_section.load("sub_mod/Projects.html",
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
-                            disp_pfo_by(G_sidebar_selected_tags.proj);
+                            disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, G_sidebar_selected_tags.proj, '#pfo-bundle', 'pfo-class');
                         }
                     });
                 break;
             case "#page-photography":
+                disp_section.load("sub_mod/Gallery.html",
+                    function(responseTxt, statusTxt, xhr){
+                        if(statusTxt === "success")
+                        {
+                            disp_cards_by(G_j_photos, G_j_photos_filtered, G_sidebar_selected_tags.photo, '#photo-gallery', 'gallery-class');
+                        }
+                    });
                 break;
             case "#page-contact":
                 disp_section.load("sub_mod/ContactForm.html");
@@ -61,70 +75,6 @@ $(function () {
             });
     }
 });
-
-/*----------------------------------------------------*/
-/* pfo filter selection
------------------------------------------------------- */
-// $(document).on('click', '.filter_tag', function () {
-//     var $this = $(this);
-//     if(!$this.hasClass('activeL')) {
-//         $(".activeL").removeClass("activeL");
-//         $this.addClass('activeL');
-//         tag = $this.attr("datalist");
-//         disp_pfo_by(tag);
-//     }
-// });
-
-function disp_pfo_by(tag_){
-    // console.log(tag_);
-    if(!G_j_pfo_projs)
-        return false;
-    if(!tag_.includes("All"))
-    {
-        G_j_pfo_projs_filtered = G_j_pfo_projs.filter(function (item,n){
-            return (item.tags.indexOf(tag_) > -1);
-        });
-    }else
-        G_j_pfo_projs_filtered = G_j_pfo_projs;
-    //regen cards
-    gen_pfo_cards(G_j_pfo_projs_filtered);
-    return true;
-}
-
-/*----------------------------------------------------*/
-/* AUTO portfolio card gen
------------------------------------------------------- */
-function gen_pfo_cards(_G_j_pfo_projs_filtered){
-    var pfo_elem;
-    pfo_elem = "";
-    var $pfo_bundle = $('#pfo-bundle');
-    $pfo_bundle.slideUp(300);
-    for (var i = 0; i < _G_j_pfo_projs_filtered.length; i++) {
-        pfo_elem += " <li class=\"pfo-item\">\n" +
-            "<div class=\"card col-lg-4 col-md-4 col-xs-6 col-sm-6\" id=\"" + _G_j_pfo_projs_filtered[i].id_name + "\">" +
-            "    <span class=\"card-pic\">\n" +
-            "      <div class = \"card-pic-crop\" >\n" +
-            "      <img src=\""+ _G_j_pfo_projs_filtered[i].img_directory + _G_j_pfo_projs_filtered[i].img_cover + "\"/>\n" +
-            "      </div> \n" +
-            "      <div class=\"card-description\">\n" +
-            "      <div class=\"card-des-title\">\n" +
-            _G_j_pfo_projs_filtered[i].title+
-            "      </div>\n" +
-            "      <div class=\"card-des-explain\">\n" +
-            _G_j_pfo_projs_filtered[i].description+
-            "      </div>\n" +
-            "      </div>\n" +
-            "    </span>\n" +
-            "</div>\n" +
-            "</li>";
-    }
-    $pfo_bundle.html(pfo_elem).slideDown(200).css({top: -20, opacity: 0}).
-    animate({top: 0, opacity: 1}, 200);
-}
-
-
-
-
 
 /*---------------------------------------------------------------*/
 /*******************************************************************
@@ -203,7 +153,7 @@ function gen_pfo_modal(_id_name, offset)
         }
     }
 }
-$(document).on('click', '.card', function () {
+$(document).on('click', '.pfo-class.card', function () {
     var id = this.id;
     gen_pfo_modal(id, 0);
 });
