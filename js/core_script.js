@@ -2,20 +2,20 @@
 /* Html bridge
 ------------------------------------------------------ */
 // $(function(){
-//     $("#aboutMeSection").load("sub_mod/AboutMe.html");
+//     $("#aboutMeSection").load("sub_mod/sec_about.html");
 // });
 //
 //
 // $(function(){
-//     $("#contactSection").load("sub_mod/ContactForm.html");
+//     $("#contactSection").load("sub_mod/sec_contact.html");
 // });
 //
 // $(function(){
-//     $("#expSection").load("sub_mod/Experience.html");
+//     $("#expSection").load("sub_mod/sec_experience.html");
 // });
 //
 // $(function(){
-//     $("#projectSection").load("sub_mod/Projects.html");
+//     $("#projectSection").load("sub_mod/sec_projects.html");
 // });
 // //
 //
@@ -33,17 +33,17 @@ $(function(){
 
 
 $(function(){
-    $("#modalTemplate").load("sub_mod/Project_modal_template.html");
+    $("#modalTemplate").load("sub_mod/modal_template_projects.html");
 });
 
 $(function(){
-    $("#modalTemplatePhoto").load("sub_mod/PhotoModal.html");
+    $("#modalTemplatePhoto").load("sub_mod/modal_template_photos.html");
 });
 
 /*----------------------------------------------------*/
 /* Menu Navbar
 ------------------------------------------------------ */
-// See pfo_lib.js
+// See sec_projects.js
 
 
 /*----------------------------------------------------*/

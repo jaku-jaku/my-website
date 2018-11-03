@@ -6,7 +6,7 @@ var G_j_blogs_filtered= null;
 //Load json and sort json and generate pfo cards
 $(function () {
     if (G_j_blogs == null) {
-        $.getJSON("sub_mod/blog_objects.json",
+        $.getJSON("sub_mod/obj_blogs.json",
             function (json) {
                 G_j_blogs = json;
                 if (G_j_blogs != null) {

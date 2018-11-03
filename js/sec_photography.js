@@ -6,7 +6,7 @@ var G_j_photos_filtered= null;
 //Load json and sort json and generate pfo cards
 $(function () {
     if (G_j_photos == null) {
-        $.getJSON("sub_mod/gallery_objects.json",
+        $.getJSON("sub_mod/obj_photos.json",
             function (json) {
                 G_j_photos = json;
                 if (G_j_photos != null) {

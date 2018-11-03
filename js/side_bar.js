@@ -104,7 +104,7 @@ function updateItemTarget(){
     if(G_target === "#page-blog"){
         if(G_sidebar_selected_tags.blog === "All_Blogs")
         {
-            $("#display-section").load("sub_mod/Blog.html",
+            $("#display-section").load("sub_mod/sec_blog.html",
                 function(responseTxt, statusTxt, xhr){
                     if(statusTxt === "success")
                     {
@@ -124,7 +124,7 @@ function updateItemTarget(){
 function loadJsonFileSideBar() {
     if(G_j_sidebar_Obj==null)
     {
-        $.getJSON("sub_mod/side_bar_selections.json",
+        $.getJSON("sub_mod/obj_side_bar_selections.json",
             function (json) {
                 G_j_sidebar_Obj = json;
                 if(G_j_sidebar_Obj != null)

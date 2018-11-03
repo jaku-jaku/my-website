@@ -1,6 +1,6 @@
 
 // ----- RUN Scrips @ Statup & resizing
-$.getJSON("sub_mod/exp_objects.json",
+$.getJSON("sub_mod/obj_experiences.json",
     function (json) {
         for (var i = 0; i < json.length; i++)
         {
@@ -344,12 +344,12 @@ function reloadBackground(){
     if(obtain_resources != null) {
         if ($(window).width() < 768) {
             // console.log('Less than 960');
-            obtain_resources.src='Resources/myExp_portrait.png';
+            obtain_resources.src='Resources/Core/my_experience_portrait.png';
             G_portrait_mode = true;
         }
         else {
             // console.log('More than 960');
-            obtain_resources.src='Resources/myExp.png';
+            obtain_resources.src='Resources/Core/my_experience.png';
             G_portrait_mode = false;
         }
         return true;
@@ -450,6 +450,7 @@ function Callback_Render() {
             G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
             for (var ni= 0; ni< G_nodeList.length; ni++)
             {
+                // console.log("draw");
                 G_nodeList[ni].Draw();
             }
         }

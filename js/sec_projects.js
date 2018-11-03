@@ -16,10 +16,10 @@ function reloadPage($this, force)
         disp_section.empty();
         switch ($this.attr('href')) {
             case "#page-about":
-                disp_section.load("sub_mod/Experience.html");
+                disp_section.load("sub_mod/sec_experience.html");
                 break;
             case "#page-blog":
-                disp_section.load("sub_mod/Blog.html",
+                disp_section.load("sub_mod/sec_blog.html",
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
@@ -28,7 +28,7 @@ function reloadPage($this, force)
                     });
                 break;
             case "#page-projects":
-                disp_section.load("sub_mod/Projects.html",
+                disp_section.load("sub_mod/sec_projects.html",
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
@@ -37,7 +37,7 @@ function reloadPage($this, force)
                     });
                 break;
             case "#page-photography":
-                disp_section.load("sub_mod/Gallery.html",
+                disp_section.load("sub_mod/sec_photography.html",
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
@@ -46,10 +46,10 @@ function reloadPage($this, force)
                     });
                 break;
             case "#page-contact":
-                disp_section.load("sub_mod/ContactForm.html");
+                disp_section.load("sub_mod/sec_contact.html");
                 break;
             default:
-                disp_section.load("sub_mod/UnderConstruction.html");
+                console.error("Oops, something is wrong.");
                 break;
         }
     }
@@ -64,7 +64,7 @@ var G_j_pfo_projs_filtered= null;
 $(function () {
     if(G_j_pfo_projs==null)
     {
-        $.getJSON("sub_mod/pfo_projects.json",
+        $.getJSON("sub_mod/obj_projects.json",
             function (json) {
                 G_j_pfo_projs = json;
                 if(G_j_pfo_projs != null)
