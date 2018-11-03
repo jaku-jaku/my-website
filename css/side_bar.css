@@ -1,0 +1,319 @@
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+
+
+/* ---------------------------------------------------
+    sidebar STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    /*overflow:scroll;*/
+    /*position: absolute;*/
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    /*align-items: stretch;*/
+    /*perspective: 1500px;*/
+}
+
+#sidebar {
+    position: relative;
+    overflow: auto;
+    height: 100vh;
+    z-index: 1;
+    min-width: 250px;
+    max-width: 250px;
+    background: whitesmoke;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: whitesmoke;
+}
+
+#sidebar ul.components {
+    color: black;
+    padding: 20px 0;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#sidebar a, a:hover, a:focus {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+#sidebar .active {
+    font-weight: bold;
+    background: white;
+}
+
+#sidebar ul p {
+    color: black;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover:not(.active) {
+    color: white;
+    background: black;
+}
+
+#sidebar ul li a[aria-expanded="true"] {
+    color: black;
+    background: lightgrey;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: whitesmoke;
+}
+
+/* ---------------------------------------------------
+    Arrow symbol
+----------------------------------------------------- */
+a[aria-expanded="true"]::after{
+    content: "\f0d8";
+    font-family: FontAwesome, serif;
+}
+
+a[aria-expanded="false"]::after{
+    content: "\f0d7";
+    font-family: FontAwesome, serif;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: whitesmoke;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -moz-transition:background .4s ease-in;
+    -o-transition:background .4s ease-in;
+    -webkit-transition:background .4s ease-in;
+}
+
+#sidebarCollapse:hover{
+    color: white;
+    background: black;
+}
+#sidebarCollapse:hover span{
+    color: white;
+    background: white;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: black;
+    transition: all 0.4s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+
+
+#sidebarCollapse span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+ul.custom-btns {
+    padding: 20px;
+}
+
+ul.custom-btns a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: white;
+}
+
+/* ==============================
+-  Nav bar Style
+============================== */
+.light {
+    font-weight: 400;
+}
+.navbar-custom {
+    z-index: 1;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.4);
+    text-transform: uppercase;
+    /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: 'Alegreya', serif;
+    /*background-color: white;*/
+}
+/*Icon Size*/
+#Jac{
+    display: block;
+    width: 110px;
+    height: 30px
+}
+/*navigate bar decoration*/
+.navbar-custom .navbar-toggle {
+    letter-spacing: 1.5px;
+    color: gray;
+    background-color: whitesmoke;
+    font-size: 12.5px;
+    -webkit-transition:  background-color 0.4s ease-in-out;
+    -moz-transition:  background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+    outline: none;
+}
+.navbar-custom .navbar-toggle:hover {
+    color: white;
+    background-color: black;
+    font-size: 12.5px;
+}
+#DEPRECATED.navbar-brand {
+    margin: 20px;
+    /*width: 110px;*/
+    width: 80%;
+    /*color:*/
+    /*background: url(../Resources/MyIcons/jac.png) no-repeat center center scroll;*/
+    background: url(../Resources/MyIcons/jachover2.png) no-repeat center center scroll;
+    background-size: 100%;
+    padding: 0;
+}
+#DEPRECATED.navbar-brand:hover {
+    background: url(../Resources/MyIcons/jachover2.png) no-repeat center center scroll;
+    background-size: 100%;
+}
+#DEPRECATED.navbar-brand:focus {
+    outline: none;
+}
+
+/*nav bar list*/
+.navbar-custom {
+    border-bottom: none;
+    letter-spacing: 1.5px;
+    /*background: transparent;*/
+    /*background: url(../Resources/bar.jpg) ;*/
+    background-size: 100%;
+    background-position: 0px -30px;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.navbar-custom a {
+    color: black;
+}
+.navbar-custom .nav li a {
+    background: whitesmoke;
+    -webkit-transition:  background-color 0.4s ease-in-out;
+    -moz-transition:  background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+.navbar-custom .nav li a:hover:not(.active){
+    color: white;
+    outline: none;
+    background: black;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active{
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.navbar-custom .nav-bar-click.active{
+    background-color: white;
+}
+
+a.disable{
+    pointer-events: none;
+    cursor: default;
+}
+a.disable span{
+    text-decoration: line-through;
+}
+
+/* ---------------------------------------------------
+    VIEW AREA STYLE
+----------------------------------------------------- */
+#view-area{
+    /*width: calc(100vw - 290px); !*Responsive*!*/
+    /*padding-top: 20px;*/
+    /*border: dotted red 1px;*/
+    position: relative;
+    height: calc(100vh - 100px);
+    overflow-x: hidden;
+    -webkit-transition:  width 0.4s ease-in-out;
+    -moz-transition:  width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+
+
+/*TODO: should I hide the scroll-bar, if so, I need to disable it for all browsers*/
+/*#view-area::-webkit-scrollbar { width: 0 !important }*/
+/*only work for chrome*/

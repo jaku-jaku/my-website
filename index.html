@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- --------------------- Head ---------------------- -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jack's Website</title>
+
+  <!-- Internal CSS Start -->
+  <!-- Note: sidebar.css has to be on top -->
+  <link rel="stylesheet" href="css/side_bar.css">
+  <link rel="stylesheet" href="css/core_default.css">
+  <link rel="stylesheet" href="css/core_style.css">
+  <link rel="stylesheet" href="css/sec_about.css">
+  <link rel="stylesheet" href="css/sec_projects.css">
+  <link rel="stylesheet" href="css/tool_owl.css">
+  <link rel="stylesheet" href="css/sec_contact_form.css">
+  <link rel="stylesheet" href="css/sec_photo_modal.css">
+  <link rel="icon" href="Resources/Logo/JXX.png">
+  <link rel="stylesheet" href="css/core_responsive.css">
+  <!-- [END] Internal CSS [END] -->
+
+  <!-- External Lib Reference Start -->
+  <!-- jQuery -->
+  <script src="Vendor/jQuery/jquery-3.3.1.js"></script>
+  <!-- bootstrap-->
+  <link rel="stylesheet" href="Vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <!--Font API-->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="Vendor/font-awesome/css/font-awesome.css">
+  <!-- Owl -->
+  <link rel="stylesheet" href="Vendor/OwlCarousel/owl.carousel.css">
+  <!-- [END] External Lib Reference [END] -->
+
+</head>
+
+<!-- --------------------- MAIN BODY ---------------------- -->
+<body id="page-top">
+
+  <div class="wrapper">
+    <!-- sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3 >JIANXIANG XU</h3>
+      </div>
+
+      <ul class="list-unstyled components" id="sidebar-dynamic-selections">
+        <!--<AUTOMATED SIDE BAR>-->
+      </ul>
+
+      <ul class="list-unstyled custom-btns">
+        <li>
+          <a href="#page-contact" class="page-scroll"><i class="fa fa-paper-plane"></i> <span>Contact Me</span></a>
+        </li>
+        <li>
+          <a href="Resources/Core/Jack(JIanxiang)Xu_Resume_V3.2.19.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+        </li>
+        <li>
+          <a href="https://github.com/JXproject" target="_blank"><i class="fa fa-github fa-fw"></i>Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jack-xu-jxinbox/" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jack_b_happy/" target="_blank"><i class="fa fa-instagram fa-fw"></i> Instagram</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content" data-spy="scroll" data-target=".sidebar" >
+      <!-- ==== #0 Navigation Bar === -->
+      <nav class="navbar-custom navbar-expand-lg navbar-light bg-light" role="navigation">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" >
+              MENU
+            </button>
+
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse " aria-expanded="false" id="top-navbar-selection">
+            <ul class="nav navbar-nav">
+              <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+              <li >
+                <a class="page-scroll nav-bar-click active" href="#page-about">ABOUT</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-blog">BLOG</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-projects">PROJECT</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-photography">PHOTOGRAPHY</a>
+              </li>
+              <li >
+                <a class="page-scroll nav-bar-click" href="#page-contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- === /.Navigation === -->
+
+
+      <!-- === INSERT MAIN CONTENTS HERE === -->
+      <!--TODO: In progress-->
+      <div id="view-area" class="always_disp">
+
+        <!-- === Section === -->
+        <section class="sec_page nice-scroll-wrapper">
+          <div class="content-container" id="display-section" content_tag="">
+              <!-- JS will insert magical things here -->
+          </div>
+        </section>
+        <!-- === Section === -->
+
+        <!-- Portfolio Modal Template -->
+        <section class="sec_page cls_modal" id="page-modal">
+          <div id="modalTemplate"></div>
+        </section>
+        <!-- Portfolio Modal Template END-->
+
+        <!-- Portfolio Modal Template -->
+        <section class="sec_page cls_modal" id="page-modal-photo">
+          <div id="modalTemplatePhoto"></div>
+        </section>
+        <!-- Portfolio Modal Template END-->
+
+      </div>
+      <!-- === [END]INSERT MAIN CONTENTS HERE === -->
+
+    </div>
+    <!-- [END]Page Content Holder -->
+
+  </div>
+
+
+
+
+
+
+  <!-- === #THE-END | Scripts === -->
+  <!-- External JavaScript -->
+  <script src="Vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <!--<script src="Vendor/jQuery/jquery.nicescroll.min.js"></script>-->
+  <script src="Vendor/jQuery/jquery-easing.min.js"></script>
+  <script src="Vendor/OwlCarousel/owl.carousel.min.js"></script>
+  <script src="Vendor/showndown/dist/showdown.min.js"></script>
+  <!-- Core JavaScript -->
+  <script type="text/javascript" src="js/core_helper.js"></script>
+  <script type="text/javascript" src="js/sec_blog.js"></script>
+  <script type="text/javascript" src="js/sec_photography.js"></script>
+  <script type="text/javascript" src="js/core_script.js"></script>
+  <script type="text/javascript" src="js/sec_about_animation.js"></script>
+  <script type="text/javascript" src="js/sec_projects.js"></script>
+  <script type="text/javascript" src="js/side_bar.js"></script>
+  <!-- Google Analytics -->
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86170334-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <!-- /.Google Analytics -->
+  <!-- === /.Scripts === -->
+</body>
+
+
+</html>

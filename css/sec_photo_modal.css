@@ -1,0 +1,30 @@
+#image-modal img{
+    width: 100%;
+}
+
+#image-modal .modal-content{
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-color: rgba(0,0,0,0) !important;
+    box-shadow: rgba(0,0,0,0) !important;
+
+}
+
+#image-modal.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+#image-modal.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+#image-modal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}

@@ -1,0 +1,73 @@
+body {
+  min-width:300px;
+  max_width: expression( document.body.clientWidth > 400 ? "400px" : "auto" ); /* sets max-width for IE */
+
+  width: 100%;
+  height: 100%;
+  /*font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Alegreya', serif;
+  color: black;
+  background-color: white;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+-webkit-text-size-adjust: 100%;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Alegreya', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Alegreya', serif;
+}
+a {
+  font-family: 'Alegreya', serif;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  /*color: #1d9b6c;*/
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  /*background: rgba(255, 255, 255, 0.2);*/
+}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  /*background: rgba(255, 255, 255, 0.2);*/
+}
+
+.content-section {
+  padding-top: 20px;
+}

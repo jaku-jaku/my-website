@@ -1,0 +1,34 @@
+#exp-background{
+    /*max-width: 1000px;*/
+    display: block;
+    margin: auto;
+}
+
+#exp-bkg-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#exp-canvas{
+    position: relative;
+    width:100%;
+    height:100%;
+    /*margin-top: -100%;*/
+}
+
+.section-description-txt{
+    max-width: 600px;
+    margin: auto;
+    /*display: block;*/
+    /*height: 40px;*/
+    border: #ed5655 1px dot-dash;
+}
+
+.one-line-txt{
+    height: 40px;
+}
+
+.section-description-txt.one-line-txt p{
+    display: none;
+}

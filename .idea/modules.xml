@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyWeb.iml" filepath="$PROJECT_DIR$/.idea/MyWeb.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/.idea/My Web next gen.iml" filepath="$PROJECT_DIR$/.idea/My Web next gen.iml" />
+>>>>>>> master
     </modules>
   </component>
 </project>
