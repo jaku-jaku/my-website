@@ -1,120 +1,28 @@
 [
-  {
-    "id_name": "CompRobCon",
-    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
-    "img_cover": "Comp_RobCon01.JPG",
-    "title": " Robotic System Design",
-    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
-    "tags": ["Activities", "2016", "Robotics"],
-    "more_imgs": ["Comp_RobCon01.JPG","Comp_RobCon02.JPG","Comp_RobCon03.JPG","Comp_RobCon04.JPG"],
-    "more_imgs_title": ["title1", "title2", "title3", "title4"],
-    "position": "Designer",
-    "code_link": "https://github.com/JXproject/LabViewFiles",
-    "paras":
-    [
-      "In grade 12 computer engineering course, I learned a fakfdsafsdafds afds af d af ds af ds af ds a f d af ds af ds a f dsa fdsa.",
-      "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s",
-      "On the day of competition, we carried equipments and parts that are already sorted by us into the competing arena and were ready for 3-hour design battle. First project was the vehicle lifter. For this project"
-    ],
-    "paras_title":
-            [
-              "Task",
-              "Action",
-              "Result"
-            ]
-  },
+//  {
+//    "id_name": "CompRobCon",
+//    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
+//    "img_cover": "Comp_RobCon01.JPG",
+//    "title": " Robotic System Design",
+//    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
+//    "tags": ["Activities", "2016", "Robotics"],
+//    "more_imgs": ["Comp_RobCon01.JPG","Comp_RobCon02.JPG","Comp_RobCon03.JPG","Comp_RobCon04.JPG"],
+//    "more_imgs_title": ["title1", "title2", "title3", "title4"],
+//    "position": "Designer",
+//    "code_link": "https://github.com/JXproject/LabViewFiles",
+//    "paras":
+//    [
+//      "In grade 12 computer engineering course, I learned a fakfdsafsdafds afds af d af ds af ds af ds a f d af ds af ds a f dsa fdsa.",
+//      "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s",
+//      "On the day of competition, we carried equipments and parts that are already sorted by us into the competing arena and were ready for 3-hour design battle. First project was the vehicle lifter. For this project"
+//    ],
+//    "paras_title":
+//            [
+//              "Task",
+//              "Action",
+//              "Result"
+//            ]
+//  }
 
-  {
-    "id_name": "C004",
-    "img_directory": "Resources/Projects/Course_1A_JADO/",
-    "img_cover": "JADOco.jpg",
-    "title": "<span> <strong>TRON DAY</strong></span>",
-    "description": "<p><b>Tron Day</b> is an exciting inner problem solving competition, first time introduce by Mechanical and Mecatronic Engineering Department.</p>",
-    "tags": ["Featured_Projects", "2016", "Robotics"],
-    "more_imgs": ["JADOco.jpg", "JADO00.jpeg"],
-    "more_imgs_title": ["title1", "title2"],
-    "position": "Designer",
-    "code_link": "https://github.com/JXproject/LabViewFiles",
-    "paras":
-    [
-      "In grade 12 computer engineering course, I learned a",
-      "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s"
-   ],
-    "paras_title":
-    [
-      "Task",
-      "Action"
-    ]
-  },
-
-
-  {
-    "id_name": "TEMPLATE",
-    "img_directory": "Resources/Testing/",
-    "img_cover": "3.jpg",
-    "title": "<span> <strong>TEMPLATE1</strong></span>2018",
-    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
-    "tags": ["Hackathon", "2018", "Unknown"],
-    "more_imgs": ["1.jpg", "4.jpg", "11.jpg"],
-    "more_imgs_title": ["title1", "title2", "title3"],
-    "position": "Designer",
-    "code_link": "https://github.com/JXproject/LabViewFiles",
-    "paras":
-    [
-      "In grade 12 computer engineering course, I learned a",
-      "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s"
-    ],
-    "paras_title":
-    [
-      "Task",
-      "Action"
-    ]
-  },
-
-  {
-    "id_name": "TEMPLATE2",
-    "img_directory": "Resources/Testing/",
-    "img_cover": "4.jpg",
-    "title": "<span> <strong>TEMPLATE2</strong></span>2018",
-    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
-    "tags": ["Activities", "2018", "Unknown"],
-    "more_imgs": ["1.jpg", "4.jpg", "11.jpg"],
-    "more_imgs_title": ["title1", "title2", "title3"],
-    "position": "Designer",
-    "code_link": "https://github.com/JXproject/LabViewFiles",
-    "paras":
-    [
-      "In grade 12 computer engineering course, I learned a",
-      "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s"
-    ],
-    "paras_title":
-    [
-      "Task",
-      "Action"
-    ]
-  },
-
-  {
-  "id_name": "TEMPLATE3",
-  "img_directory": "Resources/Testing/",
-  "img_cover": "11.jpg",
-  "title": "<span> <strong>TEMPLATE3</strong></span>2018",
-  "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
-  "tags": ["Activities", "2018", "Unknown"],
-  "more_imgs": ["1.jpg", "4.jpg", "11.jpg"],
-    "more_imgs_title": ["title1", "title2", "title3"],
-  "position": "Designer",
-  "code_link": "https://github.com/JXproject/LabViewFiles",
-  "paras":
-  [
-    "In grade 12 computer engineering course, I learned a",
-    "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s"
-  ],
-  "paras_title":
-  [
-    "Task",
-    "Action"
-  ]
-  }
 
 ]
