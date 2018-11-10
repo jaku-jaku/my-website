@@ -4,7 +4,7 @@
 var G_j_blogs = null;
 var G_j_blogs_filtered= null;
 //Load json and sort json and generate pfo cards
-$(function () {
+function load_blogs(){
     if (G_j_blogs == null) {
         $.getJSON("sub_mod/obj_blogs.json",
             function (json) {
@@ -15,7 +15,8 @@ $(function () {
                 }
             });
     }
-});
+}
+$(load_blogs);
 
 function gen_blog(id_){
     if(G_j_blogs_filtered !==null)

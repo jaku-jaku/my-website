@@ -134,9 +134,14 @@ function loadJsonFileSideBar() {
 
                 var i = indexOfItemInJSON("title", "Blog", G_j_sidebar_Obj);
                 var child_list = G_j_sidebar_Obj[i].children;
+                if(!G_j_blogs)
+                {
+                    load_blogs();
+                }
+
                 for(i = 1; i < child_list.length; i++){
                     var collector= [];
-                    for(var k =0; k<G_j_blogs.length;k++)
+                    for(var k =0; G_j_blogs && k<G_j_blogs.length;k++)
                     {
                         if(G_j_blogs[k].tags.indexOf(child_list[i].cat_name) > -1)
                             collector.push({"cat_name":G_j_blogs[k].id_name});

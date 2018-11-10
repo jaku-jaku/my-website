@@ -68,14 +68,14 @@ $(document).on('click', '#view-area', function (e) {
             {
                 $side_nav.addClass('active');
                 $sidebarCollapseBtn.addClass('active');
-                console.log("remove deactive");
+                // console.log("remove deactive");
             }
         }else{
             if($side_nav.is(".active"))
             {
                 $side_nav.removeClass('active');
                 $sidebarCollapseBtn.removeClass('active');
-                console.log("remove active");
+                // console.log("remove active");
             }
         }
     }

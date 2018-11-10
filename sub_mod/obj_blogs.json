@@ -1,12 +1,11 @@
 [
-//  {
-//    "id_name": "CompRobCon",
-//    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
-//    "img_cover": "Comp_RobCon01.JPG",
-//    "title": " Robotic System Design",
-//    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
-//    "tags": ["Course Notes", "2016", "Robotics"],
-//    "md_file_name": "blog.md"
-//  }
-
+  {
+    "id_name": "AV_course",
+    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
+    "img_cover": "Comp_RobCon01.JPG",
+    "title": "Reinforcement Learning",
+    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
+    "tags": ["Course Notes", "2018", "Autonomous"],
+    "md_file_name": "Nov6_RL_AV.md"
+  }
 ]

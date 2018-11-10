@@ -56,7 +56,6 @@
           {"cat_name":"Featured_Projects"},
           {"cat_name":"Course_Projects"},
           {"cat_name":"Hackathon"},
-          {"cat_name":"Awards"},
           {"cat_name":"Activities"},
           {"cat_name":"Uncategorized"}
         ]
@@ -79,17 +78,15 @@
     "children":
     [
       {
-        "cat_name": "All Projects"
+        "cat_name": "All Photos"
       },
       {
         "cat_name": "Filter by Category",
         "children":
         [
-          {"cat_name":"Featured_Projects"},
-          {"cat_name":"Course_Projects"},
-          {"cat_name":"Hackathon"},
-          {"cat_name":"Awards"},
-          {"cat_name":"Activities"},
+          {"cat_name":"Featured"},
+          {"cat_name":"Spring"},
+          {"cat_name":"Summer"},
           {"cat_name":"Unknown"}
         ]
       },
@@ -97,7 +94,6 @@
         "cat_name": "Filter by Year",
         "children":
         [
-          {"cat_name":"2016"},
           {"cat_name":"2017"},
           {"cat_name":"2018"},
           {"cat_name":"2019"}

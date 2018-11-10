@@ -1,38 +1,13 @@
 [
-  {
-    "id_name": "CompRobCon",
-    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
-    "img_cover": "Comp_RobCon01.JPG",
-    "title": " Robotic System Design",
-    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
-    "tags": ["Activities", "2016", "Robotics"]
-  },
+//  {
+//    "id_name": "CompRobCon",
+//    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
+//    "img_cover": "Comp_RobCon01.JPG",
+//    "title": " Robotic System Design",
+//    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
+//    "tags": ["Activities", "2016", "Robotics"]
+//  },
 
-  {
-    "id_name": "TEMPLATE",
-    "img_directory": "Resources/Testing/",
-    "img_cover": "3.jpg",
-    "title": "<span> <strong>TEMPLATE1</strong></span>2018",
-    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
-    "tags": ["Hackathon", "2018", "Unknown"]
-  },
 
-  {
-    "id_name": "TEMPLATE2",
-    "img_directory": "Resources/Testing/",
-    "img_cover": "4.jpg",
-    "title": "<span> <strong>TEMPLATE2</strong></span>2018",
-    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
-    "tags": ["Activities", "2018", "Unknown"]
-  },
-
-  {
-    "id_name": "TEMPLATE3",
-    "img_directory": "Resources/Testing/",
-    "img_cover": "11.jpg",
-    "title": "<span> <strong>TEMPLATE3</strong></span>2018",
-    "description": "<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>",
-    "tags": ["Activities", "2018", "Unknown"]
-  }
 
 ]

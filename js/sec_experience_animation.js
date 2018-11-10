@@ -441,12 +441,11 @@ function Callback_Render() {
         // Render/update only if the page is scrolling closer towards experience content
         // if(($('#page-about').offset().top <($(window).scrollTop()))
         //     && ($('#page-projects').offset().top >($(window).scrollTop())))
-        if(G_target === "#page-about")
+        if(G_is_page_visible)
         {
             G_ctx.clearRect(0,0,G_WH[0],G_WH[1]);
             for (var ni= 0; ni< G_nodeList.length; ni++)
             {
-                // console.log("draw");
                 G_nodeList[ni].Draw();
             }
         }
