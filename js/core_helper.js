@@ -1,3 +1,17 @@
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+//-- usage --//
+$(preload(
+    "Resources/Core/my_experience.jpg",
+    "Resources/Core/my_experience_portrait.jpg",
+    "Resources/Photography/Night/Alone.jpg"
+));
+
 // memorize last choice:
 var G_sidebar_selected_tags =
     {

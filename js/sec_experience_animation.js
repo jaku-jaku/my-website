@@ -39,7 +39,6 @@ function resetEngine(){
 }
 
 function Node(_data) {
-    this.IDn = null;
     this.data = _data;
     this.tag = c_S(_data['title']);
     this.x = 0;
@@ -57,6 +56,7 @@ function Node(_data) {
     this.text_height = 15;//px
     // data at update or scrn change
     this.updateStaticData = function (_isPortrait) {
+        this.READY = true;
         var m_data = this.data;
         if(_isPortrait)
         {
@@ -390,8 +390,6 @@ var G_section_decription_txt_index = 0;
 function Callback_Calculate() {
     if(!G_is_page_visible)
     {
-        var curPageObj = $(".page-scroll.nav-bar-click.active");
-        G_target = curPageObj.attr("href");
         G_is_page_visible = (G_target === "#page-about");
         if(G_is_page_visible)
         {
