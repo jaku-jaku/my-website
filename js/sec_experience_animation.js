@@ -319,13 +319,13 @@ function initEngine() {
 
     if (G_CVS.getContext) {
         G_ctx.canvas.addEventListener("mousemove",function(event){
-            var rect = G_ctx.canvas.getBoundingClientRect();
+            var rect = G_ctx.canvas.getBoundingClientRect(event);
             mouseX=event.clientX-rect.left;
             mouseY=event.clientY-rect.top;
             // console.log(rect);
             Callback_mouse(mouseX, mouseY, false);
         });
-        G_ctx.canvas.addEventListener("click", function (evt) {
+        G_ctx.canvas.addEventListener("click", function (event) {
             var rect = G_ctx.canvas.getBoundingClientRect();
             mouseX=event.clientX-rect.left;
             mouseY=event.clientY-rect.top;
