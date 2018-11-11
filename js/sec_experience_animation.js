@@ -390,6 +390,8 @@ var G_section_decription_txt_index = 0;
 function Callback_Calculate() {
     if(!G_is_page_visible)
     {
+        var curPageObj = $(".page-scroll.nav-bar-click.active");
+        G_target = curPageObj.attr("href");
         G_is_page_visible = (G_target === "#page-about");
         if(G_is_page_visible)
         {
