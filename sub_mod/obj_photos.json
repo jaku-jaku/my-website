@@ -1,5 +1,21 @@
 [
   {
+    "id_name": "Fall_bestfriends",
+    "img_directory": "Resources/Photography/Fall/",
+    "img_cover": "BestFriends.jpg",
+    "title": "友達",
+    "description": "<p> Best friends can always make me laugh no matter what, even I am in the most depressed period of my life </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Fall", "2016"]
+  },
+  {
+    "id_name": "Fall_Laugh",
+    "img_directory": "Resources/Photography/Fall/",
+    "img_cover": "Laugh.jpg",
+    "title": "Laugh",
+    "description": "<p> Friends' laugh makes me laugh. </br> But also makes me wanna cry like a babe. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Fall", "2016"]
+  },
+  {
     "id_name": "Fall_miniature_1",
     "img_directory": "Resources/Photography/Fall/",
     "img_cover": "いただきます.jpg",
@@ -131,6 +147,38 @@
     "description": "<p> Dreams are built on top of the sky, </br> That's why I am staring at it </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
+  {
+    "id_name": "Japan_StreetPole",
+    "img_directory": "Resources/Photography/Japan/",
+    "img_cover": "Streetpole1.jpg",
+    "title": "電柱 - 白い空",
+    "description": "<p> 電柱【でんちゅう】 made this pale sky more interesting. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Japan", "2016"]
+  },
+  {
+    "id_name": "Japan_StreetPole2",
+    "img_directory": "Resources/Photography/Japan/",
+    "img_cover": "Streetpole2.jpg",
+    "title": "電柱 - 青空",
+    "description": "<p> 電柱【でんちゅう】 made this pale sky more interesting. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Japan", "2016"]
+  },
+  {
+    "id_name": "Japan_kinkaku",
+    "img_directory": "Resources/Photography/Japan/",
+    "img_cover": "kinkaku.jpg",
+    "title": "金閣寺",
+    "description": "<p> 白い　金閣寺 </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Japan", "2016"]
+  },
+  {
+    "id_name": "Japan_matcha",
+    "img_directory": "Resources/Photography/Japan/",
+    "img_cover": "matcha.jpg",
+    "title": "抹茶 -　初の夏",
+    "description": "<p> In summer, all I wish is your favourite Matcha Tea.  </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Japan", "2016"]
+  },
 
 
 
@@ -158,7 +206,14 @@
     "description": "<p> Stars are the only hope in the night. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2016"]
   },
-
+  {
+    "id_name": "Night_Cat",
+    "img_directory": "Resources/Photography/Night/",
+    "img_cover": "Cat.jpg",
+    "title": "ネコ（猫）",
+    "description": "<p>What did you find in this cold dark? </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Night", "2016"]
+  },
 
 
 
