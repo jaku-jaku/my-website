@@ -2,7 +2,7 @@
   {
     "id_name": "Course_RTOS",
     "img_directory": "Resources/Projects/Course_2B_RTOS/",
-    "img_cover": "Static.jpg",
+    "img_cover": "Cover.jpg",
     "title": "Pixel Dungeon",
     "description": "<p> Course Project for RTOS </br> Pixel Dungeon Game on ARMKeilRTX </br><span>RTOS | 2018</span></p>",
     "tags": ["Featured_Projects", "2018", "Course_Projects", "Hardware"],
