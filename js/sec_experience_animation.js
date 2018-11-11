@@ -340,12 +340,12 @@ function reloadBackground(){
     if(obtain_resources != null) {
         if ($(window).width() < 768) {
             // console.log('Less than 960');
-            obtain_resources.src='Resources/Core/my_experience_portrait.png';
+            obtain_resources.src='Resources/Core/my_experience_portrait.jpg';
             G_portrait_mode = true;
         }
         else {
             // console.log('More than 960');
-            obtain_resources.src='Resources/Core/my_experience.png';
+            obtain_resources.src='Resources/Core/my_experience.jpg';
             G_portrait_mode = false;
         }
         return true;
