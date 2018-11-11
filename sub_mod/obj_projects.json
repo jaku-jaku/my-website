@@ -1,5 +1,59 @@
 [
   {
+    "id_name": "Course_RTOS",
+    "img_directory": "Resources/Projects/Course_2B_RTOS/",
+    "img_cover": "Static.jpg",
+    "title": "Pixel Dungeon",
+    "description": "<p> Course Project for RTOS </br> Pixel Dungeon Game on ARMKeilRTX </br><span>RTOS | 2018</span></p>",
+    "tags": ["Featured_Projects", "2018", "Course_Projects", "Hardware"],
+    "more_imgs": ["demo.gif","DesignFlow.jpg","Static.jpg"],
+    "more_imgs_title": [ "Demo", "Design Flow.", "Game GUI"],
+    "role": "Software Dev.",
+    "code_link": "https://github.com/JXproject/Proj__Pixel-dungeon-game-ARMKeilRTX",
+    "paras":
+    [
+      "This is a top down arcade style espace game.The game utilizes the joystick, to navigate the character through a maze towards the exit. The player has to be weary of enemies and obstacles which can reduce the life of the character on the way to the exit. If the player successfully reaches the exit, a score will be given based on the exiting time and health left. The user will be given an arrow indicator in the top-right corner of the screen, which always points in the direction of the exit. This indicator will be colour mapped based on the approximated euclidean distance between the character and the exit. To make the game more enjoyable and challenging, there will be traps, enemies, and character buffs within the maze.",
+      "During a play through, the character will be given five lives, which can be lost due to traps and conflicts with enemies, and gained from buffs found in game. The play through ends when all lives are lost or when the exit is reached. These lives will be displayed at the top of the display screen. It is also notable that the game can also be paused at any point with the pushbutton. The pushbutton will also pull up a game menu, where the user can restart the game or continue.",
+      "There are three primary enemies in the game: ghosts, zombies, and rats. Each have their own traits and affect the game differently. Ghosts are non-confrontational and can move aimlessly through walls, and can only harm the player if the character is moved into their path, which will reduce the character’s health by one, but will leave the player invulnerable for a short period. Zombies are more aggressive, they will chase you for a bit if they see you, but otherwise roaming around aimlessly. Rats moves really fast along the maze path in one direction, hit a wall and can then transform into a ghosts, zombies, or nothing, but they are rarely found.",
+      "To eradicate enemies, the user can launch projectiles by pressing down on the joystick. The number of projectiles the user can shoot consecutively is limited to five. But new projectile will be replenished after a set period of time, until a total of five are available. The projectiles are launched in the direction the character is facing, which is controlled using the potentiometer, and the number of available shots is displayed using on-board LEDs, where the first five LEDs represent ammunitions, and are available if lit.",
+      "In terms of traps, there will be only three types: spikes, flames, and lasers. All traps have their own unique activation periods and damage to the character. Needles and flames are safe when idle, but cause one point of damage when activated. Lasers will cause one point of damage along the entire path it directed in while active.",
+      "Lastly, there will be four types of rewards: space portals, health potions, bullet clips and time capsules. A pair of space portals will transport you from one portal to another, a health portions will restore one lost health point, and the time capsule can reduce the timer by five seconds, improving game score.",
+      "There are mainly 5 peripheral interfaces: </br>● Joystick: directions allow the user to move the character, and a joystick press will fire a projectile </br>● Push Button: Pause (Interrupt) the game </br>● LEDs: Indicate amount of projectiles left for the character</br>● Potentiometer: adjust the direction that the character is facing (shooting direction)</br>● LCD: display animated GUI (Graphical User Interface)",
+      "There will be seven tasks throughout the entire game (as Figure 2 shown):</br>1. Task 1 will handle the rendering task onto hardware LCD and LEDs with a fixed frame rate.</br>2. Task 2 will handle the input control from the hardware controllers: potentiometer, joystick, and push button.</br>3. Task 3 will handle all menu events: start, pause, and end menu.</br>4. Task 4 will handle the character position and orientation calculation based on the input from the hardware, and update map scenes and reference coordinates.</br>5. Task 5 will calculate all new coordinates for projectiles and also perform collision and out of boundary evaluation tests.</br>6. Task 6 will update all traps and perform evaluating tests</br>7. Task 7 will re-evaluate and update all enemies"
+    ],
+    "paras_title":
+    [
+      "Game Overview",
+      "Player Life",
+      "Enemies",
+      "Shooting Mechanism",
+      "Traps",
+      "Special Treats",
+      "Peripherals",
+      "Tasks"
+    ]
+  },
+  {
+    "id_name": "Hack_CtrlF_AR",
+    "img_directory": "Resources/Projects/CtrlF_AR/",
+    "img_cover": "app.png",
+    "title": "Ctrl-F AR",
+    "description": "<p> a live camera feed app that utilizes a real-time text recognition SDK to perform a “Ctrl-F” in real life.  </br><span>UofT Hack | 2018</span></p>",
+    "tags": ["Featured_Projects", "2018", "Hackathon", "CV", "Android"],
+    "more_imgs": ["Cover.png","Demo1.png","Demo2.png","Demo3.png","multiLingual.png","MindMap.jpg"],
+    "more_imgs_title": ["Intro.", "Demo with text", "Demo with colored letters", "Demo in French", "Multilingual selection", "Mindmap"],
+    "role": "Software Dev., Hacker",
+    "code_link": "https://github.com/JXproject/Hack__Ctrl-f-airsearch-realtime-offline",
+    "paras":
+    [
+      "We have created a live camera feed app that utilizes a real-time text recognition SDK to perform a “Ctrl-F” in real life. The goal was to create a tool that could perform searches with a faster runtime than our own eyes. Once the user types into the textfield which keyword they are looking for, the app finds that word in the text the camera is pointed at and highlights that word over it in real-time. The rest of that sentence that includes the keyword is boxed to provide context for the user. This app supports 12 different languages."
+    ],
+    "paras_title":
+    [
+      "About"
+    ]
+  },
+  {
     "id_name": "Hack_TrackyfAI",
     "img_directory": "Resources/Projects/TrackyfAI/",
     "img_cover": "busyStreet.jpg",
@@ -57,9 +111,9 @@
     "img_cover": "MusicSynth.JPG",
     "title": "Music Synthesizer",
     "description": "<p>Music Synthesizer with wireless gyro control to provide much more intuitive music mixing. </br><span> IEEE | 2017</span></p>",
-    "tags": ["Featured_Projects", "2017", "Hackathon"],
+    "tags": ["Featured_Projects", "2017", "Hackathon", "Hardware"],
     "more_imgs": ["MeOsy.JPG","Ayy.JPG","Price.JPG","DetailedShot.JPG","MusicSynth.JPG"],
-    "more_imgs_title": ["Osy and Me", "Awards Ceremony", "Awards", "Detailed shots", "Music Synthesizer", "Hardware"],
+    "more_imgs_title": ["Osy and Me", "Awards Ceremony", "Awards", "Detailed shots", "Music Synthesizer"],
     "role": "Software Dev., Hacker",
     "code_link": "https://github.com/JXproject/Hack__Music-synthesizer-arduino",
     "paras":
@@ -71,7 +125,28 @@
       "About"
     ]
   },
-
+  {
+    "id_name": "Hack_McGill2016",
+    "img_directory": "Resources/Projects/McGill_2016/",
+    "img_cover": "cover.png",
+    "title": "Music Synthesizer",
+    "description": "<p> A cross-platform compatible app that changes the way we pay for dinner. </br><span> McGill Hack | 2016</span></p>",
+    "tags": ["2016", "Hackathon", "Software"],
+    "more_imgs": ["cover.png","menu.png"],
+    "more_imgs_title": ["App Cover", "App Menu"],
+    "role": "Software Dev., Hacker",
+    "code_link": "https://github.com/JXproject/Hack__EazyEatz",
+    "paras":
+    [
+      "Restaurants today are stuck in the past and EazyEatz aims to change that. When you go out for dinner, EazyEatz—utilizing beacon technology—identifies the specific table and restaurant that you and your friends are eating at. While dining, EazyEats allows you to review the menu, order food, and the best part is that when you're done you can just get up and leave. EazyEatz automatically splits your party's bill (equally, or sliced up however you like!), and our innovative leave-and-pay technology reduces the hassle of paying by allowing you to simply leave the restaurant and automatically have your bill charged to you.",
+      "The EazyEats app was created using react-native which enabled us to have a cross-platform compatible app with minimal additional work. The backend of EazyEatz utilizes Node.JS and MongoDB, and is hosted off of Google's Cloud Platform. Due to the Estimotes being locked, our team tried to come up with an alternative solution to using the beacons by building an RFID card reader. Upon the readers detection of a smartphone, it connects back through the internet to the server to push the data to the user's phone (that otherwise would have been gotten from the beacon)."
+    ],
+    "paras_title":
+    [
+      "Idea",
+      "Our Solution"
+    ]
+  },
   {
     "id_name": "Course_Proj_Lego",
     "img_directory": "Resources/Projects/Course_1A_FinalProj/",
@@ -96,6 +171,27 @@
       "Acknowledgments"
     ]
   },
+  {
+    "id_name": "Hack_LineMusicRobot",
+    "img_directory": "Resources/Projects/LineMusicRobot/",
+    "img_cover": "AtCompetition.JPG",
+    "title": "Line Musician",
+    "description": "<p>1A Robotics Team Internal Hackathon </br><span>UWRobotics | 2016</span> </p>",
+    "tags": ["Featured_Projects", "2016", "Robotics"],
+    "more_imgs": ["Team.JPG","Testing.JPG", "Programming.JPG", "Robot.JPG", "AtCompetition.JPG"],
+    "more_imgs_title": ["Team Photo", "Calibration", "Programming", "Robot", "On Field"],
+    "role": "Hardware Designer, Programmer",
+    "code_link": "https://github.com/JXproject/Hack__DIY-music-line-follower",
+    "paras":
+    [
+      "Prior joining the UWRobotics Team, a short robotic competition was hosted internally for the first years to get more hands on experience. Our team has design and programmed a robot that can follow black line in a constant pace while converting the gray scale readings to music."
+    ],
+    "paras_title":
+    [
+      "About"
+    ]
+  },
+
   {
     "id_name": "CompRobCon",
     "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
@@ -150,6 +246,66 @@
       "Intro.",
       "About",
       "Acknowledgments"
+    ]
+  },
+  {
+    "id_name": "CS_Astar",
+    "img_directory": "Resources/Projects/Astar/",
+    "img_cover": "01.jpg",
+    "title": "A star path finding",
+    "description": "<p> A star implementation in Java <span>CS | 2016</span></p>",
+    "tags": ["Uncategorized", "2016", "CS"],
+    "more_imgs": ["Astar.gif","01.jpg","02.jpg","03.jpg","04.jpg"],
+    "more_imgs_title": ["Video Demo", "Demo Pic 1/4", "Demo Pic 2/4", "Demo Pic 3/4", "Demo Pic 4/4"],
+    "role": "Programmer",
+    "code_link": "https://github.com/JXproject/Proj__A-star-pathfinder-visualizer",
+    "paras":
+    [
+      "A star implementation"
+    ],
+    "paras_title":
+    [
+      "About"
+    ]
+  },
+  {
+    "id_name": "CS_GameOfLife",
+    "img_directory": "Resources/Projects/GameOfLife/",
+    "img_cover": "Conways.gif",
+    "title": "A star path finding",
+    "description": "<p>Game of Life Simulation in Java<span>CS | 2016</span></p>",
+    "tags": ["Uncategorized", "2016", "CS"],
+    "more_imgs": ["Conways.gif"],
+    "more_imgs_title": ["Video Demo"],
+    "role": "Programmer",
+    "code_link": "https://github.com/JXproject/Proj__Game-of-Life",
+    "paras":
+    [
+      "Game of Life Simulation in Java"
+    ],
+    "paras_title":
+    [
+      "About"
+    ]
+  },
+  {
+    "id_name": "CS_FlowChart",
+    "img_directory": "Resources/Projects/FlowChart/",
+    "img_cover": "FlowChart.jpg",
+    "title": "Flow Chart Manager",
+    "description": "<p> Flow Chart Manager <span>CS | 2016</span></p>",
+    "tags": ["Course_Projects", "2016", "CS"],
+    "more_imgs": ["FlowChart.gif","Customize.gif","FlowChart.jpg"],
+    "more_imgs_title": ["Video Demo", "Video Demo", "Demo Pic"],
+    "role": "Programmer",
+    "code_link": "https://github.com/JXproject/Proj__Flowchart-manager",
+    "paras":
+    [
+      "Course project for high school U4 Computer Science Course."
+    ],
+    "paras_title":
+    [
+      "About"
     ]
   },
   {
