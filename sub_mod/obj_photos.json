@@ -134,7 +134,6 @@
 
 
 
-
   {
     "id_name": "Night_alone",
     "img_directory": "Resources/Photography/Night/",
@@ -154,7 +153,7 @@
   {
     "id_name": "Night_Milky",
     "img_directory": "Resources/Photography/Night/",
-    "img_cover": "天の川.jpg",
+    "img_cover": "MilkySky.jpg",
     "title": "天の川",
     "description": "<p> Stars are the only hope in the night. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2016"]
