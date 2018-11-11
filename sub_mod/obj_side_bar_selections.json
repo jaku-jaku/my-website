@@ -64,10 +64,10 @@
         "cat_name": "Filter by Year",
         "children":
         [
+          {"cat_name":"2015"},
           {"cat_name":"2016"},
           {"cat_name":"2017"},
-          {"cat_name":"2018"},
-          {"cat_name":"2019"}
+          {"cat_name":"2018"}
         ]
       }
     ]
@@ -96,8 +96,7 @@
         [
           {"cat_name":"2016"},
           {"cat_name":"2017"},
-          {"cat_name":"2018"},
-          {"cat_name":"2019"}
+          {"cat_name":"2018"}
         ]
       }
     ]

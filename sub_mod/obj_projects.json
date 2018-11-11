@@ -1,28 +1,200 @@
 [
-//  {
-//    "id_name": "CompRobCon",
-//    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
-//    "img_cover": "Comp_RobCon01.JPG",
-//    "title": " Robotic System Design",
-//    "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
-//    "tags": ["Activities", "2016", "Robotics"],
-//    "more_imgs": ["Comp_RobCon01.JPG","Comp_RobCon02.JPG","Comp_RobCon03.JPG","Comp_RobCon04.JPG"],
-//    "more_imgs_title": ["title1", "title2", "title3", "title4"],
-//    "position": "Designer",
-//    "code_link": "https://github.com/JXproject/LabViewFiles",
-//    "paras":
-//    [
-//      "In grade 12 computer engineering course, I learned a fakfdsafsdafds afds af d af ds af ds af ds a f d af ds af ds a f dsa fdsa.",
-//      "Because of being chosen for the competition, I am so ecstatic and did a lot of extra practice and experiments with different mechanisms, sensors, and topics. For example, in three floor elevator, I designed a s",
-//      "On the day of competition, we carried equipments and parts that are already sorted by us into the competing arena and were ready for 3-hour design battle. First project was the vehicle lifter. For this project"
-//    ],
-//    "paras_title":
-//            [
-//              "Task",
-//              "Action",
-//              "Result"
-//            ]
-//  }
+  {
+    "id_name": "Hack_TrackyfAI",
+    "img_directory": "Resources/Projects/TrackyfAI/",
+    "img_cover": "busyStreet.jpg",
+    "title": "TrackyfAI",
+    "description": "<p> A surveillance tool that allows miltary analysts to better analyze large amounts of video footage (CANSOFCOM) </br><span>Hack The North | 2017</span></p>",
+    "tags": ["Featured_Projects", "2017", "Hackathon", "CV"],
+    "more_imgs": ["busyStreet.jpg","emptyfield.jpg"],
+    "more_imgs_title": ["渋谷 Crossing Stress Test", "Backyard Test"],
+    "role": "Software Dev., Hacker",
+    "ref_link_name": "DEVPOST/trackyfAI",
+    "ref_link": "https://devpost.com/software/trackyfai-w145pf",
+    "code_link": "https://github.com/JXproject/Hack__TrackyfAI",
+    "paras":
+    [
+      "After seeing that there are many people (CANSOFCOM) that spends hours on hours analyzing repetative surveillance data, we wanted to make to lives of these individuals more productive and easier.",
+      "TrackyfAI is a video footage tool that detects all moving objects within a scene, whether it be a bike, a person, a car or truck, checks for unusual behaviour in the regions of the moving objects, and creates an importance contour of the scene over time.",
+      "We built our own custom OpenCV image processing algorithms to approximate contours to cropped images, and Tensorflow to unload our trained image classification models. All behaviours will be recorded with timestamp in a csv file, and a heat map is generated to showcase the flow.",
+      "We are proud of the different data visualization tools we were able to create for our application. From being able to view to view the movement history of a car driving in a scene, to viewing regions of importance in a current frame in the footage, we all thought these features were pretty cool."
+    ],
+    "paras_title":
+    [
+      "Intro.",
+      "About",
+      "How we built it",
+      "Accomplishments"
+    ]
+  },
+  {
+    "id_name": "Hack_SmartHelm",
+    "img_directory": "Resources/Projects/WearHack2017/",
+    "img_cover": "Ultrasonic.jpg",
+    "title": "Smart Helmet",
+    "description": "<p> Attachable helmet accessory that provides sensory and audio feedback to the wearer for navigation and warnings on the street. </br><span>WearHack | 2017</span></p>",
+    "tags": ["Featured_Projects", "2017", "Hackathon", "Hardware"],
+    "more_imgs": ["Demo.gif","WarningUltrasonic.gif"],
+    "more_imgs_title": ["Demo", "Warning for any approaching vehicles"],
+    "role": "Software Dev., Hacker",
+    "code_link": "https://github.com/JXproject/Hack__Smart-helmet",
+    "paras":
+    [
+      "The helmet accessory consists of vibrational motors and LED strips to give signals to the wearer and any people around the wearer. Using the LED strips, the wearer can give signals to the surrounding people like stop, slowing down or turning signals using tap actions on the helmet or through the Google maps route that they have chosen. The vibrational motors allow the wearer to receive sensory information about the environment without having to look in their blind spots or worry about incoming traffic. By giving the wearer a buzz (much like the phone vibration) on the head in a specific direction based on the location of the incoming object, the wearer will be notified of the object much earlier and with warning. The device removes the need for the use of phones when bicycling or doing any agile activities. Since it is qutie dangerous to pull out and gaze at your phone to check your current location along your Google maps route, this device removes that action and receives bluetooth data from your phone (via the app we have created) about your location and route so that it can automatically give you directions when bicycling.",
+      "This project was created with the use of the Intel Edison, a small, Internet of Things (IoT) module that allows users to create IoT or wearable devices. The Arduino and Android Studio IDE were also used as the programming platform to create the interactions with the sensor data and the app on the phone. In detail, the breakout board was used for Ultrasonic sensor interrupt signal (Output pin 10) and pulseIn signal (Input pin 13). Meanwhile, Output pin 11 was used for RGB LED Strip. And vibrator and gyro board was also used. Sine vibrator is not I2c device and it shares pin 10 with Ultrasonic interruption, a sequence was used to alternating two devices. In addition, Ultrasonic sensor was driven by external 5V, and 1k resistor was used to protect the board (Xadow kit is 3.3V)",
+      "This device was primarily targetted for the hearing impaired especially since there is a lot of stigma regarding the hearing impaired participating in agile activities. With the use of this device, they will be able to receive and send sensory data in their environment when doing activities such as bicycling. It is also a promotion for the use of bicycle helmets and signalling on the streets because many young riders do not wear helmets and do not signal or follow road laws. This device provides otpimal safety to the wearer and is also a cool add on to the standard helmet!"
+    ],
+    "paras_title":
+    [
+      "About",
+      "Hardware/Software",
+      "Applications"
+    ]
+  },
+  {
+    "id_name": "Hack_IEEE_2017",
+    "img_directory": "Resources/Projects/IEEE_2017/",
+    "img_cover": "MusicSynth.JPG",
+    "title": "Music Synthesizer",
+    "description": "<p>Music Synthesizer with wireless gyro control to provide much more intuitive music mixing. </br><span> IEEE | 2017</span></p>",
+    "tags": ["Featured_Projects", "2017", "Hackathon"],
+    "more_imgs": ["MeOsy.JPG","Ayy.JPG","Price.JPG","DetailedShot.JPG","MusicSynth.JPG"],
+    "more_imgs_title": ["Osy and Me", "Awards Ceremony", "Awards", "Detailed shots", "Music Synthesizer", "Hardware"],
+    "role": "Software Dev., Hacker",
+    "code_link": "https://github.com/JXproject/Hack__Music-synthesizer-arduino",
+    "paras":
+    [
+      "This piano systhesizer is controlled by 8 buttons with 256 combos but only output with one cable. All combos can be programmable with music nodes. Used r2r ladder DAC in order to minimize inputs used (only 1 input), make programming easier and make it possible to detect key pressed without any delay. (No need for shift register nor 8 individual Digital Input but one analog input)."
+    ],
+    "paras_title":
+    [
+      "About"
+    ]
+  },
 
+  {
+    "id_name": "Course_Proj_Lego",
+    "img_directory": "Resources/Projects/Course_1A_FinalProj/",
+    "img_cover": "ArmRunning.JPG",
+    "title": " LEGO Robotic Arm",
+    "description": "<p>1A Mechatronics Final Project </br> A robot that is capable to perform supervised tasks (C++, C, SolidWorks) </br><span>Robotics | 2016</span> </p>",
+    "tags": ["Featured_Projects", "Course_Projects", "2016", "Robotics"],
+    "more_imgs": ["ArmRunning.JPG","groupPhoto.JPG", "planetarySystem.JPG", "RobotView01.JPG", "TAPlaying.JPG", "WorkingOnMechanicalDesign.JPG"],
+    "more_imgs_title": ["Arm in mission", "Our team photo [Ali, Oswaldo, Dustin, and Me]", "Custom Planetary rotary base", "Eagle view of the arm", "Joystick Interface", "Ali and Me"],
+    "role": "Designer, Programmer",
+    "code_link": "https://github.com/JXproject/Proj__Robotic-arm-lego-nxt",
+    "paras":
+    [
+      "In 1A, we had this fun and open-ended project, to design and program a mechatronic system with LEGO NXT. Initially, our team overwhelmed about topics. To compensate everyone's idea, we decided to build a versatile robotic arm that is capable to perform various tasks.",
+      "This versatile robotic arm is composed with a LEGO NXT, a custom designed planetary rotary base, servos, an ultrasonic sensor, a color sensor, and other kits. The project was designed, built and programmed in 3 weeks. There are 4 different programs built for the software: inverse kinematics program, forward kinematics program, Bluetooth joystick control program, and automatic painting program. Sigmoid-Curve profile was implemented to provide smooth motion control with minimal jerks and increase control precision. ",
+      "Special acknowledgment to our team for collaborating with countless hours. Really enjoyed with the team. Thanks boys."
+    ],
+    "paras_title":
+    [
+      "Intro.",
+      "About",
+      "Acknowledgments"
+    ]
+  },
+  {
+    "id_name": "CompRobCon",
+    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
+    "img_cover": "Comp_RobCon01.JPG",
+    "title": " Robotic System Design",
+    "description": "<p> Solve a series of challenges involving Mechanical, Electronics, Controls, and Automation Systems. </br><span>Robotics | 2016</span></p>",
+    "tags": ["Featured_Projects", "Activities", "2016", "Robotics", "LabView"],
+    "more_imgs": ["Comp_RobCon01.JPG","Comp_RobCon02.JPG","Comp_RobCon03.JPG","Comp_RobCon04.JPG"],
+    "more_imgs_title": ["Greenhouse and Lift", "Microwave", "Gold Medal", "Peter[L] and Me[R]", "LabVIEW"],
+    "role": "Designer, Programmer",
+    "code_link": "https://github.com/JXproject/Misc__Robotic-controls",
+    "ref_link_name": "2016 HALTON SKILLS COMPETITION RULE",
+    "ref_link": "http://www.haltonskills.com/scopes2016/Halton%20Skills%20-%20Robotics%20and%20Control%20Systems%20Scope%202016.pdf",
+    "paras":
+    [
+      "In grade 12, my best friend (Peter) and I took a Computer Engineering course taught by Mr.Kosir. Due to our out-performance in all course projects, we were endorsed to participate in Halton Skills for the robotic and control system competition, using LabVIEW and myDAQ kits. " ,
+      "The purpose of this competition was to provide competitors with the opportunity to demonstrate skills in STEM through a series of challenges involving Mechanical Systems, Electronics, Controls and Sensor, Automation, Mobile Robotics and Programming. Basically, we were asked to design, construct, and programming two mechatronic systems to solve two completely different tasks. In this case, we were asked to develop a system for a lifter and an automated greenhouse system. Both tasks are open-ended, we have to design extra features to improve safety and automation level while accomplishing the basic constraints.",
+      "In the end, we won 1st place overall and was also endorsed for the Ontario Skill Competition. Our designs not only fulfill all constraints and criteria, but also showcase a lot of safety features, such as mechanical E-stop via the special mechanism. ",
+      "Special thanks to my partner, Peter Li, for collaborating with me throughout practices and competitions. Extremer honour to my teacher, John Kosir, for helping us out whenever we were in need. Also, I would also like to thank our friends, Charlie LoPresti and Devon Crawford, for helping us out and representing us for the Ontario Skills Competition."
+    ],
+    "paras_title":
+    [
+      "Intro.",
+      "About",
+      "Results",
+      "Acknowledgments"
+    ]
+  },
+
+
+
+  {
+    "id_name": "JWA_LightHouse",
+    "img_directory": "Resources/Projects/Comp_Arch_lightHouse/",
+    "img_cover": "lighthouse02.JPG",
+    "title": " Light House Design",
+    "description": "<p> Won <b>2nd</b> Place at JWA Architecture Competition </br><span>Architecture | 2015</span></p>",
+    "tags": ["Featured_Projects", "Activities", "2015", "Architecture"],
+    "more_imgs": ["lighthouse02.JPG","lighthouse01.JPG"],
+    "more_imgs_title": ["2nd Place", "My Design & Rewards"],
+    "role": "Designer, Speaker",
+    "ref_link_name": "JWA Student Design Competition",
+    "ref_link": "https://www.jwarchitect.com/student-design-competition",
+    "paras":
+    [
+      "Since Grade 11, when I took graphic design courses at Secondary School, I fell in love with architectural designs. I do love arts and appreciate all great artworks. I have participated in this competition in both Grade 11 and Grade 12. I got acknowledgement rewards in grade 11, which gave me huge encouragement for the architecture field. I was told that I was not an artist since I did not really practice paintings since Grade 6. But I do know I love arts and proved them that anyone can be an artist if one has a unique view and passion. ",
+      "After a year of active readings and learning about In Grade 12, I got the 2nd place for the lighthouse by combining artistic design with engineering awareness. The design not only shows how creative an architecture can be but also show how artistic an engineering design can be. The model was designed with VectorWorks and stress tested with Autodesk Flow to show its out-performance in a hurricane, where it leads all direct wind pressure upwards, to create a low wind safe zone and relieve wind stress upwards. So the lighthouse functions as a combination of a regular lighthouse, sightseeing place, and also a temporary shelter.",
+      "Thanks to the JWA, who hosted this competition annually and encourage high school students for the architecture field. Also special thanks to my teachers who taught me graphics design in both architecture (Mr. Pink) and engineering fashions. Although in the end, I did not approach Architecture degree, all these remarkable experience had helped me out throughout my life and career. I indeed believe there is nothing one can't accomplish but one doesn't dare to do. All these encouraged me to apply architecture program for both the University of Toronto and the University of Waterloo."
+    ],
+    "paras_title":
+    [
+      "Intro.",
+      "About",
+      "Acknowledgments"
+    ]
+  },
+  {
+    "id_name": "Team_FRC",
+    "img_directory": "Resources/Projects/Team_FRC/",
+    "img_cover": "FRC02.JPG",
+    "title": " Light House Design",
+    "description": "<p> Participated mechanical design in Team 3161. </br><span>Robotics | 2015-2016</span></p>",
+    "tags": ["Featured_Projects", "Activities", "2015", "2016", "Team", "Mechanical", "Robotics"],
+    "more_imgs": ["FRC01.JPG","FRC02.JPG","FRC03.JPG"],
+    "more_imgs_title": ["SolidWorks", "Team Photo", "At the competition"],
+    "role": "Mechanical Member",
+    "ref_link_name": "Team 3161 Link",
+    "ref_link": "https://team3161.ca/",
+    "paras":
+    [
+      "In high school, I was actively looking what my favourite field is. I knew I love robotics since little. I was one of the youngest team members for FLL team in China when I was Grade 4. So I decided to join Team 3161 since my high school did not have one. In the team, I highly involved in mechanical brainstorming and CADing. ",
+      "Special thanks to the Team 3161 and Mr. Balech for mentoring me through. I really enjoyed and love the team."
+    ],
+    "paras_title":
+    [
+      "Intro.",
+      "Acknowledgments"
+    ]
+  },
+
+
+  {
+    "id_name": "Vlntr_Gala2016",
+    "img_directory": "Resources/Projects/Vlntr_Gala/",
+    "img_cover": "gala04.JPG",
+    "title": "Chinese New Year Gala",
+    "description": "<p> Media Crew for Chinese New Year Gala </br><span> Volunteer | 2016 </span></p>",
+    "tags": ["2016", "Activities"],
+    "more_imgs": ["gala03.JPG","gala02.JPG","gala04.JPG","gala01.JPG"],
+    "more_imgs_title": ["Gala View", "Stage View", "Director & me", "Me working during the event"],
+    "role": "Media Crew, Volunteer",
+    "paras":
+    [
+      "Media control for Chinese New Year Gala in 2016."
+    ],
+    "paras_title":
+    [
+      "About"
+    ]
+  }
 
 ]

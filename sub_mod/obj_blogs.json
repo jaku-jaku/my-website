@@ -1,8 +1,8 @@
 [
   {
     "id_name": "AV_course",
-    "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
-    "img_cover": "Comp_RobCon01.JPG",
+    "img_directory": "Resources/Blog_imgs/",
+    "img_cover": "JXX.jpg",
     "title": "Reinforcement Learning",
     "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
     "tags": ["Course Notes", "2018", "Autonomous"],

@@ -118,18 +118,27 @@ function gen_pfo_modal(_id_name, offset)
             //load details
             // <!--TODO : Add more type of referral links & their icons -->
             j_terms = G_j_pfo_projs_filtered[i].tags;
-            modal_html_buffer = "<p><strong>Position: </strong>" + G_j_pfo_projs_filtered[i].position + "</p>\n" +
+            modal_html_buffer = "<p><strong>Role: </strong>" + G_j_pfo_projs_filtered[i].role + "</p></br>\n" +
                 "                            <p><strong>Category: </strong>";
             for (j = 0; j < j_terms.length - 1; j++) {
                 modal_html_buffer += j_terms[j] + ", ";
             }
             modal_html_buffer += j_terms[j];
-            modal_html_buffer += "</p>\n" +
-                " <p><strong>View Code: </strong> <i class=\"fa fa-github\" style=\"padding-right:2px;\"></i><a href=\"" +
-                G_j_pfo_projs_filtered[i].code_link + "\" target=\"_blank\">"
-                + G_j_pfo_projs_filtered[i].code_link + "</a></p>\n";
+            if(G_j_pfo_projs_filtered[i].code_link != null)
+            {
+                modal_html_buffer += "</p></br>\n" +
+                    "<p><strong>View Code: </strong> <i class=\"fa fa-github\" style=\"padding-right:2px;\"></i><a href=\"" +
+                    G_j_pfo_projs_filtered[i].code_link + "\" target=\"_blank\">"
+                    + G_j_pfo_projs_filtered[i].code_link + "</a></p>\n";
+            }
+            if(G_j_pfo_projs_filtered[i].ref_link != null)
+            {
+                modal_html_buffer += "</p></br>\n" +
+                    "<p><strong>Refernce:</strong> <i class=\"fa fa-globe\" style=\"padding-right:2px;\"></i><a href=\"" +
+                    G_j_pfo_projs_filtered[i].ref_link + "\" target=\"_blank\">"
+                    + G_j_pfo_projs_filtered[i].ref_link_name + "</a></p>\n";
+            }
             $('#modal-templ-details').html(modal_html_buffer);
-
             //load descriptions Paragraphs
             modal_html_buffer = "<h5 class=\"info-font\">Project Description</h5>\n";
             j_terms = G_j_pfo_projs_filtered[i].paras_title;
