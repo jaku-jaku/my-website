@@ -57,6 +57,10 @@ TOC :
   .card-des-explain p{
     font-size: 12px;
   }
+  .card-des-explain span{
+    font-size: 11px;
+    color: gray;
+  }
   .card-container .card .card-pic .card-description {
     height: 140px;
     -webkit-transform: translate3d(0, 100px, 0);

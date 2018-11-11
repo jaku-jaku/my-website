@@ -403,14 +403,6 @@ function Callback_Calculate() {
             resetEngine();
             // console.warn("Reset engine");
         }else{
-            //description text update
-            if(G_tick%380===0)
-            {
-                var divs = $('p[id^="content-"]').hide();
-                divs.eq(G_section_decription_txt_index).fadeIn(1900).delay(1000).fadeOut(1000);
-                G_section_decription_txt_index = ++G_section_decription_txt_index % divs.length;
-            }
-            G_tick ++;
 
             //side-bar highlight
             var cur_sidebar_state = ($('#sidebar').css("margin-left")==='0px');
@@ -431,6 +423,16 @@ function Callback_Calculate() {
                 }
             }
         }
+    }
+
+    if(G_target === "#page-about" || G_target === "#page-photography") {
+        //description text update
+        if (G_tick % 380 === 0) {
+            var divs = $('p[id^="content-"]').hide();
+            divs.eq(G_section_decription_txt_index).fadeIn(1900).delay(1000).fadeOut(1000);
+            G_section_decription_txt_index = ++G_section_decription_txt_index % divs.length;
+        }
+        G_tick++;
     }
 }
 

@@ -50,7 +50,7 @@
         "cat_name": "All Projects"
       },
       {
-        "cat_name": "Filter by Category",
+        "cat_name": "Filter by Topics",
         "children":
         [
           {"cat_name":"Featured_Projects"},
@@ -81,19 +81,20 @@
         "cat_name": "All Photos"
       },
       {
-        "cat_name": "Filter by Category",
+        "cat_name": "Filter by Themes",
         "children":
         [
-          {"cat_name":"Featured"},
-          {"cat_name":"Spring"},
-          {"cat_name":"Summer"},
-          {"cat_name":"Unknown"}
+          {"cat_name":"Fall"},
+          {"cat_name":"Night"},
+          {"cat_name":"Japan"},
+          {"cat_name":"Misc."}
         ]
       },
       {
         "cat_name": "Filter by Year",
         "children":
         [
+          {"cat_name":"2016"},
           {"cat_name":"2017"},
           {"cat_name":"2018"},
           {"cat_name":"2019"}
