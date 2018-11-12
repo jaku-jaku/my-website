@@ -105,12 +105,24 @@ var G_md_converter;
 $(window).on('load', startEngine);
 // ----- Core Animation Code
 function startEngine() {
+    // alert("Done");
     var FrameTimer = setInterval(function(){
         // About me experience rendering
         Callback_Calculate(); Callback_Render();
         // side_bar
         // Callback_Sidebar();
     },10);
-    G_md_converter = new showdown.Converter()
+    G_md_converter = new showdown.Converter({
+        extensions: [
+            showdownKatex({
+                // maybe you want katex to throwOnError
+                throwOnError: true,
+                // disable displayMode
+                displayMode: false,
+                // change errorColor to blue
+                errorColor: '#1500ff',
+            }),
+        ],
+    });
 }
 

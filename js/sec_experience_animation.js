@@ -11,10 +11,11 @@ $.getJSON("sub_mod/obj_experiences.json",
 // - when resize => recompute the dots
 window.addEventListener('resize', function ()
 {
-    if(reloadBackground())
-    {
+    // console.log("resize");
+    reloadBackground();
+    setTimeout(function() {
         updateWH();
-    }
+    },500);
 });
 
 // ----- Objects
@@ -45,6 +46,7 @@ function Node(_data) {
     this.y = 0;
     this.r = 0;
     this.MODE = ENUM_NODE_MODE.idle;
+    this.RIPPLE_MAX_SCALE = 3;
     this.quadrant = 1;
     this.startTIme = Date.now();
     this.title_w = [0,0,0];
@@ -54,6 +56,7 @@ function Node(_data) {
     this.text_font = "15px Comic Sans MS";
     this.text2_font =  "12px Comic Sans MS";
     this.text_height = 15;//px
+    this.ripple_max_r = 0;
     // data at update or scrn change
     this.updateStaticData = function (_isPortrait) {
         this.READY = true;
@@ -78,6 +81,7 @@ function Node(_data) {
             this.text_height = 15;
         }
 
+        this.RIPPLE_MAX_R = this.r*this.RIPPLE_MAX_SCALE;
         this.anim_r = this.r;
         G_ctx.font = this.text_font;
         this.title_w[0] = G_ctx.measureText(m_data['title']).width;
@@ -202,9 +206,9 @@ function Node(_data) {
             {
                 this.anim_r +=0.2;
 
-                if(this.anim_r >= 3*r)
+                if(this.anim_r >= this.RIPPLE_MAX_R)
                 {
-                    this.anim_r = r;
+                    this.anim_r = this.r;
                 }
             }
             G_ctx.arc(this.x,this.y,this.anim_r, 0, 2*Math.PI, false);
@@ -269,15 +273,17 @@ function Node(_data) {
         // G_ctx.arc(_mX,_mY, 20, 0, 2*Math.PI, true);
         // G_ctx.fill();
         //Assumption: BND included
-        if (this.x >= (_mX-this.r) && this.x <= (_mX+this.r) && this.y >= (_mY-this.r) && this.y <= (_mY+this.r))
+        // --including ripple for touch detection
+        if (this.x >= (_mX-this.RIPPLE_MAX_R) && this.x <= (_mX+this.RIPPLE_MAX_R) && this.y >= (_mY-this.RIPPLE_MAX_R) && this.y <= (_mY+this.RIPPLE_MAX_R))
         {
             return true;
         }
         return false;
     };
     this.switchMODE = function (_inRange, _clicked) {
-        if((!_clicked && this.MODE===ENUM_NODE_MODE.click) || (_inRange && _clicked && this.MODE !== ENUM_NODE_MODE.click)) {
+        if((!_clicked && this.MODE===ENUM_NODE_MODE.click)||(_inRange && _clicked && this.MODE !== ENUM_NODE_MODE.click)) {
             this.MODE = ENUM_NODE_MODE.click;
+            //update side bar item
             if(G_sidebar_selected_tags.about !== this.tag)
             {
                 G_sidebar_selected_tags.about = this.tag;
@@ -289,9 +295,21 @@ function Node(_data) {
             }
         }
         else if(_inRange)
+        {
             this.MODE = ENUM_NODE_MODE.hover;
+        }
         else
+        {
             this.MODE = ENUM_NODE_MODE.idle;
+            //reset if clicked white space
+            if( G_sidebar_selected_tags.about === this.tag && _clicked)
+            {
+                G_sidebar_selected_tags.about = null;
+                G_sidebar_selected_tags.current = null;
+                updateItemTarget();
+            }
+
+        }
     };
     this.triggerMODE = function (sidebar_selection){
         if(this.tag === sidebar_selection)
@@ -336,18 +354,18 @@ function initEngine() {
 }
 
 function reloadBackground(){
-    var obtain_resources = document.getElementById('exp-img');
-    if(obtain_resources != null) {
+    var $resources = $('#exp-img');
+    var img_path = "";
+    if($resources != null) {
         if ($(window).width() < 768) {
-            // console.log('Less than 960');
-            obtain_resources.src='Resources/Core/my_experience_portrait.jpg';
+            img_path = 'Resources/Core/my_experience_portrait.jpg';
             G_portrait_mode = true;
         }
         else {
-            // console.log('More than 960');
-            obtain_resources.src='Resources/Core/my_experience.jpg';
+            img_path = 'Resources/Core/my_experience.jpg';
             G_portrait_mode = false;
         }
+        $resources.attr('src', img_path);
         return true;
     }else{
         return false;
@@ -396,7 +414,9 @@ function Callback_Calculate() {
             // console.log("initing engine");
             initEngine();//Otherwise, no need for initializing engine
             reloadBackground();
-            updateWH();
+            setTimeout(function() {
+                updateWH();
+            },500);
         }
     }else{
         if(!(G_target === "#page-about")){
@@ -408,11 +428,11 @@ function Callback_Calculate() {
             var cur_sidebar_state = ($('#sidebar').css("margin-left")==='0px');
             if( G_context_status.side_bar_visible !== cur_sidebar_state)
             {
-                reloadBackground();
+                // reloadBackground();
                 setTimeout(function() {
                     G_context_status.side_bar_visible = cur_sidebar_state;
+                    // updateWH();
                 },500);//give a 1s delay
-                updateWH();
             }
 
             if(G_context_status.side_bar_visible)

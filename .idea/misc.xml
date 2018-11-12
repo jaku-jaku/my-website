@@ -3,4 +3,9 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/Vendor/showdown-katex/asciimath-to-tex.js" />
+    <file url="file://$PROJECT_DIR$/Vendor/showdown-katex/asciimath-to-tex.spec.js" />
+    <file url="file://$PROJECT_DIR$/Vendor/showdown-katex/showdown-katex.js" />
+  </component>
 </project>

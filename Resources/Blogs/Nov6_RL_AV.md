@@ -17,14 +17,9 @@
   - Reward model R
 
 - Markov States. P $[\ref{trans_P}]$, R$[\ref{reward_R}]$ [Equations]
-  $$
-  P^a_s = P[S_{i+1} = s' | s_t = s, a_t = a] \label{trans_P}
-  $$
-
-
-$$
-R^a_{ss'}=E[r_{i+1}|s_t=s, a_t=a,s_{i+1}=s'] \label{reward_R}
-$$
+    
+   $$ P^a_s = P[S_{i+1} = s' | s_t = s, a_t = a] \label{trans_P} $$
+   $$ R^a_{ss'}=E[r_{i+1}|s_t=s, a_t=a,s_{i+1}=s'] \label{reward_R} $$
 
 #### RL (Reinforcement Learning)
 
@@ -108,3 +103,13 @@ graph TD
 
 
 
+
+$$ x=\frac{ -b\pm\sqrt{ b^2-4ac } } {2a} $$
+$$ \def\bar#1{#1^2} \bar{y} $$
+
+$$
+\begin{matrix}
+   a & b \\\
+   c & d 
+\end{matrix}
+$$
