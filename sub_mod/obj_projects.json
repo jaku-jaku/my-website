@@ -2,7 +2,7 @@
   {
     "id_name": "Course_RTOS",
     "img_directory": "Resources/Projects/Course_2B_RTOS/",
-    "img_cover": "Cover.jpg",
+    "img_cover": "min/Cover_min.jpg",
     "title": "Pixel Dungeon",
     "description": "<p> Course Project for RTOS </br> Pixel Dungeon Game on ARMKeilRTX </br><span>RTOS | 2018</span></p>",
     "tags": ["Featured_Projects", "2018", "Course_Projects", "Hardware"],
@@ -36,7 +36,7 @@
   {
     "id_name": "Hack_CtrlF_AR",
     "img_directory": "Resources/Projects/CtrlF_AR/",
-    "img_cover": "app.png",
+    "img_cover": "min/app_min.png",
     "title": "Ctrl-F AR",
     "description": "<p> a live camera feed app that utilizes a real-time text recognition SDK to perform a “Ctrl-F” in real life.  </br><span>UofT Hack | 2018</span></p>",
     "tags": ["Featured_Projects", "2018", "Hackathon", "CV", "Android"],
@@ -56,7 +56,7 @@
   {
     "id_name": "Hack_TrackyfAI",
     "img_directory": "Resources/Projects/TrackyfAI/",
-    "img_cover": "busyStreet.jpg",
+    "img_cover": "min/busyStreet_min.jpg",
     "title": "TrackyfAI",
     "description": "<p> A surveillance tool that allows miltary analysts to better analyze large amounts of video footage (CANSOFCOM) </br><span>Hack The North | 2017</span></p>",
     "tags": ["Featured_Projects", "2017", "Hackathon", "CV"],
@@ -84,7 +84,7 @@
   {
     "id_name": "Hack_SmartHelm",
     "img_directory": "Resources/Projects/WearHack2017/",
-    "img_cover": "Ultrasonic.jpg",
+    "img_cover": "min/Ultrasonic_min.jpg",
     "title": "Smart Helmet",
     "description": "<p> Attachable helmet accessory that provides sensory and audio feedback to the wearer for navigation and warnings on the street. </br><span>WearHack | 2017</span></p>",
     "tags": ["Featured_Projects", "2017", "Hackathon", "Hardware"],
@@ -108,7 +108,7 @@
   {
     "id_name": "Hack_IEEE_2017",
     "img_directory": "Resources/Projects/IEEE_2017/",
-    "img_cover": "MusicSynth.JPG",
+    "img_cover": "min/MusicSynth_min.JPG",
     "title": "Music Synthesizer",
     "description": "<p>Music Synthesizer with wireless gyro control to provide much more intuitive music mixing. </br><span> IEEE | 2017</span></p>",
     "tags": ["Featured_Projects", "2017", "Hackathon", "Hardware"],
@@ -128,7 +128,7 @@
   {
     "id_name": "Hack_McGill2016",
     "img_directory": "Resources/Projects/McGill_2016/",
-    "img_cover": "cover.png",
+    "img_cover": "min/cover_min.png",
     "title": "Music Synthesizer",
     "description": "<p> A cross-platform compatible app that changes the way we pay for dinner. </br><span> McGill Hack | 2016</span></p>",
     "tags": ["2016", "Hackathon", "Software"],
@@ -150,7 +150,7 @@
   {
     "id_name": "Course_Proj_Lego",
     "img_directory": "Resources/Projects/Course_1A_FinalProj/",
-    "img_cover": "ArmRunning.JPG",
+    "img_cover": "min/ArmRunning_min.JPG",
     "title": " LEGO Robotic Arm",
     "description": "<p>1A Mechatronics Final Project </br> A robot that is capable to perform supervised tasks (C++, C, SolidWorks) </br><span>Robotics | 2016</span> </p>",
     "tags": ["Featured_Projects", "Course_Projects", "2016", "Robotics"],
@@ -174,7 +174,7 @@
   {
     "id_name": "Hack_LineMusicRobot",
     "img_directory": "Resources/Projects/LineMusicRobot/",
-    "img_cover": "AtCompetition.JPG",
+    "img_cover": "min/AtCompetition_min.JPG",
     "title": "Line Musician",
     "description": "<p>1A Robotics Team Internal Hackathon </br><span>UWRobotics | 2016</span> </p>",
     "tags": ["Featured_Projects", "2016", "Robotics"],
@@ -195,7 +195,7 @@
   {
     "id_name": "CompRobCon",
     "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
-    "img_cover": "Comp_RobCon01.JPG",
+    "img_cover": "min/Comp_RobCon01_min.JPG",
     "title": " Robotic System Design",
     "description": "<p> Solve a series of challenges involving Mechanical, Electronics, Controls, and Automation Systems. </br><span>Robotics | 2016</span></p>",
     "tags": ["Featured_Projects", "Activities", "2016", "Robotics", "LabView"],
@@ -226,7 +226,7 @@
   {
     "id_name": "JWA_LightHouse",
     "img_directory": "Resources/Projects/Comp_Arch_LightHouse/",
-    "img_cover": "lighthouse02.JPG",
+    "img_cover": "min/lighthouse02_min.JPG",
     "title": " Light House Design",
     "description": "<p> Won <b>2nd</b> Place at JWA Architecture Competition </br><span>Architecture | 2015</span></p>",
     "tags": ["Featured_Projects", "Activities", "2015", "Architecture"],
@@ -251,7 +251,7 @@
   {
     "id_name": "CS_Astar",
     "img_directory": "Resources/Projects/Astar/",
-    "img_cover": "01.jpg",
+    "img_cover": "min/01_min.jpg",
     "title": "A star path finding",
     "description": "<p> A star implementation in Java <span>CS | 2016</span></p>",
     "tags": ["Uncategorized", "2016", "CS"],
@@ -311,7 +311,7 @@
   {
     "id_name": "Team_FRC",
     "img_directory": "Resources/Projects/Team_FRC/",
-    "img_cover": "FRC02.JPG",
+    "img_cover": "min/FRC02_min.JPG",
     "title": " Light House Design",
     "description": "<p> Participated mechanical design in Team 3161. </br><span>Robotics | 2015-2016</span></p>",
     "tags": ["Featured_Projects", "Activities", "2015", "2016", "Team", "Mechanical", "Robotics"],
@@ -336,7 +336,7 @@
   {
     "id_name": "Vlntr_Gala2016",
     "img_directory": "Resources/Projects/Vlntr_Gala/",
-    "img_cover": "gala04.JPG",
+    "img_cover": "min/gala04_min.JPG",
     "title": "Chinese New Year Gala",
     "description": "<p> Media Crew for Chinese New Year Gala </br><span> Volunteer | 2016 </span></p>",
     "tags": ["2016", "Activities"],
