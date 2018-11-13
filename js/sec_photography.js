@@ -20,9 +20,16 @@ $(function () {
 $(document).on('click', '.gallery-class.card', function () {
     var img_src=$(this).children().children().children().attr('src');
     //source original photos
+    var $img_preview = $('#imagepreview');
+    $img_preview.attr('src', img_src); // use low res first
+
     img_src= img_src.replace("/min/", "/");
     img_src= img_src.replace("_min.jpg", ".jpg");
-    $('#imagepreview').attr('src', img_src); // here asign the image to the modal when the user click the enlarge link
+    var newimg = new Image();
+    newimg.src = img_src;
+    newimg.onload = function() {
+        $img_preview.attr('src', img_src); // here assign the image to the modal when the user click the enlarge link
+    };
     $('#image-modal').modal('show');
 });
 
