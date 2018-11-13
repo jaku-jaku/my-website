@@ -77,7 +77,7 @@ function gen_cards(list_filered_, id_name_, cards_category_){
             " card col-lg-4 col-md-4 col-xs-6 col-sm-6\" id=\"" + list_filered_[i].id_name + "\">" +
             "    <span class=\"card-pic\">\n" +
             "      <div class = \"card-pic-crop\" >\n" +
-            "      <img src=\""+ list_filered_[i].img_directory + list_filered_[i].img_cover + "\"/>\n" +
+            "      <img src=\""+ list_filered_[i].img_directory + list_filered_[i].img_cover + "\" alt=\""+list_filered_[i].img_cover+"\"/>\n" +
             "      </div> \n" +
             "      <div class=\"card-description\">\n" +
             "      <div class=\"card-des-title\">\n" +
