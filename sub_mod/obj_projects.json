@@ -1,6 +1,6 @@
 [
   {
-    "id_name": "Course_RTOS",
+    "id_name": "1Course_RTOS",
     "img_directory": "Resources/Projects/Course_2B_RTOS/",
     "img_cover": "min/Cover_min.jpg",
     "title": "Pixel Dungeon",
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "id_name": "Hack_CtrlF_AR",
+    "id_name": "2Hack_CtrlF_AR",
     "img_directory": "Resources/Projects/CtrlF_AR/",
     "img_cover": "min/app_min.png",
     "title": "Ctrl-F AR",
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "id_name": "Hack_TrackyfAI",
+    "id_name": "3Hack_TrackyfAI",
     "img_directory": "Resources/Projects/TrackyfAI/",
     "img_cover": "min/busyStreet_min.jpg",
     "title": "TrackyfAI",
@@ -82,7 +82,7 @@
     ]
   },
   {
-    "id_name": "Hack_SmartHelm",
+    "id_name": "4Hack_SmartHelm",
     "img_directory": "Resources/Projects/WearHack2017/",
     "img_cover": "min/Ultrasonic_min.jpg",
     "title": "Smart Helmet",
@@ -106,7 +106,7 @@
     ]
   },
   {
-    "id_name": "Hack_IEEE_2017",
+    "id_name": "5Hack_IEEE_2017",
     "img_directory": "Resources/Projects/IEEE_2017/",
     "img_cover": "min/MusicSynth_min.JPG",
     "title": "Music Synthesizer",
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "id_name": "Hack_McGill2016",
+    "id_name": "6Hack_McGill2016",
     "img_directory": "Resources/Projects/McGill_2016/",
     "img_cover": "min/cover_min.png",
     "title": "Music Synthesizer",
@@ -148,7 +148,7 @@
     ]
   },
   {
-    "id_name": "Course_Proj_Lego",
+    "id_name": "7Course_Proj_Lego",
     "img_directory": "Resources/Projects/Course_1A_FinalProj/",
     "img_cover": "min/ArmRunning_min.JPG",
     "title": " LEGO Robotic Arm",
@@ -172,7 +172,7 @@
     ]
   },
   {
-    "id_name": "Hack_LineMusicRobot",
+    "id_name": "8Hack_LineMusicRobot",
     "img_directory": "Resources/Projects/LineMusicRobot/",
     "img_cover": "min/AtCompetition_min.JPG",
     "title": "Line Musician",
@@ -193,7 +193,7 @@
   },
 
   {
-    "id_name": "CompRobCon",
+    "id_name": "9CompRobCon",
     "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
     "img_cover": "min/Comp_RobCon01_min.JPG",
     "title": " Robotic System Design",
