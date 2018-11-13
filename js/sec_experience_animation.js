@@ -1,3 +1,13 @@
+var G_bkg_img_path =
+    [
+        'Resources/Core/my_experience_light_L.jpg',
+        'Resources/Core/my_experience_portrait_light_L.jpg',
+        'Resources/Core/min/my_experience_light_L_min.jpg',
+        'Resources/Core/min/my_experience_portrait_light_L_min.jpg',
+        'Resources/Core/min/my_experience_light_L_min2.jpg',
+        'Resources/Core/min/my_experience_portrait_light_L_min2.jpg'
+    ];
+var G_bkg_img_w = [3360,2010,2010,1202,1080,646];
 
 // ----- RUN Scrips @ Statup & resizing
 $.getJSON("sub_mod/obj_experiences.json",
@@ -357,12 +367,35 @@ function reloadBackground(){
     var $resources = $('#exp-img');
     var img_path = "";
     if($resources != null) {
-        if ($(window).width() < 768) {
-            img_path = 'Resources/Core/my_experience_portrait.jpg';
+        //always use double resolution of the device *2
+        var w = $(window).width()*2;
+        var h = $(window).height()*2;
+        if (w<h) {
+            if(h<G_bkg_img_w[5])
+            {
+                img_path = G_bkg_img_path[5];
+            }
+            else if(h<G_bkg_img_w[3])
+            {
+                img_path = G_bkg_img_path[3];
+            }
+            else{
+                img_path = G_bkg_img_path[1];
+            }
             G_portrait_mode = true;
         }
         else {
-            img_path = 'Resources/Core/my_experience.jpg';
+            if(w<G_bkg_img_w[4])
+            {
+                img_path = G_bkg_img_path[4];
+            }
+            else if(w<G_bkg_img_w[2])
+            {
+                img_path = G_bkg_img_path[2];
+            }
+            else{
+                img_path = G_bkg_img_path[0];
+            }
             G_portrait_mode = false;
         }
         $resources.attr('src', img_path);

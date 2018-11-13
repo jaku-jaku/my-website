@@ -1,72 +1,72 @@
 [
   {
     "id_name": "Fall_bestfriends",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "BestFriends.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "BestFriends_min.jpg",
     "title": "友達",
     "description": "<p> Best friends can always make me laugh no matter what, even I am in the most depressed period of my life </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Fall_Laugh",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "Laugh.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "Laugh_min.jpg",
     "title": "Laugh",
     "description": "<p> Friends' laugh makes me laugh. </br> But also makes me wanna cry like a babe. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Fall_miniature_1",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "いただきます.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "いただきます_min.jpg",
     "title": "いただきます",
     "description": "<p> Yummy?  </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Fall_nature_1",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "ちょうぼう.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "ちょうぼう_min.jpg",
     "title": "ちょうぼう",
     "description": "<p> Staring at the horizon, wishing ... </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Fall_kayak",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "kayak.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "kayak_min.jpg",
     "title": "Kayak",
     "description": "<p> Kayak in misty sky ... </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Fall_boat",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "Boat.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "Boat_min.jpg",
     "title": "折り紙 - Boat",
     "description": "<p> Dreaming ... </br> Cannon 70D </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Fall_heart",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "Heart.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "Heart_min.jpg",
     "title": "折り紙 - Heart",
     "description": "<p> Memories are playing in my dull mind </br> I hate this part, paper hearts </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Warm_tone",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "WarmTone0.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "WarmTone0_min.jpg",
     "title": "Warm Tone 1",
     "description": "<p> Remember all the good times </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
   {
     "id_name": "Warm_tone2",
-    "img_directory": "Resources/Photography/Fall/",
-    "img_cover": "WarmTone2.jpg",
+    "img_directory": "Resources/Photography/Fall/min/",
+    "img_cover": "WarmTone2_min.jpg",
     "title": "Warm Tone 2",
     "description": "<p> Remember all the time we fight </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
@@ -77,104 +77,104 @@
 
   {
     "id_name": "Japan_TokyoTower",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "TokyoTower.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "TokyoTower_min.jpg",
     "title": "東京タワー",
     "description": "<p> Tokyo Tower </br> <span> Iphone 6s </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_Flower",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "Flower.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "Flower_min.jpg",
     "title": "通りの花",
     "description": "<p> 可愛い花, 寂しよ </br>  blooming secretly, who are you showing to? </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_Tourist",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "Tourist.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "Tourist_min.jpg",
     "title": "Tourist",
     "description": "<p> Life need more adventures and stories to fulfill. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_Inari0",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "Inari.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "Inari_min.jpg",
     "title": "祈る",
     "description": "<p> We pray ... </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_Inari1",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "FushimiTaisha.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "FushimiTaisha_min.jpg",
     "title": "伏見稲荷大社",
     "description": "<p> Fushimi Inari Taisha  </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_InariFox",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "InariFox.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "InariFox_min.jpg",
     "title": "稲荷 大神",
     "description": "<p> Inari Fox Kami </br> 「食物の神様であり、稲作を司る」 </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_she",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "She.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "She_min.jpg",
     "title": "Yukata",
     "description": "<p> Yukata </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_Inari2",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "Inari2.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "Inari2_min.jpg",
     "title": "白い 願い",
     "description": "<p> White dreams, white wishes </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_SkyBuilderCam",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "SkyBuilder.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "SkyBuilder_min.jpg",
     "title": "Sky Builder",
     "description": "<p> Dreams are built on top of the sky, </br> That's why I am staring at it </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_StreetPole",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "Streetpole1.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "Streetpole1_min.jpg",
     "title": "電柱 - 白い空",
     "description": "<p> 電柱【でんちゅう】 made this pale sky more interesting. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_StreetPole2",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "Streetpole2.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "Streetpole2_min.jpg",
     "title": "電柱 - 青空",
     "description": "<p> 電柱【でんちゅう】 made this pale sky more interesting. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_kinkaku",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "kinkaku.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "kinkaku_min.jpg",
     "title": "金閣寺",
     "description": "<p> 白い　金閣寺 </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
   {
     "id_name": "Japan_matcha",
-    "img_directory": "Resources/Photography/Japan/",
-    "img_cover": "matcha.jpg",
+    "img_directory": "Resources/Photography/Japan/min/",
+    "img_cover": "matcha_min.jpg",
     "title": "抹茶 -　初の夏",
     "description": "<p> In summer, all I wish is your favourite Matcha Tea.  </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
@@ -184,32 +184,32 @@
 
   {
     "id_name": "Night_alone",
-    "img_directory": "Resources/Photography/Night/",
-    "img_cover": "Alone.jpg",
+    "img_directory": "Resources/Photography/Night/min/",
+    "img_cover": "Alone_min.jpg",
     "title": "Light",
     "description": "<p> Always waiting for you </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2017"]
   },
   {
     "id_name": "Night_Sinking",
-    "img_directory": "Resources/Photography/Night/",
-    "img_cover": "Sinking.jpg",
+    "img_directory": "Resources/Photography/Night/min/",
+    "img_cover": "Sinking_min.jpg",
     "title": "残念 / Sinking",
     "description": "<p> Slowly sinking </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2016"]
   },
   {
     "id_name": "Night_Milky",
-    "img_directory": "Resources/Photography/Night/",
-    "img_cover": "MilkySky.jpg",
+    "img_directory": "Resources/Photography/Night/min/",
+    "img_cover": "MilkySky_min.jpg",
     "title": "天の川",
     "description": "<p> Stars are the only hope in the night. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2016"]
   },
   {
     "id_name": "Night_Cat",
-    "img_directory": "Resources/Photography/Night/",
-    "img_cover": "Cat.jpg",
+    "img_directory": "Resources/Photography/Night/min/",
+    "img_cover": "Cat_min.jpg",
     "title": "ネコ（猫）",
     "description": "<p>What did you find in this cold dark? </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2016"]
@@ -219,8 +219,8 @@
 
   {
     "id_name": "Misc_Cam",
-    "img_directory": "Resources/Photography/Misc/",
-    "img_cover": "CamDream.jpg",
+    "img_directory": "Resources/Photography/Misc/min/",
+    "img_cover": "CamDream_min.jpg",
     "title": "Bokeh Dream",
     "description": "<p> I wish I could stay in my dream longer, </br> But I gotta get up. </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Misc.", "2016"]

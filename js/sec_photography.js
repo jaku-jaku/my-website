@@ -19,6 +19,9 @@ $(function () {
 
 $(document).on('click', '.gallery-class.card', function () {
     var img_src=$(this).children().children().children().attr('src');
+    //source original photos
+    img_src= img_src.replace("/min/", "/");
+    img_src= img_src.replace("_min.jpg", ".jpg");
     $('#imagepreview').attr('src', img_src); // here asign the image to the modal when the user click the enlarge link
     $('#image-modal').modal('show');
 });
@@ -50,7 +53,7 @@ $('.modal').on('show.bs.modal', function() {
 });
 
 $(window).resize(function() {
-    if ($('#image-modal.modal.in').length != 0) {
+    if ($('#image-modal.modal.in').length !== 0) {
         setModalMaxHeight($('#image-modal.modal.in'));
     }
 });

@@ -7,6 +7,8 @@ def resizeImage(infile, output_dir=""):
      outfile = os.path.splitext(infile)[0]+"_min"
      extension = os.path.splitext(infile)[1]
      w=1024
+     logo = Image.open('../../Logo/JXX.png')
+     logo.thumbnail((60, 60))
      if (cmp(extension, ".jpg")):
         return
 
@@ -20,7 +22,11 @@ def resizeImage(infile, output_dir=""):
                 nh = w
                 w = height*width/nh
             im.thumbnail((w, nh), Image.ANTIALIAS)
-            im.save(output_dir+outfile+extension,"JPEG")
+
+            image_copy = im.copy()
+            position = ((image_copy.width - logo.width - 10), (image_copy.height - logo.height - 10))
+            image_copy.paste(logo, position, logo)
+            image_copy.save(output_dir+outfile+extension,"JPEG")
         except IOError:
             print "cannot reduce image for ", infile
 
