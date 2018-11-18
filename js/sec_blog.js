@@ -58,9 +58,15 @@ function gen_blog(id_){
             });
         }else{
             console.warn("Blog doesn't exsit!");
+            G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
+            G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
+            updateItemTarget();
         }
     }else{
         console.error("Unable to load blogs!");
+        G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
+        G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
+        updateItemTarget();
     }
 
 }
@@ -68,5 +74,8 @@ function gen_blog(id_){
 
 $(document).on('click', '.blog-class.card', function () {
     var id = this.id;
+    var def_cat = this.getAttribute("default-cat");
+    var url      = window.location.href;
+    window.location.href = url +"_"+ def_cat + "/"+id;//update href
     gen_blog(id);
 });

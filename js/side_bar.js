@@ -111,6 +111,8 @@ function updateItemTarget(){
         // console.log(G_sidebar_selected_tags.blog);
         if(G_sidebar_selected_tags.blog === "#page-blog_All_Blogs")
         {
+            var url      = window.location.href;
+            window.location.href = url.split("#")[0] + "#page-blog_All_Blogs";//Override
             $("#display-section").load("sub_mod/sec_blog.html",
                 function(responseTxt, statusTxt, xhr){
                     if(statusTxt === "success")

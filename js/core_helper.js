@@ -76,7 +76,7 @@ function gen_cards(list_filered_, id_name_, cards_category_){
         html_gened += " <li class=\"pfo-item\">\n" +
             "<div class=\""+
             cards_category_+
-            " card col-lg-4 col-md-4 col-xs-6 col-sm-6\" id=\"" + list_filered_[i].id_name + "\">" +
+            " card col-lg-4 col-md-4 col-xs-6 col-sm-6\" id=\"" + list_filered_[i].id_name + "\" default-cat=\""+c_S(list_filered_[i].tags[0])+"\">" +
             "    <span class=\"card-pic\">\n" +
             "      <div class = \"card-pic-crop\" >\n" +
             "      <img src=\""+ list_filered_[i].img_directory + list_filered_[i].img_cover + "\" alt=\""+list_filered_[i].img_cover+"\"/>\n" +
@@ -122,9 +122,10 @@ function Callback_file_system(){
     if(G_prev_url !== url)
     {
         G_prev_url = url;
-        var tag = "#"+url.split("#").pop();
-        tag = tag.split("/")[0];
-        tag = tag.split("_")[0];
+        var hash_val = "#"+url.split("#").pop();
+        var tags = hash_val.split("/")[0];
+        tags = tags.split("_");
+        var tag = tags[0];
         //For page refreshing
         if(G_target !== tag){
             // console.log(tag);
@@ -135,9 +136,17 @@ function Callback_file_system(){
                 {
                     if(G_target === "#page-blog")
                     {
-                        //this will make sure it always goes to the main page
-                        G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
-                        G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
+                        var sub_files = hash_val.split("/");
+                        if(sub_files.length>=2)
+                        {
+
+                            //this will make sure it always goes to the main page
+                            G_sidebar_selected_tags.current = sub_files[sub_files.length-1];
+                            G_sidebar_selected_tags.blog = sub_files[sub_files.length-1];
+                        }else{
+                            G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
+                            G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
+                        }
                     }
 
                     loadSideBarRemappedBy(G_target);
