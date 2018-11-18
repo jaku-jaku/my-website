@@ -14,6 +14,8 @@ var G_context_status =
         side_bar_visible: true
     };
 
+var G_PAGE_REFERENCE = ["#page-about", "#page-blog", "#page-projects", "#page-photography", "#page-contact"];
+
 /*----------------------------------------------------*/
 /* Json helper functions
 ------------------------------------------------------ */
@@ -101,7 +103,6 @@ function gen_cards(list_filered_, id_name_, cards_category_){
 /*----------------------------------------------------*/
 /* Const Intv Thread
 ------------------------------------------------------ */
-var G_md_converter;
 // - compute at load
 $(window).on('load', startEngine);
 // ----- Core Animation Code
@@ -109,8 +110,51 @@ function startEngine() {
     // alert("Done");
     var FrameTimer = setInterval(function(){
         // About me experience rendering
-        Callback_Calculate(); Callback_Render();
+        Callback_Calculate(); Callback_Render(); Callback_file_system();
         // side_bar
         // Callback_Sidebar();
     },10);
+}
+
+var G_prev_url = "";
+function Callback_file_system(){
+    var url      = window.location.href;     // Returns full URL
+    if(G_prev_url !== url)
+    {
+        G_prev_url = url;
+        var tag = "#"+url.split("#").pop();
+        tag = tag.split("/")[0];
+        tag = tag.split("_")[0];
+        //For page refreshing
+        if(G_target !== tag){
+            // console.log(tag);
+            //only if it is a valid page
+            if(G_PAGE_REFERENCE.indexOf(tag)>=0)
+            {
+                G_target = tag;
+                {
+                    if(G_target === "#page-blog")
+                    {
+                        //this will make sure it always goes to the main page
+                        G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
+                        G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
+                    }
+
+                    loadSideBarRemappedBy(G_target);
+                    updateItemTarget();
+                    // reloadPage($(), false);
+                    $(".nav-bar-click").each(function() {
+                        var $this = $(this);
+                        var href_str = $this.attr("href");
+                        if(href_str === tag){
+                            reloadPage($this, false);
+                        }
+                    });
+                }
+            }
+            // else{
+            //     console.warn("page not exist");
+            // }
+        }
+    }
 }

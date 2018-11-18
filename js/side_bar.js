@@ -15,12 +15,13 @@ $(document).on('click', '.nav-bar-click', function (e) {
         if(G_target === "#page-blog")
         {
             //this will make sure it always goes to the main page
-            G_sidebar_selected_tags.current = "All_Blogs";
-            G_sidebar_selected_tags.blog = "All_Blogs";
+            G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
+            G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
         }
         loadSideBarRemappedBy(G_target);
         updateItemTarget();
     }
+    reloadPage($this, false);
 });
 
 /*----------------------------------------------------*/
@@ -107,7 +108,8 @@ function updateItemTarget(){
         }
     });
     if(G_target === "#page-blog"){
-        if(G_sidebar_selected_tags.blog === "All_Blogs")
+        // console.log(G_sidebar_selected_tags.blog);
+        if(G_sidebar_selected_tags.blog === "#page-blog_All_Blogs")
         {
             $("#display-section").load("sub_mod/sec_blog.html",
                 function(responseTxt, statusTxt, xhr){
@@ -157,7 +159,7 @@ function loadJsonFileSideBar() {
     }
 }
 
-function loadSideBarBy(title_){
+function loadSideBarBy(title_, hash_topic){
     if(!G_j_sidebar_Obj)
     {
         return;
@@ -174,12 +176,12 @@ function loadSideBarBy(title_){
         {
             var main_cat_obj = main_categories[i];
             var main_cat_name = main_cat_obj.cat_name;
-            var hashLink = title_ +"/"+ main_cat_name;
+            var hashLink = hash_topic +"_"+ main_cat_name;
             var sub_categories = main_cat_obj.children;
             hashLink = c_S(hashLink);
             if(sub_categories)//Exist
             {
-                var li_id = title_ +"_"+ main_cat_name;
+                var li_id = hash_topic +"_"+ main_cat_name;
                 li_id = c_S(li_id);//replace space with '_'
                 html_block += "<li>";
                 html_block += "<a href=\"#"+li_id+"\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"dropdown-toggle\">"
@@ -234,7 +236,7 @@ function loadSideBarRemappedBy(selected_topic_){
             G_sidebar_selected_tags.current = G_sidebar_selected_tags.contact;
             break;
     }
-    loadSideBarBy(title);
+    loadSideBarBy(title, selected_topic_.split("#").pop());
 }
 
 

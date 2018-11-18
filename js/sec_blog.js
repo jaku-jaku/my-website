@@ -69,5 +69,4 @@ function gen_blog(id_){
 $(document).on('click', '.blog-class.card', function () {
     var id = this.id;
     gen_blog(id);
-
 });

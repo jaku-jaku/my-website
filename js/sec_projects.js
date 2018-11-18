@@ -1,7 +1,7 @@
-$(document).on('click', '.nav-bar-click', function (e) {
-    var $this = $(this);
-    reloadPage($this, false);
-});
+// $(document).on('click', '.nav-bar-click', function (e) {
+//     var $this = $(this);
+//     reloadPage($this, false);
+// });
 
 function reloadPage($this, force)
 {

@@ -70,7 +70,7 @@ function Node(_data) {
     function getFont(fontSize, fontBase_) {
         var ratio = fontSize / fontBase_;   // calc ratio
         var size = G_CVS.width * ratio;   // get font size based on current width
-        return [((size|0) + 'px sans-serif'), (size|0)]; // set font
+        return [((size|0) + 'px Comic Sans MS'), (size|0)]; // set font
     }
     // data at update or scrn change
     this.updateStaticData = function (_isPortrait) {
@@ -96,7 +96,7 @@ function Node(_data) {
             var tf1 = getFont(15,1000);
             var tf2 = getFont(12,1000);
             this.text_font = tf1[0];
-            console.log(this.text_font);
+            // console.log(this.text_font);
             this.text2_font = tf2[0];
             this.text_height = tf1[1]+2;
         }else{
