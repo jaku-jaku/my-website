@@ -113,16 +113,4 @@ function startEngine() {
         // side_bar
         // Callback_Sidebar();
     },10);
-    G_md_converter = new showdown.Converter({
-        extensions: [
-            showdownKatex({
-                // maybe you want katex to throwOnError
-                throwOnError: true,
-                // disable displayMode
-                displayMode: false,
-                // change errorColor to blue
-                errorColor: '#1500ff',
-            }),
-        ],
-    });
 }

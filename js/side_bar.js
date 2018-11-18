@@ -12,6 +12,12 @@ $(document).on('click', '.nav-bar-click', function (e) {
     if(click_target !== G_target)
     {
         G_target = click_target;
+        if(G_target === "#page-blog")
+        {
+            //this will make sure it always goes to the main page
+            G_sidebar_selected_tags.current = "All_Blogs";
+            G_sidebar_selected_tags.blog = "All_Blogs";
+        }
         loadSideBarRemappedBy(G_target);
         updateItemTarget();
     }
@@ -35,7 +41,6 @@ $(document).on('click', '.side-bar-click', function (e) {
                 break;
             case "#page-blog":
                 G_sidebar_selected_tags.blog = G_sidebar_selected_tags.current;
-                // console.log(G_sidebar_selected_tags.blog);
                 break;
             case "#page-projects":
                 disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, tag_in_attr, '#pfo-bundle', 'pfo-class');

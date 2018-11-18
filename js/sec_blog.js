@@ -30,9 +30,30 @@ function gen_blog(id_){
                 url : url_path,
                 dataType: "text",
                 success : function (data) {
-                    html_content = G_md_converter.makeHtml(data);
+                    const md = window.markdownit();
+
+                    md.use(MermaidPlugin);
+                    md.use(markdownitMark);
+                    html_content = md.render(data);
+
                     $("#display-section").html(html_content);
                     G_sidebar_selected_tags.blog = id_;
+                    G_sidebar_selected_tags.current = id_;
+                    MathJax.Hub.Config({
+                        tex2jax: {
+                            inlineMath: [['$$','$$'], ['$','$']],
+                            processEscapes: true,
+                            TeX: { equationNumbers: { autoNumber: "AMS" } },
+                            typographer: true
+                        }
+                    });
+
+                    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);  // renders mathjax if 'typeset' is true (or undefined)
+                    //theme
+                    if (window.mermaid) {
+                        mermaid.initialize({theme: 'forest'});
+                    }
+                    mermaid.init({noteMargin: 10}, ".mermaid");
                 }
             });
         }else{
@@ -48,4 +69,5 @@ function gen_blog(id_){
 $(document).on('click', '.blog-class.card', function () {
     var id = this.id;
     gen_blog(id);
+
 });

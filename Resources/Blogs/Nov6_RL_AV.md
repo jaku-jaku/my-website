@@ -16,20 +16,21 @@
   - Transition model P
   - Reward model R
 
-- Markov States. P $[\ref{trans_P}]$, R$[\ref{reward_R}]$ [Equations]
+- Markov States. P, R
     
-   $$ P^a_s = P[S_{i+1} = s' | s_t = s, a_t = a] \label{trans_P} $$
-   $$ R^a_{ss'}=E[r_{i+1}|s_t=s, a_t=a,s_{i+1}=s'] \label{reward_R} $$
+   $$ P^a_s = P[S_{i+1} = s' | s_t = s, a_t = a]  $$
+   $$ R^a_{ss'}=E[r_{i+1}|s_t=s, a_t=a,s_{i+1}=s'] $$
 
 #### RL (Reinforcement Learning)
 
-```sequence
-Environment->Agent: state S and Reward R
-Note right of Agent: Imitation Learning
-Agent->Environment: Action: a
+```mermaid
+sequenceDiagram
+    Environment->>Agent: state S and Reward R
+    Note right of Agent: Imitation Learning
+    Agent->>Environment: Action: a
 ```
 
-
+  
 
 #### Types of RL Algorithms
 
@@ -101,15 +102,3 @@ graph TD
 - It is hard to design best rewarding functions
   - One approach: use Inverse Reinforcement Learning (IRL) to figure out the reward function.
 
-
-
-
-$$ x=\frac{ -b\pm\sqrt{ b^2-4ac } } {2a} $$
-$$ \def\bar#1{#1^2} \bar{y} $$
-
-$$
-\begin{matrix}
-   a & b \\\
-   c & d 
-\end{matrix}
-$$

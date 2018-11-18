@@ -2,10 +2,19 @@
   {
     "id_name": "AV_course",
     "img_directory": "Resources/Blog_imgs/",
-    "img_cover": "JXX.jpg",
+    "img_cover": "ml.jpg",
     "title": "Reinforcement Learning",
     "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
     "tags": ["Course Notes", "2018", "Autonomous"],
     "md_file_name": "Nov6_RL_AV.md"
+  },
+  {
+    "id_name": "ROS_note_nov12",
+    "img_directory": "Resources/Blog_imgs/",
+    "img_cover": "ros.jpg",
+    "title": "ROS Note Intro.",
+    "description": "<p> Useful ROS notes for beginners</p>",
+    "tags": ["ROS Notes", "2018", "Robotics"],
+    "md_file_name": "Ros-Nov12-2018.md"
   }
 ]

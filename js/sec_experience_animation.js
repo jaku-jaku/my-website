@@ -66,7 +66,12 @@ function Node(_data) {
     this.text_font = "15px Comic Sans MS";
     this.text2_font =  "12px Comic Sans MS";
     this.text_height = 15;//px
-    this.ripple_max_r = 0;
+    this.RIPPLE_MAX_R = 0;
+    function getFont(fontSize, fontBase_) {
+        var ratio = fontSize / fontBase_;   // calc ratio
+        var size = G_CVS.width * ratio;   // get font size based on current width
+        return [((size|0) + 'px sans-serif'), (size|0)]; // set font
+    }
     // data at update or scrn change
     this.updateStaticData = function (_isPortrait) {
         this.READY = true;
@@ -77,18 +82,27 @@ function Node(_data) {
             this.y = G_WH[1]*m_data['position_v'][1]/100;
             this.r = G_WH[0]*m_data['position_v'][2]/100;
             this.quadrant = m_data['position_v'][3]%5;
-            this.text_font = "13px Comic Sans MS";
-            this.text2_font =  "10px Comic Sans MS";
-            this.text_height = 10;
         }else
         {
             this.x = G_WH[0]*m_data['position'][0]/100;
             this.y = G_WH[1]*m_data['position'][1]/100;
             this.r = G_WH[0]*m_data['position'][2]/100;
             this.quadrant = m_data['position'][3]%5;
-            this.text_font = "15px Comic Sans MS";
-            this.text2_font =  "12px Comic Sans MS";
-            this.text_height = 15;
+        }
+        if(G_CVS.width>1080)
+        {
+
+        }else if(G_CVS.width>480){
+            var tf1 = getFont(15,1000);
+            var tf2 = getFont(12,1000);
+            this.text_font = tf1[0];
+            console.log(this.text_font);
+            this.text2_font = tf2[0];
+            this.text_height = tf1[1]+2;
+        }else{
+            this.text_font = "13px Comic Sans MS";
+            this.text2_font =  "10px Comic Sans MS";
+            this.text_height = 10;
         }
 
         this.RIPPLE_MAX_R = this.r*this.RIPPLE_MAX_SCALE;
