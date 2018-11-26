@@ -253,12 +253,12 @@ F --System Modelling --> H2
 H2 == Sub category ===H
 subgraph Software
 C --modeling and alhgotithmic-->H3
-A --Algorithm, data generalization--> C
+A --Asset & Algorithm, data generalization--> C
 E --> H4
 G --> H4
 G --> H5
-C --> H5
-E -. CV .-> G
+C --> H4
+E -. Asset & CV .-> G
 end
 G -. Topic .-> H2
 H4-- Key -->H
