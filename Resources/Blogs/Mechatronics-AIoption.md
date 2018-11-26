@@ -46,7 +46,7 @@ The [AI Option][1] will be available for Bachelor of Applied Science (BASc) stud
 - [ ] [ECE 423](https://ugradcalendar.uwaterloo.ca/courses/ECE/423) Embedded Computer Systems
 - [x] ==**[ECE 481](https://ugradcalendar.uwaterloo.ca/courses/ECE/481) Digital Control Systems**== ==<span style="color:blue">**:: Already in the curriculum by default | 4A ECE484 - Digital Control Applications**</span>== 
 - [ ] [ECE 486](https://ugradcalendar.uwaterloo.ca/courses/ECE/486) Robot Dynamics and Control
-- [ ] [ECE 488](https://ugradcalendar.uwaterloo.ca/courses/ECE/488) Multivariable Control Systems
+- [ ] **[ECE 488](https://ugradcalendar.uwaterloo.ca/courses/ECE/488) Multivariable Control Systems**
 - [ ] [MSCI 446](https://ugradcalendar.uwaterloo.ca/courses/MSCI/446) Data Warehousing and Mining
 - [x] ==**[MTE 544](https://ugradcalendar.uwaterloo.ca/courses/MTE/544) Autonomous Mobile Robots**==
 - [ ] [STAT 341](https://ugradcalendar.uwaterloo.ca/courses/STAT/341) Computational Statistics and Data Analysis
@@ -92,16 +92,15 @@ F: <span style="background-color:#FF7417;border: none;
      ​    text-align: center; font-weight: bold; text-decoration: none; display: 	 inline-block;font-size: 16px;">Spring</span>
 
    - The course starts by addressing the ill-structured problems and need for computational intelligence methods. It introduces the **concepts of heuristics** and their use in conjunction with search methods, **solving problems using heuristics and metaheuristics, constraints satisfaction**. The course also introduces the **concepts of cooperation and adaptations** and how they are influencing new methods for solving complex problems. The course starts by illustrating how the concepts of cooperation and adaptation are manifested in nature and how such models are inspiring new types of solutions methods. Topics to be covered include: **search algorithms**, **game playing**, **constraints satisfaction**, meta-heuristics, evolutionary computing methods, **swarm intelligence**, **ant-colony algorithms**, particle swarm methods, adaptive and learning algorithms and the use of these algorithms in solving continuous and discrete problems that arise in engineering applications. [Offered: S]
+
    - *Prereq: ==Level at least 4A== Computer Engineering or Electrical Engineering or Software Engineering.*
+
    - *Antireq: CS 486, SYDE 422/522*
 
    - [ ] **MSCI 435 LEC,TUT 0.50** | **Advanced Optimization Techniques** | ID: 012389 
 
-        <span style="background-color:#008CBA;border: none;
-
-       color: white; padding: 5px 15px; border-radius: 20px 5px;
-       text-align: center; font-weight: bold; text-decoration: none; display: 	 inline-block;font-size: 16px;">Winter</span>
-
+        <span style="background-color:#008CBA;border: none;color: white; padding: 5px 15px; border-radius: 20px 5px;
+        text-align: center; font-weight: bold; text-decoration: none; display: 	 inline-block;font-size: 16px;">Winter</span>
    - This course covers more advanced topics in **optimization** that go beyond the contents of MSCI 331 and MSCI 332. The course will cover topics such as **constraint programming,** **stochastic programming**, **large scale optimization**, or **complementarity problems**. [Offered: W]
    - *Prereq: MSCI 331, 332*
 
@@ -258,6 +257,7 @@ A --Algorithm, data generalization--> C
 E --> H4
 G --> H4
 G --> H5
+C --> H5
 E -. CV .-> G
 end
 G -. Topic .-> H2
