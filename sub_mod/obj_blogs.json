@@ -16,5 +16,15 @@
     "description": "<p> Useful ROS notes for beginners</p>",
     "tags": ["ROS Notes", "2018", "Robotics"],
     "md_file_name": "Ros-Nov12-2018.md"
+  },
+  {
+    "id_name": "Blog_Nov_25_AI_option",
+    "img_directory": "Resources/Blog_imgs/",
+    "img_cover": "JX_blog.jpg",
+    "title": "About AI option",
+    "description": "<p> My research & thoughts on UW AI options as 3A Mechatronics Student </p>",
+    "tags": ["Daily Blogs", "2018", "MTE"],
+    "md_file_name": "Mechatronics-AIoption.md",
+    "theme": "default"
   }
 ]

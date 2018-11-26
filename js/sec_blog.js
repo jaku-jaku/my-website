@@ -30,10 +30,21 @@ function gen_blog(id_){
                 url : url_path,
                 dataType: "text",
                 success : function (data) {
-                    const md = window.markdownit();
+                    const md = window.markdownit({
+                        html: true,
+                        linkify: true,
+                        typographer: true,
+                    });
+
+                    md.use(markdownitCheckbox,{
+                        divWrap: true,
+                        divClass: 'cb',
+                        idPrefix: 'cbx_'
+                    });
 
                     md.use(MermaidPlugin);
                     md.use(markdownitMark);
+
                     html_content = md.render(data);
 
                     $("#display-section").html(html_content);
@@ -50,8 +61,11 @@ function gen_blog(id_){
 
                     MathJax.Hub.Queue(["Typeset", MathJax.Hub]);  // renders mathjax if 'typeset' is true (or undefined)
                     //theme
+                    let theme_ = G_j_blogs_filtered[i].theme;
+                    if(!theme_)
+                        theme_ = 'forest';//default
                     if (window.mermaid) {
-                        mermaid.initialize({theme: 'forest'});
+                        mermaid.initialize({theme: theme_});//{theme: 'forest'}
                     }
                     mermaid.init({noteMargin: 10}, ".mermaid");
                 }

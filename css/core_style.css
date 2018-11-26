@@ -1,4 +1,57 @@
 /* ==============================
+-  checkbox
+============================== */
+input[id*='checkbox'] {
+  position: absolute;
+  opacity: 0;
+}
+input[id*='checkbox'] + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+input[id*='checkbox'] + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: whitesmoke;
+}
+input[id*='checkbox']:hover + label:before {
+  background: #f35429;
+}
+input[id*='checkbox']:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+input[id*='checkbox']:checked + label:before {
+  background: dimgrey;
+}
+input[id*='checkbox']:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+input[id*='checkbox']:disabled + label:before {
+  box-shadow: none;
+  background: whitesmoke;
+}
+input[id*='checkbox']:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: whitesmoke;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/* ==============================
 -  markdown
 ============================== */
 mark{
