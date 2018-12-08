@@ -483,7 +483,7 @@ A declarator declares a single name within a declaration.
 
 - Multi-D
 
-  - Identity matrix: `int id1[3][3]={{1},{0,1},{0,0,1}};`
+  - Identity matrix: `int id1[3][3]={ {1},{0,1},{0,0,1} };`
   - Identity matrix: `int id2[3][3]={1,0,0,0,1,0,0,0,1};`
 
 - An **array** of **char** or **wchar_t** is special, because we can use a **string** literal
