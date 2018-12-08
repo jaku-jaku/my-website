@@ -26,5 +26,15 @@
     "tags": ["Daily Blogs", "2018", "MTE"],
     "md_file_name": "Mechatronics-AIoption.md",
     "theme": "default"
+  },
+  {
+    "id_name": "Blog_note_Cpp_Chapter02",
+    "img_directory": "Resources/Blog_imgs/",
+    "img_cover": "NutshellCpp.jpg",
+    "title": "C++ in a Nutshell - Ch02",
+    "description": "<p> \"C++ in a Nutshell\" <br> Summary & Notes <br> Chapter 02 - Declarations </p>",
+    "tags": ["Daily Blogs", "2018", "Cpp"],
+    "md_file_name": "NutshellCpp_Ch2_Declarations.md",
+    "theme": "default"
   }
 ]
