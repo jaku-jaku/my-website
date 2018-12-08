@@ -267,7 +267,8 @@ A declarator declares a single name within a declaration.
 
   ```c++
   int data[] ={2,4,6}; //data[3]
-  int matA[][3]={{1,0,0},{1,2,3}}; //matA[2][3]
+  int matA[][3]={{1,0,0},
+                 {1,2,3}}; //matA[2][3]
   char str[] = "hello"; // str[6], with trailing \0
   ```
 
