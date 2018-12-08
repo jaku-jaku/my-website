@@ -444,7 +444,7 @@ A declarator declares a single name within a declaration.
 
   Ex:
 
-  ```
+  ```c++
   int x;				
   int &r = x; 		// Reference to int
   int& const rc = x;  // ERR: no cv qualified references

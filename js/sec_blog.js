@@ -34,6 +34,17 @@ function gen_blog(id_){
                         html: true,
                         linkify: true,
                         typographer: true,
+                        highlight: function (str, lang) {
+                            if (lang && hljs.getLanguage(lang)) {
+                                try {
+                                    return '<pre class="hljs"><code>' +
+                                        hljs.highlight(lang, str, true).value +
+                                        '</code></pre>';
+                                } catch (__) {}
+                            }
+
+                            return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+                        }
                     });
 
                     md.use(markdownitCheckbox,{
@@ -45,7 +56,7 @@ function gen_blog(id_){
                     md.use(MermaidPlugin);
                     md.use(markdownitMark);
 
-                    html_content = md.render(data);
+                    let html_content = md.render(data);
 
                     $("#display-section").html(html_content);
                     G_sidebar_selected_tags.blog = id_;
