@@ -36,5 +36,26 @@
     "tags": ["Daily Blogs", "2018", "Cpp"],
     "md_file_name": "NutshellCpp_Ch2_Declarations.md",
     "theme": "default"
+  },
+  {
+    "id_name": "Blog_note_Cpp_Chapter03",
+    "img_directory": "Resources/Blog_imgs/",
+    "img_cover": "NutshellCpp.jpg",
+    "title": "C++ in a Nutshell - Ch03",
+    "description": "<p> \"C++ in a Nutshell\" <br> Summary & Notes <br> Chapter 03 - Expressions </p>",
+    "tags": ["Daily Blogs", "2018", "Cpp"],
+    "md_file_name": "NutshellCpp_Ch3_Expressions.md",
+    "theme": "default"
+  },
+  {
+    "id_name": "Blog_note_Cpp_Chapter04",
+    "img_directory": "Resources/Blog_imgs/",
+    "img_cover": "NutshellCpp.jpg",
+    "title": "C++ in a Nutshell - Ch04",
+    "description": "<p> \"C++ in a Nutshell\" <br> Summary & Notes <br> Chapter 04 - Statements </p>",
+    "tags": ["Daily Blogs", "2018", "Cpp"],
+    "md_file_name": "NutshellCpp_Ch4_Statements.md",
+    "theme": "default"
   }
+
 ]
