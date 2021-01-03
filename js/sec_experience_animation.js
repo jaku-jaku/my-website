@@ -1,3 +1,4 @@
+// -- WARNING: This page is ARCHIVED in v3 --
 var G_bkg_img_path =
     [
         'Resources/Core/my_experience_light_L.jpg',
