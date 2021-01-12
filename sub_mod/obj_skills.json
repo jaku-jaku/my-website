@@ -1,0 +1,21 @@
+[
+    {
+        "software"     :["C++", "C", "Python", "C#", "Java", "Javascript"],
+        "tools"        :["ROS", "Linux", "Git", "FreeRTOS", "OpenCV", "OpenGL", "HoloLens", "Unity", "IAR", "VisualStudio", "MATLAB", "CAN"],
+        "hardware"     :["Cortex ARM", "AVR", "PLC", "Arduino", "ESP8266", "Soldering", "Rapid Prototyping"],
+        "mechanical"   :["Fusion 360", "AutoCAD", "SolidWorks", "VectorWorks", "Laser Cutting", "3D printing", "Machining"]
+    },
+    {
+        "university_of_waterloo":[
+            "CS 480: Intro. to Machine Learning",
+            "SYDE 575: Image Processing",
+            "SYDE 572: Pattern Recognition",
+            "ECE 457A: Adaptive & Cooperative Algo.",
+            "MTE 457B: Fundamentals of Computational Intelligence",
+            "MTE 544: Autonomous Mobile Robotics",
+            "PSYCH 207: Cognitive Science",
+            "ECE 484: Digital Control",
+            "ECE 488: Multivariable Control Systems"
+        ]
+    }
+]

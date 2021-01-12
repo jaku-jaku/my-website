@@ -8,6 +8,7 @@
         "cat_name": "Internship",
         "children":
         [
+          {"cat_name":"Embedded Software Dev."},
           {"cat_name":"Firmware Dev."},
           {"cat_name":"AR Software Dev."},
           {"cat_name":"Jack of all robots"}
@@ -18,9 +19,7 @@
         "children":
         [
           {"cat_name":"Team Lead"},
-          {"cat_name":"Product Manager"},
-          {"cat_name":"Robotic Engineer"},
-          {"cat_name":"Perception Software R&D"}
+          {"cat_name":"Robotics Engineer"}
         ]
       }
     ]
