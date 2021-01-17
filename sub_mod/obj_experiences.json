@@ -10,9 +10,12 @@
     "Description":"Developed software for sensing and actuation, and led embedded software developments for ultrasonics sensors.",
     "web": "http://tesla.com/",
     "Bullets": [
-      "A", 
-      "B", 
-      "C"
+      "Developed thermal protection model for M3/Y steering column.", 
+      "Developed ultrasonics sensing technologies to support autopilot in embedded controllers.", 
+      "Developed many automation toolsets needed for the developments. (Python, C)",
+      "Raised issues and improved the driver proﬁle recall interface for Model 3 Seats with a full coverage of unit tests",
+      "Coordinated with multiple teams to develop the interface to allow a real-time coordination between the ﬁrst and second row seats on the Model X",
+      "Developed various toolsets for data analysis and system modeling to assist multiple developments (Python)"
     ]
   },
 
@@ -27,9 +30,8 @@
     "Description":"Developed an unique shape detection algorithm, GUI debugging tools, and core firmware of ShadowSense (modular) touch screen for large scale video wall.",
     "web": "http://baanto.com/",
     "Bullets": [
-      "A", 
-      "B", 
-      "C"
+      "Improved performance of the ﬁrmware and developed a unique and adaptive algorithm (C++) to recognize polygon shapes for multi-touch ShadowSense touchscreens in realtime over 60Hz in all form factor",
+      "Devised useful analysis tools (Excel, VBA, Python) and a real-time sensor data visualizing application (C#, C++, Unity), which minimized time and eﬀorts spent on debugging and testing by over 60% (The visualizer has also being used for conference demos to showcase complex operations behind the scenes)"
     ]
   },
 
@@ -44,9 +46,9 @@
     "Description":"Worked on a state-of-the-art real-time AR project (HoloLens, UWP, OpenGL, OpenCV, C++) ",
     "web": "http://interaptix.com/",
     "Bullets": [
-      "A", 
-      "B", 
-      "C"
+      "Created a state-of-the-art real-time AR project and also conducted various R&D in CV and ML",
+      "Developed a variety of evaluation tools (C++, OpenGL, Python) for multi-camera synchronization and networking",
+      "Implemented custom calibration and point-cloud rendering for multiple RGB-D cameras"
     ]
   },
 
@@ -61,9 +63,9 @@
     "Description":"Currently working on cool exoskeletons for hospital rehabs for injured and disabled kids.",
     "web": "http://trexorobotics.com/",
     "Bullets": [
-      "A", 
-      "B", 
-      "C"
+      "Built medical pediatric exoskeletons for children with walking diﬃculties & Brought back a smile to many families",
+      "Developed a robust full stack software system that covers from ﬁrmware (C, FreeRTOS, Cortex M4 & AVR), middleware (ROS & ROS_Control, Linux Environment), debugging tools (Python), and Android applications (C, C++, Java, ROS Java), providing a seamless and comfortable rehabilitation experience",
+      "Conceived a new control system allowing patients to initiate steps as they please & Optimized application by 50%"
     ]
   },
   
@@ -78,9 +80,8 @@
     "Description":"Built a Mars Rover robot. Specifically, worked on hardware design of science modules, firmware, and computer vision. ",
     "web": "https://uwrobotics.uwaterloo.ca/",
     "Bullets": [
-      "A", 
-      "B", 
-      "C"
+      "Worked on mechanical and computer vision systems for an autonomous Mars Rover robot",
+      "Always passionate about space robotics"
     ]
   },
 
@@ -93,11 +94,10 @@
     "Duration": "2 years",
     "company": "Robot Racing | UW Robotics",
     "Description":"Leading a 20-person team for an international autonomous robot racing competition for the year 2018 & 2019.",
-    "web": "",
+    "web": "https://uwrobotics.uwaterloo.ca/",
     "Bullets": [
-      "A", 
-      "B", 
-      "C"
+      "Leading and managing a team of 20 students, developing a fully autonomous mobile robot that is capable of maneuvering through obstacles, lanes, and traﬃc signs in high speed on rough terrains (Jetson TX2, ZED, M4)",
+      "Conducting mechanical, electrical and software system designs for the robot (SolidWorks, ROS, C++, C)"
     ]
   }
 ]

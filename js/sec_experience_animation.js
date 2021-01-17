@@ -434,6 +434,34 @@ function initEngine() {
     }
 }
 
+document.addEventListener('click', function(event) {
+    var canvas_region = document.getElementById('exp-canvas');
+    var sidebar_region = document.getElementById('sidebar');
+    var sidebar_collapse_btn = document.getElementById('sidebarCollapse');
+    var isClickInsideCanvas = false;
+    var isClickInsideSideBar = false;
+    if (canvas_region)
+    {
+        isClickInsideCanvas = canvas_region.contains(event.target);
+    }
+    if (sidebar_region)
+    {
+        isClickInsideSideBar |= sidebar_region.contains(event.target);
+    }
+    if (sidebar_collapse_btn)
+    {
+        isClickInsideSideBar |= sidebar_collapse_btn.contains(event.target);
+    }
+    if (isClickInsideCanvas || isClickInsideSideBar) {
+        // do nothing
+    }
+    else
+    {
+        // update, set mouse out of context => hide content
+        Callback_mouse(-1, -1, true);
+    }
+});
+
 function reloadBackground(){
     var $resources = $('#exp-img');
     var img_path = "";
@@ -624,11 +652,11 @@ function Callback_Calculate() {
         // fixed ratio of image: HACK
         var cw = $('.container-photo').width();
         $('.container-photo').css({'height': cw+'px'});
-        if(G_CVS.width == null)
+        if(G_CVS == null)
         {
             updateWH();
         }
-        if (G_CVS.width > 700)
+        else if (G_CVS.width > 700)
         {
             $('.animated-title').css({'height': cw * 1.2 +'px'});
         }

@@ -57,11 +57,19 @@
     top: calc(-100% - 10px);
     left: -10px;
     /* Animation and Color */
-    border: 5px solid transparent;
+    border: 6px solid transparent;
     transform: rotate(45deg);
     border-top-color: #80ced6;
     border-bottom-color: #80ced6;
-    animation: slowspin2 10s linear infinite;
+    animation: slowspin 10s linear infinite;
+    transition: 0.3s ease-in-out 0.3s;
+}
+.borderCircle:hover .borCircle1{
+    border: 3px solid transparent;
+    border-top-color: #3d838b;
+    border-bottom-color: #3d838b;
+    animation: slowspin 1s linear infinite;
+    transition: ease-in-out 0.1s;
 }
 .one-line-txt{
     width: 100%;
@@ -141,17 +149,6 @@
 
 /* Animation */
 @keyframes slowspin{
-    0%{
-        transform: rotate(30deg);
-    }
-    50%{
-        transform: rotate(75deg);
-    }
-    100%{
-        transform: rotate(390deg);
-    }
-}
-@keyframes slowspin2{
     0%{
         transform: rotate(230deg);
     }
@@ -383,7 +380,7 @@ ul.item-bubbles li:last-child {
 /*** Toast CSS ***/
 #job-detailed-description-toast {
     display: none;
-    min-width: 80%;
+    width: 80%;
     margin: auto;
     background-color: #80cdd6d6;
     color:black;
