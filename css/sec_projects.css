@@ -6,22 +6,6 @@
 
 }
 
-
-/*TODO Background Color
-.Portfolio-section {*/
-/*width: 100%;*/
-/*padding-bottom: 50px;*/
-/*color: black;*/
-/*min-height: 100vh;*/
-/*!*background: url(../Resources/Dots.svg) repeat center center scroll;*!*/
-/*background-color: #FFFFFF;*/
-/*-webkit-background-size: cover;*/
-/*-moz-background-size: cover;*/
-/*background-size: cover;*/
-/*-o-background-size: cover;*/
-/*}*/
-
-
 /*Project card dsection*/
 .card{
     position: absolute;
@@ -224,7 +208,14 @@
 
 /*Portfolio info*/
 .portfolio-info{
+    margin: auto;
+    align-content: center;
     background-color: #F0F0F0;
+    width: 90%;
+    max-width: 1200px;
+}
+.portfolio-info .container{
+    width: 90%;
 }
 .portfolio-info .info-content {
     background-color: #F0F0F0;
@@ -344,4 +335,11 @@
 }
 .project-para a{
     font-weight: bold;
+}
+
+/* ********** */
+/* Blog Style */
+/* ********** */
+.md-content {
+    text-align: left;
 }

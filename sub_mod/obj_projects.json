@@ -1,5 +1,131 @@
 [
   {
+    "id_name": "FYDP_TableUV",
+    "img_directory": "Resources/Projects/FYDP_TableUV/",
+    "img_cover": "robot-tableuv.png",
+    "title": "FYDP: TableUV",
+    "description": "<p><b> Capstone Project </b></br> Autonomous IoT table-top sanitization robot</br><span>2020-2021</span></p>",
+    "tags": ["Featured_Projects", "2020", "2021", "Course_Projects"],
+    "more_imgs": ["robot-tableuv.png", "expose.png"],
+    "more_imgs_title": [ "Robot CAD Model", "Internal View"],
+    "role": "Team Lead",
+    "code_link": "https://github.com/TableUV",
+    "paras":
+    [
+      "An autonomous table-top sanitization robot: <a href=\"https://tableuv.github.io\" target=\"_blank\">https://tableuv.github.io</a>" 
+    ],
+    "paras_title":
+    [
+      "Brief"
+    ]
+  },
+  {
+    "id_name": "Stewart-Platform-Maze-Solver",
+    "img_directory": "Resources/Projects/Maze_solver/",
+    "img_cover": "render3.png",
+    "title": "FYDP: TableUV",
+    "description": "<p> <b>UW MTE 380 Course Project</b> </br> Authors: Jack, Jeremy, Tsugumi, Zong </br><span>2019</span></p>",
+    "tags": ["Featured_Projects", "2019", "Course_Projects"],
+    "more_imgs": ["render3.png", "frame_debugWindow_1.png", "Final_Platform.jpg", "flow_chart.jpeg", "system_sketch.png", "render2.png"],
+    "more_imgs_title": [ "CAD Render", "Computer Vision Interface", "Final Build", "Flow Chart", "System Concept", "CAD Render 2"],
+    "role": "Team Lead",
+    "code_link": "https://github.com/JXproject/Autonomous-Maze-Solver-Stewart-Platform",
+    "paras":
+    [
+      "Autonomous maze solver with Stewart Platform via a single WebCam." 
+    ],
+    "paras_title":
+    [
+      "Brief"
+    ]
+  },
+  {
+    "id_name": "LED-Youtube-Subscriber-Counter",
+    "img_directory": "Resources/Projects/LED_Youtube_sub/",
+    "img_cover": "demo.png",
+    "title": "LED Subscriber Counter",
+    "description": "<p> <b>A gift for Devon</b> </br> <span>2019</span></p>",
+    "tags": ["Featured_Projects", "2019", "Hardware"],
+    "more_imgs": ["cad.png", "demo.png", "test.png"],
+    "more_imgs_title": [ "CAD Model", "Demo", "Test"],
+    "role": "Team Lead",
+    "code_link": "https://github.com/JXproject/Youtube-Subscriber-LED-Matrix-Display",
+    "paras":
+    [
+      "A little matrix display for showing YouTube subscriber. A gift designed and made for my best buddy, Devon." 
+    ],
+    "paras_title":
+    [
+      "Brief"
+    ]
+  },
+  {
+    "id_name": "UW-RobotRacing-2019-Hummingbot",
+    "img_directory": "Resources/Projects/UW_RR/",
+    "img_cover": "a_pose.jpg",
+    "title": "Hummingbot",
+    "description": "<p> <b>UW Robotics</b> </br> High-speed Autonomous Mobile Racing Robot  <span>2018-2019</span></p>",
+    "tags": ["Featured_Projects", "2019", "2018", "Design_Team"],
+    "more_imgs": [
+      "d_team.jpg",
+      "HummingbotShadow.png", 
+      "a_pose.jpg",
+      "b_sponsor.png",
+      "c_cad.jpg",
+      "c_lidar.jpg",
+      "c_low_level_board.jpg",
+      "c_prototype.jpg",
+      "c_usb.jpg",
+      "c_wireless_interface.jpg",
+      "c_zed.jpg",
+      "b_comm.png",
+      "b_hard_interface.png",
+      "b_soft_stack.png",
+      "d_registration.jpg",
+      "d_team_shirt.png",
+      "e_comp.jpg",
+      "e_comp2.jpg" ,
+      "e_comp3.jpg"
+    ],
+    "more_imgs_title": [ 
+      "Our Team",
+      "Logo",
+      "Robot",
+      "Sponsorship Package",
+      "CAD Model",
+      "Lidar",
+      "Low Level Control Board",
+      "Prototype Process",
+      "USB Port",
+      "Wireless Interface",
+      "ZED Depth Camera",
+      "Brainstorming - Hardware Interface",
+      "Brainstorming - Hardware Architecture",
+      "Brainstorming - Software Stack",
+      "Team Registration",
+      "Team Shirt",
+      "Competition Scenario 1",
+      "Competition Scenario 2",
+      "Competition Scenario 3"
+    ],
+    "role": "Team Lead",
+    "code_link": "https://github.com/uwrobotics/RR-Hummingbot-Software",
+    "paras":
+    [
+      "Our passion is to build a state-of-the-art autonomous high speed racing vehicle that outperforms humancontrolled racing cars.",
+      "Our team consists of 25 Undergraduate and Graduate Students currently attending the University of Waterloo, as well as a network of Alumni, Professors, Advisors, and a Research Lab (CogDrive). Our team is a multi-award-winning team that competes annually in the International Autonomous Robot Racing Competition (IARRC) for over 10 years.</br>The team is currently operating under the UWRobotics (University of Waterloo Robotics) team, sharing the same work space with the Mars Rover team. Both teams aim to provide students with an environment to apply practical engineering skills in robotics and technology.",
+      "Every year, the team designs and builds a mini-vehicle that races in a fully autonomous mode, against other robots from all over the world. The robot has to navigate through obstacle-filled courses without any human guidance or control. Our main challenges are following: </br>- Navigation & Path Planning</br>- High Speed Local Mapping</br>- Active Collision Avoidance</br>- Sign Following</br>- Object Detection</br>- Circuit Board Design</br>- Signal Processing</br>- Sensor Fusion</br>- Vehicle Dynamics</br>- Vehicle Stability </br>Building an autonomous racing car is a multidisciplinary engineering project that covers mechanical, electrical, and software. The project really focuses on optimized and accurate algorithms, control software, and flawless integration.",
+      "Our Sponsorship Package: <a href=\"Resources/Projects/UW_RR/UW-IARRC_SponsorshipPkgv3.pdf\" target=\"_blank\"> [ DOWNLOAD ] </a>"
+    ],
+    "paras_title":
+    [
+      "Our Passion",
+      "Our Team",
+      "Challenges",
+      "Package"
+    ]
+  },
+  {
     "id_name": "1Course_RTOS",
     "img_directory": "Resources/Projects/Course_2B_RTOS/",
     "img_cover": "min/Cover_min.jpg",

@@ -8,7 +8,6 @@ $(function(){
         reloadPage(curPageObj, true);
         G_target = curPageObj.attr("href");
         loadSideBarRemappedBy(G_target);
-        updateItemTarget();
     }, 200);
 
 });
@@ -19,6 +18,10 @@ $(function(){
 
 $(function(){
     $("#modalTemplatePhoto").load("sub_mod/modal_template_photos.html");
+});
+
+$(function(){
+    $("#modalTemplateBlog").load("sub_mod/modal_template_blog.html");
 });
 
 
