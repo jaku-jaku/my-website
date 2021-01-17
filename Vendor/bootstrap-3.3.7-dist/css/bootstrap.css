@@ -1428,14 +1428,17 @@ ol ol {
   list-style: none;
 }
 .list-inline {
+  vertical-align: center;
+  margin: auto;
   padding-left: 0;
-  margin-left: -5px;
   list-style: none;
 }
 .list-inline > li {
+  max-width: 200px;
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+  margin: auto;
+  /* padding-right: 5px;
+  padding-left: 5px; */
 }
 dl {
   margin-top: 0;

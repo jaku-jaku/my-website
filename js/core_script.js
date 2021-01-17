@@ -1,24 +1,6 @@
 /*----------------------------------------------------*/
 /* Html bridge
 ------------------------------------------------------ */
-// $(function(){
-//     $("#aboutMeSection").load("sub_mod/sec_about.html");
-// });
-//
-//
-// $(function(){
-//     $("#contactSection").load("sub_mod/sec_contact.html");
-// });
-//
-// $(function(){
-//     $("#expSection").load("sub_mod/sec_experience.html");
-// });
-//
-// $(function(){
-//     $("#projectSection").load("sub_mod/sec_projects.html");
-// });
-// //
-//
 $(function(){
     loadJsonFileSideBar();
     setTimeout(function(){
@@ -31,7 +13,6 @@ $(function(){
 
 });
 
-
 $(function(){
     $("#modalTemplate").load("sub_mod/modal_template_projects.html");
 });
@@ -39,6 +20,7 @@ $(function(){
 $(function(){
     $("#modalTemplatePhoto").load("sub_mod/modal_template_photos.html");
 });
+
 
 /*----------------------------------------------------*/
 /* Menu Navbar
@@ -108,6 +90,7 @@ document.addEventListener('scroll', function (event) {
     });
     // }
 }, true /*Capture event*/);
+
 
 /*----------------------------------------------------*/
 /* Navbar Smooth Scroll TODO: Fix!!

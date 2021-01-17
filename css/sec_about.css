@@ -1,3 +1,6 @@
+/* ==============================
+-  About & Exp Section
+============================== */
 #exp-background{
     /*max-width: 1000px;*/
     display: block;
@@ -17,18 +20,399 @@
     /*margin-top: -100%;*/
 }
 
-.section-description-txt{
-    max-width: 600px;
+/* ===== Text | Photo ===== */
+.container-text {
+    text-align: left;
+}
+
+.container-text-and-photo {
+    /* width: 90%; */
+    height: 100%;
     margin: auto;
-    /*display: block;*/
-    /*height: 40px;*/
-    border: #ed5655 1px dot-dash;
 }
-
+/* Profile Photo */
+.borderCircle{
+    /* height: 90%;
+    width: 90%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* border: 5px solid green; */
+    margin: auto;
+}
+.cropCircle{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.borCircle1{
+    /* Positioning */
+    height: calc(100% + 20px);
+    width: calc(100% + 20px);
+    border-radius: calc((100% + 20px) / 2);
+    position: relative;
+    top: calc(-100% - 10px);
+    left: -10px;
+    /* Animation and Color */
+    border: 6px solid transparent;
+    transform: rotate(45deg);
+    border-top-color: #80ced6;
+    border-bottom-color: #80ced6;
+    animation: slowspin 10s linear infinite;
+    transition: 0.3s ease-in-out 0.3s;
+}
+.borderCircle:hover .borCircle1{
+    border: 3px solid transparent;
+    border-top-color: #3d838b;
+    border-bottom-color: #3d838b;
+    animation: slowspin 1s linear infinite;
+    transition: ease-in-out 0.1s;
+}
 .one-line-txt{
-    height: 40px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+/* Responsive */
+@media only screen and (min-width : 768px) {
+    .container-text-and-photo {
+        margin-top: 30px;
+        width: 80%;
+        display: flex;
+    }
+    .borderCircle{
+        height: 100%;
+        width: 100%;
+    }
+    .container-text {
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        /* display: inline-block; */
+        display: block;
+        margin: auto;
+    }
+    .container-photo{
+        width: 40%;
+        padding-top: 40%;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .my-bubble-block{
+        width: 30%;
+        min-height: 260px;
+    }
+    .my-bubble-block.large-block{
+        width: 60% !important;
+    }
 }
 
-.section-description-txt.one-line-txt p{
+@media only screen and (max-width: 767px) {
+    .borderCircle{
+        height: 100%;
+        width: 100%;
+    }
+    .container-text-and-photo {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        width: 90%;
+        display: block;
+        align-content: center;
+    }
+    .container-text{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-photo{
+        width: 90%;
+        padding-top: 90%;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .my-bubble-block{
+        width: 80%;
+    }
+    .my-bubble-block.large-block{
+        width: 80% !important;
+    }
+}
+
+/* Animation */
+@keyframes slowspin{
+    0%{
+        transform: rotate(230deg);
+    }
+    50%{
+        transform: rotate(275deg);
+    }
+    100%{
+        transform: rotate(590deg);
+    }
+}
+
+/*  Title  */
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+    0% { transform: translate3d(0, -200%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBar {
+    0% { 
+        background-color: #4c4c4c;
+        width:10px;
+    }
+    40% { 
+        background-color: #acdee3;
+        width:100px;
+    }
+    100% {
+        background-color: #80ced6;
+        width:200px;
+    }
+}
+.animated-title {
+    color: #222;
+    font-family: 'Alegreya';
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.animated-title > div div {
+    padding: 1vmin 0;
+    position: absolute;
+}
+.animated-title > div div h {
+    font-size: clamp(10px, 3vmax,  60px);;
+    display: block;
+}
+.animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+.animated-title > div.text-top div h:first-child {
+    /* color: #767676; */
+}
+.animated-title > div.text-bottom {
+    bottom: 0;
+}
+.animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -200%);
+}
+.text-bottom{
+    text-align: left;
+}
+.one-line-txt p{
+    width: 100% !important;
+    font-size: clamp(10px, 2vmax,  30px);
+    margin: 0px !important;
+    padding-left: 0px !important;
     display: none;
+}
+
+.text-bottom:before{
+    display:block;
+    height:2px;
+    content:" ";
+    margin:0 0;
+    margin-top:1vmax;
+    margin-bottom:1vmax;
+    -webkit-transition: width 1.3s; /* Safari */
+    transition: width 1.3s;
+    animation: showBar 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* TODO: please make font-size depends on responsive screen and max OR in js */
+#name-jack {
+    font-size: clamp(10px, 5vmax,  80px);
+}
+
+#name-xu {
+    font-size: clamp(10px, 5vmax,  80px);
+    color: #3d838b;
+}
+
+
+/*******
+* Skills
+*******/
+.bubble-section{
+    width: 80%;
+    margin: auto;
+}
+.my-bubble-block{
+    margin: 10px;
+    min-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    /* border: 3px solid #80ced6; */
+}
+.my-bubble-block h5{
+    margin-top: 20px;
+}
+.my-bubble-block.block-wide{
+    width: 90% !important;
+}
+.gradient-border-on-hover {
+    background: white;
+    position: relative;
+}
+.gradient-border-on-hover:after{
+    background: #80ced6;
+    --border-width: 3px;
+    border-radius: 13px;
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+}
+.gradient-border-on-hover:hover:after{
+    --border-width: 5px;
+    border-radius: 15px;
+    background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: moveGradient 4s alternate infinite;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in
+}
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+ul.item-bubbles{
+    margin-top: 0px;
+    padding: 20px;
+}
+ul.item-bubbles li {
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid turquoise;
+}
+ul.item-bubbles li:last-child {
+    margin-bottom: 0;
+}
+
+/*******
+* Detailed Experience Toast
+*******/
+
+/* Detailed Description */
+.detailed-description-section {
+    width: 95%;
+    margin: auto;
+    text-align: left !important;
+    font-family: 'Alegreya';
+    /* text-transform: uppercase; */
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+}
+.detailed-description-section a{
+    color: black;
+    text-decoration: underline;
+}
+.detailed-description-section a:hover{
+    color: white;
+}
+.detailed-description-section p{
+    margin: 0px;
+}
+
+#job-company{
+    font-size: clamp(12px, 2vmax, 25px);
+}
+#job-title{
+    font-size: clamp(10px, 1.5vmax, 20px);
+}
+#job-bullets{
+    font-size: clamp(10px, 1.2vmax, 20px);
+    margin: 0px;
+}
+
+/*** Toast CSS ***/
+#job-detailed-description-toast {
+    display: none;
+    width: 80%;
+    margin: auto;
+    background-color: #80cdd6d6;
+    color:black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1%;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    left: 10%;
+    font-size: 17px;
+}
+
+/**** Ending ****/
+#ending-section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#ending-section p{
+    color: gray;
+    display: flex;
+    flex-direction: row;
+}
+#ending-section p:before, #ending-section p:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid gray;
+    margin: auto;
+}
+#ending-section p:before{
+    margin-right: 5%
+}
+#ending-section p:after {
+    margin-left: 5%
 }

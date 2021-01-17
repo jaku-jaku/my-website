@@ -1,85 +1,103 @@
 [
   {
+    "title": "Embedded Software Dev.",
+    "position": [20, 10, 1, 1],
+    "position_v": [30, 10, 2, 1],
+    "start_date": "May,2019",
+    "end_date": "Aug,2020",
+    "Duration": "4 + 8 months",
+    "company": "Tesla Inc.",
+    "Description":"Developed software for sensing and actuation, and led embedded software developments for ultrasonics sensors.",
+    "web": "http://tesla.com/",
+    "Bullets": [
+      "Developed thermal protection model for M3/Y steering column.", 
+      "Developed ultrasonics sensing technologies to support autopilot in embedded controllers.", 
+      "Developed many automation toolsets needed for the developments. (Python, C)",
+      "Raised issues and improved the driver proﬁle recall interface for Model 3 Seats with a full coverage of unit tests",
+      "Coordinated with multiple teams to develop the interface to allow a real-time coordination between the ﬁrst and second row seats on the Model X",
+      "Developed various toolsets for data analysis and system modeling to assist multiple developments (Python)"
+    ]
+  },
+
+  {
     "title": "Firmware Dev.",
-    "position": [10,15, 1, 1],
-    "position_v": [10,15, 2, 1],
+    "position": [20, 40, 1, 1],
+    "position_v": [20, 30, 2, 1],
     "start_date": "May,2017",
     "end_date": "Aug,2017",
     "Duration": "4 months",
     "company": "Nytric Inc.",
     "Description":"Developed an unique shape detection algorithm, GUI debugging tools, and core firmware of ShadowSense (modular) touch screen for large scale video wall.",
-    "web": "http://baanto.com/"
+    "web": "http://baanto.com/",
+    "Bullets": [
+      "Improved performance of the ﬁrmware and developed a unique and adaptive algorithm (C++) to recognize polygon shapes for multi-touch ShadowSense touchscreens in realtime over 60Hz in all form factor",
+      "Devised useful analysis tools (Excel, VBA, Python) and a real-time sensor data visualizing application (C#, C++, Unity), which minimized time and eﬀorts spent on debugging and testing by over 60% (The visualizer has also being used for conference demos to showcase complex operations behind the scenes)"
+    ]
   },
 
   {
     "title": "AR Software Dev.",
-    "position": [50,8, 1, 3],
-    "position_v": [80, 10, 2, 3],
+    "position": [50, 20, 1, 2],
+    "position_v": [80, 10, 2, 2],
     "start_date": "Jan,2018",
     "end_date": "Apr,2018",
     "Duration": "4 months",
     "company": "Interaptix Inc.",
     "Description":"Worked on a state-of-the-art real-time AR project (HoloLens, UWP, OpenGL, OpenCV, C++) ",
-    "web": "http://interaptix.com/"
+    "web": "http://interaptix.com/",
+    "Bullets": [
+      "Created a state-of-the-art real-time AR project and also conducted various R&D in CV and ML",
+      "Developed a variety of evaluation tools (C++, OpenGL, Python) for multi-camera synchronization and networking",
+      "Implemented custom calibration and point-cloud rendering for multiple RGB-D cameras"
+    ]
   },
 
   {
     "title": "Jack of all robots",
-    "position": [70,50, 1, 3],
-    "position_v": [20,80, 2, 1],
+    "position": [80,30, 1, 2],
+    "position_v": [75,70, 2, 2],
     "start_date": "Sept,2018",
     "end_date": "Dec,2018",
     "Duration": "4 months",
     "company": "Trexo Robotics",
     "Description":"Currently working on cool exoskeletons for hospital rehabs for injured and disabled kids.",
-    "web": "http://trexorobotics.com/"
+    "web": "http://trexorobotics.com/",
+    "Bullets": [
+      "Built medical pediatric exoskeletons for children with walking diﬃculties & Brought back a smile to many families",
+      "Developed a robust full stack software system that covers from ﬁrmware (C, FreeRTOS, Cortex M4 & AVR), middleware (ROS & ROS_Control, Linux Environment), debugging tools (Python), and Android applications (C, C++, Java, ROS Java), providing a seamless and comfortable rehabilitation experience",
+      "Conceived a new control system allowing patients to initiate steps as they please & Optimized application by 50%"
+    ]
   },
-
+  
   {
-    "title": "Product Manager",
-    "position": [90,25, 1, 2],
-    "position_v": [80,50, 2, 2],
-    "start_date": "May,2017",
-    "end_date": "Nov,2017",
-    "Duration": "7 months",
-    "company": "TobyX Corp.",
-    "Description":"Developed dynamically scalable IoT systems (including Cloud, Hubs, and Things) to provide a revolutionary experience for hotel services and advertising",
-    "web": "https://tobyx.io/#"
-  },
-
-  {
-    "title": "Robotic Engineer",
-    "position": [60,70, 1, 2],
-    "position_v": [70,90, 2, 2],
+    "title": "Robotics Engineer",
+    "position": [20,80, 1, 1],
+    "position_v": [25, 85, 2, 1],
     "start_date": "Sept,2016",
     "end_date": "June,2018",
     "Duration": "2 yrs",
     "company": "Mars Rover | UW Robotics",
     "Description":"Built a Mars Rover robot. Specifically, worked on hardware design of science modules, firmware, and computer vision. ",
-    "web": "https://uwrobotics.uwaterloo.ca/"
-  },
-
-  {
-    "title": "Perception Software R&D",
-    "position": [20,80, 1, 1],
-    "position_v": [20,50, 2, 1],
-    "start_date": "May,2018",
-    "end_date": "Aug,2018",
-    "Duration": "4 months",
-    "company": "WATonomous",
-    "Description":"R&D on road lane perception project.",
-    "web": "https://watonomous.ca/#/team"
+    "web": "https://uwrobotics.uwaterloo.ca/",
+    "Bullets": [
+      "Worked on mechanical and computer vision systems for an autonomous Mars Rover robot",
+      "Always passionate about space robotics"
+    ]
   },
 
   {
     "title": "Team Lead",
     "position": [90,85, 1, 2],
-    "position_v": [60,70, 2, 2],
+    "position_v": [10,60, 2, 1],
     "start_date": "Jan,2018",
-    "end_date": "current",
-    "Duration": "...",
+    "end_date": "Jan, 2020",
+    "Duration": "2 years",
     "company": "Robot Racing | UW Robotics",
     "Description":"Leading a 20-person team for an international autonomous robot racing competition for the year 2018 & 2019.",
-    "web": ""
+    "web": "https://uwrobotics.uwaterloo.ca/",
+    "Bullets": [
+      "Leading and managing a team of 20 students, developing a fully autonomous mobile robot that is capable of maneuvering through obstacles, lanes, and traﬃc signs in high speed on rough terrains (Jetson TX2, ZED, M4)",
+      "Conducting mechanical, electrical and software system designs for the robot (SolidWorks, ROS, C++, C)"
+    ]
   }
 ]

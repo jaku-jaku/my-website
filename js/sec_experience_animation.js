@@ -1,3 +1,4 @@
+// -- WARNING: This page is ARCHIVED in v3 --
 var G_bkg_img_path =
     [
         'Resources/Core/my_experience_light_L.jpg',
@@ -7,7 +8,7 @@ var G_bkg_img_path =
         'Resources/Core/min/my_experience_light_L_min2.jpg',
         'Resources/Core/min/my_experience_portrait_light_L_min2.jpg'
     ];
-var G_bkg_img_w = [3360,2010,2010,1202,1080,646];
+var G_bkg_img_w = [2130,1498,1500,1000,1080,646];
 
 // ----- RUN Scrips @ Statup & resizing
 $.getJSON("sub_mod/obj_experiences.json",
@@ -49,6 +50,66 @@ function resetEngine(){
     G_portrait_mode = false;
 }
 
+/*----------------------------------------------------*/
+/* After Loaded
+------------------------------------------------------ */
+// Load Contact Info.
+function loadUrl(tag, url){
+    const elements = document.getElementsByClassName(tag);
+    for (const ele of elements){
+        ele.href = url;
+    }
+}
+function updatePOC() {
+    $.getJSON("sub_mod/obj_poc.json",
+        function (json) {
+            data = json[0];
+            loadUrl('link-github'     ,data["github"]);
+            loadUrl('link-linkedin'   ,data["linkedin"]);
+            loadUrl('link-instagram'  ,data["instagram"]);
+            loadUrl('link-resume'     ,data["resume"]);
+            // console.log("Loaded");
+        }
+    )
+}
+function updateSkills() {
+    // ---- Update Skills
+    $.getJSON("sub_mod/obj_skills.json",
+        function (json) {
+            //  Skills
+            data = json[0];
+            categories = ["software", "tools", "hardware", "mechanical"];
+            for (cat of categories)
+            {
+                ul_html = "";
+                for (element of data[cat])
+                {
+                    ul_html += "<li>" + element + "</li>";
+                }
+                // console.log("skill-" + cat)
+                skill_div = document.getElementById("skill-" + cat);
+                skill_div.innerHTML = ul_html;
+            }
+            //  Edu
+            data = json[1];
+            ul_html = ""
+            for (element of data["university_of_waterloo"])
+            {
+                ul_html += "<li>" + element + "</li>";
+            }
+            edu_div = document.getElementById("edu-uw");
+            edu_div.innerHTML = ul_html;
+    });
+}
+
+window.onload = function(){
+    updatePOC();
+    updateSkills();
+};
+
+/*****************
+ *** NODE DATA ***
+ *****************/
 function Node(_data) {
     this.data = _data;
     this.tag = c_S(_data['title']);
@@ -63,8 +124,8 @@ function Node(_data) {
     this.bkg_rect = [0, 0, 0, 0];
     this.mx_lines = 0;
     this.str_span = 0;
-    this.text_font = "15px Comic Sans MS";
-    this.text2_font =  "12px Comic Sans MS";
+    this.text_size_px = 15;
+    this.FONT_FAMILY = "px Comic Sans MS";
     this.text_height = 15;//px
     this.RIPPLE_MAX_R = 0;
     function getFont(fontSize, fontBase_) {
@@ -89,36 +150,30 @@ function Node(_data) {
             this.r = G_WH[0]*m_data['position'][2]/100;
             this.quadrant = m_data['position'][3]%5;
         }
-        if(G_CVS.width>1080)
-        {
-
-        }else if(G_CVS.width>480){
-            var tf1 = getFont(15,1000);
-            var tf2 = getFont(12,1000);
-            this.text_font = tf1[0];
-            // console.log(this.text_font);
-            this.text2_font = tf2[0];
-            this.text_height = tf1[1]+2;
-        }else{
-            this.text_font = "13px Comic Sans MS";
-            this.text2_font =  "10px Comic Sans MS";
-            this.text_height = 10;
-        }
+        
+        
+        this.text_size_px = Math.round(Math.max(Math.sqrt(Math.min(Math.max(G_WH[0],G_WH[1]))/5, 30), 10));
+        // update text font size
+        this.text_font = this.text_size_px + this.FONT_FAMILY;
+        this.text2_font = (this.text_size_px - 2) + this.FONT_FAMILY;
+        this.text_height = Math.round(this.text_size_px * 1.5);
 
         this.RIPPLE_MAX_R = this.r*this.RIPPLE_MAX_SCALE;
         this.anim_r = this.r;
         G_ctx.font = this.text_font;
         this.title_w[0] = G_ctx.measureText(m_data['title']).width;
-        this.title_w[1] = G_ctx.measureText(m_data['company']).width;
+        this.title_w[1] = G_ctx.measureText(m_data['company']).width + 10;
         if(!_isPortrait) // single lines
             this.title_w[2] = this.title_w[0]+this.title_w[1];
         else    // two lines
             this.title_w[2] = this.title_w[0]>this.title_w[1]?this.title_w[0]:this.title_w[1];
+        
         G_ctx.font = this.text2_font;
         var str = m_data['Description'];
         var tw = G_ctx.measureText(str).width;
         this.mx_lines = Math.round(tw/this.title_w[2]);
         this.str_span = Math.ceil(str.length/this.mx_lines);
+        this.title_w[2] = this.title_w[2] * 1.3;
         // console.log(this.x, this.y);
         //update drawing positions
         x = this.x;
@@ -207,7 +262,7 @@ function Node(_data) {
             G_ctx.lineWidth = 1;
             G_ctx.stroke();
             G_ctx.fillStyle= "white";
-            G_ctx.globalAlpha = 0.6;
+            G_ctx.globalAlpha = 0.9;
             //TODO: backgrounds!!
             G_ctx.fillRect(this.bkg_rect[0], this.bkg_rect[1], this.bkg_rect[2], this.bkg_rect[3]);
             // TODO : hover show shortened info
@@ -280,7 +335,6 @@ function Node(_data) {
                     cur_str_i += this.str_span;
                 }
             }
-
         }
 
         if((Date.now() - this.startTIme)%60)
@@ -342,12 +396,15 @@ function Node(_data) {
         }else{
             this.MODE = ENUM_NODE_MODE.idle;
         }
-
     };
 }
 
+/*********************
+ *** Render Engine ***
+ *********************/
 function initEngine() {
     //config
+    G_section_decription_txt_index = 0;
     G_CVS = document.getElementById('exp-canvas');
     G_BKG = document.getElementById('exp-img');
     if(!G_CVS || !G_BKG)
@@ -376,6 +433,34 @@ function initEngine() {
         })
     }
 }
+
+document.addEventListener('click', function(event) {
+    var canvas_region = document.getElementById('exp-canvas');
+    var sidebar_region = document.getElementById('sidebar');
+    var sidebar_collapse_btn = document.getElementById('sidebarCollapse');
+    var isClickInsideCanvas = false;
+    var isClickInsideSideBar = false;
+    if (canvas_region)
+    {
+        isClickInsideCanvas = canvas_region.contains(event.target);
+    }
+    if (sidebar_region)
+    {
+        isClickInsideSideBar |= sidebar_region.contains(event.target);
+    }
+    if (sidebar_collapse_btn)
+    {
+        isClickInsideSideBar |= sidebar_collapse_btn.contains(event.target);
+    }
+    if (isClickInsideCanvas || isClickInsideSideBar) {
+        // do nothing
+    }
+    else
+    {
+        // update, set mouse out of context => hide content
+        Callback_mouse(-1, -1, true);
+    }
+});
 
 function reloadBackground(){
     var $resources = $('#exp-img');
@@ -464,13 +549,15 @@ function Callback_Calculate() {
             setTimeout(function() {
                 updateWH();
             },500);
+            // update Hidden Content
+            updatePOC();
+            updateSkills();
         }
     }else{
         if(!(G_target === "#page-about")){
             resetEngine();
             // console.warn("Reset engine");
         }else{
-
             //side-bar highlight
             var cur_sidebar_state = ($('#sidebar').css("margin-left")==='0px');
             if( G_context_status.side_bar_visible !== cur_sidebar_state)
@@ -489,17 +576,100 @@ function Callback_Calculate() {
                     G_nodeList[ni].triggerMODE(G_sidebar_selected_tags.about);
                 }
             }
+
+            // toast pop-up
+            var showDetail = false; 
+            var job_toast = document.getElementById("job-detailed-description-toast");
+            for (var ni= 0; ni< G_nodeList.length; ni++)
+            {
+                showDetail |= (G_nodeList[ni].MODE == ENUM_NODE_MODE.click);
+                if (showDetail)
+                {
+                    // fill in job_toast
+                    var company_div = document.getElementById('job-company'); 
+                    var same_company = (G_nodeList[ni].data["company"] == company_div.innerText);
+                    if (same_company)
+                    {
+
+                    }
+                    else
+                    {
+                        // refresh content
+                        company_div.href = G_nodeList[ni].data["web"];
+                        company_div.innerText = G_nodeList[ni].data["company"];
+                        var title_div = document.getElementById('job-title'); 
+                        title_div.innerText = G_nodeList[ni].data["title"];
+                        var bullets_div = document.getElementById('job-bullets'); 
+                        bullets_content = G_nodeList[ni].data["Bullets"];
+                        ul_html="";
+                        for (var i = 0; i < bullets_content.length; i++) {
+                            content
+                            ul_html += "<li>" + bullets_content[i] + "</li> \n";
+                        }
+                        bullets_div.innerHTML = ul_html;
+                    }
+                    // flickr job_toast upon refresh
+                    if (job_toast.classList.contains("toast-show"))
+                    {
+                        if (!same_company)
+                        {
+                            $(job_toast).fadeOut("fast").fadeIn("fast");
+                        }
+                    }
+                    // show job_toast
+                    else
+                    {
+                        job_toast.className = job_toast.className.replace("toast-hide", "toast-show");
+                        $(job_toast).fadeIn("slow");
+                        // console.log("[Show Toast]")
+                    }
+                    // stop searching
+                    break;
+                }
+            }
+            if (showDetail == false)
+            {
+                if (!job_toast.classList.contains("toast-hide"))
+                {
+                    $(job_toast).fadeOut("slow");
+                    job_toast.className = job_toast.className.replace("toast-show", "toast-hide");
+                    // console.log("[Hide Toast]")
+                }
+            }
         }
+        
     }
 
     if(G_target === "#page-about" || G_target === "#page-photography") {
         //description text update
         if (G_tick % 380 === 0) {
             var divs = $('p[id^="content-"]').hide();
-            divs.eq(G_section_decription_txt_index).fadeIn(1900).delay(1000).fadeOut(1000);
+            divs.eq(G_section_decription_txt_index).fadeIn(1900).delay(600).fadeOut(200);
             G_section_decription_txt_index = ++G_section_decription_txt_index % divs.length;
         }
         G_tick++;
+
+        // fixed ratio of image: HACK
+        var cw = $('.container-photo').width();
+        $('.container-photo').css({'height': cw+'px'});
+        if(G_CVS == null)
+        {
+            updateWH();
+        }
+        else if (G_CVS.width > 700)
+        {
+            $('.animated-title').css({'height': cw * 1.2 +'px'});
+        }
+        else
+        {
+            $('.animated-title').css({'height': 200 +'px'});
+        }
+    }
+
+    if (G_target === "#page-contact")
+    {
+        // update Hidden Content
+        updatePOC();
     }
 }
 
