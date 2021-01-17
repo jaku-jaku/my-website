@@ -212,10 +212,10 @@
     align-content: center;
     background-color: #F0F0F0;
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
 }
 .portfolio-info .container{
-    width: 100%;
+    width: 90%;
 }
 .portfolio-info .info-content {
     background-color: #F0F0F0;
@@ -335,4 +335,11 @@
 }
 .project-para a{
     font-weight: bold;
+}
+
+/* ********** */
+/* Blog Style */
+/* ********** */
+.md-content {
+    text-align: left;
 }

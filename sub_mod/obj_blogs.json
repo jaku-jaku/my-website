@@ -1,11 +1,74 @@
 [
   {
-    "id_name": "AV_course",
+    "id_name": "MTE544-Basic-Math",
+    "img_directory": "Resources/Blog_imgs/Estimation.assets/",
+    "img_cover": "Screen Shot 2020-12-09 at 5.41.16 PM.png",
+    "title": "Robotics - Basic Math (1/3)",
+    "description": "<p> <b>MTE 544: Autonomous Mobile Robot</b> </p>",
+    "tags": ["Course", "2020", "ML_&_AI", "Mobile_Robot"],
+    "md_file_name": "1 - Intro + Math + Modelling.md"
+  },
+  {
+    "id_name": "MTE544-Estimation",
+    "img_directory": "Resources/Blog_imgs/Estimation.assets/",
+    "img_cover": "Screen Shot 2020-12-09 at 5.41.16 PM.png",
+    "title": "Robotics - Estimation (2/3)",
+    "description": "<p> <b>MTE 544: Autonomous Mobile Robot</b></br> (Bayes and Kalman Filters) </p>",
+    "tags": ["Course", "2020", "ML_&_AI", "Mobile_Robot"],
+    "md_file_name": "2 - Estimation (Bayes and Kalman Filters).md"
+  },
+  {
+    "id_name": "MTE544-Localization-Mapping-SLAM",
+    "img_directory": "Resources/Blog_imgs/Localization and Mapping.assets/",
+    "img_cover": "Screen Shot 2020-12-03 at 10.21.12 AM.png",
+    "title": "Robotics - SLAM (3/3)",
+    "description": "<p> <b>MTE 544: Autonomous Mobile Robot</b></br> (Localization and Mapping) </p>",
+    "tags": ["Course", "2020", "ML_&_AI", "Mobile_Robot"],
+    "md_file_name": "3 - Localization and Mapping.md"
+  },
+  {
+    "id_name": "SYDE575-Segmentation",
+    "img_directory": "Resources/Blog_imgs/Sec 7 - Segmentation.assets/",
+    "img_cover": "Otsu's_Method_Visualization.gif",
+    "title": "CV - Segmentation",
+    "description": "<p> <b>SYDE 575: Image Processing</b></br> - Segmentation </p>",
+    "tags": ["Course", "2020", "ML_&_AI", "Mobile_Robot"],
+    "md_file_name": "Sec 7 - Segmentation.md"
+  },
+  {
+    "id_name": "SYDE575-Image-Compression",
+    "img_directory": "Resources/Blog_imgs/Sec 8 - Image Compression.assets/",
+    "img_cover": "Screen Shot 2020-12-04 at 9.42.27 PM.png",
+    "title": "CV - Image Compression",
+    "description": "<p> <b>SYDE 575: Image Processing</b> </br>- Image Compression </p>",
+    "tags": ["Course", "2020", "ML_&_AI", "Mobile_Robot"],
+    "md_file_name": "Sec 8 - Image Compression.md"
+  },
+  {
+    "id_name": "ECE457A-Heuristic-Search",
+    "img_directory": "Resources/Blog_imgs/457A_Final_Review_assets/",
+    "img_cover": "4.png",
+    "title": "Heuristic Search (1/2)",
+    "description": "<p> <b>ECE 457A: Cooperative and Adaptive Algorithm</b> </br> - Heuristic Search </p>",
+    "tags": ["Course", "2020", "ML_&_AI"],
+    "md_file_name": "457A Mid Review.md"
+  },
+  {
+    "id_name": "ECE457A-Ant-Colony-Swarm",
+    "img_directory": "Resources/Blog_imgs/457A_Final_Review_assets/",
+    "img_cover": "4.png",
+    "title": "Ant Colony + Swarm (2/2)",
+    "description": "<p> <b>ECE 457A: Cooperative and Adaptive Algorithm</b> </br> Amt Colony and Particle Swarm Optimization </p>",
+    "tags": ["Course", "2020", "ML_&_AI"],
+    "md_file_name": "457A Final Review.md"
+  },
+  {
+    "id_name": "Autonomous-Vehicle-Reinforcement-Learning-Intro",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "ml.jpg",
-    "title": "Reinforcement Learning",
+    "title": "Reinforcement Learning Intro",
     "description": "<p> Solve a series of challenges involving Mechanical Systems, Electronics, Controls and Sensors, Automation, Mobile Robotics and Programming.</p>",
-    "tags": ["Course Notes", "2018", "Autonomous"],
+    "tags": ["Course", "2018", "ML_&_AI"],
     "md_file_name": "Nov6_RL_AV.md"
   },
   {
@@ -14,7 +77,7 @@
     "img_cover": "ros.jpg",
     "title": "ROS Note Intro.",
     "description": "<p> Useful ROS notes for beginners</p>",
-    "tags": ["ROS Notes", "2018", "Robotics"],
+    "tags": ["ROS", "2018", "ML_&_AI"],
     "md_file_name": "Ros-Nov12-2018.md"
   },
   {
@@ -23,7 +86,7 @@
     "img_cover": "JX_blog.jpg",
     "title": "About AI option",
     "description": "<p> My research & thoughts on UW AI options as 3A Mechatronics Student </p>",
-    "tags": ["Daily Blogs", "2018", "MTE"],
+    "tags": ["ML_&_AI", "2018", "Daily Blogs"],
     "md_file_name": "Mechatronics-AIoption.md",
     "theme": "default"
   },
@@ -33,7 +96,7 @@
     "img_cover": "NutshellCpp.jpg",
     "title": "C++ in a Nutshell - Ch02",
     "description": "<p> \"C++ in a Nutshell\" <br> Summary & Notes <br> Chapter 02 - Declarations </p>",
-    "tags": ["Daily Blogs", "2018", "Cpp"],
+    "tags": ["Daily Blogs", "2018", "C++"],
     "md_file_name": "NutshellCpp_Ch2_Declarations.md",
     "theme": "default"
   },
@@ -43,7 +106,7 @@
     "img_cover": "NutshellCpp.jpg",
     "title": "C++ in a Nutshell - Ch03",
     "description": "<p> \"C++ in a Nutshell\" <br> Summary & Notes <br> Chapter 03 - Expressions </p>",
-    "tags": ["Daily Blogs", "2018", "Cpp"],
+    "tags": ["Daily Blogs", "2018", "C++"],
     "md_file_name": "NutshellCpp_Ch3_Expressions.md",
     "theme": "default"
   },
@@ -53,7 +116,7 @@
     "img_cover": "NutshellCpp.jpg",
     "title": "C++ in a Nutshell - Ch04",
     "description": "<p> \"C++ in a Nutshell\" <br> Summary & Notes <br> Chapter 04 - Statements </p>",
-    "tags": ["Daily Blogs", "2018", "Cpp"],
+    "tags": ["Daily Blogs", "2018", "C++"],
     "md_file_name": "NutshellCpp_Ch4_Statements.md",
     "theme": "default"
   }

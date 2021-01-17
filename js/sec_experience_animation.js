@@ -88,7 +88,10 @@ function updateSkills() {
                 }
                 // console.log("skill-" + cat)
                 skill_div = document.getElementById("skill-" + cat);
-                skill_div.innerHTML = ul_html;
+                if (skill_div)
+                {
+                    skill_div.innerHTML = ul_html;
+                }
             }
             //  Edu
             data = json[1];
@@ -98,7 +101,10 @@ function updateSkills() {
                 ul_html += "<li>" + element + "</li>";
             }
             edu_div = document.getElementById("edu-uw");
-            edu_div.innerHTML = ul_html;
+            if (edu_div)
+            {
+                edu_div.innerHTML = ul_html;
+            }
     });
 }
 
@@ -368,7 +374,6 @@ function Node(_data) {
                 if(G_target === "#page-about")
                 {
                     G_sidebar_selected_tags.current = this.tag;
-                    updateItemTarget();
                 }
             }
         }
@@ -384,7 +389,6 @@ function Node(_data) {
             {
                 G_sidebar_selected_tags.about = null;
                 G_sidebar_selected_tags.current = null;
-                updateItemTarget();
             }
 
         }

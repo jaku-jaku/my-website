@@ -1,8 +1,11 @@
+
 /*----------------------------------------------------*/
 /* Load json file, and sort
 ------------------------------------------------------ */
 var G_j_blogs = null;
 var G_j_blogs_filtered= null;
+var G_j_blog_i = null;
+var DEFAULT_BLOG_DIRECTORY = "#page-blog";
 //Load json and sort json and generate pfo cards
 function load_blogs(){
     if (G_j_blogs == null) {
@@ -18,13 +21,11 @@ function load_blogs(){
 }
 $(load_blogs);
 
-function gen_blog(id_){
+function gen_blog_modal(i){
     if(G_j_blogs_filtered !==null)
     {
-        var i = indexOfItemInJSON("id_name",id_,G_j_blogs_filtered);
         if(i !== -1) {
             var md_name = G_j_blogs_filtered[i].md_file_name;
-            // console.log(md_name);
             var url_path = "Resources/Blogs/"+md_name;
             $.ajax({
                 url : url_path,
@@ -58,12 +59,10 @@ function gen_blog(id_){
 
                     let html_content = md.render(data);
 
-                    $("#display-section").html(html_content);
-                    G_sidebar_selected_tags.blog = id_;
-                    G_sidebar_selected_tags.current = id_;
+                    $("#modal-templ-blog-content").html(html_content);
                     MathJax.Hub.Config({
                         tex2jax: {
-                            inlineMath: [['$$','$$'], ['$','$']],
+                            // inlineMath: [['$','$']],
                             processEscapes: true,
                             TeX: { equationNumbers: { autoNumber: "AMS" } },
                             typographer: true
@@ -79,28 +78,50 @@ function gen_blog(id_){
                         mermaid.initialize({theme: theme_});//{theme: 'forest'}
                     }
                     mermaid.init({noteMargin: 10}, ".mermaid");
+
                 }
             });
         }else{
             console.warn("Blog doesn't exsit!");
-            G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
-            G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
-            updateItemTarget();
         }
     }else{
         console.error("Unable to load blogs!");
-        G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
-        G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
-        updateItemTarget();
     }
 
 }
 
+function update_url(id) {
+    var url      = window.location.href;
+    window.location.href =  url.split(DEFAULT_BLOG_DIRECTORY)[0] + DEFAULT_BLOG_DIRECTORY + "/" + id;
+}
 
 $(document).on('click', '.blog-class.card', function () {
-    var id = this.id;
-    var def_cat = this.getAttribute("default-cat");
-    var url      = window.location.href;
-    window.location.href = url +"_"+ def_cat + "/"+id;//update href
-    gen_blog(id);
+    var i = indexOfItemInJSON("id_name",this.id,G_j_blogs_filtered);
+    update_url(this.id);
+
+    //Display the modal
+    $('#blogModalTemplate').modal('show');                
+    gen_blog_modal(i);
+    G_j_blog_i = i;
+});
+
+$(document).on('click', '.closeb', function () {
+    update_url("");
+    G_j_blog_i = null;
+});
+$(document).on('click', '.prevb', function () {
+    var i = G_j_blog_i - 1;
+    i = i <= -1 ? (G_j_blogs_filtered.length-1) : i; //-ve prev
+    G_j_blog_i = i;
+    var id = G_j_blogs_filtered[i]["id_name"];
+    update_url(id);
+    gen_blog_modal(i);
+});
+$(document).on('click', '.nextb', function () {
+    var i = G_j_blog_i + 1;
+    i = i >= G_j_blogs_filtered.length ? 0 : i; //next is 0
+    G_j_blog_i = i;
+    var id = G_j_blogs_filtered[i]["id_name"];
+    update_url(id);
+    gen_blog_modal(i);
 });

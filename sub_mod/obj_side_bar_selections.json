@@ -33,13 +33,22 @@
         "cat_name": "All Blogs"
       },
       {
-        "cat_name": "Daily Blogs"
+        "cat_name": "Filter by Topics",
+        "children":
+        [
+          {"cat_name":"ROS"},
+          {"cat_name":"ML & AI"},
+          {"cat_name":"C++"}
+        ]
       },
       {
-        "cat_name": "Course Notes"
-      },
-      {
-        "cat_name": "ROS Notes"
+        "cat_name": "Filter by Year",
+        "children":
+        [
+          {"cat_name":"2018"},
+          {"cat_name":"2020"},
+          {"cat_name":"2021"}
+        ]
       }
     ]
   },
@@ -69,7 +78,10 @@
           {"cat_name":"2015"},
           {"cat_name":"2016"},
           {"cat_name":"2017"},
-          {"cat_name":"2018"}
+          {"cat_name":"2018"},
+          {"cat_name":"2019"},
+          {"cat_name":"2020"},
+          {"cat_name":"2021"}
         ]
       }
     ]

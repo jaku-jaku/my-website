@@ -12,14 +12,7 @@ $(document).on('click', '.nav-bar-click', function (e) {
     if(click_target !== G_target)
     {
         G_target = click_target;
-        if(G_target === "#page-blog")
-        {
-            //this will make sure it always goes to the main page
-            G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
-            G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
-        }
         loadSideBarRemappedBy(G_target);
-        updateItemTarget();
     }
     reloadPage($this, false);
 });
@@ -42,20 +35,20 @@ $(document).on('click', '.side-bar-click', function (e) {
                 break;
             case "#page-blog":
                 G_sidebar_selected_tags.blog = G_sidebar_selected_tags.current;
+                G_j_blogs_filtered = disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
                 break;
             case "#page-projects":
-                disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, tag_in_attr, '#pfo-bundle', 'pfo-class');
+                G_j_pfo_projs_filtered = disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, tag_in_attr, '#pfo-bundle', 'pfo-class');
                 G_sidebar_selected_tags.proj = G_sidebar_selected_tags.current;
                 break;
             case "#page-photography":
                 G_sidebar_selected_tags.photo = G_sidebar_selected_tags.current;
-                disp_cards_by(G_j_photos, G_j_photos_filtered, tag_in_attr, '#photo-gallery', 'gallery-class');
+                G_j_photos_filtered = disp_cards_by(G_j_photos, G_j_photos_filtered, tag_in_attr, '#photo-gallery', 'gallery-class');
                 break;
             case "#page-contact":
                 G_sidebar_selected_tags.contact = G_sidebar_selected_tags.current;
                 break;
         }
-        updateItemTarget();
     }
 });
 
@@ -76,56 +69,8 @@ $(document).on('click', '#sidebarCollapse', function () {
         {
             loadSideBarRemappedBy(G_target);
         }
-        updateItemTarget();
     }
 });
-
-function updateItemTarget(){
-    $(".side-bar-click").each(function(){
-        var $this = $(this);
-        var ul_parent = $this.closest('ul');
-        var $attr_href = $this.attr("href");
-        if(G_target === "#page-blog")//blog has to be exact
-        {
-            var temp = $attr_href.substr($attr_href.lastIndexOf('/')+1,$attr_href.length);
-            if( temp === (G_sidebar_selected_tags.current))
-            {
-                $this.addClass("active");
-                ul_parent.addClass("in");
-
-            }else if($this.hasClass("active")){
-                $this.removeClass("active");
-            }
-        }else{
-            if($attr_href.includes(G_sidebar_selected_tags.current))
-            {
-                $this.addClass("active");
-                ul_parent.addClass("in");
-
-            }else if($this.hasClass("active")){
-                $this.removeClass("active");
-            }
-        }
-    });
-    if(G_target === "#page-blog"){
-        // console.log(G_sidebar_selected_tags.blog);
-        if(G_sidebar_selected_tags.blog === "#page-blog_All_Blogs")
-        {
-            var url      = window.location.href;
-            window.location.href = url.split("#")[0] + "#page-blog_All_Blogs";//Override
-            $("#display-section").load("sub_mod/sec_blog.html",
-                function(responseTxt, statusTxt, xhr){
-                    if(statusTxt === "success")
-                    {
-                        disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
-                    }
-                });
-        }else{
-            gen_blog(G_sidebar_selected_tags.blog);
-        }
-    }
-}
-
 /*----------------------------------------------------*/
 /* Load json file, and sort
 ------------------------------------------------------ */
@@ -139,23 +84,6 @@ function loadJsonFileSideBar() {
                 if(G_j_sidebar_Obj != null)
                 {
                     G_j_sidebar_Obj = sortResults(G_j_sidebar_Obj, "title", true);
-                }
-
-                var i = indexOfItemInJSON("title", "Blog", G_j_sidebar_Obj);
-                var child_list = G_j_sidebar_Obj[i].children;
-                if(!G_j_blogs)
-                {
-                    load_blogs();
-                }
-
-                for(i = 1; i < child_list.length; i++){
-                    var collector= [];
-                    for(var k =0; G_j_blogs && k<G_j_blogs.length;k++)
-                    {
-                        if(G_j_blogs[k].tags.indexOf(child_list[i].cat_name) > -1)
-                            collector.push({"cat_name":G_j_blogs[k].id_name});
-                    }
-                    child_list[i].children = collector;
                 }
             });
     }

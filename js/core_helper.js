@@ -2,7 +2,7 @@
 var G_sidebar_selected_tags =
     {
         about: "All",
-        blog: "All_Blogs",
+        blog: "All",
         proj: "All",
         photo: "All",
         contact: "All",
@@ -49,19 +49,21 @@ function c_D(content){
 /* cards filter selection
 ------------------------------------------------------ */
 function disp_cards_by(list_, list_filtered_, tag_, div_id_, cards_category_){
-    // console.log(tag_);
     if(!list_)
-        return false;
+    return false;
     if(!tag_.includes("All"))
     {
         list_filtered_ = list_.filter(function (item,n){
             return (item.tags.indexOf(tag_) > -1);
         });
-    }else
+    }
+    else
+    {
         list_filtered_ = list_;
+    }
     //regen cards
     gen_cards(list_filtered_, div_id_, cards_category_);
-    return true;
+    return list_filtered_;
 }
 
 /*----------------------------------------------------*/
@@ -110,60 +112,60 @@ function startEngine() {
     // alert("Done");
     var FrameTimer = setInterval(function(){
         // About me experience rendering
-        Callback_Calculate(); Callback_Render(); Callback_file_system();
+        Callback_Calculate(); Callback_Render();
+        //  Callback_file_system();
         // side_bar
         // Callback_Sidebar();
     },10);
 }
 
-var G_prev_url = "";
-function Callback_file_system(){
-    var url      = window.location.href;     // Returns full URL
-    if(G_prev_url !== url)
-    {
-        G_prev_url = url;
-        var hash_val = "#"+url.split("#").pop();
-        var tags = hash_val.split("/")[0];
-        tags = tags.split("_");
-        var tag = tags[0];
-        //For page refreshing
-        if(G_target !== tag){
-            // console.log(tag);
-            //only if it is a valid page
-            if(G_PAGE_REFERENCE.indexOf(tag)>=0)
-            {
-                G_target = tag;
-                {
-                    if(G_target === "#page-blog")
-                    {
-                        var sub_files = hash_val.split("/");
-                        if(sub_files.length>=2)
-                        {
+// var G_prev_url = "";
+// function Callback_file_system(){
+//     var url      = window.location.href;     // Returns full URL
+//     if(G_prev_url !== url)
+//     {
+//         G_prev_url = url;
+//         var hash_val = "#"+url.split("#").pop();
+//         var tags = hash_val.split("/")[0];
+//         tags = tags.split("_");
+//         var tag = tags[0];
+//         //For page refreshing
+//         if(G_target !== tag){
+//             // console.log(tag);
+//             //only if it is a valid page
+//             if(G_PAGE_REFERENCE.indexOf(tag)>=0)
+//             {
+//                 G_target = tag;
+//                 {
+//                     if(G_target === "#page-blog")
+//                     {
+//                         var sub_files = hash_val.split("/");
+//                         if(sub_files.length>=2)
+//                         {
 
-                            //this will make sure it always goes to the main page
-                            G_sidebar_selected_tags.current = sub_files[sub_files.length-1];
-                            G_sidebar_selected_tags.blog = sub_files[sub_files.length-1];
-                        }else{
-                            G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
-                            G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
-                        }
-                    }
+//                             //this will make sure it always goes to the main page
+//                             G_sidebar_selected_tags.current = sub_files[sub_files.length-1];
+//                             G_sidebar_selected_tags.blog = sub_files[sub_files.length-1];
+//                         }else{
+//                             G_sidebar_selected_tags.current = "#page-blog_All_Blogs";
+//                             G_sidebar_selected_tags.blog = "#page-blog_All_Blogs";
+//                         }
+//                     }
 
-                    loadSideBarRemappedBy(G_target);
-                    updateItemTarget();
-                    // reloadPage($(), false);
-                    $(".nav-bar-click").each(function() {
-                        var $this = $(this);
-                        var href_str = $this.attr("href");
-                        if(href_str === tag){
-                            reloadPage($this, false);
-                        }
-                    });
-                }
-            }
-            // else{
-            //     console.warn("page not exist");
-            // }
-        }
-    }
-}
+//                     loadSideBarRemappedBy(G_target);
+//                     // reloadPage($(), false);
+//                     $(".nav-bar-click").each(function() {
+//                         var $this = $(this);
+//                         var href_str = $this.attr("href");
+//                         if(href_str === tag){
+//                             reloadPage($this, false);
+//                         }
+//                     });
+//                 }
+//             }
+//             // else{
+//             //     console.warn("page not exist");
+//             // }
+//         }
+//     }
+// }

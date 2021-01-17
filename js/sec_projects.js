@@ -23,7 +23,7 @@ function reloadPage($this, force)
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
-                            disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
+                            G_j_blogs_filtered = disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
                         }
                     });
                 break;
@@ -32,7 +32,7 @@ function reloadPage($this, force)
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
-                            disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, G_sidebar_selected_tags.proj, '#pfo-bundle', 'pfo-class');
+                            G_j_pfo_projs_filtered = disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, G_sidebar_selected_tags.proj, '#pfo-bundle', 'pfo-class');
                         }
                     });
                 break;
@@ -41,7 +41,7 @@ function reloadPage($this, force)
                     function(responseTxt, statusTxt, xhr){
                         if(statusTxt === "success")
                         {
-                            disp_cards_by(G_j_photos, G_j_photos_filtered, G_sidebar_selected_tags.photo, '#photo-gallery', 'gallery-class');
+                            G_j_photos_filtered = disp_cards_by(G_j_photos, G_j_photos_filtered, G_sidebar_selected_tags.photo, '#photo-gallery', 'gallery-class');
                         }
                     });
                 break;
@@ -168,9 +168,6 @@ $(document).on('click', '.pfo-class.card', function () {
 });
 $(document).on('click', '.prevp', function () {
     gen_pfo_modal(G_cur_pfo_id_name, -1);
-});
-$(document).on('click', '.nextp', function () {
-    gen_pfo_modal(G_cur_pfo_id_name, +1);
 });
 $(document).on('click', '.nextp', function () {
     gen_pfo_modal(G_cur_pfo_id_name, +1);
