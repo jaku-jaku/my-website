@@ -172,3 +172,6 @@ $(document).on('click', '.prevp', function () {
 $(document).on('click', '.nextp', function () {
     gen_pfo_modal(G_cur_pfo_id_name, +1);
 });
+$(document).on('click', '.nextp', function () {
+    gen_pfo_modal(G_cur_pfo_id_name, +1);
+});
