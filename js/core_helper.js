@@ -19,8 +19,6 @@ var G_sidebar_selected_filters =
         current: null
     };//by default to show all projects
 
-var G_item = null;
-
 var G_context_status =
     {
         side_bar_visible: true
@@ -111,8 +109,6 @@ function gen_cards(list_filered_, id_name_, cards_category_){
     animate({top: 0, opacity: 1}, 200);
 }
 
-
-
 //   --------------------------------   --------------------------------    --------------------------------
 /*----------------------------------------------------*/
 /* Const Intv Thread
@@ -139,19 +135,18 @@ function Callback_url_supervisor(){
         G_prev_url = url;
         var urls = url.split("#");
         var len = 0;
-        var new_dir = "";
+        var new_dir = [];
         var tags = null;
         var page_target = null;
         var modal_selection = null;
         var tag = null;
-        var all_selected = true;
         // console.log(urls);
         // console.log(urls.length);
         if (urls.length == 2)
         {
             tags = ("#"+urls[1]).split("/");
             page_target = tags[0];
-            new_dir += page_target;
+            new_dir.push(page_target);
             len = tags.length;
             // console.log(tags);
             if (G_PAGE_REFERENCE.indexOf(page_target) < 0)
@@ -164,7 +159,7 @@ function Callback_url_supervisor(){
         {
             // default page for invalid page target
             page_target = "#page-about";
-            new_dir += "#page-about";
+            new_dir.push("#page-about");
         }
         if (len > 1)
         {
@@ -173,12 +168,12 @@ function Callback_url_supervisor(){
                 // console.log("[ All ]")
                 tag = "All";
                 filter = null;
-                if (len == 3)
-                {
-                    // console.log("")
-                    // load popup
-                    modal_selection = tags[2];
-                }
+            }
+            else if (len == 2)
+            {
+                // console.log("")
+                // load popup
+                modal_selection = tags[1];
             }
             else if (len >= 3)
             {
@@ -200,6 +195,7 @@ function Callback_url_supervisor(){
         // console.log("tags: ", tags);
         // console.log("page_target: ",page_target);
         // console.log("new-url: ", new_dir);
+        // console.log("modal_selection: ", modal_selection);
         
         //For page refreshing
         if(G_target != page_target)
@@ -228,7 +224,8 @@ function Callback_url_supervisor(){
         {
             G_sidebar_selected_tags.current = tag;
             G_sidebar_selected_filters.current = filter;
-            new_dir += "/" + filter + "/" + tag;
+            new_dir.push(filter);
+            new_dir.push(tag);
             refreshItemsBasedOnCurrentTag();
         }
         else if (tag && !filter) // for all entries
@@ -239,7 +236,78 @@ function Callback_url_supervisor(){
         }
         
         renderBarItem();
+
+        if (G_item && (modal_selection == G_item))
+        {
+            new_dir.push(modal_selection);
+        }
+        else if (modal_selection != G_item)
+        {
+            if (modal_selection == null)
+            {
+                // console.log("[Entry not valid]");
+                $('#blogModalTemplate').modal('hide');
+                $('#portfolioModalTemplate').modal('hide');
+                $('#image-modal').modal('hide');
+                G_item = modal_selection;
+            }
+            else
+            {
+                // console.log("[Load new entry]");
+                blog_id = indexOfItemInJSON("id_name",modal_selection,G_j_blogs_filtered);
+                proj_id = indexOfItemInJSON("id_name",modal_selection,G_j_pfo_projs_filtered);
+                photo_id = indexOfItemInJSON("id_name",modal_selection,G_j_photos_filtered);
+                if (blog_id >= 0)
+                {
+                    // console.log("[Load new entry: blog]", blog_id);
+                    gen_blog_modal(blog_id);
+                    new_dir.push(modal_selection);
+                    $('#blogModalTemplate').modal('show');
+                    $('#image-modal').modal('hide');
+                    $('#portfolioModalTemplate').modal('hide');
+                    G_item = modal_selection;
+                }
+                else if (proj_id >= 0)
+                {
+                    // console.log("[Load new entry: proj]", proj_id);
+                    gen_pfo_modal(proj_id);
+                    new_dir.push(modal_selection);
+                    $('#blogModalTemplate').modal('hide');
+                    $('#image-modal').modal('hide');
+                    $('#portfolioModalTemplate').modal('show');
+                    G_item = modal_selection;
+                }
+                else if (photo_id >= 0)
+                {
+                    // we can reload (TBI)?
+                }
+            }
+        }
+        
         // update href:
-        window.location.href = urls[0] + new_dir;
+        window.location.href = urls[0] + new_dir.join("/");
     }
+}
+
+var G_item = null;
+function htmlReplace(new_item)
+{
+    var urls = window.location.href.split("/");
+    if (G_item == null)
+    {
+        urls.push(new_item); // add
+    }
+    else 
+    {
+        if (new_item == null)
+        {
+            urls.pop(); // remove
+        }
+        else if (urls[urls.length - 1].includes(G_item))
+        {
+            urls[urls.length - 1] = new_item; // replace
+        }
+    }
+    G_item = new_item;
+    window.location.href = urls.join("/");
 }

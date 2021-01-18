@@ -92,26 +92,28 @@ function gen_blog_modal(i){
 
 $(document).on('click', '.blog-class.card', function () {
     var i = indexOfItemInJSON("id_name",this.id,G_j_blogs_filtered);
+    G_j_blog_i = i;
     //Display the modal
     $('#blogModalTemplate').modal('show');                
     gen_blog_modal(i);
-    G_j_blog_i = i;
+    htmlReplace(G_j_blogs_filtered[i]["id_name"]);
 });
 
 $(document).on('click', '.closeb', function () {
     G_j_blog_i = null;
+    htmlReplace(null);
 });
 $(document).on('click', '.prevb', function () {
     var i = G_j_blog_i - 1;
     i = i <= -1 ? (G_j_blogs_filtered.length-1) : i; //-ve prev
-    var id = G_j_blogs_filtered[i]["id_name"];
-    gen_blog_modal(i);
     G_j_blog_i = i;
+    gen_blog_modal(i);
+    htmlReplace(G_j_blogs_filtered[i]["id_name"]);
 });
 $(document).on('click', '.nextb', function () {
     var i = G_j_blog_i + 1;
     i = i >= G_j_blogs_filtered.length ? 0 : i; //next is 0
-    var id = G_j_blogs_filtered[i]["id_name"];
-    gen_blog_modal(i);
     G_j_blog_i = i;
+    gen_blog_modal(i);
+    htmlReplace(G_j_blogs_filtered[i]["id_name"]);
 });
