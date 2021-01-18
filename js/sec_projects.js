@@ -81,19 +81,13 @@ $(function () {
 /*****************AUTO portfolio modal real-time gen****************
 /*******************************************************************
 ----------------------------------------------------------------- */
-var G_cur_pfo_id_name = "";
+var G_j_pfo_i = null;
 
-function gen_pfo_modal(_id_name, offset)
+function gen_pfo_modal(i)
 {
     // Use preloaded json to construct page dynamically
     if(G_j_pfo_projs_filtered != null) {
-        var i = indexOfItemInJSON("id_name",_id_name,G_j_pfo_projs_filtered);
         if(i !== -1) {
-            i = i + offset; //offsetting the selection for prev/next
-            i = i <= -1 ? (G_j_pfo_projs_filtered.length-1) : i; //-ve prev
-            i = i >= G_j_pfo_projs_filtered.length ? 0 : i; //next is 0
-
-            G_cur_pfo_id_name = G_j_pfo_projs_filtered[i].id_name; //save id_name globally
             var modal_html_buffer;
 
             modal_html_buffer = "<h1>" + G_j_pfo_projs_filtered[i].title + "<h1>";
@@ -160,14 +154,29 @@ function gen_pfo_modal(_id_name, offset)
     }
 }
 $(document).on('click', '.pfo-class.card', function () {
-    var id = this.id;
-    gen_pfo_modal(id, 0);
+    var i = indexOfItemInJSON("id_name",this.id,G_j_pfo_projs_filtered);
+    G_j_pfo_i = i;
     //Display the modal
     $('#portfolioModalTemplate').modal('show');
+    gen_pfo_modal(i);
+    htmlReplace(G_j_pfo_projs_filtered[i]["id_name"]);
+});
+$(document).on('click', '.closep', function () {    
+    G_j_pfo_i = null;
+    htmlReplace(null);
 });
 $(document).on('click', '.prevp', function () {
-    gen_pfo_modal(G_cur_pfo_id_name, -1);
+    var i = G_j_pfo_i - 1;
+    i = i <= -1 ? (G_j_pfo_projs_filtered.length-1) : i; //-ve prev
+    G_j_pfo_i = i;
+    gen_pfo_modal(i);
+    htmlReplace(G_j_pfo_projs_filtered[i]["id_name"]);
+    
 });
 $(document).on('click', '.nextp', function () {
-    gen_pfo_modal(G_cur_pfo_id_name, +1);
+    var i = G_j_pfo_i + 1;
+    i = i >= G_j_pfo_projs_filtered.length ? 0 : i; //next is 0
+    G_j_pfo_i = i;
+    gen_pfo_modal(i);
+    htmlReplace(G_j_pfo_projs_filtered[i]["id_name"]);
 });

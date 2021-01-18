@@ -20,9 +20,25 @@ $(function () {
 $(document).on('click', '.gallery-class.card', function () {
     var img_src=$(this).children().children().children().attr('src');
     //source original photos
+    loadImage(img_src);
+    $('#image-modal').modal('show');
+});
+
+$('.modal').on('show.bs.modal', function() {
+    $(this).show();
+    setModalMaxHeight(this);
+});
+
+$(window).resize(function() {
+    if ($('#image-modal.modal.in').length !== 0) {
+        setModalMaxHeight($('#image-modal.modal.in'));
+    }
+});
+
+
+function loadImage(img_src){
     var $img_preview = $('#imagepreview');
     $img_preview.attr('src', img_src); // use low res first
-
     img_src= img_src.replace("/min/", "/");
     img_src= img_src.replace("_min.jpg", ".jpg");
     var newimg = new Image();
@@ -30,8 +46,7 @@ $(document).on('click', '.gallery-class.card', function () {
     newimg.onload = function() {
         $img_preview.attr('src', img_src); // here assign the image to the modal when the user click the enlarge link
     };
-    $('#image-modal').modal('show');
-});
+};
 
 function setModalMaxHeight(element) {
     this.$element     = $(element);
@@ -52,15 +67,4 @@ function setModalMaxHeight(element) {
         'max-height': maxHeight,
         'overflow-y': 'auto'
     });
-}
-
-$('.modal').on('show.bs.modal', function() {
-    $(this).show();
-    setModalMaxHeight(this);
-});
-
-$(window).resize(function() {
-    if ($('#image-modal.modal.in').length !== 0) {
-        setModalMaxHeight($('#image-modal.modal.in'));
-    }
-});
+};
