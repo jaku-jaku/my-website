@@ -269,8 +269,8 @@
     margin: auto;
 }
 .my-bubble-block{
-    margin: 10px;
-    min-width: 300px;
+    margin: 5px;
+    min-width: 220px;
     display: inline-block;
     vertical-align: top;
     border-radius: 10px;
