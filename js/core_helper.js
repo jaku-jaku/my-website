@@ -9,6 +9,18 @@ var G_sidebar_selected_tags =
         current: "All"
     };//by default to show all projects
 
+var G_sidebar_selected_filters =
+    {
+        about: null,
+        blog: null,
+        proj: null,
+        photo: null,
+        contact: null,
+        current: null
+    };//by default to show all projects
+
+var G_item = null;
+
 var G_context_status =
     {
         side_bar_visible: true
@@ -113,59 +125,121 @@ function startEngine() {
     var FrameTimer = setInterval(function(){
         // About me experience rendering
         Callback_Calculate(); Callback_Render();
-        //  Callback_file_system();
+        Callback_url_supervisor();
         // side_bar
         // Callback_Sidebar();
     },10);
 }
 
 var G_prev_url = "";
-function Callback_file_system(){
+function Callback_url_supervisor(){
     var url      = window.location.href;     // Returns full URL
     if(G_prev_url !== url)
     {
         G_prev_url = url;
-        var hash_val = "#"+url.split("#").pop();
-        var tags = hash_val.split("/")[0];
-        tags = tags.split("_");
-        var tag = tags[0];
-        //For page refreshing
-        if(G_target !== tag){
-            // console.log(tag);
-            //only if it is a valid page
-            if(G_PAGE_REFERENCE.indexOf(tag)>=0)
+        var urls = url.split("#");
+        var len = 0;
+        var new_dir = "";
+        var tags = null;
+        var page_target = null;
+        var modal_selection = null;
+        var tag = null;
+        var all_selected = true;
+        // console.log(urls);
+        // console.log(urls.length);
+        if (urls.length == 2)
+        {
+            tags = ("#"+urls[1]).split("/");
+            page_target = tags[0];
+            new_dir += page_target;
+            len = tags.length;
+            // console.log(tags);
+            if (G_PAGE_REFERENCE.indexOf(page_target) < 0)
             {
-                G_target = tag;
+                page_target = null;// invalid
+            }
+            // console.log("[Update Urls]")
+        }
+        if (page_target == null)
+        {
+            // default page for invalid page target
+            page_target = "#page-about";
+            new_dir += "#page-about";
+        }
+        if (len > 1)
+        {
+            if (tags[1].includes("All"))
+            {
+                // console.log("[ All ]")
+                tag = "All";
+                filter = null;
+                if (len == 3)
                 {
-                    if(G_target === "#page-blog")
-                    {
-                        var sub_files = hash_val.split("/");
-                        if(sub_files.length>=2)
-                        {
+                    // console.log("")
+                    // load popup
+                    modal_selection = tags[2];
+                }
+            }
+            else if (len >= 3)
+            {
+                filter = tags[1];
+                tag = tags[2];
+                if (len == 4)
+                {
+                    // load popup
+                    modal_selection = tags[3];
+                }
+            }
+            else
+            {
+                // invalid entry
+            }
+        }
+        
 
-                            //this will make sure it always goes to the main page
-                            G_sidebar_selected_tags.current = sub_files[sub_files.length-1];
-                            G_sidebar_selected_tags.blog = sub_files[sub_files.length-1];
-                        }else{
-                            G_sidebar_selected_tags.current = "#page-blog";
-                            G_sidebar_selected_tags.blog = "#page-blog";
-                        }
-                    }
-
+        // console.log("tags: ", tags);
+        // console.log("page_target: ",page_target);
+        // console.log("new-url: ", new_dir);
+        
+        //For page refreshing
+        if(G_target != page_target)
+        {
+            // console.log("Re-direct to: ", page_target);
+            // update
+            {
+                G_target = page_target;
+                {
+                    // load side bar
                     loadSideBarRemappedBy(G_target);
-                    // reloadPage($(), false);
+                    // load page and contents
                     $(".nav-bar-click").each(function() {
                         var $this = $(this);
                         var href_str = $this.attr("href");
-                        if(href_str === tag){
+                        if(href_str === page_target){
                             reloadPage($this, false);
                         }
                     });
+                    // open modal
                 }
             }
-            // else{
-            //     console.warn("page not exist");
-            // }
         }
+        // update content based on filters
+        if ( tag && filter )
+        {
+            G_sidebar_selected_tags.current = tag;
+            G_sidebar_selected_filters.current = filter;
+            new_dir += "/" + filter + "/" + tag;
+            refreshItemsBasedOnCurrentTag();
+        }
+        else if (tag && !filter) // for all entries
+        {
+            G_sidebar_selected_tags.current = tag;
+            G_sidebar_selected_filters.current = filter;
+            refreshItemsBasedOnCurrentTag();
+        }
+        
+        renderBarItem();
+        // update href:
+        window.location.href = urls[0] + new_dir;
     }
 }

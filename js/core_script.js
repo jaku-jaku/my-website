@@ -53,14 +53,14 @@ $(document).on('click', '#view-area', function (e) {
             {
                 $side_nav.addClass('active');
                 $sidebarCollapseBtn.addClass('active');
-                // console.log("remove deactive");
+                // // console.log("remove deactive");
             }
         }else{
             if($side_nav.is(".active"))
             {
                 $side_nav.removeClass('active');
                 $sidebarCollapseBtn.removeClass('active');
-                // console.log("remove active");
+                // // console.log("remove active");
             }
         }
     }
@@ -80,7 +80,7 @@ function parallax() {
 /* monitoring current state
 ------------------------------------------------------ */
 document.addEventListener('scroll', function (event) {
-    // console.log('scrolling', event.target);
+    // // console.log('scrolling', event.target);
     var scroll_pos = $(window).scrollTop();
     var view_height = $(window).height();
     parallax();
@@ -89,7 +89,7 @@ document.addEventListener('scroll', function (event) {
     $( ".sec_page" ).each(function(index) {
         elem = $(this);
         // if((scroll_pos - elem.offset().top) > - view_height/2 && (scroll_pos - elem.offset().top) < view_height/2)
-        // console.log(index+ " - [" + elem.offset().top +","+ scroll_pos +" ]");
+        // // console.log(index+ " - [" + elem.offset().top +","+ scroll_pos +" ]");
     });
     // }
 }, true /*Capture event*/);

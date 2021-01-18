@@ -22,7 +22,7 @@ $.getJSON("sub_mod/obj_experiences.json",
 // - when resize => recompute the dots
 window.addEventListener('resize', function ()
 {
-    // console.log("resize");
+    // // console.log("resize");
     reloadBackground();
     setTimeout(function() {
         updateWH();
@@ -68,7 +68,7 @@ function updatePOC() {
             loadUrl('link-linkedin'   ,data["linkedin"]);
             loadUrl('link-instagram'  ,data["instagram"]);
             loadUrl('link-resume'     ,data["resume"]);
-            // console.log("Loaded");
+            // // console.log("Loaded");
         }
     )
 }
@@ -86,7 +86,7 @@ function updateSkills() {
                 {
                     ul_html += "<li>" + element + "</li>";
                 }
-                // console.log("skill-" + cat)
+                // // console.log("skill-" + cat)
                 skill_div = document.getElementById("skill-" + cat);
                 if (skill_div)
                 {
@@ -180,7 +180,7 @@ function Node(_data) {
         this.mx_lines = Math.round(tw/this.title_w[2]);
         this.str_span = Math.ceil(str.length/this.mx_lines);
         this.title_w[2] = this.title_w[2] * 1.3;
-        // console.log(this.x, this.y);
+        // // console.log(this.x, this.y);
         //update drawing positions
         x = this.x;
         y = this.y;
@@ -425,14 +425,14 @@ function initEngine() {
             var rect = G_ctx.canvas.getBoundingClientRect(event);
             mouseX=event.clientX-rect.left;
             mouseY=event.clientY-rect.top;
-            // console.log(rect);
+            // // console.log(rect);
             Callback_mouse(mouseX, mouseY, false);
         });
         G_ctx.canvas.addEventListener("click", function (event) {
             var rect = G_ctx.canvas.getBoundingClientRect();
             mouseX=event.clientX-rect.left;
             mouseY=event.clientY-rect.top;
-            // console.log(rect);
+            // // console.log(rect);
             Callback_mouse(mouseX, mouseY, true);
         })
     }
@@ -518,13 +518,13 @@ function updateWH() {
         G_CVS.scrollWidth = G_WH[0];
         G_CVS.scrollHeight = G_WH[1];
         G_CVS.style.marginTop = -G_WH[1].toString() +'px';
-        // console.log(G_CVS.width, G_CVS.height, G_CVS.style.marginTop);
+        // // console.log(G_CVS.width, G_CVS.height, G_CVS.style.marginTop);
 
         for (var ni= 0; ni< G_nodeList.length; ni++)
         {
             G_nodeList[ni].updateStaticData(G_portrait_mode);
         }
-        // console.log(G_WH);
+        // // console.log(G_WH);
     }else
     {
         G_WH = null;
@@ -547,7 +547,7 @@ function Callback_Calculate() {
         G_is_page_visible = (G_target === "#page-about");
         if(G_is_page_visible)
         {
-            // console.log("initing engine");
+            // // console.log("initing engine");
             initEngine();//Otherwise, no need for initializing engine
             reloadBackground();
             setTimeout(function() {
@@ -625,7 +625,7 @@ function Callback_Calculate() {
                     {
                         job_toast.className = job_toast.className.replace("toast-hide", "toast-show");
                         $(job_toast).fadeIn("slow");
-                        // console.log("[Show Toast]")
+                        // // console.log("[Show Toast]")
                     }
                     // stop searching
                     break;
@@ -637,7 +637,7 @@ function Callback_Calculate() {
                 {
                     $(job_toast).fadeOut("slow");
                     job_toast.className = job_toast.className.replace("toast-show", "toast-hide");
-                    // console.log("[Hide Toast]")
+                    // // console.log("[Hide Toast]")
                 }
             }
         }

@@ -90,15 +90,8 @@ function gen_blog_modal(i){
 
 }
 
-function update_url(id) {
-    var url      = window.location.href;
-    window.location.href =  url.split(DEFAULT_BLOG_DIRECTORY)[0] + DEFAULT_BLOG_DIRECTORY + "/" + id;
-}
-
 $(document).on('click', '.blog-class.card', function () {
     var i = indexOfItemInJSON("id_name",this.id,G_j_blogs_filtered);
-    update_url(this.id);
-
     //Display the modal
     $('#blogModalTemplate').modal('show');                
     gen_blog_modal(i);
@@ -106,22 +99,19 @@ $(document).on('click', '.blog-class.card', function () {
 });
 
 $(document).on('click', '.closeb', function () {
-    update_url("");
     G_j_blog_i = null;
 });
 $(document).on('click', '.prevb', function () {
     var i = G_j_blog_i - 1;
     i = i <= -1 ? (G_j_blogs_filtered.length-1) : i; //-ve prev
-    G_j_blog_i = i;
     var id = G_j_blogs_filtered[i]["id_name"];
-    update_url(id);
     gen_blog_modal(i);
+    G_j_blog_i = i;
 });
 $(document).on('click', '.nextb', function () {
     var i = G_j_blog_i + 1;
     i = i >= G_j_blogs_filtered.length ? 0 : i; //next is 0
-    G_j_blog_i = i;
     var id = G_j_blogs_filtered[i]["id_name"];
-    update_url(id);
     gen_blog_modal(i);
+    G_j_blog_i = i;
 });

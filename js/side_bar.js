@@ -20,38 +20,53 @@ $(document).on('click', '.nav-bar-click', function (e) {
 /*----------------------------------------------------*/
 /* Side Sidebar
 ------------------------------------------------------ */
-$(document).on('click', '.side-bar-click', function (e) {
-    var $this = $(this);
-    if(!$this.hasClass('active'))
+function renderBarItem(){
+    bar_items = $(".side-bar-click");
+    if (bar_items)
     {
-        var attr_selected = $this.attr("href");
-        var tag_in_attr = attr_selected.substr(attr_selected.lastIndexOf('/')+1, attr_selected.length);
-        G_sidebar_selected_tags.current = tag_in_attr;
-        //Based on current target, call different action callback
-        switch(G_target)
-        {
-            case "#page-about":
-                G_sidebar_selected_tags.about = G_sidebar_selected_tags.current;
-                break;
-            case "#page-blog":
-                G_sidebar_selected_tags.blog = G_sidebar_selected_tags.current;
-                G_j_blogs_filtered = disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
-                break;
-            case "#page-projects":
-                G_j_pfo_projs_filtered = disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, tag_in_attr, '#pfo-bundle', 'pfo-class');
-                G_sidebar_selected_tags.proj = G_sidebar_selected_tags.current;
-                break;
-            case "#page-photography":
-                G_sidebar_selected_tags.photo = G_sidebar_selected_tags.current;
-                G_j_photos_filtered = disp_cards_by(G_j_photos, G_j_photos_filtered, tag_in_attr, '#photo-gallery', 'gallery-class');
-                break;
-            case "#page-contact":
-                G_sidebar_selected_tags.contact = G_sidebar_selected_tags.current;
-                break;
-        }
+        bar_items.each(function(index, element) {
+            if ($(this).attr("href").includes(G_sidebar_selected_tags.current))
+            {
+                if(!$(this).hasClass("active"))
+                {
+                    // console.log("active:", element)
+                    $(this).addClass("active")
+                }
+            }
+            else
+            {
+                if($(this).hasClass("active"))
+                {
+                    // console.log("deactive:", element)
+                    $(this).removeClass("active")
+                }
+            }
+        });
     }
-});
-
+    drop_items = $(".dropdown-toggle");
+    if (drop_items)
+    {
+        // console.log(G_sidebar_selected_filters)
+        drop_items.each(function(index, element) {
+            if ($(this).attr("href").includes(G_sidebar_selected_filters.current))
+            {
+                if(!$(this).hasClass("active"))
+                {
+                    // console.log("active:", element)
+                    $(this).delay(1000).addClass("active")
+                }
+            }
+            else
+            {
+                if($(this).hasClass("active"))
+                {
+                    // console.log("deactive:", element)
+                    $(this).removeClass("active")
+                }
+            }
+        });
+    }
+}
 /*----------------------------------------------------*/
 /* sidebar Category Collapse
 ------------------------------------------------------ */
@@ -69,6 +84,7 @@ $(document).on('click', '#sidebarCollapse', function () {
         {
             loadSideBarRemappedBy(G_target);
         }
+        renderBarItem();
     }
 });
 /*----------------------------------------------------*/
@@ -106,12 +122,12 @@ function loadSideBarBy(title_, hash_topic){
         {
             var main_cat_obj = main_categories[i];
             var main_cat_name = main_cat_obj.cat_name;
-            var hashLink = hash_topic +"_"+ main_cat_name;
+            var hashLink = hash_topic +"/"+ main_cat_name;
             var sub_categories = main_cat_obj.children;
             hashLink = c_S(hashLink);
             if(sub_categories)//Exist
             {
-                var li_id = hash_topic +"_"+ main_cat_name;
+                var li_id = hash_topic +"-"+ main_cat_name;
                 li_id = c_S(li_id);//replace space with '_'
                 html_block += "<li>";
                 html_block += "<a href=\"#"+li_id+"\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"dropdown-toggle\">"
@@ -148,26 +164,60 @@ function loadSideBarRemappedBy(selected_topic_){
         case "#page-about":
             title = "About";
             G_sidebar_selected_tags.current = G_sidebar_selected_tags.about;
+            G_sidebar_selected_filters.current = G_sidebar_selected_filters.about;
             break;
         case "#page-blog":
             title = "Blog";
             G_sidebar_selected_tags.current = G_sidebar_selected_tags.blog;
+            G_sidebar_selected_filters.current = G_sidebar_selected_filters.blog;
             break;
         case "#page-projects":
             title = "Project";
             G_sidebar_selected_tags.current = G_sidebar_selected_tags.proj;
+            G_sidebar_selected_filters.current = G_sidebar_selected_filters.proj;
             break;
         case "#page-photography":
             title = "Photos";
             G_sidebar_selected_tags.current = G_sidebar_selected_tags.photo;
+            G_sidebar_selected_filters.current = G_sidebar_selected_filters.photo;
             break;
         case "#page-contact":
             title = "Contact";
             G_sidebar_selected_tags.current = G_sidebar_selected_tags.contact;
+            G_sidebar_selected_filters.current = G_sidebar_selected_filters.contact;
             break;
     }
     loadSideBarBy(title, selected_topic_.split("#").pop());
 }
 
-
+function refreshItemsBasedOnCurrentTag()
+{
+    //Based on current target, call different action callback
+    switch(G_target)
+    {
+        case "#page-about":
+            G_sidebar_selected_tags.about = G_sidebar_selected_tags.current;
+            G_sidebar_selected_filters.about = G_sidebar_selected_filters.current;
+            break;
+        case "#page-blog":
+            G_sidebar_selected_tags.blog = G_sidebar_selected_tags.current;
+            G_sidebar_selected_filters.blog = G_sidebar_selected_filters.current;
+            G_j_blogs_filtered = disp_cards_by(G_j_blogs, G_j_blogs_filtered, G_sidebar_selected_tags.blog, '#blog-bundle', 'blog-class');
+            break;
+        case "#page-projects":
+            G_sidebar_selected_tags.proj = G_sidebar_selected_tags.current;
+            G_sidebar_selected_filters.proj = G_sidebar_selected_filters.current;
+            G_j_pfo_projs_filtered = disp_cards_by(G_j_pfo_projs, G_j_pfo_projs_filtered, G_sidebar_selected_tags.proj, '#pfo-bundle', 'pfo-class');
+            break;
+        case "#page-photography":
+            G_sidebar_selected_tags.photo = G_sidebar_selected_tags.current;
+            G_sidebar_selected_filters.photo = G_sidebar_selected_filters.current;
+            G_j_photos_filtered = disp_cards_by(G_j_photos, G_j_photos_filtered, G_sidebar_selected_tags.photo, '#photo-gallery', 'gallery-class');
+            break;
+        case "#page-contact":
+            G_sidebar_selected_tags.contact = G_sidebar_selected_tags.current;
+            G_sidebar_selected_filters.contact = G_sidebar_selected_filters.current;
+            break;
+    }
+}
 

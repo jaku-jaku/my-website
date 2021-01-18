@@ -112,7 +112,7 @@ function gen_pfo_modal(_id_name, offset)
 
             modal_html_buffer += " </div>\n" +
                 "                        </div>";
-            // console.log(modal_html_buffer);
+            // // console.log(modal_html_buffer);
             $('#modal-templ-imgs').html(modal_html_buffer);
 
             //load details
@@ -156,15 +156,14 @@ function gen_pfo_modal(_id_name, offset)
                 autoHeight: true,
                 transitionStyle: "fade"
             });
-
-            //Display the modal
-            $('#portfolioModalTemplate').modal('show');
         }
     }
 }
 $(document).on('click', '.pfo-class.card', function () {
     var id = this.id;
     gen_pfo_modal(id, 0);
+    //Display the modal
+    $('#portfolioModalTemplate').modal('show');
 });
 $(document).on('click', '.prevp', function () {
     gen_pfo_modal(G_cur_pfo_id_name, -1);
