@@ -1,5 +1,77 @@
 [
   {
+    "id_name": "SF_Tea",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "SF_tea_min.jpg",
+    "title": " 品 茶 ",
+    "description": "<p> Tea Taste @ SF </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2020", "California", "Adventure"]
+  },
+  {
+    "id_name": "Cali_3",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "CALI3_min.jpg",
+    "title": "加州 - 蓝",
+    "description": "<p> A Peaceful Ocean </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2020", "California", "Blue"]
+  },
+  {
+    "id_name": "Cali_1",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "CALI_min.jpg",
+    "title": "California Blue",
+    "description": "<p> A Peaceful Bay </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2020", "California", "Blue"]
+  },
+  {
+    "id_name": "LA_street",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "LA_street_min.jpg",
+    "title": "Los Angeles Vibe",
+    "description": "<p> Los Angeles </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2019", "California"]
+  },
+  {
+    "id_name": "LA_building",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "LA_tower_min.jpg",
+    "title": "Los Angeles Blue",
+    "description": "<p> Peaceful Blue </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2019", "California", "Blue"]
+  },
+  {
+    "id_name": "Jump",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "morro_bay_jump_min.jpg",
+    "title": "Cheering for the dawn",
+    "description": "<p> Jump at Morro Bay </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2019", "California", "Adventure", "Night"]
+  },
+  {
+    "id_name": "Shanghai",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "Shanghai_min.jpg",
+    "title": "Night at Shanghai",
+    "description": "</br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Fall", "2019", "China", "Adventure", "Night"]
+  },
+  {
+    "id_name": "Tree",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "TAHOE_1_min.jpg",
+    "title": "Tree",
+    "description": "<p> Tree at Tahoe </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Summer", "2019", "California", "Adventure"]
+  },
+  {
+    "id_name": "Clairo",
+    "img_directory": "Resources/Photography/2019-20/min/",
+    "img_cover": "Clairo_min.jpg",
+    "title": "Immunity",
+    "description": "<p> Concert Clairo </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
+    "tags": ["Winter", "2019", "Concert", "Night"]
+  },
+  {
     "id_name": "Fall_bestfriends",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "BestFriends_min.jpg",
@@ -71,10 +143,6 @@
     "description": "<p> Remember all the time we fight </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Fall", "2016"]
   },
-
-
-
-
   {
     "id_name": "Japan_TokyoTower",
     "img_directory": "Resources/Photography/Japan/min/",

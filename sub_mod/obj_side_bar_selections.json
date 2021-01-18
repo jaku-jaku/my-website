@@ -98,7 +98,10 @@
         "cat_name": "Filter by Themes",
         "children":
         [
+          {"cat_name":"California"},
+          {"cat_name":"Blue"},
           {"cat_name":"Fall"},
+          {"cat_name":"Summer"},
           {"cat_name":"Night"},
           {"cat_name":"Japan"},
           {"cat_name":"Misc."}
@@ -110,7 +113,9 @@
         [
           {"cat_name":"2016"},
           {"cat_name":"2017"},
-          {"cat_name":"2018"}
+          {"cat_name":"2018"},
+          {"cat_name":"2019"},
+          {"cat_name":"2020"}
         ]
       }
     ]
