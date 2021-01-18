@@ -22,6 +22,7 @@ $(document).on('click', '.gallery-class.card', function () {
     //source original photos
     loadImage(img_src);
     $('#image-modal').modal('show');
+    htmlReplace(this.id);
 });
 
 $('.modal').on('show.bs.modal', function() {

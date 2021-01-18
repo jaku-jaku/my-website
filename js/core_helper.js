@@ -248,6 +248,7 @@ function Callback_url_supervisor(){
                 // console.log("[Entry not valid]");
                 $('#blogModalTemplate').modal('hide');
                 $('#portfolioModalTemplate').modal('hide');
+                $('#image-modal').modal('hide');
                 G_item = modal_selection;
             }
             else
@@ -255,12 +256,14 @@ function Callback_url_supervisor(){
                 // console.log("[Load new entry]");
                 blog_id = indexOfItemInJSON("id_name",modal_selection,G_j_blogs_filtered);
                 proj_id = indexOfItemInJSON("id_name",modal_selection,G_j_pfo_projs_filtered);
+                photo_id = indexOfItemInJSON("id_name",modal_selection,G_j_photos_filtered);
                 if (blog_id >= 0)
                 {
                     // console.log("[Load new entry: blog]", blog_id);
                     gen_blog_modal(blog_id);
                     new_dir.push(modal_selection);
                     $('#blogModalTemplate').modal('show');
+                    $('#image-modal').modal('hide');
                     $('#portfolioModalTemplate').modal('hide');
                     G_item = modal_selection;
                 }
@@ -270,8 +273,13 @@ function Callback_url_supervisor(){
                     gen_pfo_modal(proj_id);
                     new_dir.push(modal_selection);
                     $('#blogModalTemplate').modal('hide');
+                    $('#image-modal').modal('hide');
                     $('#portfolioModalTemplate').modal('show');
                     G_item = modal_selection;
+                }
+                else if (photo_id >= 0)
+                {
+                    // we can reload (TBI)?
                 }
             }
         }
