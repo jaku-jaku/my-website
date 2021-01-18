@@ -288,9 +288,9 @@
   | Instructions                                                 | Examples                                                     |
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
   | <br />1.Divide image into 4x4 pixel blocks<br />2. For each block, compute the mean and std. deviation of pixel intensities | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.44.43 PM.png" alt="Screen Shot 2020-12-04 at 2.44.43 PM" style="zoom:80%;" /> |
-  | 3. Classify each pixel in the block as follows<br />$$g(x,y) =\begin{cases} 1, & f(x,y)>\mu \\\\ 0, & f(x,y) \leq \mu\end{cases}$$ | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.44.50 PM.png" alt="Screen Shot 2020-12-04 at 2.44.50 PM" style="zoom:80%;" /> |
-  | 4. Store binary block along with mean and standard deviation<br />5. To decode, compute decoding values l (low) and h (high) based on mean and standard deviation<br />$$l = \mu - \sigma \sqrt{\frac{n_{x>\mu}}{n_{total}-n_{x>\mu}}}$$<br />$$h = \mu + \sigma \sqrt{\frac{n_{total}-n_{x>\mu}}{n_{x>\mu}}}$$<br />NOTE:<br />Once a threshold, xth, is selected the output levels of the *quantizer* (a and b) are found such that the first (mean) and second moments are preserved in the output. | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.56.31 PM.png" alt="Screen Shot 2020-12-04 at 2.56.31 PM" style="zoom:70%;" /> |
-  | 6. Decode binary block as follows<br />$$\hat{f}=\begin{cases} h, & g(x,y)=1 \\\\ l, & g(x,y)=0\end{cases}$$ | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.49.55 PM.png" alt="Screen Shot 2020-12-04 at 2.49.55 PM" style="zoom:80%;" /> |
+  | 3. Classify each pixel in the block as follows<br />$g(x,y) =\begin{cases} 1, & f(x,y)>\mu \\\\ 0, & f(x,y) \leq \mu\end{cases}$ | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.44.50 PM.png" alt="Screen Shot 2020-12-04 at 2.44.50 PM" style="zoom:80%;" /> |
+  | 4. Store binary block along with mean and standard deviation<br />5. To decode, compute decoding values l (low) and h (high) based on mean and standard deviation<br />$l = \mu - \sigma \sqrt{\frac{n_{x>\mu}}{n_{total}-n_{x>\mu}}}$<br />$h = \mu + \sigma \sqrt{\frac{n_{total}-n_{x>\mu}}{n_{x>\mu}}}$<br />NOTE:<br />Once a threshold, xth, is selected the output levels of the *quantizer* (a and b) are found such that the first (mean) and second moments are preserved in the output. | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.56.31 PM.png" alt="Screen Shot 2020-12-04 at 2.56.31 PM" style="zoom:70%;" /> |
+  | 6. Decode binary block as follows<br />$\hat{f}=\begin{cases} h, & g(x,y)=1 \\\\ l, & g(x,y)=0\end{cases}$ | <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 2.49.55 PM.png" alt="Screen Shot 2020-12-04 at 2.49.55 PM" style="zoom:80%;" /> |
 
 ###### BTC Compression Rate
 
@@ -360,13 +360,13 @@ E-->F((Decompressed <br/>Image))
 
 - **Forward transform**
 
-  - $$T(u,v) =\underset{x=0}{\overset{n-1}{\sum}}\underset{y=0}{\overset{n-1}{\sum}}g(x,y)\,r(x,y,u,v)$$
+  - $T(u,v) =\underset{x=0}{\overset{n-1}{\sum}}\underset{y=0}{\overset{n-1}{\sum}}g(x,y)\,r(x,y,u,v)$
 
   <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.31.33 PM.png" alt="Screen Shot 2020-12-04 at 3.31.33 PM" style="zoom:60%;"/>
 
 - **Inverse transform**
 
-  - $$g(x,y) =\underset{u=0}{\overset{n-1}{\sum}}\underset{v=0}{\overset{n-1}{\sum}}T(u,v)\,s(x,y,u,v)$$
+  - $g(x,y) =\underset{u=0}{\overset{n-1}{\sum}}\underset{v=0}{\overset{n-1}{\sum}}T(u,v)\,s(x,y,u,v)$
 
   <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.31.38 PM.png" alt="Screen Shot 2020-12-04 at 3.31.38 PM" style="zoom:60%;"/>
   
@@ -387,7 +387,7 @@ E-->F((Decompressed <br/>Image))
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ==**<br />Karhunen-Loeve** **(KL) transform**==<br /> - Optimal transform in terms of compression<br />.    - Minimizes mean square error <br />.    - Statistically decorrelated (off-diagonal elements of covariance matrix are zero)<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.31.26 PM.png" alt="Screen Shot 2020-12-04 at 3.31.26 PM" style="zoom:80%;" /><br /><br />NOTE: Also known as **principal components analysis (PCA)**<br /><br />- Basis functions essentially based on the **eigenvector**<br />- **Eigenvectors** associated with **highest eigenvalues** will be associated with **most variance** | <br />**Advantages**:<br />- Provides ==optimal compression performance== from an energy compaction perspective<br />**Disadvantages**:<br />- ==Computationally expensive==, since the transform is data-dependent and deriving basis functions is non-trivial<br />=> not good for operational compression. |
 | **Fourier transform**<br />- Transformation kernels<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.34.58 PM.png" alt="Screen Shot 2020-12-04 at 3.34.58 PM" style="zoom:0%;" /><br /> | **Advantages**:<br />- ==Hardware acceleration== available on CPUs<br />**Disadvantages**:<br />- -Relatively ==poor compression performance== |
-| **Walsh-Hadamard Transform (WHT)**<br />- Transformation kernels<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.36.42 PM.png" alt="Screen Shot 2020-12-04 at 3.36.42 PM" style="zoom:80%;" /><br /><br />- NOTE: $$b_i(x)$$ is the ith bit (from right to left) in the binary representation of (x), $$p_i(x) = b$$<br />- WH kernels consist of **alternating** plus (white) and minus (black) 1s in **checkerboard** pattern<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.38.10 PM.png" alt="Screen Shot 2020-12-04 at 3.38.10 PM" style="zoom:100%;" /><br /> | **Advantages**:<br />- ==Computationally simple<br />==**Disadvantages**:<br />- Relatively poor compression performance (==worse than Fourier transform==) |
+| **Walsh-Hadamard Transform (WHT)**<br />- Transformation kernels<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.36.42 PM.png" alt="Screen Shot 2020-12-04 at 3.36.42 PM" style="zoom:80%;" /><br /><br />- NOTE: $b_i(x)$ is the ith bit (from right to left) in the binary representation of (x), $p_i(x) = b$<br />- WH kernels consist of **alternating** plus (white) and minus (black) 1s in **checkerboard** pattern<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.38.10 PM.png" alt="Screen Shot 2020-12-04 at 3.38.10 PM" style="zoom:100%;" /><br /> | **Advantages**:<br />- ==Computationally simple<br />==**Disadvantages**:<br />- Relatively poor compression performance (==worse than Fourier transform==) |
 | **==Discrete Cosine Transform (DCT)==**<br />- Transformation kernels<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.38.30 PM.png" alt="Screen Shot 2020-12-04 at 3.38.30 PM" style="zoom:80%;" /><br /><br />-NOTE: Forward and inverse transforms are the same, therefore, easier to implement in hardware.<br /><br />- Kernel Ex:<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 3.38.58 PM.png" alt="Screen Shot 2020-12-04 at 3.38.58 PM" style="zoom:70%;" /><br /> | **Advantages**:<br />- **Computational efficient** (easy to implement in hardware)<br />- **High compression performance** (closely approximates performance of KLT for many images)<br /><br />=> Given these benefits, DCT has become an international **standard** for transform coding |
 
 ### How do we deal with Color?
@@ -501,7 +501,7 @@ J-->K1[remove zero-shit]-->K2[Merge nxn </br> subimages]-->L
 | <br />4. **Zero-shift**<br />- For each block, shift values by -128 to center around zero<br />.    “Zero shift reduces the internal precision requirements in the DCT calculations.”<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.14.42 PM.png" alt="Screen Shot 2020-12-04 at 4.14.42 PM" style="zoom:50%;" /> |
 | <br />5. **DCT** (**Discrete Cosine Transform**) **Kernel**<br />- Note: Figure helps to visualize the filters, not how implemented in practice!!!!<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.14.38 PM.png" alt="Screen Shot 2020-12-04 at 4.14.38 PM" style="zoom:60%;" /><br />- (0,0): 1st 4x4 filter : averaging filter => Sub Img * Each Filter (Convolution) => 4x4 block<br /><br />=> ==this is a visualization but not actual implementation, proceed for **Step 6,7 with DCT Matrix**<br />==<br />- Top Left: low frequency, Bottom Right: high frequency |
 | <br />6. **DCT Matrix**<br />- Composed of 8x 1-D cosines of varying frequencies (arranged in rows) <br/>             <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.14.30 PM.png" alt="Screen Shot 2020-12-04 at 4.14.30 PM" style="zoom:80%;" /><br />- Calculated using 1-d version of DCT formula introduced in Section 8-3<br />.     - Each row is calculated using a 1-d version of the 2-d version of the DCT in Section 8.3.<br />                <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.14.34 PM.png" alt="Screen Shot 2020-12-04 at 4.14.34 PM" style="zoom:50%;" /><br />T = dctmtx(SIZE); |
-| <br />7. **==Compute DCT:==** $$F=PXP^T$$<br />       <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.14.25 PM.png" alt="Screen Shot 2020-12-04 at 4.14.25 PM" style="zoom:60%;" /><br />**DCT Memory Requirements** <br/>- Notice that the DC coefficient (i.e., F(0,0)) requires more than 8 bits to represent<br/>- Since much of the energy is stored in the DC coefficient<br/>     - Therefore, internally, more bits are required for storage during DCT computation<br/>     - This does not increase memory requirements that much as we are only operating on small 8x8 blocks at a time.<br /><br />floor(blkproc(f - 128, [8, 8], 'P1 * x * P2', T, T')); |
+| <br />7. **==Compute DCT:==** $F=PXP^T$<br />       <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.14.25 PM.png" alt="Screen Shot 2020-12-04 at 4.14.25 PM" style="zoom:60%;" /><br />**DCT Memory Requirements** <br/>- Notice that the DC coefficient (i.e., F(0,0)) requires more than 8 bits to represent<br/>- Since much of the energy is stored in the DC coefficient<br/>     - Therefore, internally, more bits are required for storage during DCT computation<br/>     - This does not increase memory requirements that much as we are only operating on small 8x8 blocks at a time.<br /><br />floor(blkproc(f - 128, [8, 8], 'P1 * x * P2', T, T')); |
 | <br />8. **Quantization**<br />- Divide DCT coefficients by quantization matrix <br/>           <img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.13.58 PM.png" alt="Screen Shot 2020-12-04 at 4.13.58 PM" style="zoom:60%;" /><br />- Quantized coefficients composed of mostly zeros and small values<br />- 0s are those not recoverable, lost by quantization<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.13.54 PM.png" alt="Screen Shot 2020-12-04 at 4.13.54 PM" style="zoom:50%;" /><br /><br />round(blkproc(F_trans, [8 8], 'x ./ P1', k*Z)); |
 | <br />9. **Variable-Length Coding**<br />1. Arrange coefficients in ==zig-zag order <br/>==2. Apply a run-length ==sequential encoding scheme<br/>==- Perform variable-length coding (e.g., Huffman)<br/><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.13.47 PM.png" alt="Screen Shot 2020-12-04 at 4.13.47 PM" style="zoom:50%;" /><br/><br />OTHER NOTE:<br />This encoding mode is called baseline *sequential* encoding. <br/>Baseline JPEG also supports *progressive* encoding. While sequential encoding encodes coefficients of a single block at a time (in a zigzag manner), progressive encoding encodes similar-positioned coefficients of all blocks in one go, followed by the next positioned coefficients of all blocks, and so on. So, if the image is divided into N 8×8 blocks {B0,B1,B2, ..., Bn-1}, then progressive encoding encodes Bi(0,0) for all blocks, i.e., for all i = 0, 1, 2, ..., N-1. This is followed by encoding Bi(0,1) coefficient of all blocks, followed by Bi(1,0)-th coefficient of all blocks, then Bi(2,0)-th coefficient of all blocks, and so on. It should be noted here that once all similar-positioned coefficients have been encoded, the next position to be encoded is the one occurring next in the zigzag traversal as indicated in the figure above. It has been found that Baseline Progressive JPEG encoding usually gives better compression as compared to Baseline Sequential JPEG due to the ability to use different Huffman tables (see below) tailored for different frequencies on each "scan" or "pass" (which includes similar-positioned coefficients), though the difference is not too large.<br/>In order to encode the above generated coefficient pattern, JPEG uses Huffman encoding. JPEG has a special Huffman code word for ending the sequence prematurely when the remaining coefficients are zero.<br/>[ source Wikipedia ]<br /> |
 | <br />10. **Dequantizing**- **Recovering the Block**<br />- Multiply quantized DCT coefficients by quantization matrix<br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.13.43 PM.png" alt="Screen Shot 2020-12-04 at 4.13.43 PM" style="zoom:50%;" /><br /><img src="Resources/Blog_imgs/Sec 8 - Image Compression.assets/Screen Shot 2020-12-04 at 4.13.39 PM.png" alt="Screen Shot 2020-12-04 at 4.13.39 PM" style="zoom:60%;" /> |
@@ -530,7 +530,7 @@ J-->K1[remove zero-shit]-->K2[Merge nxn </br> subimages]-->L
      - 6 bits allocated for green
      - 5 bits allocated for blue
   3. Compute two additional color values
-     - $$c_2 = \frac{2}{3}c_0 + \frac{1}{3}c_1 \qquad c_3 = \frac{1}{3}c_0 + \frac{2}{3} c_1$$
+     - $c_2 = \frac{2}{3}c_0 + \frac{1}{3}c_1 \qquad c_3 = \frac{1}{3}c_0 + \frac{2}{3} c_1$
   4. Assign a value from **0 to 3 (2 bits)** to each pixel based on which of the **four color values** they are **closest**
      - Requires storage for 4x4 two-bit lookup table for storage
   5. To decode, replace values from lookup table with one of the four color values
@@ -559,7 +559,7 @@ J-->K1[remove zero-shit]-->K2[Merge nxn </br> subimages]-->L
 
 - The compression rate of DXTC for the color image can then be computed as
 
-  -  $$BPP_{uncompressed}:BPP_{DXTC} = 24:4 = 6:1$$
+  -  $BPP_{uncompressed}:BPP_{DXTC} = 24:4 = 6:1$
 
 - Image Example of DXTC
 
@@ -629,7 +629,7 @@ J-->K1[remove zero-shit]-->K2[Merge nxn </br> subimages]-->L
 - In most systems, all **normal vectors** are unit vectors with a length of 1
 - Also, z component assumed to be positive since it should point out of the surface
 - lIdea: Instead of storing z, **compute z based on x and y**
-  - $$z=\sqrt{1- (x^2 + y^2)}$$
+  - $z=\sqrt{1- (x^2 + y^2)}$
 - Since z is not stored, storage requirements have effectively been **reduced by 1/3**
 
 ##### How does 3Dc encoding work?
@@ -653,7 +653,7 @@ J-->K1[remove zero-shit]-->K2[Merge nxn </br> subimages]-->L
   - The high and low representative coordinate values **V0 and V1 each require 8 bits**
   - Each value in the **4x4 lookup table** represents **8 possible values**, thus requiring **4x4x3bit=48 bits**
 - Soln:
-  - $$\frac{2}{3}$$ channels must be stored (i.e., **2 lookup tables, 2 sets of V0 and V1**, etc.)
+  - $\frac{2}{3}$ channels must be stored (i.e., **2 lookup tables, 2 sets of V0 and V1**, etc.)
   - Number of bits required to store this color image in 3Dc compressed format is **(2x8bits+48bits)x2=128 bits**
   - The bit rate of the normal map in a 3Dc compressed format is **128 bits/16 pixels = 8bpp**
   - Effective compression rate for 3Dc in this case is:
@@ -680,11 +680,11 @@ J-->K1[remove zero-shit]-->K2[Merge nxn </br> subimages]-->L
 
 - For a sub-image *f*, find the sub-image *p* that is most similar to *f* (**block matching**)
 - One approach is to find the sub-image that minimizes the mean absolute distortion (MAD)
-  - $$MAD(x,y) = \frac{1}{mn} \sum^{m}_{i=1} \sum^{n} _{j=1}|f(x+i, y+j) - f(x+i+dx, x+j+dy)|$$
+  - $MAD(x,y) = \frac{1}{mn} \sum^{m}_{i=1} \sum^{n} _{j=1}|f(x+i, y+j) - f(x+i+dx, x+j+dy)|$
 - Usually performed on the luminance channel
 - Encode and store vector (dx,dy)
 - Calculate the error residual between the two sub-images
-  - $$e(x,y) = f(x+i, y+j) - f(x+i+dx, x+j+dy)$$
+  - $e(x,y) = f(x+i, y+j) - f(x+i+dx, x+j+dy)$
     - where i,j spans the dimension of the sub-image
 - Transform prediction error residual with image transform and quantization
 

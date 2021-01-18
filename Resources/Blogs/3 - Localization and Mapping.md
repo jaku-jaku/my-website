@@ -115,17 +115,17 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
       - Prediction Update:
         $$
-        \begin{align} G_t &= \frac{\partial}{\partial x_{t-1}} g(x_{t-1}, u_t) |_{x_{t-1}=\mu_{t-1}} \\\\ \bar{\mu}_t &= g(\mu_{t-1}, u_t) \\\\ \bar{\Sigma}_t &= G_t \Sigma_{t-1} G_t^T + R_t \end{align}
+        \begin{aligned} G_t &= \frac{\partial}{\partial x_{t-1}} g(x_{t-1}, u_t) |_{x_{t-1}=\mu_{t-1}} \\\\ \bar{\mu}_t &= g(\mu_{t-1}, u_t) \\\\ \bar{\Sigma}_t &= G_t \Sigma_{t-1} G_t^T + R_t \end{aligned}
         $$
 
       - Measurement Update:
         $$
-        \begin{align}
+        \begin{aligned}
         H_t &= \left. \frac{\partial}{\partial x_t} h(x_t) \right|_{x_{t}=\mu_{t}} \\\\
         K_t &= \bar{\Sigma}_t H_t^T (H_t \bar{\Sigma}_t H_t^T + Q_t)^{-1}\\\\
         \mu_t &= \bar{\mu}_t  + K_t (y_t - h(\bar{\mu}_t))\\\\ 
         \Sigma_t &=  (1 - K_t H_t)\bar{\Sigma}_{t-1}
-        \end{align}
+        \end{aligned}
         $$
 
     - Linearization of Motion Model:
@@ -472,8 +472,7 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
     - Components for vehicle state and map state
 
     - $$
-      \mu_t = \begin{bmatrix} \mu^r_t \\\\ \mu_t^m \end{bmatrix} \begin{matrix} \leftarrow Robot\\\\ \leftarrow Map\end{matrix} \qquad 
-      
+      \mu_t = \begin{bmatrix} \mu^r_t \\\\ \mu_t^m \end{bmatrix} \begin{matrix} \leftarrow Robot\\\\ \leftarrow Map\end{matrix} \qquad
       \Sigma_t = \begin{bmatrix} \Sigma_t^{rr} & \Sigma_t^{rm} \\\\ \Sigma_t^{mr} & \Sigma_t^{mm}  \end{bmatrix}
       $$
 
@@ -483,17 +482,10 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
   - $$
     \begin{bmatrix}
     x_{1}^r \\\\ x_{2}^r \\\\ x_{3} ^r
-    \end{bmatrix}= 
-    \begin{bmatrix}
+    \end{bmatrix} = \begin{bmatrix}
     x \\\\ y \\\\ \theta
-    \end{bmatrix}
-    
-    \qquad 
-    
-    \begin{bmatrix}
-    u_1 \\\\ u_2
-    \end{bmatrix}
-    = 
+    \end{bmatrix} \qquad \begin{bmatrix}
+    u_1 \\\\ u_2 \end{bmatrix} =
     \begin{bmatrix}
     v \\\\ \omega
     \end{bmatrix}
@@ -523,15 +515,11 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
     - Then:
       $$
-      \begin{bmatrix}y^i_{1,t} \\\\ y^i_{2,t} \end{bmatrix}= h^i(x_t, \delta_t) = 
-      
+      \begin{bmatrix}y^i_{1,t} \\\\ y^i_{2,t} \end{bmatrix}= h^i(x_t, \delta_t) =
       \begin{bmatrix}\phi^i_t \\\\ r^i_t\end{bmatrix}=
-      
       \begin{bmatrix} 
       \tan^{-1}{\left(\frac{\delta y_t^i}{\delta x_t^i}\right)} - x^r_{3,t} \\\\ \sqrt{(\delta x_t^i)^2 + (\delta y_t^i)^2}
-      \end{bmatrix} + \delta_t\sim \mathcal{N}(\mu=0,\,\sigma^{2}=Q_t)
-      
-      \qquad
+      \end{bmatrix} + \delta_t\sim \mathcal{N}(\mu=0,\,\sigma^{2}=Q_t) \qquad
       \begin{matrix}
       Beaing \\\\
       \\\\
@@ -601,11 +589,11 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
   - Quick 3x3 update
 
     - $$
-      \begin{align}
-      G_t  &= \left. \frac{\part}{\part x^r_{t-1}} g(x^r_{t-1}, u_t) \right|_{x^r_{t-1} = \mu^r_{t-1}} \\\\
+      \begin{aligned}
+      G_t  &= \left. \frac{\partial}{\partial x^r_{t-1}} g(x^r_{t-1}, u_t) \right|_{x^r_{t-1} = \mu^r_{t-1}} \\\\
       \bar{\mu}_t^r &= g(\mu_{t-1}^r, u_t)\\\\
       \bar{\Sigma}_t^{rr} &= G_t \Sigma_{t-a}^{rr} G_t^T + R_t
-      \end{align}
+      \end{aligned}
       $$
 
 - Linearization of Motion Model, as before:
@@ -623,12 +611,12 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
   - independence means updates can be performed one feature at a time
 
   - $$
-    \begin{align}
+    \begin{aligned}
     H_t^i &= \left. \frac{\partial}{\partial x_t} h^i(x_t) \right|_{x_{t}=\mu_{t}} \\\\
     K_t^i &= \bar{\Sigma}_t (H_t^i)^T (H_t^i \bar{\Sigma}_t (H_t^i)^T + Q_t)^{-1} \\\\
     \mu_t &= \bar{\mu}_t  + K_t^i (y_t - h(\bar{\mu}_t)) \\\\
     \Sigma_t &=  (1 - K_t H_t^i)\bar{\Sigma}_{t-1}
-    \end{align}
+    \end{aligned}
     $$
 
 - Linearization of measurement Model:
