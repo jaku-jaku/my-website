@@ -143,7 +143,7 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
   \begin{align} 
   bel(x_t) &= p(x_t | y_{1:t}, u_{1:t}) = p(x_t | y_t, y_{1:t-1}, u_{1:t}) \\\\ 
   &= \frac{p(y_t | x_t, y_{1:t-1}, u_{1:t}) p(x_t | y_{1:t-1}, u_{1:t})}{p(y_t | y_{1:t-1}, u_{1:t})} \\\\ 
-  &= \overbrace{p(y_t | x_t, y_{1:t-1}, u_{1:t})}^{p(y_t|x_t): \text{ measurement model.  }} \, \overbrace{p(x_t | y_{1:t-1}, u_{1:t})}^{\overline{bel}(x_t): \text{ belief prediction. }} \, \overbrace{{p(y_t | y_{1:t-1}, u_{1:t})^{-1}}}^{\eta: \text{ const. normalizer}} \\\\ 
+  &= \overbrace{p(y_t | x_t, y_{1:t-1}, u_{1:t})}^{p(y_t|x_t): \text{ measurement model.  }} \, \overbrace{p(x_t | y_{1:t-1}, u_{1:t})}^{\overline{bel}(x_t): \text{ belief prediction. }} \, \overbrace{{p(y_t | y_{1:t-1}\, u_{1:t})^{-1}}}^{\eta: \text{ const. normalizer}} \\\\ 
   &= \eta \, p(y_t|x_t) \, \overline{bel}(x_t)
   \end{align}
   $$
