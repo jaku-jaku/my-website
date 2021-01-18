@@ -1,6 +1,7 @@
 [
   {
     "id_name": "FYDP_TableUV",
+    "index": "2020-1",
     "img_directory": "Resources/Projects/FYDP_TableUV/",
     "img_cover": "robot-tableuv.png",
     "title": "FYDP: TableUV",
@@ -21,6 +22,7 @@
   },
   {
     "id_name": "Stewart-Platform-Maze-Solver",
+    "index": "2019-3",
     "img_directory": "Resources/Projects/Maze_solver/",
     "img_cover": "render3.png",
     "title": "FYDP: TableUV",
@@ -41,6 +43,7 @@
   },
   {
     "id_name": "LED-Youtube-Subscriber-Counter",
+    "index": "2019-2",
     "img_directory": "Resources/Projects/LED_Youtube_sub/",
     "img_cover": "demo.png",
     "title": "LED Subscriber Counter",
@@ -61,6 +64,7 @@
   },
   {
     "id_name": "UW-RobotRacing-2019-Hummingbot",
+    "index": "2019-1",
     "img_directory": "Resources/Projects/UW_RR/",
     "img_cover": "a_pose.jpg",
     "title": "Hummingbot",
@@ -127,6 +131,7 @@
   },
   {
     "id_name": "1Course_RTOS",
+    "index": "2018-2",
     "img_directory": "Resources/Projects/Course_2B_RTOS/",
     "img_cover": "min/Cover_min.jpg",
     "title": "Pixel Dungeon",
@@ -161,6 +166,7 @@
   },
   {
     "id_name": "2Hack_CtrlF_AR",
+    "index": "2018-1",
     "img_directory": "Resources/Projects/CtrlF_AR/",
     "img_cover": "min/app_min.png",
     "title": "Ctrl-F AR",
@@ -181,6 +187,7 @@
   },
   {
     "id_name": "3Hack_TrackyfAI",
+    "index": "2017-3",
     "img_directory": "Resources/Projects/TrackyfAI/",
     "img_cover": "min/busyStreet_min.jpg",
     "title": "TrackyfAI",
@@ -209,6 +216,7 @@
   },
   {
     "id_name": "4Hack_SmartHelm",
+    "index": "2017-2",
     "img_directory": "Resources/Projects/WearHack2017/",
     "img_cover": "min/Ultrasonic_min.jpg",
     "title": "Smart Helmet",
@@ -233,6 +241,7 @@
   },
   {
     "id_name": "5Hack_IEEE_2017",
+    "index": "2017-1",
     "img_directory": "Resources/Projects/IEEE_2017/",
     "img_cover": "min/MusicSynth_min.JPG",
     "title": "Music Synthesizer",
@@ -253,6 +262,7 @@
   },
   {
     "id_name": "6Hack_McGill2016",
+    "index": "2016-11",
     "img_directory": "Resources/Projects/McGill_2016/",
     "img_cover": "min/cover_min.png",
     "title": "Music Synthesizer",
@@ -275,6 +285,7 @@
   },
   {
     "id_name": "7Course_Proj_Lego",
+    "index": "2016-10",
     "img_directory": "Resources/Projects/Course_1A_FinalProj/",
     "img_cover": "min/ArmRunning_min.JPG",
     "title": " LEGO Robotic Arm",
@@ -299,6 +310,7 @@
   },
   {
     "id_name": "8Hack_LineMusicRobot",
+    "index": "2016-9",
     "img_directory": "Resources/Projects/LineMusicRobot/",
     "img_cover": "min/AtCompetition_min.JPG",
     "title": "Line Musician",
@@ -320,6 +332,7 @@
 
   {
     "id_name": "9CompRobCon",
+    "index": "2016-7",
     "img_directory": "Resources/Projects/Comp_Robot_Control_Competition_2016/",
     "img_cover": "min/Comp_RobCon01_min.JPG",
     "title": " Robotic System Design",
@@ -351,6 +364,7 @@
 
   {
     "id_name": "JWA_LightHouse",
+    "index": "2016-6",
     "img_directory": "Resources/Projects/Comp_Arch_LightHouse/",
     "img_cover": "min/lighthouse02_min.JPG",
     "title": " Light House Design",
@@ -376,6 +390,7 @@
   },
   {
     "id_name": "CS_Astar",
+    "index": "2016-5",
     "img_directory": "Resources/Projects/Astar/",
     "img_cover": "min/01_min.jpg",
     "title": "A star path finding",
@@ -396,6 +411,7 @@
   },
   {
     "id_name": "CS_GameOfLife",
+    "index": "2016-4",
     "img_directory": "Resources/Projects/GameOfLife/",
     "img_cover": "Conways.gif",
     "title": "A star path finding",
@@ -416,6 +432,7 @@
   },
   {
     "id_name": "CS_FlowChart",
+    "index": "2016-3",
     "img_directory": "Resources/Projects/FlowChart/",
     "img_cover": "FlowChart.jpg",
     "title": "Flow Chart Manager",
@@ -436,6 +453,7 @@
   },
   {
     "id_name": "Team_FRC",
+    "index": "2016-2",
     "img_directory": "Resources/Projects/Team_FRC/",
     "img_cover": "min/FRC02_min.JPG",
     "title": " Light House Design",
@@ -461,6 +479,7 @@
 
   {
     "id_name": "Vlntr_Gala2016",
+    "index": "2016-1",
     "img_directory": "Resources/Projects/Vlntr_Gala/",
     "img_cover": "min/gala04_min.JPG",
     "title": "Chinese New Year Gala",

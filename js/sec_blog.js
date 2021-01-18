@@ -13,7 +13,7 @@ function load_blogs(){
             function (json) {
                 G_j_blogs = json;
                 if (G_j_blogs != null) {
-                    G_j_blogs = sortResults(G_j_blogs, "id_name", true);
+                    G_j_blogs = sortResults(G_j_blogs, "index", false);
                     G_j_blogs_filtered = G_j_blogs;
                 }
             });
@@ -62,7 +62,7 @@ function gen_blog_modal(i){
                     $("#modal-templ-blog-content").html(html_content);
                     MathJax.Hub.Config({
                         tex2jax: {
-                            // inlineMath: [['$','$']],
+                            inlineMath: [['$','$']],
                             processEscapes: true,
                             TeX: { equationNumbers: { autoNumber: "AMS" } },
                             typographer: true

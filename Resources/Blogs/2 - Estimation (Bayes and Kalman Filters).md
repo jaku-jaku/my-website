@@ -140,12 +140,12 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
 - At time $t$, from [[Recall] Bayes Filter Theorem](#[Recall] Bayes Filter Theorem) relates $x_t, y_t$
   $$
-  \begin{align} 
+  \begin{aligned} 
   bel(x_t) &= p(x_t | y_{1:t}, u_{1:t}) = p(x_t | y_t, y_{1:t-1}, u_{1:t}) \\\\ 
   &= \frac{p(y_t | x_t, y_{1:t-1}, u_{1:t}) p(x_t | y_{1:t-1}, u_{1:t})}{p(y_t | y_{1:t-1}, u_{1:t})} \\\\ 
   &= \overbrace{p(y_t | x_t, y_{1:t-1}, u_{1:t})}^{p(y_t|x_t): \text{ measurement model.  }} \, \overbrace{p(x_t | y_{1:t-1}, u_{1:t})}^{\overline{bel}(x_t): \text{ belief prediction. }} \, \overbrace{{p(y_t | y_{1:t-1}\, u_{1:t})^{-1}}}^{\eta: \text{ const. normalizer}} \\\\ 
   &= \eta \, p(y_t|x_t) \, \overline{bel}(x_t)
-  \end{align}
+  \end{aligned}
   $$
 
 - Hence:
@@ -158,7 +158,7 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
   - Done using total probability over previouse state:
 
-    $$ \begin{align} \overline{bel}(x_t)&= p(x_t | y_{1:t-1}, u_{1:t}) \\\\ &= \int{\overbrace{p(x_t | x_{t-1}, y_{1:t-1}, u_{1:t})}^{\text{a) can incorporate motion model}}\, \overbrace{p(x_{t-1}|y_{1:t-1}, u_{1:t})}^{\text{b) = bel(x_{t-1})}} \, dx_{t-1}}\end{align} $$
+    $$ \begin{aligned} \overline{bel}(x_t)&= p(x_t | y_{1:t-1}, u_{1:t}) \\\\ &= \int{\overbrace{p(x_t | x_{t-1}, y_{1:t-1}, u_{1:t})}^{\text{a) can incorporate motion model}}\, \overbrace{p(x_{t-1}|y_{1:t-1}, u_{1:t})}^{\text{b) = bel(x_{t-1})}} \, dx_{t-1}}\end{aligned} $$
 
     a) Incorporating [Motion Modeling](#Motion Modeling):
 
@@ -223,17 +223,17 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
         - $\overline{bel}(x_t) = \int{p(x_t | u_t, x_{t-1})\, bel(x_{t-1}) \, dx_{t-1}}$
         - $\overline{bel}(x_1) = \int{p(x_1|u_1, x_0) bel(x_0) dx_0} = \sum{p(x_1 | u_1, x_0) p(x_0)}$
       - Calculate belief prediction for each possible value of state:
-        - $$ \begin{align}  \overline{bel}(open_1) & =p(open_1 | none_1, open_0) bel(open_0) + p(open_1 | none_1, closed_0) bel(closed_0) \\\\ &= 1*0.5 + 0*0.5 = 0.5 \end{align} $$
-        - $$ \begin{align}  \overline{bel}(closed_1) & =p(closed_1 | none_1, open_0) bel(open_0) + p(closed_1 | none_1, closed_0) bel(closed_0) \\\\ &= 0*0.5 + 1*0.5 = 0.5 \end{align} $$
+        - $$ \begin{aligned}  \overline{bel}(open_1) & =p(open_1 | none_1, open_0) bel(open_0) + p(open_1 | none_1, closed_0) bel(closed_0) \\\\ &= 1*0.5 + 0*0.5 = 0.5 \end{aligned} $$
+        - $$ \begin{aligned}  \overline{bel}(closed_1) & =p(closed_1 | none_1, open_0) bel(open_0) + p(closed_1 | none_1, closed_0) bel(closed_0) \\\\ &= 0*0.5 + 1*0.5 = 0.5 \end{aligned} $$
     - measurement $y_1 = sense\_open$:
       - [2. **Measurement Update** : (***Bayes Theorem***)](#2. **Measurement Update** : (***Bayes Theorem***)):
         - $bel(x_1) = \eta \, p(y_1| x_1) \overline{bel}(x_1)$
       - Calculate for each possible value of state:
-        - $$ \begin{align}  {bel}(open_1) & = \eta \,p(sense\_open_1 | open_1) \overline{bel}(open_1) \\\\ &= \eta 0.6 \cdot 0.5 = 0.3 \eta \end{align} $$
-        - $$ \begin{align}  {bel}(closed_1) & = \eta \,p(sense\_open_1 | closed_1) \overline{bel}(closed_1) \\\\ &= \eta 0.2 \cdot 0.5 = 0.1 \eta \end{align} $$
+        - $$ \begin{aligned}  {bel}(open_1) & = \eta \,p(sense\_open_1 | open_1) \overline{bel}(open_1) \\\\ &= \eta 0.6 \cdot 0.5 = 0.3 \eta \end{aligned} $$
+        - $$ \begin{aligned}  {bel}(closed_1) & = \eta \,p(sense\_open_1 | closed_1) \overline{bel}(closed_1) \\\\ &= \eta 0.2 \cdot 0.5 = 0.1 \eta \end{aligned} $$
       - Caluclate **normalizer** $\eta$ and solve for **posterior**
         - $$\eta = \frac{1}{0.3 + 0.1} = 2.5$$
-        - $$\Rightarrow \begin{align} & bel(open_1) = 0.75 \\\\ & bel(closed_1) = 0.25 \end{align} $$
+        - $$\Rightarrow \begin{aligned} & bel(open_1) = 0.75 \\\\ & bel(closed_1) = 0.25 \end{aligned} $$
   - **At $t=2$,** 
     - With $u_2 = pull, \quad y_2 = sense\_open$
     - Then: 
@@ -281,7 +281,7 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
       - $n\times n$ state, one for each grid point
       - 4 input choices
-        - $p(x_t | x_{t-1}, u_t)\in [0, 1]^{n^2 \times n^2 \times 4}$
+        - $p(x_t \vert x_{t-1}, u_t)\in [0, 1]^{n^2 \times n^2 \times 4}$
 
     - Code:
 
@@ -317,7 +317,7 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
     - Given any current state, probability of a measurement
 
-    - Same number of measurements as states $p(y_t | x_t) \in [0, 1]^{n^2\times n^2}$
+    - Same number of measurements as states $p(y_t \vert x_t) \in [0, 1]^{n^2\times n^2}$
 
     - Same $3\times 3$ matrix governs all interior points
 
@@ -337,7 +337,7 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
                       0.11 0.11 0.11];
       
       % Convert to full measurement model 
-      % p(y_t | x_t) 
+      % p(y_t \vert x_t) 
       meas_mod = zeros(N,N); 
       
       % Fill in non-boundary measurements 
@@ -601,10 +601,10 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
 - Insert normal distributions:
   $$
-  \begin{align}
+  \begin{aligned}
   \overline{bel}(x_t) &= \int p(x_t| u_t, x_{t-1}) bel(x_{t-1})dx_{t-1} \\\\
   &= \eta \int e^{-1/2(x_t - A_t x_{t-1} - B_t u_t)^T \, R_T^{-1} (x_t - A_t x_{t-1} - B_t u_t)} e^{-1/2(x_{t-1}-\mu_{t-1})^T \Sigma_{t-1}^{-1}(x_{t-1}-\mu_{t-1})} dx_{t-1}
-  \end{align}
+  \end{aligned}
   $$
 
 - Separate out terms that depend on current state
@@ -621,10 +621,10 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 
 - Measurement update:
   $$
-  \begin{align}
+  \begin{aligned}
   bel(x_t) &= \eta p(y_t | x_t) \overline{bel}(x_t)\\\\
   &= \eta e^{-1/2 (y_t - C_t x_t)^T Q_t^{-1}(y_t - C_t x_t)}e^{-1/2(x_t - \bar{\mu}_t)^T \overline{\Sigma}_t^{-1}(x_t - \bar{\mu}_t)}
-  \end{align}
+  \end{aligned}
   $$
   
 
@@ -696,32 +696,32 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 - Motion model:
 
   $$
-    \begin{align}
-    g(x_{t-1}, u_t) & \approx g(\mu_{t-1}, u_t) + \left. \frac{\part}{\part x_{t-1}} g(x_{t-1}, u_t) \right|_{x_{t-1}=\mu_{t-1}} \cdot (x_{t-1} - \mu_{t-1}) \\\\
+    \begin{aligned}
+    g(x_{t-1}, u_t) & \approx g(\mu_{t-1}, u_t) + \left. \frac{\partial}{\partial x_{t-1}} g(x_{t-1}, u_t) \right|_{x_{t-1}=\mu_{t-1}} \cdot (x_{t-1} - \mu_{t-1}) \\\\
     &= g(\mu_{t-1}, u_t) + G_t \cdot (x_{t-1} - \mu_{t-1})
-    \end{align}
+    \end{aligned}
   $$
   
 
 - Measurement model:
 
   $$
-    \begin{align}
-    h(x_t) & \approx h(\overline{\mu}_{t}) + \left. \frac{\part}{\part x_{t}} h(x_{t}) \right|_{x_{t}=\mu_{t}} \cdot (x_{t} - \overline{\mu}_{t}) \\\\
+    \begin{aligned}
+    h(x_t) & \approx h(\overline{\mu}_{t}) + \left. \frac{\partial}{\partial x_{t}} h(x_{t}) \right|_{x_{t}=\mu_{t}} \cdot (x_{t} - \overline{\mu}_{t}) \\\\
     &= h(\overline{\mu}_{t}, u_t) + H_t \cdot (x_{t} - \overline{\mu}_{t})
-    \end{align}
+    \end{aligned}
   $$
   
 
 #### **1. Prediction Update**
 
-- $G_t = \left. \frac{\part}{\part x_{t-1}} g(x_{t-1}, u_t) \right|_{x_{t-1}=\mu_{t-1}}$
+- $G_t = \left. \frac{\partial}{\partial x_{t-1}} g(x_{t-1}, u_t) \right|_{x_{t-1}=\mu_{t-1}}$
 - $\overline{\mu}_t = g(\mu_{t-1}, u_t)$     
 - $\overline{\Sigma}_t = G_t \Sigma_{t-1}G_t^T + R_t$   
 
 #### **2. Measurement Update**
 
-- $H_t = \left. \frac{\part}{\part x_{t}} h(x_{t}) \right|_{x_{t}=\mu_{t}}$
+- $H_t = \left. \frac{\partial}{\partial x_{t}} h(x_{t}) \right|_{x_{t}=\mu_{t}}$
 - $K_t = \overline{\Sigma}_t H_t^T (H_t \overline{\Sigma}_t H_t^T + Q_t)^{-1}$     
 - $\mu_t = \overline{\mu}_t + K_t (y_t - h(\overline{\mu}_t))$
 - $\Sigma_t = (I - K_t H_t)\overline{\Sigma}_t$
@@ -770,13 +770,13 @@ You may find a great online materials and courses from Prof. Waslander: [Wave La
 |                       | Bayes Filter                                                 | Kalman Filter                                                | Extended Kalman Filter                                       |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Prior** State       | $bel(x_0) =  p(x_0)$                                         | $=\mathcal{N}(\mu_0, \Sigma_0)$                              | $p(x_0) \sim \mathcal{N}(\mu_0, \Sigma_0)$                   |
-| **Motion Model**      | $p( x_t| x_{t -1} , u_t )$                                   | $= \mathcal{N}(A_t x_{t-1} + B_t u_t, A_t \Sigma_{t-1}A^T_t + R_t)$ | $x_t = g(x_{t-1}, u_t) + \epsilon_t \;,  \epsilon_t \sim \mathcal{N}(0, R_t)$ |
-| **Measurement Model** | $p( y t | x t )$                                             | $= \mathcal{N}(C_t x_t, Q_t)$                                | $y_t= h(x_t) + \delta_t \;, \delta_t \sim \mathcal{N}(0, Q_t)$ |
-| **Beliefs**           | $bel( x_t ) = p( x_t | y_{1: t} , u_{1: t} )$                | $bel(x_t) = \mathcal{N}(\mu_t, \Sigma_t), \qquad \overline{bel}(x_t)=\mathcal{N}(\overline{\mu}_t, \overline{\Sigma}_t)$ | Remain Gaussian                                              |
-| 1. Prediction Update  | $\overline{bel}(x_t) = \int{p(x_t| u_t, x_{t-1})\, bel(x_{t-1}) \, dx_{t-1}}$ | $= \eta \int \left[ e^{-1/2(x_t - A_t x_{t-1} - B_t u_t)^T \, R_T^{-1} (x_t - A_t x_{t-1} - B_t u_t)} \\\\ e^{-1/2(x_{t-1}-\mu_{t-1})^T \Sigma_{t-1}^{-1}(x_{t-1}-\mu_{t-1})} \right] dx_{t-1}$ |                                                              |
-| (at time $t$)         | $\overline{bel}(x_t) = \sum{p(x_t | u_t, x_{t-1})\, bel(x_{t-1}) \, dx_{t-1}}$ | - $\overline{\mu}_t = A_t \mu_{t-1} + B_t \mu_t$<br />- $\overline{\Sigma}_t = A_t \Sigma_{t-1}A_t^T + R_t$ | $G_t = \left. \frac{\part}{\part x_{t-1}} g(x_{t-1}, u_t) \right|_{x_{t-1}=\mu_{t-1}}$ $\overline{\mu}_t = g(\mu_{t-1}, u_t)$      $\overline{\Sigma}_t = G_t \Sigma_{t-1}G_t^T + R_t$ |
-| 2. Measurement Update | $bel(x_t) = \eta \, p(y_t|x_t) \overline{bel}(x_t)$          | $= \eta e^{-1/2 (y_t - C_t x_t)^T Q_t^{-1}(y_t - C_t x_t)}e^{-1/2(x_t - \bar{\mu}_t)^T \overline{\Sigma}_t^{-1}(x_t - \bar{\mu}_t)}$ |                                                              |
-| (at time $t$)         | $bel(x_t) = \eta \, p(y_t|x_t) \overline{bel}(x_t)$          | - $K_t = \overline{\Sigma}_t C_t^T (C_t \overline{\Sigma}_t C_t^T + Q_t)^{-1}$<br />- $\mu_t = \overline{\mu}_t + K_t (y_t - C_t \overline{\mu}_t)$<br />- $\Sigma_t = (I - K_t C_t)\overline{\Sigma}_t$ | $H_t = \left. \frac{\part}{\part x_{t}} h(x_{t}) \right|_{x_{t}=\mu_{t}}$ $K_t = \overline{\Sigma}_t H_t^T (H_t \overline{\Sigma}_t H_t^T + Q_t)^{-1}$      $\mu_t = \overline{\mu}_t + K_t (y_t - h(\overline{\mu}_t))$ $\Sigma_t = (I - K_t H_t)\overline{\Sigma}_t$ |
+| **Motion Model**      | $p( x_t\vert x_{t -1} , u_t )$                                   | $= \mathcal{N}(A_t x_{t-1} + B_t u_t, A_t \Sigma_{t-1}A^T_t + R_t)$ | $x_t = g(x_{t-1}, u_t) + \epsilon_t \;,  \epsilon_t \sim \mathcal{N}(0, R_t)$ |
+| **Measurement Model** | $p( y t \vert x t )$                                             | $= \mathcal{N}(C_t x_t, Q_t)$                                | $y_t= h(x_t) + \delta_t \;, \delta_t \sim \mathcal{N}(0, Q_t)$ |
+| **Beliefs**           | $bel( x_t ) = p( x_t \| y_{1: t} , u_{1: t} )$                | $bel(x_t) = \mathcal{N}(\mu_t, \Sigma_t), \qquad \overline{bel}(x_t)=\mathcal{N}(\overline{\mu}_t, \overline{\Sigma}_t)$ | Remain Gaussian                                              |
+| 1. Prediction Update  | $\overline{bel}(x_t) = \int{p(x_t\| u_t, x_{t-1})\, bel(x_{t-1}) \, dx_{t-1}}$ | $\begin{aligned}=  \eta \int & \Big[ e^{-1/2(x_t - A_t x_{t-1} - B_t u_t)^T \, R_T^{-1} (x_t - A_t x_{t-1} - B_t u_t)} \\ & e^{-1/2(x_{t-1}-\mu_{t-1})^T \Sigma_{t-1}^{-1}(x_{t-1}-\mu_{t-1})} \Big] dx_{t-1} \end{aligned}$ |                                                              |
+| (at time $t$)         | $\overline{bel}(x_t) = \sum{p(x_t \| u_t, x_{t-1})\, bel(x_{t-1}) \, dx_{t-1}}$ | - $\overline{\mu}_t = A_t \mu_{t-1} + B_t \mu_t$<br />- $\overline{\Sigma}_t = A_t \Sigma_{t-1}A_t^T + R_t$ | $G_t = \frac{\partial}{\partial x_{t-1}} g(x_{t-1}\, u_t) \vert_{x_{t-1}=\mu_{t-1}}$ $\overline{\mu}_t = g(\mu_{t-1}, u_t)$      $\overline{\Sigma}_t = G_t \Sigma_{t-1}G_t^T + R_t$ |
+| 2. Measurement Update | $bel(x_t) = \eta \, p(y_t\|x_t) \overline{bel}(x_t)$          | $= \eta e^{-1/2 (y_t - C_t x_t)^T Q_t^{-1}(y_t - C_t x_t)}e^{-1/2(x_t - \bar{\mu}_t)^T \overline{\Sigma}_t^{-1}(x_t - \bar{\mu}_t)}$ |                                                              |
+| (at time $t$)         | $bel(x_t) = \eta \, p(y_t\|x_t) \overline{bel}(x_t)$          | - $K_t = \overline{\Sigma}_t C_t^T (C_t \overline{\Sigma}_t C_t^T + Q_t)^{-1}$<br />- $\mu_t = \overline{\mu}_t + K_t (y_t - C_t \overline{\mu}_t)$<br />- $\Sigma_t = (I - K_t C_t)\overline{\Sigma}_t$ | $H_t = \left. \frac{\partial}{\partial x_{t}} h(x_{t}) \right\vert_{x_{t}=\mu_{t}}$ $K_t = \overline{\Sigma}_t H_t^T (H_t \overline{\Sigma}_t H_t^T + Q_t)^{-1}$      $\mu_t = \overline{\mu}_t + K_t (y_t - h(\overline{\mu}_t))$ $\Sigma_t = (I - K_t H_t)\overline{\Sigma}_t$ |
 | Summary               | - [Bayes Filter \| Algorithm](#Bayes Filter \| Algorithm)<br />- [Bayes Filter \| Problem Formulation](#Bayes Filter \| Problem Formulation)<br /><br />- If **state, measurements, inputs** are **DISCRETE**, <br />-- can **directly implement** ***Bayes Filter***<br />--- **Prediction update** is ***summation*** over **discrete** states<br />--- **Measurement update** is ***multiplication*** of **two vectors**<br /><br />- Else, if they are **CONTINUOUS**<br />-- must define model or approximation to enable computation:<br />---- **KF** (Kalman Filter)<br />-------- **Linear** motion models<br />-------- **Linear** measurement models<br />-------- **Additive Gaussian** disturbance and noise distributions<br />---- **EKF / UKF** (Extended Kalman Filter / Unscented Kalman Filter)<br />-------- **Non-linear** motion models<br />-------- **Non-linear** measurement models**<br />-------- Additive Gaussian** disturbance and noise distributions<br />---- **PF** (Particle Filter)<br />-------- **(Dis)continuous** motion models<br />-------- **(Dis)continuous** measurement models<br />-------- **General** disturbance and noise distributions | - [ KF Algorithm Abstract ](#[ KF Algorithm Abstract ])<br /><br />- Follows same framework as **Bayes filter** <br />- Requires **linear motion** and **Gaussian disturbance**<br />- Requires **linear measurement** and **Gaussian noise** <br />- It is sufficient to update **mean** and **covariance** of **beliefs**, because they **remain Gaussian****Prediction step** involves **addition of Gaussians** <br />- **Measurement step** seeks to **minimize** mean square error of **the estimate** (MMSE)<br />- - Expand out **covariance** from definition and measurement model <br />- - Assume form of **estimator**, **linear** **combination** of **prediction** and **measurement** <br />- - **Solve MMSE problem** to find **optimal linear combination<br />- - Simplify** **covariance** update once **gain is found** | - [ EKF Algorithm Abstract ](#[ EKF Algorithm Abstract ])<br /><br />- non-linear measurements and motion models<br />- no longer optimal <br />- Most effective when covariance is low<br />- covariance update may diverge<br />- Approximation of a nonlinear transformation of a Gaussian distribution by linear tranformation of the mean and covariance |
 
 

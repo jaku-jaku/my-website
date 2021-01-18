@@ -95,12 +95,11 @@ graph LR
 
 - **Standard method** for **blind**, **histogram**-based thresholding 
 - "A Threshold Selection Method from Grey Level histograms" (IEEE, 1979)
-- Form a probability distribution $$p_i$$:
-
-  - $$p_i = \frac{n_i}{N}$$
+- Form a probability distribution $p_i$:
+  - $p_i = \frac{n_i}{N}$
   - Where:
-    - $$N$$ represents total num of pixels 
-    - $$n_i$$ represents num of pixels at each grey level
+    - $N$ represents total num of pixels 
+    - $n_i$ represents num of pixels at each grey level
 
 #### Otsu's Equation (Derivation & Sketch):
 
@@ -111,19 +110,19 @@ graph LR
 | Derivation - Otsu's Equation                                 |
 | ------------------------------------------------------------ |
 | <br />Probabilities of class occurrence:                     |
-| ==$$\omega_0 + \omega_1 = 1  \\\\ \begin{align}\omega_0 & = p_r (C_0) = \sum^{K}_{i=1} P_i = \omega(k)  \\\\ \omega_1 & = p_r (C_1) = \sum^{G}_{i=K+1} P_i = 1 - \omega(k)\end{align}$$== |
+| ==$\omega_0 + \omega_1 = 1  \\\\ \begin{aligned}\omega_0 & = p_r (C_0) = \sum^{K}_{i=1} P_i = \omega(k)  \\\\ \omega_1 & = p_r (C_1) = \sum^{G}_{i=K+1} P_i = 1 - \omega(k)\end{aligned}$== |
 | <br />Overall Probability:                                   |
-| $$\begin{align}\mu  & = \sum^{G}_{i=1} i \,p_i  \\\\ 	 & = \omega_0 \mu_0 + \omega_1 \mu_1  \qquad \text{(weighted average)} \\\\ 		 &= \sum^{K}_{i=1} i \,p_i + \sum^{G}_{i=K+1} i \,p_i\end{align}$$ |
+| $\begin{aligned}\mu  & = \sum^{G}_{i=1} i \,p_i  \\\\ 	 & = \omega_0 \mu_0 + \omega_1 \mu_1  \qquad \text{(weighted average)} \\\\ 		 &= \sum^{K}_{i=1} i \,p_i + \sum^{G}_{i=K+1} i \,p_i\end{aligned}$ |
 | <br />Hence:                                                 |
-| ==$$\begin{align}\mu_0  & = \frac{\sum^{K}_{i=1} i \,p_i }{\omega_0}  \\\\ \mu_0  & = \frac{\sum^{G}_{i=K+1} i \,p_i }{\omega_1}  \\\\ \end{align}$$== |
-| => Now have $$\mu_0$$ and $$\mu_1$$ as functions of k.<br />=> need to optimize based on some criterion.<br /><br />Here, use between-class variance:<br />$$\begin{align} &\text{If } \mu(k)=\sum^k_{i=1} i \, p_i  \\\\  & \qquad\Rightarrow \mu_0 = \frac{\mu(k)}{\omega(k)} \qquad \mu_1 = \frac{\mu - \mu(k)}{1 - \omega (k)}  \\\\  & \qquad \Rightarrow \sigma_B^2 \overset{\Delta}{=} \omega_0 (\mu_0 - \mu)^2 + \omega_1 (\mu_1 - \mu)^2  \end{align}$$<br /><br />The algorithm exhaustively searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes: $$\sigma_B^2$$<br />You want two cluster is far as possible in histogram.<br />$$\begin{align}\sigma_B^2(k) &= \omega(k) \left[\frac{\mu(k)}{\omega(k)} - \mu\right]^2 + [1 - \omega(k)]\left[\frac{\mu - \mu(k)}{1 - \omega(k)} - \mu \right]^2  \\\\  &= \omega(k) \left[\frac{\mu(k)- \mu}{\omega(k)}\right]^2 + [1 - \omega(k)]\left[\frac{\mu(k) \mu - \mu(k)}{1 - \omega(k)}\right]^2  \\\\  & = \frac{[\mu \omega(k) - \mu(k)]^2}{\omega(k)} + \frac{[\mu \omega(k) - \mu(k)]^2}{1-\omega(k)}  \\\\  &= \frac{[1- \omega(k)][\mu \omega(k) - \mu(k)]^2 + \omega(k)[\mu \omega(k) - \mu(k)]^2}{\omega(k) [1 - \omega(k)]}  \\\\   &= \frac{[\mu \omega(k) - \mu(k)]^2}{\omega(k) [1 - \omega(k)]}\end{align}$$<br /><br />Hence:<br />$$\begin{align}\sigma_B^2(k) = \frac{[\mu \omega(k) - \mu(k)]^2}{\omega(k) [1 - \omega(k)]} \end{align}$$<br /> |
+| ==$\begin{aligned}\mu_0  & = \frac{\sum^{K}_{i=1} i \,p_i }{\omega_0}  \\\\ \mu_0  & = \frac{\sum^{G}_{i=K+1} i \,p_i }{\omega_1}  \\\\ \end{aligned}$== |
+| => Now have $\mu_0$ and $\mu_1$ as functions of k.<br />=> need to optimize based on some criterion.<br /><br />Here, use between-class variance:<br />$\begin{aligned} &\text{If } \mu(k)=\sum^k_{i=1} i \, p_i  \\\\  & \qquad\Rightarrow \mu_0 = \frac{\mu(k)}{\omega(k)} \qquad \mu_1 = \frac{\mu - \mu(k)}{1 - \omega (k)}  \\\\  & \qquad \Rightarrow \sigma_B^2 \overset{\Delta}{=} \omega_0 (\mu_0 - \mu)^2 + \omega_1 (\mu_1 - \mu)^2  \end{aligned}$<br /><br />The algorithm exhaustively searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes: $\sigma_B^2$<br />You want two cluster is far as possible in histogram.<br />$\begin{aligned}\sigma_B^2(k) &= \omega(k) \left[\frac{\mu(k)}{\omega(k)} - \mu\right]^2 + [1 - \omega(k)]\left[\frac{\mu - \mu(k)}{1 - \omega(k)} - \mu \right]^2  \\\\  &= \omega(k) \left[\frac{\mu(k)- \mu}{\omega(k)}\right]^2 + [1 - \omega(k)]\left[\frac{\mu(k) \mu - \mu(k)}{1 - \omega(k)}\right]^2  \\\\  & = \frac{[\mu \omega(k) - \mu(k)]^2}{\omega(k)} + \frac{[\mu \omega(k) - \mu(k)]^2}{1-\omega(k)}  \\\\  &= \frac{[1- \omega(k)][\mu \omega(k) - \mu(k)]^2 + \omega(k)[\mu \omega(k) - \mu(k)]^2}{\omega(k) [1 - \omega(k)]}  \\\\   &= \frac{[\mu \omega(k) - \mu(k)]^2}{\omega(k) [1 - \omega(k)]}\end{aligned}$<br /><br />Hence:<br />$\begin{aligned}\sigma_B^2(k) = \frac{[\mu \omega(k) - \mu(k)]^2}{\omega(k) [1 - \omega(k)]} \end{aligned}$<br /> |
 
 #### How to Implement?
 
 | Implementation                                               |
 | :----------------------------------------------------------- |
-| <br />Matlab: just calculate $$\sigma_B^2(k)$$ as a vector     |
-| <br />Programming: use update equations recursively for efficiency<br />EX:<br /> $$\begin{align}\mu(k) &= \sum^{k} _{i=1} i\, p_i  \\\\  \mu(k+1) &= \sum^{k+1} _{i=1} i\, p_i = \sum^{k} _{i=1} i \, p_i+ (k+1) \, P_{k+1} =  \mu(k) + (k+1)\,P_{k+1}  \\\\  \omega(k) &= \sum^{k}_{i=1} = P_i  \\\\  \omega(k+1) &= \omega(k) + P_{k+1}  \\\\  \mu & = \textbf{constant} = \sum^{G} _{i=1} i\, p_i \end{align}$$ <br /> |
+| <br />Matlab: just calculate $\sigma_B^2(k)$ as a vector     |
+| <br />Programming: use update equations recursively for efficiency<br />EX:<br /> $\begin{aligned}\mu(k) &= \sum^{k} _{i=1} i\, p_i  \\\\  \mu(k+1) &= \sum^{k+1} _{i=1} i\, p_i = \sum^{k} _{i=1} i \, p_i+ (k+1) \, P_{k+1} =  \mu(k) + (k+1)\,P_{k+1}  \\\\  \omega(k) &= \sum^{k}_{i=1} = P_i  \\\\  \omega(k+1) &= \omega(k) + P_{k+1}  \\\\  \mu & = \textbf{constant} = \sum^{G} _{i=1} i\, p_i \end{aligned}$ <br /> |
 | <br />**Example 1 - Otsu's Method**:<br />- Anytime with a clear contrast between the background and foreground<br /> <img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.05.02 PM.png" alt="" style="zoom:80%;" />  |
 | <br />**Example 2 - Smoothing + Otsu's Method** <br /><br />- after applying the smooth, u get bimodal instead of unimodal peaks, and run Otsu's method to separate foreground and background<br /> <img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.05.42 PM.png" alt="" style="zoom:80%;" /> |
 
@@ -164,9 +163,9 @@ end
 
 | **Finite Mixture Models**                                    |
 | ------------------------------------------------------------ |
-| <br />- Suppose we know that there are $$m$$ clustes/classes in the image<br />- Suppose that the probability distribution of each cluster/ class can be modeled using a parametric model (ex: Gaussian, Gamma, Cauchy, etc.)<br />=> Turns into a Model based clusterization <br /><br />- **Idea**: We can model the probability distribution of the image as a mixture of $$m$$ different probability ditributions, one for each cluster/class<br />- **Formulation**:<br />$$\begin{align}f_X(x) = \sum^{m}_{i=1} a_i \, f_{Y_i}(x)\end{align}$$<br />- **Goal**: <br />    - Determine this set of $$m$$ distributions <br />    - and determine which pixel values belong to each cluster/class based on which of these distributions give the highest probability |
-| <img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.45.47 PM.png" alt="Screen Shot 2020-12-03 at 11.45.47 PM" style="zoom:60%;" /><br /><br /><br />**- Steps:**<br />.    1. Learn the parameters of the distribution models for the $$m$$ clusters<br />.           - ex: for Gaussian, learn the mean and std. deviation<br />.    2. For each possible pixel:<br />.            2-1) Determine the probability that its pixel intensity belongs to each of the $$m$$ clustes based on the distribution model<br />.            2-2) Assign the pixel's cluster label to the cluster that provides the highest probability<br />.     3. Therefore, thresholds between clustes coincide at points of **equal probabilities**<br /><br /> |
-| **<br />Example:** Suppose we have two classes modeled by 2 Gaussians <br />($$\begin{equation}\mu_1 = 3, \sigma_1 = 1, \mu_2=5, \sigma_2=1\end{equation}$$)<br />- What is the threshold between these two classes?<br />.     => Set up distribution equations for each class<br /><img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.31.39 PM.png" alt="Screen Shot 2020-12-03 at 11.31.39 PM" style="zoom:80%;" /><br /><br />=> Since threshold is at point of equal probabilities:<br /><img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.31.45 PM.png" alt="Screen Shot 2020-12-03 at 11.31.45 PM" style="zoom:80%;" /> |
+| <br />- Suppose we know that there are $m$ clustes/classes in the image<br />- Suppose that the probability distribution of each cluster/ class can be modeled using a parametric model (ex: Gaussian, Gamma, Cauchy, etc.)<br />=> Turns into a Model based clusterization <br /><br />- **Idea**: We can model the probability distribution of the image as a mixture of $m$ different probability ditributions, one for each cluster/class<br />- **Formulation**:<br />$\begin{aligned}f_X(x) = \sum^{m}_{i=1} a_i \, f_{Y_i}(x)\end{aligned}$<br />- **Goal**: <br />    - Determine this set of $m$ distributions <br />    - and determine which pixel values belong to each cluster/class based on which of these distributions give the highest probability |
+| <img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.45.47 PM.png" alt="Screen Shot 2020-12-03 at 11.45.47 PM" style="zoom:60%;" /><br /><br /><br />**- Steps:**<br />.    1. Learn the parameters of the distribution models for the $m$ clusters<br />.           - ex: for Gaussian, learn the mean and std. deviation<br />.    2. For each possible pixel:<br />.            2-1) Determine the probability that its pixel intensity belongs to each of the $m$ clustes based on the distribution model<br />.            2-2) Assign the pixel's cluster label to the cluster that provides the highest probability<br />.     3. Therefore, thresholds between clustes coincide at points of **equal probabilities**<br /><br /> |
+| **<br />Example:** Suppose we have two classes modeled by 2 Gaussians <br />($\begin{equation}\mu_1 = 3, \sigma_1 = 1, \mu_2=5, \sigma_2=1\end{equation}$)<br />- What is the threshold between these two classes?<br />.     => Set up distribution equations for each class<br /><img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.31.39 PM.png" alt="Screen Shot 2020-12-03 at 11.31.39 PM" style="zoom:80%;" /><br /><br />=> Since threshold is at point of equal probabilities:<br /><img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-03 at 11.31.45 PM.png" alt="Screen Shot 2020-12-03 at 11.31.45 PM" style="zoom:80%;" /> |
 
 ### Histogram Segmentation - Pros and Cons
 
@@ -230,8 +229,8 @@ end
 - Mathematically, morphology can be implemented using set theory.
   
   - Set A: set of all white pixels (ex: detected edges)
-- Translation: $$(A)\gamma = \{ c | c = a + \gamma, a \in A \}$$
-  - Where $$a,c,\gamma$$ are in (x,y) coordinates
+- Translation: $(A)\gamma = \{ c | c = a + \gamma, a \in A \}$
+  - Where $a,c,\gamma$ are in (x,y) coordinates
   
   - Basic building block for **Dilation and Erosion**
   
@@ -241,35 +240,35 @@ end
 
 #### Dilation ==OR Gate==:
 
-- Dilation: $$C = A \oplus B = \{ c \,\vert\, c = a + b, a \in A, b \in B \} = \underset{b\in B}{\bigcup} (A)_b = \underset{a\in A}{\bigcup}  (B)_a$$ (commutative)
+- Dilation: $C = A \oplus B = \{ c \,\vert\, c = a + b, a \in A, b \in B \} = \underset{b\in B}{\bigcup} (A)_b = \underset{a\in A}{\bigcup}  (B)_a$ (commutative)
   - A: image
   - B: "structuring element"
     - set of pixels referred to as the "structuring element" which defines the nature of the dilation
     - can take any shape
 - Example: 
-  - if $$B = \{ (0,0), (1,0)\}$$ = [  x  |     ]
+  - if $B = \{ (0,0), (1,0)\}$ = [  x  |     ]
   
-  - $$C = A \oplus B = (A + \{0,0\}) \bigcup (A + \{1, 0\})$$
+  - $C = A \oplus B = (A + \{0,0\}) \bigcup (A + \{1, 0\})$
   
     <img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-04 at 12.28.29 AM.png" alt="Screen Shot 2020-12-04 at 12.28.29 AM" style="zoom:80%;" align="left"/>
   
-  - $$C$$ is a dilation of $$A$$ using structuring element $$B$$
+  - $C$ is a dilation of $A$ using structuring element $B$
 
 #### Erosion ==AND Gate==:
 
-- Erosion:  $$C = A \ominus B = \underset{b\in B}{\bigcap} (A)_{-b}$$ (not commutative)
+- Erosion:  $C = A \ominus B = \underset{b\in B}{\bigcap} (A)_{-b}$ (not commutative)
   - A: image
   - B: "structuring element"
 - Example:
-  - $$B = \{ (0,0), (1,0)\}$$ = [  x  |     ]
+  - $B = \{ (0,0), (1,0)\}$ = [  x  |     ]
   
-  - $$C = A \ominus B = (A + \{0,0\}) \bigcap (A + \{-1, 0\})$$
+  - $C = A \ominus B = (A + \{0,0\}) \bigcap (A + \{-1, 0\})$
   
     <img src="Resources/Blog_imgs/Sec 7 - Segmentation.assets/Screen Shot 2020-12-04 at 12.32.52 AM.png" alt="Screen Shot 2020-12-04 at 12.32.52 AM" style="zoom:80%;" align="left"/>
   
   
   
-  - $$C$$ is an erosion of $$A$$ using structuring element $$B$$
+  - $C$ is an erosion of $A$ using structuring element $B$
 
 #### Openings (ED) and Closings (DE)
 

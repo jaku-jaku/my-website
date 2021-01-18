@@ -1,6 +1,7 @@
 [
   {
     "id_name": "MTE544-Basic-Math",
+    "index": "2020-7",
     "img_directory": "Resources/Blog_imgs/Estimation.assets/",
     "img_cover": "Screen Shot 2020-12-09 at 5.41.16 PM.png",
     "title": "Robotics - Basic Math (1/3)",
@@ -10,6 +11,7 @@
   },
   {
     "id_name": "MTE544-Estimation",
+    "index": "2020-6",
     "img_directory": "Resources/Blog_imgs/Estimation.assets/",
     "img_cover": "Screen Shot 2020-12-09 at 5.41.16 PM.png",
     "title": "Robotics - Estimation (2/3)",
@@ -19,6 +21,7 @@
   },
   {
     "id_name": "MTE544-Localization-Mapping-SLAM",
+    "index": "2020-5",
     "img_directory": "Resources/Blog_imgs/Localization and Mapping.assets/",
     "img_cover": "Screen Shot 2020-12-03 at 10.21.12 AM.png",
     "title": "Robotics - SLAM (3/3)",
@@ -28,6 +31,7 @@
   },
   {
     "id_name": "SYDE575-Segmentation",
+    "index": "2020-4",
     "img_directory": "Resources/Blog_imgs/Sec 7 - Segmentation.assets/",
     "img_cover": "Otsu's_Method_Visualization.gif",
     "title": "CV - Segmentation",
@@ -37,6 +41,7 @@
   },
   {
     "id_name": "SYDE575-Image-Compression",
+    "index": "2020-3",
     "img_directory": "Resources/Blog_imgs/Sec 8 - Image Compression.assets/",
     "img_cover": "Screen Shot 2020-12-04 at 9.42.27 PM.png",
     "title": "CV - Image Compression",
@@ -46,6 +51,7 @@
   },
   {
     "id_name": "ECE457A-Heuristic-Search",
+    "index": "2020-2",
     "img_directory": "Resources/Blog_imgs/457A_Final_Review_assets/",
     "img_cover": "4.png",
     "title": "Heuristic Search (1/2)",
@@ -55,6 +61,7 @@
   },
   {
     "id_name": "ECE457A-Ant-Colony-Swarm",
+    "index": "2020-1",
     "img_directory": "Resources/Blog_imgs/457A_Final_Review_assets/",
     "img_cover": "4.png",
     "title": "Ant Colony + Swarm (2/2)",
@@ -64,6 +71,7 @@
   },
   {
     "id_name": "Autonomous-Vehicle-Reinforcement-Learning-Intro",
+    "index": "2018-6",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "ml.jpg",
     "title": "Reinforcement Learning Intro",
@@ -73,6 +81,7 @@
   },
   {
     "id_name": "ROS_note_nov12",
+    "index": "2018-5",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "ros.jpg",
     "title": "ROS Note Intro.",
@@ -82,6 +91,7 @@
   },
   {
     "id_name": "Blog_Nov_25_AI_option",
+    "index": "2018-4",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "JX_blog.jpg",
     "title": "About AI option",
@@ -92,6 +102,7 @@
   },
   {
     "id_name": "Blog_note_Cpp_Chapter02",
+    "index": "2018-3",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "NutshellCpp.jpg",
     "title": "C++ in a Nutshell - Ch02",
@@ -102,6 +113,7 @@
   },
   {
     "id_name": "Blog_note_Cpp_Chapter03",
+    "index": "2018-2",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "NutshellCpp.jpg",
     "title": "C++ in a Nutshell - Ch03",
@@ -112,6 +124,7 @@
   },
   {
     "id_name": "Blog_note_Cpp_Chapter04",
+    "index": "2018-1",
     "img_directory": "Resources/Blog_imgs/",
     "img_cover": "NutshellCpp.jpg",
     "title": "C++ in a Nutshell - Ch04",

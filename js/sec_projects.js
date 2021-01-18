@@ -69,7 +69,7 @@ $(function () {
                 G_j_pfo_projs = json;
                 if(G_j_pfo_projs != null)
                 {
-                    G_j_pfo_projs = sortResults(G_j_pfo_projs, "id_name", true);
+                    G_j_pfo_projs = sortResults(G_j_pfo_projs, "index", false);
                     G_j_pfo_projs_filtered = G_j_pfo_projs;
                 }
             });
