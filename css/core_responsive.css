@@ -220,13 +220,6 @@ TOC :
     font-size: 10px;
   }
 
-  #ThanksMessage{
-    height:55px;
-  }
-  #ERRORMessage{
-    height:55px;
-  }
-
   /*cards*/
   .card-pic-crop{
     width: 40vw;
