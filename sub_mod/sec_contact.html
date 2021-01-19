@@ -21,10 +21,10 @@
                 </li>
             </ul>
 
-            <div id="ThanksMessage" >
+            <div id="ThanksMessage" class="msg-block">
                 Message Received! Thanks for emailing me! I will contact you ASAP. :D
             </div>
-            <div id="ERRORMessage" >
+            <div id="ERRORMessage" class="msg-block">
                 : C Ooops, something is wrong, failed to send message, please try it again.
             </div>
 
@@ -97,7 +97,7 @@
 
             // Fire off THE DATA TO THE GOOGLE FORM
             request = $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbw1RvmGkrxh8oUfrFkiMBeZu_1014lo_M0r4VShxkalPIhn4DA/exec",
+                url: "https://script.google.com/macros/s/AKfycbxm23lSSk_20KvD2DHJyXYT4fXlox8kf7Gr_kH09eq8tUzghJN82_RP/exec",
                 type: "post",
                 data: serializedData
             });

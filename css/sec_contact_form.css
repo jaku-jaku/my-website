@@ -88,6 +88,19 @@
 .input-block{
     width: 100%;
 }
+#ThanksMessage{
+    background-color: green;
+}
+#ERRORMessage{
+    background-color: red;
+}
+.msg-block{
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    align-content: center;
+    vertical-align: middle;
+}
 ::-moz-selection { /* Code for Firefox */
     color: #ECEEED;
     background: #11ABB0;
