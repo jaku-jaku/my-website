@@ -25,7 +25,7 @@
     "index": "2019-3",
     "img_directory": "Resources/Projects/Maze_solver/",
     "img_cover": "render3.png",
-    "title": "FYDP: TableUV",
+    "title": "Stewart Maze Solver",
     "description": "<p> <b>UW MTE 380 Course Project</b> </br> Authors: Jack, Jeremy, Tsugumi, Zong </br><span>2019</span></p>",
     "tags": ["Featured_Projects", "2019", "Course_Projects"],
     "more_imgs": ["render3.png", "frame_debugWindow_1.png", "Final_Platform.jpg", "flow_chart.jpeg", "system_sketch.png", "render2.png"],
