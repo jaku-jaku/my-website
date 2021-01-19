@@ -43,6 +43,12 @@ function sortResults(j_arr, prop, asc) {
         else return (b[prop] > a[prop]);
     });
 }
+function sortResultsInInt(j_arr, prop, asc) {
+    return j_arr.sort(function(a, b) {
+        if (asc) return (parseInt(a[prop]) > parseInt(b[prop]));
+        else return (parseInt(b[prop]) > parseInt(a[prop]));
+    });
+}
 
 
 //convert space to '_'

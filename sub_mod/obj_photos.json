@@ -1,6 +1,7 @@
 [
   {
     "id_name": "SF_Tea",
+    "index": "36",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "SF_tea_min.jpg",
     "title": " 品 茶 ",
@@ -9,6 +10,7 @@
   },
   {
     "id_name": "Cali_3",
+    "index": "35",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "CALI3_min.jpg",
     "title": "加州 - 蓝",
@@ -17,6 +19,7 @@
   },
   {
     "id_name": "Cali_1",
+    "index": "34",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "CALI_min.jpg",
     "title": "California Blue",
@@ -25,6 +28,7 @@
   },
   {
     "id_name": "LA_street",
+    "index": "33",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "LA_street_min.jpg",
     "title": "Los Angeles Vibe",
@@ -33,6 +37,7 @@
   },
   {
     "id_name": "LA_building",
+    "index": "32",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "LA_tower_min.jpg",
     "title": "Los Angeles Blue",
@@ -41,6 +46,7 @@
   },
   {
     "id_name": "Jump",
+    "index": "31",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "morro_bay_jump_min.jpg",
     "title": "Cheering for the dawn",
@@ -49,6 +55,7 @@
   },
   {
     "id_name": "Shanghai",
+    "index": "30",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "Shanghai_min.jpg",
     "title": "Night at Shanghai",
@@ -57,6 +64,7 @@
   },
   {
     "id_name": "Tree",
+    "index": "29",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "TAHOE_1_min.jpg",
     "title": "Tree",
@@ -65,6 +73,7 @@
   },
   {
     "id_name": "Clairo",
+    "index": "28",
     "img_directory": "Resources/Photography/2019-20/min/",
     "img_cover": "Clairo_min.jpg",
     "title": "Immunity",
@@ -73,6 +82,7 @@
   },
   {
     "id_name": "Fall_bestfriends",
+    "index": "27",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "BestFriends_min.jpg",
     "title": "友達",
@@ -81,6 +91,7 @@
   },
   {
     "id_name": "Fall_Laugh",
+    "index": "26",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "Laugh_min.jpg",
     "title": "Laugh",
@@ -89,6 +100,7 @@
   },
   {
     "id_name": "Fall_miniature_1",
+    "index": "25",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "いただきます_min.jpg",
     "title": "いただきます",
@@ -97,6 +109,7 @@
   },
   {
     "id_name": "Fall_nature_1",
+    "index": "24",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "ちょうぼう_min.jpg",
     "title": "ちょうぼう",
@@ -105,6 +118,7 @@
   },
   {
     "id_name": "Fall_kayak",
+    "index": "23",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "kayak_min.jpg",
     "title": "Kayak",
@@ -113,6 +127,7 @@
   },
   {
     "id_name": "Fall_boat",
+    "index": "22",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "Boat_min.jpg",
     "title": "折り紙 - Boat",
@@ -121,6 +136,7 @@
   },
   {
     "id_name": "Fall_heart",
+    "index": "21",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "Heart_min.jpg",
     "title": "折り紙 - Heart",
@@ -129,6 +145,7 @@
   },
   {
     "id_name": "Warm_tone",
+    "index": "20",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "WarmTone0_min.jpg",
     "title": "Warm Tone 1",
@@ -137,6 +154,7 @@
   },
   {
     "id_name": "Warm_tone2",
+    "index": "19",
     "img_directory": "Resources/Photography/Fall/min/",
     "img_cover": "WarmTone2_min.jpg",
     "title": "Warm Tone 2",
@@ -146,6 +164,7 @@
   {
     "id_name": "Japan_TokyoTower",
     "img_directory": "Resources/Photography/Japan/min/",
+    "index": "18",
     "img_cover": "TokyoTower_min.jpg",
     "title": "東京タワー",
     "description": "<p> Tokyo Tower </br> <span> Iphone 6s </span></p>",
@@ -153,6 +172,7 @@
   },
   {
     "id_name": "Japan_Flower",
+    "index": "17",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "Flower_min.jpg",
     "title": "通りの花",
@@ -161,6 +181,7 @@
   },
   {
     "id_name": "Japan_Tourist",
+    "index": "16",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "Tourist_min.jpg",
     "title": "Tourist",
@@ -169,6 +190,7 @@
   },
   {
     "id_name": "Japan_Inari0",
+    "index": "15",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "Inari_min.jpg",
     "title": "祈る",
@@ -177,6 +199,7 @@
   },
   {
     "id_name": "Japan_Inari1",
+    "index": "14",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "FushimiTaisha_min.jpg",
     "title": "伏見稲荷大社",
@@ -185,6 +208,7 @@
   },
   {
     "id_name": "Japan_InariFox",
+    "index": "13",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "InariFox_min.jpg",
     "title": "稲荷 大神",
@@ -193,6 +217,7 @@
   },
   {
     "id_name": "Japan_she",
+    "index": "12",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "She_min.jpg",
     "title": "Yukata",
@@ -201,6 +226,7 @@
   },
   {
     "id_name": "Japan_Inari2",
+    "index": "11",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "Inari2_min.jpg",
     "title": "白い 願い",
@@ -209,6 +235,7 @@
   },
   {
     "id_name": "Japan_SkyBuilderCam",
+    "index": "10",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "SkyBuilder_min.jpg",
     "title": "Sky Builder",
@@ -217,6 +244,7 @@
   },
   {
     "id_name": "Japan_StreetPole",
+    "index": "9",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "Streetpole1_min.jpg",
     "title": "電柱 - 白い空",
@@ -225,6 +253,7 @@
   },
   {
     "id_name": "Japan_StreetPole2",
+    "index": "8",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "Streetpole2_min.jpg",
     "title": "電柱 - 青空",
@@ -233,6 +262,7 @@
   },
   {
     "id_name": "Japan_kinkaku",
+    "index": "7",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "kinkaku_min.jpg",
     "title": "金閣寺",
@@ -241,17 +271,16 @@
   },
   {
     "id_name": "Japan_matcha",
+    "index": "6",
     "img_directory": "Resources/Photography/Japan/min/",
     "img_cover": "matcha_min.jpg",
     "title": "抹茶 -　初の夏",
     "description": "<p> In summer, all I wish is your favourite Matcha Tea.  </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Japan", "2016"]
   },
-
-
-
   {
     "id_name": "Night_alone",
+    "index": "5",
     "img_directory": "Resources/Photography/Night/min/",
     "img_cover": "Alone_min.jpg",
     "title": "Light",
@@ -260,6 +289,7 @@
   },
   {
     "id_name": "Night_Sinking",
+    "index": "4",
     "img_directory": "Resources/Photography/Night/min/",
     "img_cover": "Sinking_min.jpg",
     "title": "残念 / Sinking",
@@ -268,6 +298,7 @@
   },
   {
     "id_name": "Night_Milky",
+    "index": "3",
     "img_directory": "Resources/Photography/Night/min/",
     "img_cover": "MilkySky_min.jpg",
     "title": "天の川",
@@ -276,17 +307,16 @@
   },
   {
     "id_name": "Night_Cat",
+    "index": "2",
     "img_directory": "Resources/Photography/Night/min/",
     "img_cover": "Cat_min.jpg",
     "title": "ネコ（猫）",
     "description": "<p>What did you find in this cold dark? </br> <span> Cannon 70D </br> EF 24-70mm F/4L IS USM </span></p>",
     "tags": ["Night", "2016"]
   },
-
-
-
   {
     "id_name": "Misc_Cam",
+    "index": "1",
     "img_directory": "Resources/Photography/Misc/min/",
     "img_cover": "CamDream_min.jpg",
     "title": "Bokeh Dream",
