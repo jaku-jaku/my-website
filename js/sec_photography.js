@@ -10,7 +10,7 @@ $(function () {
             function (json) {
                 G_j_photos = json;
                 if (G_j_photos != null) {
-                    G_j_photos = sortResults(G_j_photos, "id_name", true);
+                    G_j_photos = sortResultsInInt(G_j_photos, "index", false);
                     G_j_photos_filtered = G_j_photos;
                 }
             });
