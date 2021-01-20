@@ -226,3 +226,32 @@ ul.banner-social-buttons {
 .jx-debug{
   border: #ed5655 1px dotted;
 }
+
+/**** Ending ****/
+.ending-section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.ending-section span{
+    font-size: small; 
+    margin-top: 70px;
+    margin-bottom: 30px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    -webkit-animation: fadeIn .7s both ease;
+    -moz-animation: fadeIn .7s both ease;
+    animation: fadeIn .7s both ease;
+}
+.ending-section span:before, .ending-section span:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid gray;
+    margin: auto;
+}
+.ending-section span:before{
+    margin-right: 5%
+}
+.ending-section span:after {
+    margin-left: 5%
+}

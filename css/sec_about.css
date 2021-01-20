@@ -394,25 +394,4 @@ ul.item-bubbles li:last-child {
     font-size: 17px;
 }
 
-/**** Ending ****/
-#ending-section{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-#ending-section p{
-    color: gray;
-    display: flex;
-    flex-direction: row;
-}
-#ending-section p:before, #ending-section p:after {
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid gray;
-    margin: auto;
-}
-#ending-section p:before{
-    margin-right: 5%
-}
-#ending-section p:after {
-    margin-left: 5%
-}
+
