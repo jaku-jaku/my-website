@@ -16,6 +16,12 @@
             "PSYCH 207: Cognitive Science",
             "ECE 484: Digital Control",
             "ECE 488: Multivariable Control Systems"
+        ],
+        "university_of_waterloo_masc":[
+            "ME 649: Optimal Control",
+            "SYDE 671: Advanced Image Processing",
+            "CS 885: Reinforcement Learning",
+            "ECE 780: Model Predictive Control"
         ]
     }
 ]

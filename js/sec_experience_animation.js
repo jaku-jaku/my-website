@@ -76,23 +76,23 @@ function updateSkills() {
     // ---- Update Skills
     $.getJSON("sub_mod/obj_skills.json",
         function (json) {
-            //  Skills
-            data = json[0];
-            categories = ["software", "tools", "hardware", "mechanical"];
-            for (cat of categories)
-            {
-                ul_html = "";
-                for (element of data[cat])
-                {
-                    ul_html += "<li>" + element + "</li>";
-                }
-                // // console.log("skill-" + cat)
-                skill_div = document.getElementById("skill-" + cat);
-                if (skill_div)
-                {
-                    skill_div.innerHTML = ul_html;
-                }
-            }
+            //  Skills [REMOVED-SKILLS]
+            // data = json[0];
+            // categories = ["software", "tools", "hardware", "mechanical"];
+            // for (cat of categories)
+            // {
+            //     ul_html = "";
+            //     for (element of data[cat])
+            //     {
+            //         ul_html += "<li>" + element + "</li>";
+            //     }
+            //     // // console.log("skill-" + cat)
+            //     skill_div = document.getElementById("skill-" + cat);
+            //     if (skill_div)
+            //     {
+            //         skill_div.innerHTML = ul_html;
+            //     }
+            // }
             //  Edu
             data = json[1];
             ul_html = ""
@@ -101,6 +101,16 @@ function updateSkills() {
                 ul_html += "<li>" + element + "</li>";
             }
             edu_div = document.getElementById("edu-uw");
+            if (edu_div)
+            {
+                edu_div.innerHTML = ul_html;
+            }
+            ul_html = ""
+            for (element of data["university_of_waterloo_masc"])
+            {
+                ul_html += "<li>" + element + "</li>";
+            }
+            edu_div = document.getElementById("edu-uw-masc");
             if (edu_div)
             {
                 edu_div.innerHTML = ul_html;
